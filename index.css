@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(63, 63, 66);
+    font-size:small;
+    
+}
+/*styling the logo*/
+.logo{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+}
+.logo img{
+    width:100%;
+    box-shadow:1px 5px 3px lightgrey;
+}
+/*styling more on seedai*/
+.more-on-seedai{
+    padding:5px;
+    box-shadow: 1px 1px 3px black;
+    margin:5px;
+    position: absolute;
+    background-color:white;
+    z-index:1;
+    
+}
+.more-on-seedai .close{
+    display:inline-flex;
+    position:absolute;
+    right:20px;
+    margin:-2px -5px 0 0;
+}
+.more-on-seedai{
+    display:none;
+}
+.more-on-seedai .close-bar1{
+    background-color: rgb(172, 169, 169);
+    width:2px;
+    height:15px;
+    transform:rotate(45deg);
+    margin:0 -1px 0 0;
+}
+.more-on-seedai .close-bar2{
+    background-color: rgb(172, 169, 169);
+    width:2px;
+    height:15px;
+    transform:rotate(135deg);
+    margin:0;
+}
+/*styling menu-icon*/
+.menu-icon{
+    padding:10px;
+    background-color: rgb(185, 151, 120);
+    display:flex;
+    justify-content: flex-end;
+    height:17px;
+    background-color: rgb(139, 43, 43);
+    transition: all 200ms linear;
+}
+.bar-wrap{
+    animation:roll 1000ms 2;
+    border:20px solid brown;
+    box-shadow:1px 1px 3px rgb(63, 59, 59);
+    background-color: brown;
+   
+}
+@keyframes roll {
+    from{margin-left:-300px;padding:15px;}
+    to{margin-left:300px;}
+    
+}
+.bar-one{
+    width:20px;
+    padding:1px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom:3px;
+    margin-top:-5px;
+    box-shadow: 1px 2px 3px;
+    transition: all 200ms linear;
+}
+.bar-two{
+    width:20px;
+    padding:1px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom:3px;
+    box-shadow: 1px 2px 3px;
+}
+.bar-three{
+    width:20px;
+    padding:1px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 3px;
+    transition: margin 200ms linear;
+}
+/*styling menu*/
+.menu{
+    background-color: rgb(139, 43, 43);
+    position:absolute;
+    top:0;
+    width:100%;
+    height:0;
+    transition: height 600ms linear;
+    overflow:hidden;
+}
+.menu-list{
+    color:white;
+    font-size: medium;
+    padding:5px;
+}
+.menu-list li a{
+    text-decoration:none;
+    color:rgb(223, 149, 39);
+}
+/*styling text-animation*/
+.text-animation{
+    margin-top: -25px;
+}
+.text-animation::after{
+    content: "Creativity In Progress ";
+    position:absolute;
+    height:20px;
+    animation: Star 2000ms 1;
+    color:rgb(223, 149, 39);
+    padding-left:3px;
+
+}
+@keyframes Star {
+    0%{content: "C|";color:rgb(255, 238, 0)}
+    5%{content: "Cr|";color:rgb(255, 136, 0);}
+    10%{content: "Cre|";color:rgb(235, 180, 31)}
+    15%{content: "Crea|";color:rgb(247, 140, 19);}
+    20%{content: "Creat|";color:rgb(214, 167, 14);}
+    25%{content: "Creati|";color:darkorange;}
+    30%{content: "Creativ|";color:rgb(228, 203, 203)}
+    35%{content: "Creativi|";color:rgb(218, 124, 18)}
+    40%{content: "Creativit|";color:rgb(216, 145, 14)}
+    45%{content: "Creativity|";color:rgb(255, 106, 0)}
+    55%{content: "Creativity In|";color:rgb(233, 100, 23);}
+    60%{content: "Creativity In P|";color:rgb(205, 182, 50)}
+    65%{content: "Creativity In Pr|";color:rgb(214, 84, 23);}
+    70%{content: "Creativity In Pro|";color:coral;}
+    75%{content: " Creativity In Prog|";color:rgb(235, 147, 15);}
+    80%{content: "Creativity In Progr|";color:rgb(139, 132, 34);}
+    85%{content: "Creativity In Progre|";color:rgb(231, 110, 28)}
+    90%{content: "Creativity In Progres|";color:rgb(255, 255, 255);}
+    100%{content: "Creativity In Progress|";color:rgb(224, 128, 64);}
+}
+/*styling slide-show*/
+.slide-show{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+}
+.slide-show .images{
+    margin-top:20px;
+    width:250px;
+    height: 300px;
+    padding:5px;
+    display:flex;
+    gap:5px;
+    overflow: hidden;
+}
+.image1{
+    background-image: url('emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:300px;
+    width:300px;
+    transition: width 300ms linear;
+    overflow: hidden;
+    text-align: center;
+}
+.image2{
+    background-image: url('ernest-brillo-9_vReDaom2Q-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:00px;
+    width:00px;
+    transition: width 300ms linear;
+    overflow: hidden;
+    text-align: center;
+}
+.image3{
+    background-image: url('harrison-broadbent-1mu9gF8OhNk-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:00px;
+    width:00px;
+    transition: width 300ms linear;
+    overflow: hidden;
+    text-align: center;
+}
+/*styling slide-show-position*/
+.slide-show-position{
+    display:flex;
+    justify-content: center;
+    gap:5px;
+    margin:10px 0 20px 0;
+}
+.pos1,.pos2,.pos3{
+    width:10px;
+    height:10px;
+    border-radius:10%;
+    border:1px solid;
+}
+/*styling welcome paragraphs*/
+.welcome{
+    background-color:rgb(255, 255, 255);
+}
+h4{
+    color:rgb(167, 74, 74);
+}
+.one,.two{
+    padding:10px;
+}
+footer{
+    margin-top:30px;
+    padding:5px;
+    background-color: rgb(223, 132, 27);
+    color:rgb(0, 0, 0);
+    font-size: 12px;
+}
