@@ -11,26 +11,23 @@ function menu(){
 
         document.querySelector(".bar-one").style.marginTop='1px';
         document.querySelector(".bar-three").style.marginTop='-4px';
-        document.querySelector(".more-on-seedai").style.display="none";
         menustate=0;
     }
     else if(menustate==0){
         document.querySelector(".menu").style.height='0';
         document.querySelector(".menu").style.opacity='-1';
+        document.querySelector(".menu-icon").style.marginTop='0';
         document.querySelector(".bar-one").style.transform='rotate(0deg)';
         document.querySelector(".bar-two").style.display="block";
         document.querySelector(".bar-three").style.transform='rotate(0deg)';
         document.querySelector(".bar-one").style.marginTop='-5px';
         document.querySelector(".bar-three").style.marginTop='0';
-
-        document.querySelector(".more-on-seedai").style.display='block';
         menustate=1;
     }
 }
 //MORE ON SEEDAI
 function more_on_seedai(){
     document.querySelector(".more-on-seedai").style.display="none";
-    document.querySelector(".menu-icon").style.marginTop='0';
 }
 
 //SLIDESHOW ANIMATION
