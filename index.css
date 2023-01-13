@@ -5,7 +5,7 @@
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:rgb(63, 63, 66);
-    font-size:small;
+   
     
 }
 /*styling the logo*/
@@ -180,9 +180,12 @@ body{
 /*styling welcome paragraphs*/
 .welcome{
     background-color:rgb(255, 255, 255);
+    text-align: center;
 }
 h4{
     color:rgb(167, 74, 74);
+    text-transform: uppercase;
+    font-size:larger;
 }
 .one,.two{
     padding:10px;
