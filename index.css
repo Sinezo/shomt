@@ -190,6 +190,67 @@ h4{
 .one,.two{
     padding:10px;
 }
+/*styling services"*/
+.services{
+    padding:5px;
+    background-color: rgb(84, 117, 136);
+    color:rgb(230, 219, 219);
+    margin-top: 70px;
+}
+.services .heading{
+    display:flex;
+    justify-content: center;
+}
+.services .services-heading{
+    background-color: rgb(65, 105, 131);
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items: center;
+    padding:10px;
+    border-radius: 50%;
+    margin:-50px 0 20px 0;
+    color:rgb(228, 219, 219);
+    box-shadow: 1px 2px 3px;
+}
+.services h4{
+    color:white;
+    padding:10px;
+}
+.services .electrical{
+    padding:5px;
+    background-color: rgb(72, 104, 122);
+    border-radius: 10px;
+}
+.services .electrical h3{
+    color:rgb(219, 192, 152);
+}
+
+.electrical ul li{
+    margin-top: 5px;
+    padding:5px;
+    border-radius:10px;
+    list-style-type:square;
+    list-style-position: inside;
+}
+
+.services .electronic{
+    padding:5px;
+    background-color: rgb(72, 104, 122);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.services .electronic h3{
+    color:rgb(219, 192, 152);
+}
+
+.electronic ul li{
+    margin-top: 5px;
+    padding:5px;
+    border-radius:10px;
+    list-style-type:square;
+    list-style-position: inside;
+}
 /*styling more on seedai*/
 .more-on-seedai{
     padding:10px;
