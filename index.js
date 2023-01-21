@@ -2,9 +2,9 @@
 var menustate=1;
 function menu(){
     if(menustate==1){
-        document.querySelector(".menu").style.height='300px';
+        document.querySelector(".menu").style.height='fit-content';
         document.querySelector(".menu").style.opacity='1';
-        document.querySelector(".menu-icon").style.marginTop='200px';
+        document.querySelector(".menu-icon").style.marginTop='50px';
         document.querySelector(".bar-one").style.transform='rotate(45deg)';
         document.querySelector(".bar-two").style.display="none";
         document.querySelector(".bar-three").style.transform='rotate(135deg)';

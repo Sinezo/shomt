@@ -5,40 +5,24 @@
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:rgb(63, 63, 66);
-   
+   font-size:small;
     
-}
-/*styling the logo*/
-.logo{
-    display:flex;
-    justify-content: center;
-    padding:10px;
-    background-color: brown;
-}
-.logo img{
-    width:100%;
-    box-shadow:1px 5px 3px lightgrey;
 }
 /*styling menu-icon*/
 .menu-icon{
     padding:10px;
-    background-color: rgb(194, 59, 59);
+    background-color: rgb(55, 85, 112);
     display:flex;
     justify-content: flex-end;
     height:17px;
     transition: all 200ms linear;
 }
 .bar-wrap{
-    animation:roll 1000ms 2;
-    border:20px solid brown;
+    border:20px solid rgb(55, 85, 112);
     box-shadow:1px 1px 3px rgb(63, 59, 59);
-    background-color: brown;
+    background-color: rgb(231, 226, 226);
+    border-radius: 5px;
    
-}
-@keyframes roll {
-    from{margin-left:-300px;padding:15px;}
-    to{margin-left:300px;}
-    
 }
 .bar-one{
     width:20px;
@@ -65,7 +49,7 @@ body{
 }
 /*styling menu*/
 .menu{
-    background-color: rgb(139, 43, 43);
+    background-color: rgb(15, 49, 78);
     position:absolute;
     top:0;
     width:100%;
@@ -80,7 +64,7 @@ body{
 }
 .menu-list li a{
     text-decoration:none;
-    color:rgb(223, 149, 39);
+    color:rgb(255, 255, 255);
 }
 /*styling text-animation*/
 .text-animation{
@@ -124,7 +108,6 @@ body{
 }
 .slide-show .images{
     margin-top:20px;
-    width:250px;
     height: 300px;
     padding:5px;
     display:flex;
@@ -132,7 +115,7 @@ body{
     overflow: hidden;
 }
 .image1{
-    background-image: url('emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg');
+    background-image: url('elec-design.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -143,7 +126,7 @@ body{
     text-align: center;
 }
 .image2{
-    background-image: url('ernest-brillo-9_vReDaom2Q-unsplash.jpg');
+    background-image: url('elec-installation.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -154,7 +137,7 @@ body{
     text-align: center;
 }
 .image3{
-    background-image: url('harrison-broadbent-1mu9gF8OhNk-unsplash.jpg');
+    background-image: url('electronic-design.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -183,7 +166,7 @@ body{
     text-align: center;
 }
 h4{
-    color:rgb(167, 74, 74);
+    color:rgb(223, 149, 39);
     text-transform: uppercase;
     font-size:larger;
 }
@@ -258,7 +241,7 @@ h4{
     margin:40px 5px;
     background-color:white;
     z-index:1;
-    
+    font-size:small;
 }
 .more-on-seedai .close{
     display:inline-flex;
@@ -367,8 +350,8 @@ h4{
 /*styling footer*/
 footer{
     margin-top:30px;
-    padding:5px;
+    padding:25px;
     background-color: rgb(223, 132, 27);
     color:rgb(0, 0, 0);
-    font-size: 12px;
+    font-size:large;
 }
