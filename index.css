@@ -58,13 +58,13 @@ body{
     overflow:hidden;
 }
 .menu-list{
-    color:white;
-    font-size: medium;
+    color:rgb(231, 162, 12);
+    font-size: small;
     padding:5px;
 }
 .menu-list li a{
     text-decoration:none;
-    color:rgb(255, 255, 255);
+    color:rgb(230, 142, 12);
 }
 /*styling text-animation*/
 .text-animation{
