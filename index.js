@@ -1,8 +1,28 @@
+//CONTUCT-US
+var contact_us_state=1;
+function contact_us(){
+    if(contact_us_state==1){
+        document.querySelector(".contact-us").style.height="70px";
+        document.querySelector(".contact-us").style.padding="20px";
+        document.querySelector(".drop-down").style.transform="rotate(225deg";
+        document.querySelector(".drop-down").style.transition="all 200ms linear";
+        document.querySelector(".drop-down").style.color="rgb(230, 151, 33)";
+
+        contact_us_state=0;
+    }
+    else{
+        document.querySelector(".contact-us").style.height="0";
+        document.querySelector(".contact-us").style.padding="0";
+        document.querySelector(".drop-down").style.transform="rotate(45deg";
+        document.querySelector(".drop-down").style.color="rgb(102, 99, 94)";
+        contact_us_state=1;
+    }
+}
 //MENU
 var menustate=1;
 function menu(){
     if(menustate==1){
-        document.querySelector(".menu").style.height='fit-content';
+        document.querySelector(".menu").style.height='150px';
         document.querySelector(".menu").style.opacity='1';
         document.querySelector(".menu-icon").style.marginTop='50px';
         document.querySelector(".bar-one").style.transform='rotate(45deg)';
