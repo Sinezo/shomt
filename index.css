@@ -3,7 +3,8 @@
     padding:0;
 }
 body{
-    font-family: 'Fredoka One', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans Display', sans-serif;
     color:rgb(63, 63, 66);
    font-size:medium;
     
@@ -189,9 +190,10 @@ body{
     text-align: center;
 }
 h4{
-    color:rgb(223, 149, 39);
+    color:rgb(241, 218, 87);
     text-transform: uppercase;
     font-size:larger;
+    font-family: 'Noto Sans Display', sans-serif;
 }
 .one,.two{
     padding:10px;
@@ -360,7 +362,7 @@ h4{
 footer{
     margin-top:30px;
     padding:25px;
-    background-color: rgb(197, 181, 87);
+    background-color: rgb(194, 179, 93);
     color:rgb(0, 0, 0);
 }
 .social-media span{
