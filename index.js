@@ -2,7 +2,7 @@
 var contact_us_state=1;
 function contact_us(){
     if(contact_us_state==1){
-        document.querySelector(".contact-us").style.height="70px";
+        document.querySelector(".contact-us").style.height="100px";
         document.querySelector(".contact-us").style.padding="20px";
         document.querySelector(".drop-down").style.transform="rotate(225deg";
         document.querySelector(".drop-down").style.transition="all 200ms linear";
@@ -55,32 +55,36 @@ var slide_position=1;
 function slide_animation(){
     if(slide_position==1){
         document.querySelector('.image1').style.width='0';
-        document.querySelector('.image2').style.width='300px';
+        document.querySelector('.image2').style.width='100%';
         document.querySelector('.image2').style.height='300px';
 
-        document.querySelector('.pos1').style.backgroundColor='rgb(63, 63, 66)';
-        document.querySelector('.pos2').style.backgroundColor='white';
+        
+        document.querySelector('.pos2').style.backgroundColor='rgb(63, 63, 66)';
+        document.querySelector('.pos1').style.backgroundColor='white';
         document.querySelector('.pos3').style.backgroundColor='white';
         slide_position=2;
     }
     else if(slide_position==2){
         document.querySelector('.image2').style.width='0';
-        document.querySelector('.image3').style.width='300px';
+        document.querySelector('.image3').style.width='100%';
         document.querySelector('.image3').style.height='300px';
 
-        document.querySelector('.pos2').style.backgroundColor='rgb(63, 63, 66)';
+        document.querySelector('.pos3').style.backgroundColor='rgb(63, 63, 66)';
+        document.querySelector('.pos2').style.backgroundColor='white';
         document.querySelector('.pos1').style.backgroundColor='white';
-        document.querySelector('.pos3').style.backgroundColor='white';
+
+        
+        
 
         slide_position=3;
     }
     else if(slide_position==3){
         document.querySelector('.image3').style.width='0';
-        document.querySelector('.image1').style.width='300px';
+        document.querySelector('.image1').style.width='100%';
 
-        document.querySelector('.pos3').style.backgroundColor='rgb(63, 63, 66)';
+        document.querySelector('.pos1').style.backgroundColor='rgb(63, 63, 66)';
         document.querySelector('.pos2').style.backgroundColor='white';
-        document.querySelector('.pos1').style.backgroundColor='white';
+        document.querySelector('.pos3').style.backgroundColor='white';
         slide_position=1;
     }
     setTimeout('slide_animation()',5000);
@@ -89,10 +93,11 @@ window.onload=slide_animation;
 //SLIDE ANIMATION POSITION
 function position1(){
     slide_position=1;
-    document.querySelector('.image1').style.width='0';
-    document.querySelector('.image3').style.width='0';
-        document.querySelector('.image2').style.width='300px';
-        document.querySelector('.image2').style.height='300px';
+    
+
+        document.querySelector('.image3').style.width='0';
+    document.querySelector('.image2').style.width='0';
+        document.querySelector('.image1').style.width='300px';
 
         document.querySelector('.pos1').style.backgroundColor='rgb(63, 63, 66)';
         document.querySelector('.pos2').style.backgroundColor='white';
@@ -100,10 +105,10 @@ function position1(){
 }
 function position2(){
     slide_position=2;
-    document.querySelector('.image2').style.width='0';
     document.querySelector('.image1').style.width='0';
-        document.querySelector('.image3').style.width='300px';
-        document.querySelector('.image3').style.height='300px';
+    document.querySelector('.image3').style.width='0';
+        document.querySelector('.image2').style.width='300px';
+        document.querySelector('.image2').style.height='300px';
 
         document.querySelector('.pos2').style.backgroundColor='rgb(63, 63, 66)';
         document.querySelector('.pos1').style.backgroundColor='white';
@@ -111,9 +116,11 @@ function position2(){
 }
 function position3(){
     slide_position=3;
-    document.querySelector('.image3').style.width='0';
-    document.querySelector('.image2').style.width='0';
-        document.querySelector('.image1').style.width='300px';
+  
+        document.querySelector('.image2').style.width='0';
+    document.querySelector('.image1').style.width='0';
+        document.querySelector('.image3').style.width='300px';
+        document.querySelector('.image3').style.height='300px';
 
         document.querySelector('.pos3').style.backgroundColor='rgb(63, 63, 66)';
         document.querySelector('.pos2').style.backgroundColor='white';

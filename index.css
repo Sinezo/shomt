@@ -3,8 +3,7 @@
     padding:0;
 }
 body{
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Noto Sans Display', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:rgb(63, 63, 66);
    font-size:medium;
     
@@ -34,7 +33,7 @@ font-family: 'Noto Sans Display', sans-serif;
 }
 /*styling menu-icon*/
 .menu-icon{
-    padding:10px;
+    padding:20px;
     background-color: rgb(55, 85, 112);
     display:flex;
     justify-content: flex-end;
@@ -46,6 +45,7 @@ font-family: 'Noto Sans Display', sans-serif;
     box-shadow:1px 1px 3px rgb(63, 59, 59);
     background-color: rgb(231, 226, 226);
     border-radius: 5px;
+    margin:10px -10px;
    
 }
 .bar-one{
@@ -90,40 +90,6 @@ font-family: 'Noto Sans Display', sans-serif;
     text-decoration:none;
     color:rgb(221, 129, 36);
 }
-/*styling text-animation*/
-.text-animation{
-    margin-top: -25px;
-}
-.text-animation::after{
-    content: "Creativity In Progress ";
-    position:absolute;
-    height:20px;
-    animation: Star 2000ms 1;
-    color:rgb(223, 149, 39);
-    padding-left:3px;
-
-}
-@keyframes Star {
-    0%{content: "C|";color:rgb(255, 238, 0)}
-    5%{content: "Cr|";color:rgb(255, 136, 0);}
-    10%{content: "Cre|";color:rgb(235, 180, 31)}
-    15%{content: "Crea|";color:rgb(247, 140, 19);}
-    20%{content: "Creat|";color:rgb(214, 167, 14);}
-    25%{content: "Creati|";color:darkorange;}
-    30%{content: "Creativ|";color:rgb(228, 203, 203)}
-    35%{content: "Creativi|";color:rgb(218, 124, 18)}
-    40%{content: "Creativit|";color:rgb(216, 145, 14)}
-    45%{content: "Creativity|";color:rgb(255, 106, 0)}
-    55%{content: "Creativity In|";color:rgb(233, 100, 23);}
-    60%{content: "Creativity In P|";color:rgb(205, 182, 50)}
-    65%{content: "Creativity In Pr|";color:rgb(214, 84, 23);}
-    70%{content: "Creativity In Pro|";color:coral;}
-    75%{content: " Creativity In Prog|";color:rgb(235, 147, 15);}
-    80%{content: "Creativity In Progr|";color:rgb(139, 132, 34);}
-    85%{content: "Creativity In Progre|";color:rgb(231, 110, 28)}
-    90%{content: "Creativity In Progres|";color:rgb(255, 255, 255);}
-    100%{content: "Creativity In Progress|";color:rgb(224, 128, 64);}
-}
 /*styling slide-show*/
 .slide-show{
     display:flex;
@@ -133,10 +99,10 @@ font-family: 'Noto Sans Display', sans-serif;
 .slide-show .images{
     margin-top:20px;
     height: 300px;
-    padding:5px;
+    width:500px;
     display:flex;
-    gap:5px;
     overflow: hidden;
+    background-color: brown;
 }
 .image1{
     background-image: url('elec-design.jpg');
@@ -144,7 +110,7 @@ font-family: 'Noto Sans Display', sans-serif;
     background-repeat: no-repeat;
     background-position:center;
     height:300px;
-    width:300px;
+    width:100%;
     transition: width 300ms linear;
     overflow: hidden;
     text-align: center;
@@ -190,19 +156,22 @@ font-family: 'Noto Sans Display', sans-serif;
     text-align: center;
 }
 h4{
-    color:rgb(241, 218, 87);
+    color:rgb(184, 187, 189);
     text-transform: uppercase;
     font-size:larger;
     font-family: 'Noto Sans Display', sans-serif;
+    text-align:center;
 }
 .one,.two{
     padding:10px;
+    text-align:start;
+    margin:10px;
 }
 /*styling services"*/
 .services{
     padding:5px;
-    background-color: rgb(84, 117, 136);
-    color:rgb(230, 219, 219);
+    background-color: rgb(145, 146, 146);
+    color:rgb(236, 231, 231);
     margin-top: 70px;
 }
 .services .heading{
@@ -210,28 +179,28 @@ h4{
     justify-content: center;
 }
 .services .services-heading{
-    background-color: rgb(65, 105, 131);
-    width:60px;
-    height:60px;
+    background-color: rgb(158, 156, 156);
+    width:90px;
+    height:90px;
     display:flex;
     align-items: center;
     padding:10px;
-    border-radius: 50%;
+    
     margin:-50px 0 20px 0;
-    color:rgb(228, 219, 219);
-    box-shadow: 1px 2px 3px;
-}
-.services h4{
-    color:white;
-    padding:10px;
+    color:rgb(255, 255, 255);
+    box-shadow: 1px 2px 2px rgb(26, 24, 24);
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 900;
 }
 .services .electrical{
     padding:5px;
-    background-color: rgb(72, 104, 122);
+    background-color: rgb(126, 130, 133);
     border-radius: 10px;
 }
 .services .electrical h3{
-    color:rgb(219, 192, 152);
+    color:rgb(245, 243, 239);
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 900;
 }
 
 .electrical ul li{
@@ -240,16 +209,19 @@ h4{
     border-radius:10px;
     list-style-type:square;
     list-style-position: inside;
+    border:1px solid rgb(113, 117, 119);
 }
 
 .services .electronic{
     padding:5px;
-    background-color: rgb(72, 104, 122);
+    background-color: rgb(126, 130, 133);
     border-radius: 10px;
     margin-top: 20px;
 }
 .services .electronic h3{
-    color:rgb(219, 192, 152);
+    color:rgb(245, 243, 239);
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 900;
 }
 
 .electronic ul li{
@@ -258,12 +230,13 @@ h4{
     border-radius:10px;
     list-style-type:square;
     list-style-position: inside;
+    border:1px solid rgb(113, 117, 119);
 }
 /*styling more on seedai*/
 .more-on-seedai{
     padding:10px;
     box-shadow: 1px 1px 3px black;
-    margin:40px 5px;
+    margin:40px 25px;
     background-color:white;
     z-index:1;
     font-size:small;
@@ -272,7 +245,7 @@ h4{
     display:inline-flex;
     position:absolute;
     right:20px;
-    margin:-2px -5px 0 0;
+    margin:-5px 11px 0 0;
 }
 .training-box{
     display:flex;
@@ -311,18 +284,11 @@ h4{
     padding:10px;
     background-color: white;
     color:rgb(214, 139, 42);
-    border:0;
+    border:1px solid;
     border-radius:4px;
     animation:emailus 1500ms infinite;
 
 
-}
-@keyframes emailus {
-    0%{border-left:1px solid;}
-    25%{border-left:2px solid;}
-    50%{border-top:2px solid;}
-    75%{border-right:2px solid;}
-    100%{border-bottom:2px solid;}
 }
 /*styling e-learning box*/
 .e-learning-box{
@@ -349,21 +315,15 @@ h4{
     border:1px solid;
     border-radius:4px;
     animation:gotoclass 1500ms infinite;
-    border:0;
-}
-@keyframes gotoclass {
-    0%{border-left:1px solid;}
-    25%{border-left:2px solid;}
-    50%{border-top:2px solid;}
-    75%{border-right:2px solid;}
-    100%{border-bottom:2px solid;}
 }
 /*styling footer*/
 footer{
     margin-top:30px;
     padding:25px;
-    background-color: rgb(194, 179, 93);
-    color:rgb(0, 0, 0);
+    background-color: rgb(230, 151, 33);
+    color:rgb(253, 249, 249);
+    font-size: small;
+    text-align: center;
 }
 .social-media span{
     margin-right:10px;
