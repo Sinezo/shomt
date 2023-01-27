@@ -90,39 +90,3 @@ function slide_animation(){
     setTimeout('slide_animation()',5000);
 }
 window.onload=slide_animation;
-//SLIDE ANIMATION POSITION
-function position1(){
-    slide_position=1;
-    
-
-        document.querySelector('.image3').style.width='0';
-    document.querySelector('.image2').style.width='0';
-        document.querySelector('.image1').style.width='300px';
-
-        document.querySelector('.pos1').style.backgroundColor='rgb(63, 63, 66)';
-        document.querySelector('.pos2').style.backgroundColor='white';
-        document.querySelector('.pos3').style.backgroundColor='white';
-}
-function position2(){
-    slide_position=2;
-    document.querySelector('.image1').style.width='0';
-    document.querySelector('.image3').style.width='0';
-        document.querySelector('.image2').style.width='300px';
-        document.querySelector('.image2').style.height='300px';
-
-        document.querySelector('.pos2').style.backgroundColor='rgb(63, 63, 66)';
-        document.querySelector('.pos1').style.backgroundColor='white';
-        document.querySelector('.pos3').style.backgroundColor='white';
-}
-function position3(){
-    slide_position=3;
-  
-        document.querySelector('.image2').style.width='0';
-    document.querySelector('.image1').style.width='0';
-        document.querySelector('.image3').style.width='300px';
-        document.querySelector('.image3').style.height='300px';
-
-        document.querySelector('.pos3').style.backgroundColor='rgb(63, 63, 66)';
-        document.querySelector('.pos2').style.backgroundColor='white';
-        document.querySelector('.pos1').style.backgroundColor='white';
-}
