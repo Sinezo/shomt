@@ -14,7 +14,7 @@ function contact_us(){
         document.querySelector(".contact-us").style.height="0";
         document.querySelector(".contact-us").style.padding="0";
         document.querySelector(".drop-down").style.transform="rotate(45deg";
-        document.querySelector(".drop-down").style.color="rgb(102, 99, 94)";
+        document.querySelector(".drop-down").style.color="rgb(231, 156, 27)";
         contact_us_state=1;
     }
 }
