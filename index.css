@@ -91,53 +91,7 @@ body{
     text-decoration:none;
     color:rgb(252, 246, 241);
 }
-/*styling slide-show*/
-.slide-show{
-    display:flex;
-    justify-content: center;
-    margin-top:50px;
-}
-.slide-show .images{
-    margin-top:20px;
-    height: 300px;
-    width:500px;
-    display:flex;
-    overflow: hidden;
-    background-color: brown;
-}
-.image1{
-    background-image: url('elec-design.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    height:300px;
-    width:100%;
-    transition: width 300ms linear;
-    overflow: hidden;
-    text-align: center;
-}
-.image2{
-    background-image: url('elec-installation.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    height:00px;
-    width:00px;
-    transition: width 300ms linear;
-    overflow: hidden;
-    text-align: center;
-}
-.image3{
-    background-image: url('electronic-design.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    height:00px;
-    width:00px;
-    transition: width 300ms linear;
-    overflow: hidden;
-    text-align: center;
-}
+/*styling welcome video*/
 .welcome-video{
     margin:50px 0 0 0;
 }
@@ -162,7 +116,7 @@ body{
 }
 /*styling welcome paragraphs*/
 .welcome{
-    background-color:rgb(53, 87, 114);
+    background-color:rgb(255, 255, 255);
     text-align: center;
     padding:20px 0;
 }
@@ -171,9 +125,9 @@ h4{
     text-transform: uppercase;
     font-size:larger;
     font-family: 'Noto Sans Display', sans-serif;
-    text-align:center;
     
     background-color: rgb(235, 148, 36);
+    padding:10px;
 }
 .who-are-we{
     text-align:start;
@@ -183,6 +137,7 @@ h4{
 .who-are-we div{
     padding:10px;
 }
+
 .why-us{
     text-align:start;
     margin:20px 10px 20px 10px;
@@ -191,40 +146,39 @@ h4{
 .why-us div{
     padding:10px;
 }
-.column-show{
-    padding:20px;
-    margin:60px 0 0 0;
-    display:flex;
-    justify-content: center;
-}
+
 .column-show .images{
-    display:flex;
-    gap:5px;
-}
-.column-show div{
     width:100%;
+    margin-top: 30px;
+    padding:10px;
+    border-radius: 5px;
     
 }
 .column-show img{
     width:100%;
     height:120px;
-    border-radius: 50%;
-    opacity:.9
+    opacity:.9;
+    margin:-10px;
     
 }
+.next-prev{
+    margin-top: -10px;
+    color:rgb(124, 128, 128);
+}
+
 /*styling services"*/
 .services{
     padding:5px;
-    background-color: rgb(53, 87, 114);
-    color:rgb(236, 231, 231);
-    margin-top: 70px;
+    background-color: rgb(248, 246, 242);
+    color:rgb(49, 48, 48);
+    margin-top: 50px;
 }
 .services .heading{
     display:flex;
     justify-content: center;
 }
 .services .services-heading{
-    background-color: rgb(53, 87, 114);
+    background-color: rgb(248, 246, 242);
     width:90px;
     height:90px;
     display:flex;
@@ -232,61 +186,49 @@ h4{
     justify-content: center;
     padding:15px;
     
-    margin:-40px 0 20px 0;
-    color:rgb(255, 255, 255);
+    margin:-40px 0 0 0;
+    color:rgb(85, 88, 88);
     border-radius:50%;
     font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
     z-index: -1;
 }
-.services .electrical{
+.services ul li{
+    background-color:rgb(109, 108, 107);
+    margin-top:5px;
     padding:10px;
-    background-color: rgb(44, 71, 94);
-    border-radius: 10px;
+    color:white;
 }
-.services .electrical h3{
-    color:rgb(245, 243, 239);
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 900;
-}
-
-.electrical ul li{
-    margin-top: 5px;
+.services .general, .services .overhead,.services .machines,.services .lights{
+    background-color: beige;
+    color:rgb(65, 63, 63);
+    font-size: small;
+    border:1px solid;
+    border-top: 0;
     padding:5px;
-    border-radius:10px;
-    list-style-type:square;
-    list-style-position: inside;
-    border:1px solid rgb(113, 117, 119);
 }
-
-.services .electronic{
-    padding:10px;
-    background-color: rgb(44, 71, 94);
-    border-radius: 10px;
-    margin-top: 20px;
-}
-.services .electronic h3{
-    color:rgb(245, 243, 239);
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 900;
-}
-
-.electronic ul li{
-    margin-top: 5px;
-    padding:5px;
-    border-radius:10px;
-    list-style-type:square;
-    list-style-position: inside;
-    border:1px solid rgb(113, 117, 119);
+.services .overhead,.services .machines,.services .lights{
+   display:none;
 }
 /*styling more on seedai*/
 .more-on-seedai{
     padding:10px;
     box-shadow: 1px 1px 3px black;
     margin:40px 25px;
-    background-color:white;
+    background-color:rgb(247, 246, 242);
+    color:rgb(110, 103, 93);
     z-index:1;
-    font-size:small;
+    font-size:medium;
+    height:100px;
+    overflow: hidden;
+}
+.more-on-seedai h3{
+    padding:10px;
+}
+.more-on-seedai h4{
+    color:rgb(105, 102, 102);
+    background-color: rgb(209, 209, 231);
+    padding:10px;
 }
 .more-on-seedai .close{
     display:inline-flex;
@@ -321,19 +263,13 @@ h4{
     width:5px;
     border-radius: 10px;
 }
-.email-button{
-    text-align:center;
+.email-button {
     padding:10px;
-    height:30px;
-}
-.email-button button{
-    width:60%;
-    padding:10px;
-    background-color: white;
-    color:rgb(214, 139, 42);
+    background-color: rgb(211, 155, 33);
+    color:rgb(255, 255, 255);
     border:1px solid;
     border-radius:4px;
-    animation:emailus 1500ms infinite;
+    width:100px;
 
 
 }
@@ -350,12 +286,6 @@ h4{
     border-radius: 10px;
 }
 .class-button{
-    text-align: center;
-    padding:10px;
-    height:30px;
-}
-.class-button button{
-    width:60%;
     padding:10px;
     background-color: white;
     color:rgb(214, 139, 42);

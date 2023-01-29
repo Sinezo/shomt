@@ -22,7 +22,7 @@ function contact_us(){
 var menustate=1;
 function menu(){
     if(menustate==1){
-        document.querySelector(".menu").style.height='150px';
+        document.querySelector(".menu").style.height='200px';
         document.querySelector(".menu").style.opacity='1';
         document.querySelector(".menu-icon").style.marginTop='50px';
         document.querySelector(".bar-one").style.transform='rotate(45deg)';
@@ -49,44 +49,39 @@ function menu(){
 function more_on_seedai(){
     document.querySelector(".more-on-seedai").style.display="none";
 }
-
-//SLIDESHOW ANIMATION
-var slide_position=1;
-function slide_animation(){
-    if(slide_position==1){
-        document.querySelector('.image1').style.width='0';
-        document.querySelector('.image2').style.width='100%';
-        document.querySelector('.image2').style.height='300px';
-
-        
-        document.querySelector('.pos2').style.backgroundColor='rgb(63, 63, 66)';
-        document.querySelector('.pos1').style.backgroundColor='white';
-        document.querySelector('.pos3').style.backgroundColor='white';
-        slide_position=2;
+//IMAGES ON WHO ARE WE
+var images_start=1;
+var delay=5000;
+function Images(){
+    if(images_start==1){
+        IMAGES.src="elec-installation.jpg";
+        images_start=2;
     }
-    else if(slide_position==2){
-        document.querySelector('.image2').style.width='0';
-        document.querySelector('.image3').style.width='100%';
-        document.querySelector('.image3').style.height='300px';
-
-        document.querySelector('.pos3').style.backgroundColor='rgb(63, 63, 66)';
-        document.querySelector('.pos2').style.backgroundColor='white';
-        document.querySelector('.pos1').style.backgroundColor='white';
-
-        
-        
-
-        slide_position=3;
+    else if(images_start==2){
+        IMAGES.src="elec-design.jpg";
+        images_start=3;
     }
-    else if(slide_position==3){
-        document.querySelector('.image3').style.width='0';
-        document.querySelector('.image1').style.width='100%';
-
-        document.querySelector('.pos1').style.backgroundColor='rgb(63, 63, 66)';
-        document.querySelector('.pos2').style.backgroundColor='white';
-        document.querySelector('.pos3').style.backgroundColor='white';
-        slide_position=1;
+    else if(images_start==3){
+        IMAGES.src="electronic-design.jpg";
+        images_start=1;
     }
-    setTimeout('slide_animation()',5000);
+    setTimeout('Images()', delay);
 }
-window.onload=slide_animation;
+window.onload=Images;
+
+//SKIP IMAGES
+function next(){
+    if(images_start==1){
+        IMAGES.src="elec-design.jpg";
+        images_start=3;
+    }
+    else if(images_start==2){
+        IMAGES.src="electronic-design.jpg";
+        images_start=1;
+        
+    }
+    else if(images_start==3){
+        IMAGES.src="elec-installation.jpg";
+        images_start=2;
+    }
+}

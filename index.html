@@ -55,7 +55,7 @@
         </ul>
     </div>
 
-    <!--SLIDESHOW-->
+    <!--WELCOME VIDEO-->
     <div class="welcome-video">
         <video  autoplay loop muted>
             <source src="light_bulb_cu_stock_preview.mp4" type="video/mp4">
@@ -75,40 +75,38 @@
 
     <!--WELCOME PARAGRAPHS-->
     <br>
+    <div class="decorator" style="background-color:rgb(53, 87, 114);padding:30px;"></div>
     <section class="welcome">
         <br><br><br>
         <div class="who-are-we">
             
-            <h4>Who <br> are we?</h4><br>
+            <h4 onclick="Images()">Who  are we?</h4><br>
             <div>
                     Sinethemba Electrical & Electronic Design and Installation (SEEDAI)
                 is an electrical and electronic business initiative whose focus is on 
                 the design and installation of electrical and electronic systems.
                 <div class="column-show">
                     <div class="images">
-                        <div class="image-1">
-                            <img src="elec-installation.jpg" alt="elec-installation">
-                        </div>
-                        <div class="image-2" style="margin-top:-30px;">
-                            <img src="elec-design.jpg" alt="elec-design">
-                        </div>
-                        <div class="image-3">
-                            <img src="electronic-design.jpg" alt="">
-                        </div>
+                        <img src="" alt="images" name="IMAGES">
+                    </div>
+                    <div class="next-prev">
+                        <span class="span-1"><i class="fa-solid fa-chevron-left"></i></span> <span  class="span-2" style="float:right;" onclick="next()"><i class="fa-solid fa-chevron-right"></i></span>
                     </div>
                 </div>
 
                 <br><br>We employ laws and principles of Electrical Engineering to invent and improve devices and systems out there.
 
                 Through our thorough planning and necessary experiments, we produce the best quality and satisfactory products and services. <br><br>
-                <button style="color:rgb(145, 148, 150);background-color: rgb(255, 255, 255);padding:10px;border:1px solid rgb(145, 148, 150);" onclick="window.location='about.html'">Read more</button>
+                <button style="color:rgb(145, 148, 150);background-color: rgb(255, 255, 255);padding:10px;border:1px solid rgb(145, 148, 150);" onclick="window.location='about.html'"><i class="fa-brands fa-readme"></i> Read more</button> <button style="padding:10px;width:150px;background-color:rgb(46, 127, 202);color:white;border:1px solid rgb(255, 255, 255);"><i class="fa-solid fa-phone"></i>  Contact Us</button>
             </div>
 
         </div>
+    
+        <div class="decorator" style="background-color:rgb(53, 87, 114);padding:30px;"></div>
 
         <br><br>
         <div class="why-us">
-            <h4> Why <br>us?</h4><br>
+            <h4> Why us?</h4><br>
                 <div>
                     We value you. In the process of designing we have your safety on our minds.
             A system without protection is like a ticking bomb. We make sure even in case of faults, you will never be affected. We achieve this by employing the modern electrical protection and automation.
@@ -116,6 +114,7 @@
         </div>
     </section>
     <br><br>
+    <div class="decorator" style="background-color:rgb(53, 87, 114);padding:30px;"></div>
 
     <!--SERVICES-->
     <div class="services">
@@ -123,65 +122,18 @@
         <div class="heading">
             <div class="services-heading">SERVICES</div>
         </div>
-
-        <div class="electrical">
-            <h3>Electrical</h3>
-            <ul>
-                <li>Electrical Machines - Design and Installation</li>
-                <li>Control Systems - Design and Installation</li>
-                <li> Street Lights - Installation and Maintenance</li>
-                <li>Overhead lines - Distribution and Transmission</li>
-            </ul>
-        </div>
-
-        <div class="electronic">
-            <h3>Electronic</h3>
-            <ul>
-                <li>Smart Security Systems - Design and Installation</li>
-                <li>Electronic Systems - Design and Installation</li>
-                <li>Arduino Based Control Systems -  Design and Installation</li>
-            </ul>
-        </div>
-
-        <div class="hireus-box" style="text-align:end;padding:10px;margin-top:30px;">
-            <button class="hire-us" style="color:rgb(247, 203, 109);border:1px solid;padding:10px;background-color:rgb(57, 83, 122)">Hire us</button>
-        </div>
-    </div>
-    
-    <!--MORE ON SEEDAI-->
-    <div class="more-on-seedai">
-        <div class="close" onclick="more_on_seedai()">
-            &#9587;
-        </div>
-        <h3>More on SEEDAI</h3>
-        <p>
-            We are an Engineering company after all, it is also our passion to teach 
-            Electrical Engineering to all enthusiasts 
-            out there seeking knowledge. <br> <br>
-           <div class="training-box">
-                <div class="decor1"></div>
-                <div class="training">
-                    <h4>Training</h6>
-                        We offer our Practicals on
-                        <div class="industry"><br></div> <br>projects to help students or anyone to understand 
-                        the theory being taught in class better.
-                        <div class="email-button">
-                            <button>Email us</button>
-                        </div>
-                </div>
-           </div><br><br>
-            <div class="e-learning-box">
-                <div class="decor2"></div>
-                <div class="e-learning">
-                    <h4>E-Learning</h4>
-                To make the learning more fun and interesting we decided to have an online learning platform
-                where students will get to learn and be tested.
-                <div class="class-button">
-                    <button>Go to class</button>
-                </div>
-                </div>
-            </div>
-        </p>
+        <ul>
+            <li>General Electrical Maintenance <span style="float:right;color:rgb(255, 255, 255);"><i class="fa-solid fa-minus"></i></span></li>
+            <li class="general">We do maintenance in Low Voltage electrical devices and systems.</li>
+            <li>Overhed Lines <span style="float:right;color:rgb(255, 255, 255);"><i class="fa-solid fa-plus"></i></span></li>
+            <li class="overhead">We do installation of electrical overhead lines for distributing electricity to the consumers.</li>
+            <li>Electrical Machines <span style="float:right;color:rgb(255, 255, 255);"><i class="fa-solid fa-plus"></i></span></li>
+            <li class="machines">Working with electrical machines is what we do. We do design and installation of electrical machines like electric motors and transformers.</li>
+            <li>Street Lights <span style="float:right;color:rgb(255, 255, 255);"><i class="fa-solid fa-plus"></i></span></li>
+            <li class="lights">We do installation, controls system and maintenace of street lights.</li>
+            <li>Electrical Systems <span style="float:right;color:rgb(255, 255, 255);"><i class="fa-solid fa-plus"></i></span></li>
+            <li>Electronic Systmems <span style="float:right;color:rgb(255, 255, 255);"><i class="fa-solid fa-plus"></i></span></li>
+        </ul>
     </div>
 
     <!--FOOTER-->
