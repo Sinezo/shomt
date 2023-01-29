@@ -85,3 +85,141 @@ function next(){
         images_start=2;
     }
 }
+//CLICKING SERVICES
+var serv1 =1;
+function service1(){
+    if(serv1==1){
+        document.querySelector(".general").style.height='0';
+        document.querySelector(".general").style.overflow='hidden';
+        document.querySelector(".general").style.padding='0';
+        document.querySelector(".general").style.border='0';
+        document.querySelector(".general").style.height='0';
+        document.querySelector(".general").style.overflow='hidden';
+        document.querySelector(".general").style.transition=" height 200ms linear";
+        serv1=0;
+    }
+    else{
+        document.querySelector(".general").style.height='20px';
+        document.querySelector(".general").style.overflow='hidden';
+        document.querySelector(".general").style.padding='20px';
+        document.querySelector(".general").style.border='1px solid';
+        document.querySelector(".general").style.borderTop='0';
+        serv1=1;
+    }
+}
+
+var serv2 =1;
+function service2(){
+    if(serv2==1){
+        document.querySelector(".overhead").style.height='20px';
+        document.querySelector(".overhead").style.overflow='hidden';
+        document.querySelector(".overhead").style.padding='20px';
+        document.querySelector(".overhead").style.border='1px solid';
+        document.querySelector(".overhead").style.borderTop='0';
+        document.querySelector(".overhead").style.transition=" height 200ms linear";
+        serv2=0;
+    }
+    else{
+        document.querySelector(".overhead").style.height='0';
+        document.querySelector(".overhead").style.overflow='hidden';
+        document.querySelector(".overhead").style.padding='0';
+        document.querySelector(".overhead").style.border='0';
+        document.querySelector(".overhead").style.height='0';
+        document.querySelector(".overhead").style.overflow='hidden';
+        document.querySelector(".overhead").style.padding='0';
+        serv2=1;
+    }
+}
+
+var serv3 =1;
+function service3(){
+    if(serv3==1){
+        document.querySelector(".machines").style.height='40px';
+        document.querySelector(".machines").style.overflow='hidden';
+        document.querySelector(".machines").style.padding='20px';
+        document.querySelector(".machines").style.border='1px solid';
+        document.querySelector(".machines").style.borderTop='0';
+        document.querySelector(".machines").style.transition=" height 200ms linear";
+        serv3=0;
+    }
+    else{
+        document.querySelector(".machines").style.height='0';
+        document.querySelector(".machines").style.overflow='hidden';
+        document.querySelector(".machines").style.padding='0';
+        document.querySelector(".machines").style.border='0';
+        document.querySelector(".machines").style.height='0';
+        document.querySelector(".machines").style.overflow='hidden';
+        document.querySelector(".machines").style.padding='0';
+        serv3=1;
+    }
+}
+
+var serv4 =1;
+function service4(){
+    if(serv4==1){
+        document.querySelector(".lights").style.height='20px';
+        document.querySelector(".lights").style.overflow='hidden';
+        document.querySelector(".lights").style.padding='20px';
+        document.querySelector(".lights").style.border='1px solid';
+        document.querySelector(".lights").style.borderTop='0';
+        document.querySelector(".lights").style.transition=" height 200ms linear";
+        serv4=0;
+    }
+    else{
+        document.querySelector(".lights").style.height='0';
+        document.querySelector(".lights").style.overflow='hidden';
+        document.querySelector(".lights").style.padding='0';
+        document.querySelector(".lights").style.border='0';
+        document.querySelector(".lights").style.height='0';
+        document.querySelector(".lights").style.overflow='hidden';
+        document.querySelector(".lights").style.padding='0';
+        serv4=1;
+    }
+}
+
+
+var serv5 =1;
+function service5(){
+    if(serv5==1){
+        document.querySelector(".elec-systems").style.height='20px';
+        document.querySelector(".elec-systems").style.overflow='hidden';
+        document.querySelector(".elec-systems").style.padding='20px';
+        document.querySelector(".elec-systems").style.border='1px solid';
+        document.querySelector(".elec-systems").style.borderTop='0';
+        document.querySelector(".elec-systems").style.transition=" height 200ms linear";
+        serv5=0;
+    }
+    else{
+        document.querySelector(".elec-systems").style.height='0';
+        document.querySelector(".elec-systems").style.overflow='hidden';
+        document.querySelector(".elec-systems").style.padding='0';
+        document.querySelector(".elec-systems").style.border='0';
+        document.querySelector(".elec-systems").style.height='0';
+        document.querySelector(".elec-systems").style.overflow='hidden';
+        document.querySelector(".elec-systems").style.padding='0';
+        serv5=1;
+    }
+}
+
+var serv6 =1;
+function service6(){
+    if(serv6==1){
+        document.querySelector(".electronic-systems").style.height='20px';
+        document.querySelector(".electronic-systems").style.overflow='hidden';
+        document.querySelector(".electronic-systems").style.padding='20px';
+        document.querySelector(".electronic-systems").style.border='1px solid';
+        document.querySelector(".electronic-systems").style.borderTop='0';
+        document.querySelector(".electronic-systems").style.transition=" height 200ms linear";
+        serv6=0;
+    }
+    else{
+        document.querySelector(".electronic-systems").style.height='0';
+        document.querySelector(".electronic-systems").style.overflow='hidden';
+        document.querySelector(".electronic-systems").style.padding='0';
+        document.querySelector(".electronic-systems").style.border='0';
+        document.querySelector(".electronic-systems").style.height='0';
+        document.querySelector(".electronic-systems").style.overflow='hidden';
+        document.querySelector(".electronic-systems").style.padding='0';
+        serv6=1;
+    }
+}
