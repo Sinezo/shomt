@@ -47,7 +47,7 @@ body{
 /*styling menu-icon*/
 .menu-icon{
     padding:20px;
-    background-color: rgb(235, 148, 36);
+    background-color: rgb(255, 255, 255);
     display:flex;
     justify-content: flex-end;
     height:17px;
