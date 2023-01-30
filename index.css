@@ -8,6 +8,17 @@ body{
    font-size:medium;
     
 }
+/*styling web name*/
+.web-name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:600;
+    color:rgb(255, 255, 255);
+    font-size:40px; 
+    border:3px solid;
+    padding:10px;
+    background-color: rgb(207, 132, 18);
+    border-radius: 10px;
+}
 /*styling contact-us*/
 .contact-us{
     text-align: center;
