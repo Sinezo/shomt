@@ -6,7 +6,7 @@ function contact_us(){
         document.querySelector(".contact-us").style.padding="20px";
         document.querySelector(".drop-down").style.transform="rotate(225deg";
         document.querySelector(".drop-down").style.transition="all 200ms linear";
-        document.querySelector(".drop-down").style.color="rgb(230, 151, 33)";
+        document.querySelector(".drop-down").style.color="white";
 
         contact_us_state=0;
     }
@@ -14,7 +14,7 @@ function contact_us(){
         document.querySelector(".contact-us").style.height="0";
         document.querySelector(".contact-us").style.padding="0";
         document.querySelector(".drop-down").style.transform="rotate(45deg";
-        document.querySelector(".drop-down").style.color="rgb(231, 156, 27)";
+        document.querySelector(".drop-down").style.color="white";
         contact_us_state=1;
     }
 }
@@ -22,9 +22,9 @@ function contact_us(){
 var menustate=1;
 function menu(){
     if(menustate==1){
-        document.querySelector(".menu").style.height='200px';
+        document.querySelector(".menu").style.height='150px';
         document.querySelector(".menu").style.opacity='1';
-        document.querySelector(".menu-icon").style.marginTop='50px';
+        document.querySelector(".menu-icon").style.marginTop='20px';
         document.querySelector(".bar-one").style.transform='rotate(45deg)';
         document.querySelector(".bar-two").style.display="none";
         document.querySelector(".bar-three").style.transform='rotate(135deg)';
@@ -36,7 +36,7 @@ function menu(){
     else if(menustate==0){
         document.querySelector(".menu").style.height='0';
         document.querySelector(".menu").style.opacity='-1';
-        document.querySelector(".menu-icon").style.marginTop='0';
+        document.querySelector(".menu-icon").style.marginTop='-60px';
         document.querySelector(".bar-one").style.transform='rotate(0deg)';
         document.querySelector(".bar-two").style.display="block";
         document.querySelector(".bar-three").style.transform='rotate(0deg)';

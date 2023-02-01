@@ -16,7 +16,7 @@ body{
     font-size:40px; 
     border:3px solid;
     padding:10px;
-    background-color: rgb(207, 132, 18);
+    background-color: rgb(24, 180, 37);
     border-radius: 10px;
 }
 /*styling contact-us*/
@@ -33,16 +33,23 @@ body{
 /*styling logo*/
 .logo{
     padding:10px;
-    background-color: rgb(53, 87, 114);
+    background-color: rgb(255, 255, 255);
 }
 .logo .name-infull{
     font-size: 10px;
     text-align: center;
     margin:-10px 0 20px 0;
-    color:rgb(243, 187, 103);
+    color:rgb(236, 149, 18);
+    font-family: fantasy;
 }
 .logo-name{
     padding:10px;
+    margin-left: -15px;
+}
+/*styling drop-down*/
+.drop-down{
+    color:white;
+    transform: rotate(135deg);
 }
 /*styling menu-icon*/
 .menu-icon{
@@ -52,13 +59,14 @@ body{
     justify-content: flex-end;
     height:17px;
     transition: all 200ms linear;
+    margin-top:-60px;
 }
 .bar-wrap{
-    box-shadow:1px 1px 3px rgb(63, 59, 59);
     background-color: rgb(231, 226, 226);
-    margin:10px -10px;
+    margin:10px -30px 0 0;
     background-color: rgb(109, 107, 107);
     padding:10px 10px 14px 10px; 
+    border-radius:4px;
    
 }
 .bar-wrap:hover{
@@ -141,21 +149,42 @@ body{
     padding:20px 0;
 }
 h4{
-    color:rgb(255, 255, 255);
+    color:rgb(233, 145, 29);
     text-transform: uppercase;
-    font-size:larger;
+    font-size:large;
     font-family: 'Noto Sans Display', sans-serif;
     
-    background-color: rgb(235, 148, 36);
-    padding:50px;
+    background-color: rgb(255, 255, 255);
+    padding:5px;
 }
 .who-are-we{
     text-align:start;
     margin:20px 10px;
     background-color:rgb(255, 255, 255);
+    box-shadow:0px 1px 1px 3px rgb(238, 234, 234);
+    border-radius:10px;
+    
 }
 .who-are-we div{
     padding:10px;
+}
+.column-show .images{
+    width:100%;
+    margin-top: 30px;
+    padding:10px;
+    border-radius: 5px;
+    
+}
+.column-show img{
+    width:100%;
+    height:300px;
+    opacity:.9;
+    margin:-20px;
+    
+}
+.next-prev{
+    margin-top: -10px;
+    color:rgb(124, 128, 128);
 }
 .read-more{
     color:rgb(145, 148, 150);
@@ -171,42 +200,27 @@ h4{
 .contact-btn{
     padding:10px;
     width:150px;
-    background-color:rgb(46, 127, 202);
+    background-color:rgb(67, 155, 101);
     color:white;
     border:1px solid rgb(255, 255, 255);
 }
 .contact-btn:hover{
     color:rgb(31, 30, 30);
-    background-color:rgb(68, 148, 223) ;
+    background-color:rgb(68, 223, 120) ;
     cursor:pointer;
 }
 .why-us{
     text-align:start;
     margin:20px 10px 20px 10px;
     background-color:rgb(255, 255, 255);
+    box-shadow:0px 1px 1px 3px rgb(238, 234, 234);
+    border-radius: 10px;
 }
 .why-us div{
     padding:10px;
 }
 
-.column-show .images{
-    width:100%;
-    margin-top: 30px;
-    padding:10px;
-    border-radius: 5px;
-    
-}
-.column-show img{
-    width:100%;
-    height:120px;
-    opacity:.9;
-    margin:-10px;
-    
-}
-.next-prev{
-    margin-top: -10px;
-    color:rgb(124, 128, 128);
-}
+
 /*styling about us*/
 .about-us{
     padding:20px;
@@ -231,46 +245,44 @@ h4{
 /*styling services"*/
 .services{
     padding:10px;
-    background-color: rgb(248, 246, 242);
+    background-color: rgb(255, 255, 255);
     color:rgb(49, 48, 48);
     margin-top: 50px;
+    box-shadow:0px 1px 1px 3px rgb(238, 234, 234);
+    margin:10px;
+    border-radius:10px;
 }
 .services .heading{
-    display:flex;
-    justify-content: center;
+    text-align: center;
 }
 .services .services-heading{
-    background-color: rgb(248, 246, 242);
-    width:90px;
-    height:90px;
-    display:flex;
-
-    justify-content: center;
+    background-color: rgb(255, 255, 255);
     padding:15px;
-    
-    margin:-40px 0 0 0;
-    color:rgb(85, 88, 88);
-    border-radius:50%;
+    color:rgb(218, 180, 15);
+    border-radius:2%;
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
-    z-index: -1;
 }
 .services ul{
-    margin-top:-40px;
+    margin-top:-0px;
+    list-style: none;
 }
 .services ul li{
-    background-color:rgb(34, 77, 117);
+    background-color:rgb(255, 255, 255);
     margin-top:5px;
     padding:20px;
-    color:white;
+    color:rgb(49, 189, 7);
+    border:1px solid;
+    border-radius:10px;
 }
 .services .general, .services .overhead,.services .machines,.services .lights,.services .elec-systems,.services .electronic-systems{
-    background-color: rgb(245, 240, 240);
+    background-color: rgb(255, 255, 255);
     color:rgb(65, 63, 63);
     font-size: small;
-    border:1px solid;
+    border:1px solid rgb(189, 187, 187);
     border-top: 0;
     padding:10px;
+    border-radius:0 0 5px 5px;
 }
 .services .overhead,.services .machines,.services .lights,.services .elec-systems,.services .electronic-systems{
    height:0;
@@ -284,7 +296,7 @@ h4{
 footer{
     margin-top:30px;
     padding:25px;
-    background-color: rgb(219, 148, 42);
+    background-color: rgb(60, 116, 108);
     color:rgb(253, 249, 249);
     font-size: small;
     text-align: center;
