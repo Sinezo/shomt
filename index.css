@@ -6,7 +6,7 @@ body{
     font-family: 'Fredoka One', cursive;
     color:rgb(108, 110, 108);
    font-size:medium;
-   font-weight:100;
+   font-weight: 100;
     
 }
 button{
@@ -14,7 +14,6 @@ button{
 }
 /*styling web name*/
 .web-name{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight:600;
     color:rgb(255, 255, 255);
     font-size:40px; 
@@ -44,7 +43,7 @@ button{
     text-align: center;
     margin:-10px 0 20px 0;
     color:rgb(236, 149, 18);
-    font-family: 'Fredoka One', cursive;
+    /*font-family: 'Fredoka One', cursive;*/
 }
 .logo-name{
     padding:10px;
@@ -165,7 +164,7 @@ h4{
     color:rgb(121, 121, 116);
     text-transform: uppercase;
     font-size:large;
-    font-family: 'Fredoka One', cursive;
+    /*font-family: 'Fredoka One', cursive;*/
     
     background-color: rgb(255, 255, 255);
     padding:5px;
@@ -290,6 +289,9 @@ h4{
     color:rgb(49, 189, 7);
     border:1px solid;
     border-radius:10px;
+}
+.services ul li i{
+    color:rgb(141, 140, 137);
 }
 .services .general, .services .overhead,.services .machines,.services .lights,.services .elec-systems,.services .electronic-systems{
     background-color: rgb(255, 255, 255);
