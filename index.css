@@ -4,9 +4,13 @@
 }
 body{
     font-family: 'Fredoka One', cursive;
-    color:rgb(72, 72, 75);
+    color:rgb(108, 110, 108);
    font-size:medium;
+   font-weight:100;
     
+}
+button{
+    font-family: 'Fredoka One', cursive;
 }
 /*styling web name*/
 .web-name{
@@ -40,7 +44,7 @@ body{
     text-align: center;
     margin:-10px 0 20px 0;
     color:rgb(236, 149, 18);
-    font-family: fantasy;
+    font-family: 'Fredoka One', cursive;
 }
 .logo-name{
     padding:10px;
