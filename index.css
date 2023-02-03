@@ -3,7 +3,7 @@
     padding:0;
 }
 body{
-    font-family:fantasy;
+    font-family: 'Fredoka One', cursive;
     color:rgb(72, 72, 75);
    font-size:medium;
     
@@ -161,7 +161,7 @@ h4{
     color:rgb(121, 121, 116);
     text-transform: uppercase;
     font-size:large;
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Fredoka One', cursive;
     
     background-color: rgb(255, 255, 255);
     padding:5px;
