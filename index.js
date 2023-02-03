@@ -5,7 +5,7 @@ function contact_us(){
         document.querySelector(".contact-us").style.height="100px";
         document.querySelector(".contact-us").style.padding="20px";
         document.querySelector(".drop-down").style.transform="rotate(225deg";
-        document.querySelector(".drop-down").style.transition="all 200ms linear";
+        document.querySelector(".drop-down").style.transition="all 300ms linear";
         document.querySelector(".drop-down").style.color="white";
 
         contact_us_state=0;
