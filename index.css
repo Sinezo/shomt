@@ -4,7 +4,7 @@
 }
 body{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:rgb(108, 110, 108);
+    color:rgb(48, 46, 46);
    font-size:medium;
     
 }
@@ -156,6 +156,7 @@ body{
 .design-pictures .pictures img{
     width:100%;
     border-radius: 10px;
+    border:2px solid rgb(28, 74, 85);
 }
 .electronic-design{
     background-color: rgb(28, 74, 85);
@@ -194,7 +195,6 @@ h4{
 .column-show .images{
     width:100%;
     margin-top: 30px;
-    padding:10px;
     border-radius: 5px;
     
 }
@@ -202,7 +202,7 @@ h4{
     width:100%;
     height:300px;
     opacity:.9;
-    margin:-20px;
+    margin:-10px;
     
 }
 .next-prev{
@@ -220,18 +220,35 @@ h4{
     border:1px solid rgb(216, 196, 14);
     cursor:pointer;
 }
+/*styling contact form*/
+.contact-form{
+    background-color:rgb(239, 240, 241);
+    padding:30px;
+}
+.contact-form h4{
+    background-color:rgb(239, 240, 241) ;
+}
+.contact-form form input{
+    padding:10px;
+    margin-top:10px;
+}
+.contact-form textarea{
+    padding:10px;
+    margin-top: 10px;
+}
 .contact-btn{
     padding:10px;
-    width:150px;
-    background-color:rgb(67, 155, 101);
+    width:197px;
+    background-color:rgb(100, 102, 101);
     color:white;
     border:1px solid rgb(255, 255, 255);
 }
 .contact-btn:hover{
-    color:rgb(31, 30, 30);
-    background-color:rgb(68, 223, 120) ;
+    color:rgb(255, 255, 255);
+    background-color:rgb(6, 44, 56) ;
     cursor:pointer;
 }
+/*styling why--us*/
 .why-us{
     text-align:start;
     margin:20px 10px 20px 10px;
@@ -326,7 +343,7 @@ h4{
 footer{
     margin-top:30px;
     padding:25px;
-    background-color: rgb(30, 59, 78);
+    background-color: rgb(28, 74, 85);
     color:rgb(253, 249, 249);
     font-size: small;
     text-align: center;
