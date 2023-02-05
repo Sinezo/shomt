@@ -187,14 +187,21 @@ h4{
     text-align:start;
     margin:10px 10px;
     background-color:rgb(255, 255, 255);
+    font-size:larger;
+    line-height: 30px;
     
 }
-.who-are-we div{
+.who-are-we p{
     padding:10px;
+}
+.column-show{
+    background-color: rgb(36, 74, 92);
+    padding:10px;
+    border:1px solid white;
 }
 .column-show .images{
     width:100%;
-    margin-top: 30px;
+    margin: 30px 0 0 10px;
     border-radius: 5px;
     
 }
@@ -223,22 +230,25 @@ h4{
 /*styling contact form*/
 .contact-form{
     background-color:rgb(239, 240, 241);
-    padding:30px;
+    padding:50px;
+    margin-left: -20px;
 }
 .contact-form h4{
     background-color:rgb(239, 240, 241) ;
 }
 .contact-form form input{
-    padding:10px;
+    padding:20px;
     margin-top:10px;
+    width:95%;
 }
 .contact-form textarea{
     padding:10px;
     margin-top: 10px;
+    width:102%;
 }
 .contact-btn{
-    padding:10px;
-    width:197px;
+    padding:20px;
+    width:109%;
     background-color:rgb(100, 102, 101);
     color:white;
     border:1px solid rgb(255, 255, 255);
@@ -253,6 +263,8 @@ h4{
     text-align:start;
     margin:20px 10px 20px 10px;
     background-color:rgb(255, 255, 255);
+    font-size:larger;
+    line-height: 30px;
 }
 .why-us div{
     padding:10px;
@@ -284,13 +296,13 @@ h4{
 /*styling services"*/
 .services{
     padding:10px;
-    background-color: rgb(28, 74, 85);
+    background-color: rgb(255, 255, 255);
     color:rgb(49, 48, 48);
     margin-top: 50px;
     box-shadow:0px 1px 1px 3px rgb(238, 234, 234);
-    margin:10px;
     width:500px;
     height:fit-content;
+    font-size: larger;
 }
 .services .heading{
     text-align: center;
@@ -308,10 +320,10 @@ h4{
     list-style: none;
 }
 .services ul li{
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(28, 74, 85);
     margin-top:5px;
     padding:20px;
-    color:rgb(85, 86, 87);
+    color:rgb(255, 255, 255);
     border:1px solid;
 }
 .services ul li i{
