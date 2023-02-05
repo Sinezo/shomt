@@ -8,9 +8,7 @@ body{
    font-size:medium;
     
 }
-button{
-    font-family: 'Fredoka One', cursive;
-}
+
 /*styling web name*/
 .web-name{
     font-weight:600;
@@ -18,15 +16,15 @@ button{
     font-size:40px; 
     border:3px solid;
     padding:10px;
-    background-color: rgb(24, 180, 37);
+    background-color: rgb(28, 74, 85);
     border-radius: 10px;
 }
 /*styling contact-us*/
 .contact-us{
     text-align: center;
     font-size: small;
-    background-color: rgb(230, 151, 33);
-    color:white;
+    background-color: rgb(255, 255, 255);
+    color:rgb(36, 33, 33);
     height:0;
     overflow:hidden;
     transition: height 120ms linear;
@@ -41,7 +39,7 @@ button{
     font-size: 10px;
     text-align: center;
     margin:-10px 0 20px 0;
-    color:rgb(236, 149, 18);
+    color:rgb(59, 59, 58);
     /*font-family: 'Fredoka One', cursive;*/
 }
 .logo-name{
@@ -102,9 +100,25 @@ button{
     padding:5px 0 2px 0;
     background-color: rgb(27, 27, 26);
 }
+/*styling short-cut*/
+.short-cut{
+    display:flex;
+    gap:1px;
+    padding:20px;
+
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    color:white;
+}
+.hire-us,.help,.faqs{
+    padding:20px;
+    background-color: rgb(28, 74, 85);
+    height:30px;
+}
+
 /*styling menu*/
 .menu{
-    background-color: rgb(235, 148, 36);
+    background-color: rgb(122, 117, 110);
     position:absolute;
     top:0;
     width:100%;
@@ -144,23 +158,23 @@ button{
     border-radius: 10px;
 }
 .electronic-design{
-    background-color: rgb(79, 190, 15);
+    background-color: rgb(28, 74, 85);
     padding:20px;
     text-align: center;
     margin: -100px 0 0 10px;
     position: absolute;
     color:rgb(255, 255, 255);
-    border-radius: 5px;
     box-shadow: 1px 2px 3px grey;
 }
 /*styling welcome paragraphs*/
 .welcome{
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(28, 74, 85);
     text-align: center;
     padding:20px 0;
+    margin-top: 50px;
 }
 h4{
-    color:rgb(121, 121, 116);
+    color:rgb(36, 74, 92);
     text-transform: uppercase;
     font-size:large;
     /*font-family: 'Fredoka One', cursive;*/
@@ -172,8 +186,6 @@ h4{
     text-align:start;
     margin:10px 10px;
     background-color:rgb(255, 255, 255);
-    box-shadow:0px 0px 3px 3px rgb(202, 199, 199);
-    border-radius:10px;
     
 }
 .who-are-we div{
@@ -224,8 +236,6 @@ h4{
     text-align:start;
     margin:20px 10px 20px 10px;
     background-color:rgb(255, 255, 255);
-    box-shadow:0px 0px 3px 3px rgb(202, 199, 199);
-    border-radius: 10px;
 }
 .why-us div{
     padding:10px;
@@ -257,12 +267,11 @@ h4{
 /*styling services"*/
 .services{
     padding:10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(28, 74, 85);
     color:rgb(49, 48, 48);
     margin-top: 50px;
     box-shadow:0px 1px 1px 3px rgb(238, 234, 234);
     margin:10px;
-    border-radius:10px;
     width:500px;
     height:fit-content;
 }
@@ -272,7 +281,7 @@ h4{
 .services .services-heading{
     background-color: rgb(255, 255, 255);
     padding:15px;
-    color:rgb(218, 180, 15);
+    color:rgb(28, 74, 85);
     border-radius:2%;
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
@@ -285,16 +294,15 @@ h4{
     background-color:rgb(255, 255, 255);
     margin-top:5px;
     padding:20px;
-    color:rgb(49, 189, 7);
+    color:rgb(85, 86, 87);
     border:1px solid;
-    border-radius:10px;
 }
 .services ul li i{
     color:rgb(141, 140, 137);
 }
 .services .general, .services .overhead,.services .machines,.services .lights,.services .elec-systems,.services .electronic-systems{
     background-color: rgb(255, 255, 255);
-    color:rgb(65, 63, 63);
+    color:rgb(107, 106, 106);
     font-size: small;
     border:1px solid rgb(189, 187, 187);
     border-top: 0;
@@ -318,7 +326,7 @@ h4{
 footer{
     margin-top:30px;
     padding:25px;
-    background-color: rgb(60, 116, 108);
+    background-color: rgb(30, 59, 78);
     color:rgb(253, 249, 249);
     font-size: small;
     text-align: center;
