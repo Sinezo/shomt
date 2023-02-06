@@ -115,7 +115,13 @@ body{
     background-color: rgb(28, 74, 85);
     height:30px;
 }
-
+.singamakhuthala{
+    padding:50px;
+    background-color: rgb(28, 74, 85);
+    width:fit-content;
+    color:white;
+    z-index: 1;
+}
 /*styling menu*/
 .menu{
     background-color: rgb(122, 117, 110);
@@ -175,19 +181,17 @@ body{
     margin-top: 50px;
 }
 h4{
-    color:rgb(36, 74, 92);
+    color:rgb(255, 255, 255);
     text-transform: uppercase;
     font-size:large;
     /*font-family: 'Fredoka One', cursive;*/
-    
-    background-color: rgb(255, 255, 255);
     padding:5px;
 }
 .who-are-we{
     text-align:start;
     margin:10px 10px;
-    background-color:rgb(255, 255, 255);
     font-size:larger;
+    color:white;
     line-height: 30px;
     
 }
@@ -195,9 +199,8 @@ h4{
     padding:10px;
 }
 .column-show{
-    background-color: rgb(36, 74, 92);
     padding:10px;
-    border:1px solid white;
+   
 }
 .column-show .images{
     width:100%;
@@ -227,46 +230,16 @@ h4{
     border:1px solid rgb(216, 196, 14);
     cursor:pointer;
 }
-/*styling contact form*/
-.contact-form{
-    background-color:rgb(239, 240, 241);
-    padding:50px;
-    margin-left: -20px;
-}
-.contact-form h4{
-    background-color:rgb(239, 240, 241) ;
-}
-.contact-form form input{
-    padding:20px;
-    margin-top:10px;
-    width:95%;
-}
-.contact-form textarea{
-    padding:10px;
-    margin-top: 10px;
-    width:102%;
-}
-.contact-btn{
-    padding:20px;
-    width:109%;
-    background-color:rgb(100, 102, 101);
-    color:white;
-    border:1px solid rgb(255, 255, 255);
-}
-.contact-btn:hover{
-    color:rgb(255, 255, 255);
-    background-color:rgb(6, 44, 56) ;
-    cursor:pointer;
-}
+
 /*styling why--us*/
 .why-us{
     text-align:start;
     margin:20px 10px 20px 10px;
-    background-color:rgb(255, 255, 255);
+    color:white;
     font-size:larger;
     line-height: 30px;
 }
-.why-us div{
+.why-us p{
     padding:10px;
 }
 
@@ -275,7 +248,8 @@ h4{
 .about-us{
     width:500px;
     padding:20px;
-    background-color: rgb(245, 250, 250);
+    background-color: rgb(255, 255, 255);
+    color:rgb(43, 41, 41);
 }
 .about-us div{
     text-align:center;
@@ -289,15 +263,15 @@ h4{
     text-transform:uppercase;
 }
 .about-us div .numbers{
-    color:rgb(0, 0, 0);
+    color:rgb(216, 147, 19);
     font-weight: 600;
     font-size: xx-large;
 }
 /*styling services"*/
 .services{
-    padding:10px;
-    background-color: rgb(255, 255, 255);
-    color:rgb(49, 48, 48);
+    padding:30px;
+    background-color:rgb(28, 74, 85);
+    color:rgb(255, 255, 255);
     margin-top: 50px;
     box-shadow:0px 1px 1px 3px rgb(238, 234, 234);
     width:500px;
@@ -308,7 +282,7 @@ h4{
     text-align: center;
 }
 .services .services-heading{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(236, 196, 110);
     padding:15px;
     color:rgb(28, 74, 85);
     border-radius:2%;
@@ -336,13 +310,45 @@ h4{
     border:1px solid rgb(189, 187, 187);
     border-top: 0;
     padding:10px;
-    border-radius:0 0 5px 5px;
 }
 .services .overhead,.services .machines,.services .lights,.services .elec-systems,.services .electronic-systems{
    height:0;
    padding:0;
    border:0;
    overflow:hidden;
+}
+/*styling contact form*/
+.contact-form{
+    background-color:rgb(239, 240, 241);
+    padding:50px;
+    margin-left: -25px;
+}
+.contact-form h4{
+    background-color:rgb(239, 240, 241) ;
+    text-align: center;
+    color:rgb(28, 74, 85);
+}
+.contact-form form input{
+    padding:20px;
+    margin-top:10px;
+    width:100%;
+}
+.contact-form textarea{
+    padding:10px;
+    margin-top: 10px;
+    width:109%;
+}
+.contact-btn{
+    padding:20px;
+    width:117%;
+    background-color:rgb(100, 102, 101);
+    color:white;
+    border:1px solid rgb(255, 255, 255);
+}
+.contact-btn:hover{
+    color:rgb(255, 255, 255);
+    background-color:rgb(6, 44, 56) ;
+    cursor:pointer;
 }
 /*styling flex*/
 .flex{
