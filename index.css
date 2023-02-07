@@ -120,7 +120,7 @@ body{
     background-color: rgb(67, 73, 62);
     width:fit-content;
     color:white;
-    z-index: 1;
+    margin-top:50px;
 }
 /*styling menu*/
 .menu{
@@ -170,8 +170,12 @@ body{
     text-align: center;
     margin: -100px 0 0 10px;
     position: absolute;
-    color:rgb(226, 161, 20);
+    color:rgb(36, 189, 61);
     box-shadow: 1px 2px 3px rgb(26, 25, 25);
+}
+.design-pictures p{
+    padding:20px;
+    color:rgb(56, 55, 54);
 }
 /*styling welcome paragraphs*/
 .welcome{
@@ -327,33 +331,48 @@ h4{
 .contact-form{
     background-color:rgb(255, 255, 255);
     padding:50px;
-    margin-left: -25px;
+    display:flex;
+    justify-content: center;
 }
 .contact-form h4{
     background-color:rgb(255, 255, 255) ;
     text-align: center;
     color:rgb(28, 74, 85);
+    
+}
+.form-box{
+    width:500px;
+    background-color: rgb(255, 255, 255);
 }
 .contact-form form input{
     padding:20px;
     margin-top:10px;
     width:100%;
+    box-sizing: border-box;
+    border:0;
+    box-shadow: 1px 1px 3px black;
 }
 .contact-form textarea{
     padding:10px;
     margin-top: 10px;
-    width:109%;
+    width:100%;
+    box-sizing: border-box;
+    border:0;
+    box-shadow: 1px 1px 3px black;
 }
 .contact-btn{
     padding:20px;
-    width:117%;
-    background-color:rgb(135, 143, 139);
+    background-color:rgb(37, 99, 150);
     color:rgb(255, 255, 255);
     border:1px solid rgb(255, 255, 255);
+    width:100%;
+    box-sizing: border-box;
+    border:0;
+    box-shadow: 1px 1px 3px black;
 }
 .contact-btn:hover{
     color:rgb(255, 255, 255);
-    background-color:rgb(6, 44, 56) ;
+    background-color:rgb(35, 142, 175) ;
     cursor:pointer;
 }
 /*styling flex*/
