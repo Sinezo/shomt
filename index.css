@@ -150,13 +150,13 @@ header .website-name .name{
 }
 /*summary section*/
 .summary-section{
-    padding:10px;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(245, 245, 240);
     color:rgb(161, 158, 158);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:10px;
+    padding:10px;
 }
 .summary-section ul{
     list-style: none;
@@ -167,14 +167,58 @@ header .website-name .name{
     width:fit-content;
     margin-bottom: 5px;
 }
+/*services*/
 .summary-section .services{
     width:500px;
     padding:10px;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
 }
 .summary-section .services i{
     font-size:x-small;
 }
+.summary-section .services .services-intro{
+    padding:10px 0;
+}
+.summary-section .services .services-list{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.summary-section .services .services-list .one,.summary-section .services .services-list .two,.summary-section .services .services-list .three,.summary-section .services .services-list .four,.summary-section .services .services-list .five,.summary-section .services .services-list .six{
+    padding:20px;
+    width:fit-content;
+    border:1px solid lightgrey;
+}
+.summary-section .services .services-list .one{
+    background-color: chocolate;
+    color:white;
+}
+.summary-section .services .services-list .two{
+    background-color: rgb(43, 87, 122);
+    color:white;
+}
+.summary-section .services .services-list .three{
+    background-color: rgb(63, 30, 210);
+    color:white;
+}
+.summary-section .services .services-list .four{
+    background-color: rgb(60, 47, 134);
+    color:white;
+}
+.summary-section .services .services-list .five{
+    background-color: rgb(210, 30, 30);
+    color:white;
+}
+.summary-section .services .services-list .six{
+    background-color: rgb(50, 145, 173);
+    color:white;
+}
+.summary-section .services .services-list p{
+    font-size: small;
+    color:rgb(233, 227, 227);
+}
+/*contact us*/
 .summary-section .contact-us{
     width:500px;
     padding:10px;
