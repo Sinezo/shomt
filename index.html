@@ -20,7 +20,7 @@
         </div>
         <!--login-->
         <div class="login">
-            Login
+            <i class="fa-regular fa-circle-user"></i> Login
         </div>
         <!--menu icon-->
         <div class="menu-icon">
@@ -39,7 +39,7 @@
     <div class="horizontal-scroll">
         <!--slogan-->
         <div class="slogan">
-            Showing light to <b>All</b>
+            <i class="fa-regular fa-lightbulb"></i> Showing light to <b>All</b>
         </div>
         <!--scroll content-->
         <div class="scroll-content">
@@ -57,16 +57,35 @@
     </div>
 
     <!--HERO SECTION-->
+    <!--skip buttons-->
+    <div class="skip-buttons">
+        <button onclick="BACK_IMAGES()" class="back-btn"><i class="fa-solid fa-chevron-left"></i></button> <button onclick="NEXT_IMAGES()" class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
     <div class="hero-section">
         <!--image-->
-        <div class="image">
-            <img src="ernest-brillo-9_vReDaom2Q-unsplash.jpg" alt="image">
+        <div class="images">
+            <!--photo1-->
+            <div class="photo1">
+                <img src="ernest-brillo-9_vReDaom2Q-unsplash.jpg" alt="image">
+            </div>
+            <!--photo2-->
+            <div class="photo2">
+                <img src="pngwing.com.png" alt="image">
+            </div>
+            <!--photo3-->
+            <div class="photo3">
+                <img src="ernest-brillo-9_vReDaom2Q-unsplash.jpg" alt="image">
+            </div>
+            <!--photo4-->
+            <div class="photo4">
+                <img src="pngwing.com.png" alt="image">
+            </div>
         </div>
         <!--text-->
         <div class="text">
             <h1>About Seedai</h1>
             <p>
-                Sinethemba Electrical & Electronic Design and Installation is an engineering company whose main focus is on the 
+                Sinethemba Electrical & Electronic Design and Installation <i>(seedai)</i> is an engineering company whose main focus is on the 
                 design of electrical and electronic systems with significance of solving real world problems.
             </p>
             <div class="buttons">
@@ -74,6 +93,96 @@
             </div>
         </div>
     </div>
+
+    <!--SUMMARY SECTION-->
+    <div class="summary-section">
+        <!--services-->
+        <div class="services">
+            <h2>Services</h2>
+            <ul>
+                <li><i class="fa-solid fa-chevron-right"></i> LV Electrical Design</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Electronic Design</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Automation</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Electrical & Electronic system installation</li>
+                <li><i class="fa-solid fa-chevron-right"></i> General Electrical Maintenance</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Domestic Installation</li>
+            </ul>
+        </div>
+        <!--contact us-->
+        <div class="contact-us">
+            <h2>Contact us</h2>
+            <!--address-->
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 13 Sisson St, Umtata</li>
+                <li><i class="fa-solid fa-phone"></i> 078 605 2462</li>
+                <li><i class="fa-regular fa-envelope"></i> lusawanasinethemba@gmail.com</li>
+                <li><i class="fa-regular fa-clock"></i> Mon - Sat: 8h00 - 17h00</li>
+            </ul>
+            <!--form-->
+            <div class="form">
+                <form action="contact-us.php" method="post">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email ">
+                    <input type="text" placeholder="Message" class="message">
+                    <button type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--MENU POPUP-->
+    <div class="menu-popup">
+        <!--wrap menu-->
+        <div class="wrap-menu">
+            <!--clode menu-->
+            <div class="close-menu">
+                <div class="icon" onclick="MENU()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <!--horizontal scroll-->
+            <div id="horizontal-scroll">
+                <!--slogan-->
+                <div id="slogan">
+                    <i class="fa-regular fa-lightbulb"></i> Showing light to <b>All</b>
+                </div>
+                <!--scroll content-->
+                <div id="scroll-content">
+                    <div id="content">
+                        <ul>
+                            <li>electrical design</li>
+                            <li>electronic design</li>
+                            <li>arduino programming</li>
+                            <li>internet of things</li>
+                            <li>simulation</li>
+                            <li>installation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--menu list-->
+            <div class="menu-list">
+                <ul>
+                    <li>Blog</li>
+                    <li>Competions</li>
+                    <li>About the founder</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        
+            <!--buttons-->
+            <div class="buttons">
+                <button class="create-account">Create Account</button> <br><button id="request-design">Request Design</button>
+            </div>
+        </div>
+        <!--blinder-->
+        <div class="blinder">
+            
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        Copyright &copy;2023 seedai.  All Rights Reserved 
+        Developed by: Sinethemba Lusawana
+    </footer>
 
 <script src="index.js"></script>
 </body>

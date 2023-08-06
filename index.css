@@ -35,6 +35,8 @@ header .website-name .name{
     width:25px;
     height:4px;
     background-color: rgb(209, 122, 23);
+    transition: all 120ms linear;
+
 }
 .menu-icon .bar2{
     display:flex;
@@ -61,6 +63,9 @@ header .website-name .name{
     height:fit-content;
     padding:10px
 }
+.horizontal-scroll .slogan i{
+    color:rgb(255, 187, 0);
+}
 .scroll-content .content{
     width:400px;
     overflow-x: hidden;
@@ -83,6 +88,22 @@ header .website-name .name{
     color:rgb(27, 26, 26);
 }
 
+/*skip-buttons*/
+.skip-buttons{
+    position:absolute;
+    margin:120px 0 0 0;
+    width:100%;
+    z-index:1;
+}
+.skip-buttons button{
+    padding:20px;
+    border-radius: 50%;
+    border:0;
+
+}
+.skip-buttons .next-btn{
+    float:right;
+}
 /*hero section*/
 .hero-section{
     display:flex;
@@ -90,11 +111,18 @@ header .website-name .name{
     justify-content:center;
     padding:20px;
 }
-.hero-section .image{
+.hero-section .images{
     width:500px;
+    height:250px;
+    display:flex;
+    overflow-x: hidden;
 }
-.hero-section .image img{
+.hero-section .images .photo1,.hero-section .images .photo2,.hero-section .images .photo3,.hero-section .images .photo4{
+    min-width:100%;
+}
+.hero-section .images img{
     width:100%; 
+    height:100%;
 }
 .hero-section .text{
     width:500px;
@@ -120,10 +148,173 @@ header .website-name .name{
     font-weight: 600;
     border:0;
 }
+/*summary section*/
+.summary-section{
+    padding:10px;
+    background-color: rgb(17, 17, 17);
+    color:rgb(161, 158, 158);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+}
+.summary-section ul{
+    list-style: none;
+}
+.summary-section h2{
+    padding:10px 0;
+    border-bottom: 1px solid rgb(43, 42, 42);;
+    width:fit-content;
+    margin-bottom: 5px;
+}
+.summary-section .services{
+    width:500px;
+    padding:10px;
+    background-color: rgb(22, 22, 22);
+}
+.summary-section .services i{
+    font-size:x-small;
+}
+.summary-section .contact-us{
+    width:500px;
+    padding:10px;
+    background-color: rgb(22, 22, 22);
+}
+.contact-us .form{
+    padding:20px 0;
+}
+.contact-us .form form{
+    display:grid;
+    gap:5px;
+}
+.contact-us .form form input{
+    padding:15px;
+    border:0;
+    background-color: rgb(27, 26, 26);
+    color:rgb(155, 150, 150);
+}
+.contact-us .form form  .message{
+    padding:30px 15px;
+}
+.contact-us .form form  button{
+    padding:15px;
+    border:0;
+    background-image:linear-gradient(to right, rgb(114, 182, 82),rgb(94, 82, 67),rgb(185, 177, 69));
+    color:white;
+    margin-top: 5px;
+}
+/*menu popup*/
+.menu-popup{
+    position:fixed;
+    width:0;
+    overflow:hidden;
+    height:100%;
+    top:0;
+    display:flex;
+    transition: width 300ms ease-in-out;
+}
+.wrap-menu{
+    padding:10px;
+    background-color: white;
+    width:70%;
+    height:100%;
+    position:relative;
+    
+}
+.blinder{
+    width:30%;
+    height:100%;
+    background-color:black;
+    opacity:.9;
+}
+.menu-popup .close-menu{
+    display:flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+.menu-popup .close-menu .icon{
+    padding:10px;
+    background-color: red;
+    color:white;
+    margin:-10px 
+}
+/*horizontal-scroll of menu popup*/
+#horizontal-scroll{
+    padding:10px;
+    border:1px solid lightgrey;
+    display:flex;
+    overflow-x: hidden;
+}
+#horizontal-scroll #slogan{
+    min-width:150px;
+    height:fit-content;
+    padding:10px
+}
+#horizontal-scroll #slogan i{
+    color:rgb(255, 187, 0);
+}
+#scroll-content #content{
+    width:400px;
+    overflow-x: hidden;
+    border-left: 1px solid lightgray;
+
+}
+#scroll-content #content ul{
+    display:flex;
+    gap:20px;
+    overflow-x: scroll;
+    animation: scroll 11400ms linear infinite;
+}
+#scroll-content #content ul li{
+    min-width:max-content;
+    padding:10px;
+    color:rgb(27, 26, 26);
+}
+
+.wrap-menu .menu-list ul{
+    padding:10px 0;
+    line-height: 2;
+    list-style: none;
+    min-width:max-content;
+}
+.wrap-menu .buttons{
+    padding:10px 0;
+    border-top: 1px solid rgb(218, 216, 216);
+    position: absolute;
+    width: 100%;
+    bottom:30px;
+}
+.wrap-menu .buttons button{
+    padding:15px;
+    width:95%;
+    margin:10px 0 0 0;
+    min-width:max-content;
+}
+.wrap-menu .buttons .create-account{
+    background-color: unset;
+    border:1px solid;
+}
+.wrap-menu .buttons #request-design{
+    border:0;
+    background-color: rgb(228, 141, 28);
+    color:white;
+}
+/*footer*/
+footer{
+    text-align:center;
+    padding:20px;
+    background-color: rgb(209, 122, 23);
+    color:white;
+
+}
 /*BIG SCREEN*/
 @media  screen and (min-width:700px){
 /*horizontal-scroll*/
 .horizontal-scroll{
     justify-content: center;
+}
+/*skip-buttons*/
+.skip-buttons{
+    display:none;
 }
 }
