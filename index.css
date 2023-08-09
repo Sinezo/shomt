@@ -403,4 +403,8 @@ header{
 header .website-name{
     width:100%;
 }
+/*.hero-section*/
+.hero-section .text .buttons{
+   background-color: rgb(20, 20, 20);;
+}
 }
