@@ -53,6 +53,9 @@ function NEXT_IMAGES(){
     photo.style.filter='brightness(30%)';
     photo.style.transition='all 200ms ease-in';
     photo.style.overflow='hidden';
+
+    document.querySelector('#next-chevron').style.transform='rotate(360deg)';
+    document.querySelector('#next-chevron').style.transition='all 300ms ease-in-out';
     position++;
     }
     else{
@@ -73,6 +76,9 @@ function BACK_IMAGES(){
     photo.style.transition='all 300ms ease-in';
     photo.style.filter='brightness(100%)';
     photo.style.overflow='hidden';
+
+    document.querySelector('#back-chevron').style.transform='rotate(-360deg)';
+    document.querySelector('#back-chevron').style.transition='all 300ms ease-in-out';
     position--;
     }
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Competitons| seedai</title>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+/*header*/
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding:5px;
+    box-shadow:1px 1px 3px lightgrey;
+}
+/*website name*/
+header .website-name{
+    display:flex;
+    background-color: rgb(255, 166, 0);
+}
+header .website-name .image{
+    width:50px;
+    margin-top: 10px;
+}
+header .website-name .image img{
+    width:100%;
+}
+header .website-name .name{
+    font-size:larger;
+    font-weight: 600;
+    margin-top: 20px;
+}
+/*login*/
+header .login{
+    min-width:max-content;
+}
+/*menu icon*/
+.menu-icon .bar1,.menu-icon .bar3{
+    width:25px;
+    height:4px;
+    background-color: rgb(209, 122, 23);
+    transition: all 120ms linear;
+
+}
+.menu-icon .bar2{
+    display:flex;
+    margin:3px 0;
+}
+.menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar2,.menu-icon .bar2 .mini-bar3,.menu-icon .bar2 .mini-bar4{
+    width:6.25px;
+    height:4px;
+    background-color: rgb(209, 122, 23);
+    transition: all 400ms ease-in-out;
+}
+.menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
+    transition: all 250ms linear;
+}
+
+/*SMALL SCREEN*/
+@media screen and  (max-width:500px){
+/*header*/
+header{
+    justify-content: end;
+}
+/*website name*/
+header .website-name{
+    width:100%;
+}
+}
+/*info box*/
+.info-box{
+    padding:30px;
+    text-align: center;
+}
+.info-box h1{
+    padding:10px;
+}
+.info-box p{
+    padding:10px;
+}
+.info-box span{
+    color:red;
+}
+    </style>
+</head>
+<body>
+     <!--HEADER-->
+     <header>
+        <!--website name-->
+        <div class="website-name" onclick="window.location='index.html'">
+            <div class="image"><img src="pngwing.com.png" alt=""></div> 
+            <div class="name">seedai</div>
+        </div>
+        <!--login-->
+        <div class="login">
+            <i class="fa-regular fa-circle-user"></i> Login
+        </div>
+        <!--menu icon-->
+        <div class="menu-icon">
+           <!--wrap bars-->
+           <div class="wrap-bars" onclick="MENU()">
+            <div class="bar1"></div>
+            <div class="bar2">
+                <div class="mini-bar1"></div><div class="mini-bar2"></div><div class="mini-bar3"></div><div class="mini-bar4"></div>
+            </div>
+            <div class="bar3"></div>
+           </div>
+        </div>
+    </header>
+
+    <div class="info-box">
+        <h1>Opps!</h1>
+    <p>There is nothing to show at the moment.</p>
+    <span>It may be because the website is still under development process.</span>
+    </div>
+</body>
+</html>

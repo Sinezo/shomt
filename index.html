@@ -14,7 +14,7 @@
     <!--HEADER-->
     <header>
         <!--website name-->
-        <div class="website-name">
+        <div class="website-name" onclick="window.location='index.html'">
             <div class="image"><img src="pngwing.com.png" alt=""></div> 
             <div class="name">seedai</div>
         </div>
@@ -59,7 +59,7 @@
     <!--HERO SECTION-->
     <!--skip buttons-->
     <div class="skip-buttons">
-        <button onclick="BACK_IMAGES()" class="back-btn"><i class="fa-solid fa-chevron-left"></i></button> <button onclick="NEXT_IMAGES()" class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        <button onclick="BACK_IMAGES()" class="back-btn"><i class="fa-solid fa-chevron-left" id="back-chevron"></i></button> <button onclick="NEXT_IMAGES()" class="next-btn"><i class="fa-solid fa-chevron-right" id=next-chevron></i></button>
     </div>
     <div class="hero-section">
         <!--image-->
@@ -89,7 +89,7 @@
                 design of electrical and electronic systems with significance of solving real world problems.
             </p>
             <div class="buttons">
-                <button class="view-projects">View Pojects</button> <button class="request-project">Request Project</button>
+                <button class="view-projects">View Pojects</button><button class="request-project">Request Project</button>
             </div>
         </div>
     </div>
@@ -142,7 +142,7 @@
             </div>
         </div>
         <!--contact us-->
-        <div class="contact-us">
+        <div class="contact-us" id="contact-us">
             <h2>Contact us</h2>
             <!--address-->
             <ul>
@@ -194,10 +194,10 @@
             <!--menu list-->
             <div class="menu-list">
                 <ul>
-                    <li>Blog</li>
-                    <li>Competions</li>
-                    <li>About the founder</li>
-                    <li>Contact us</li>
+                    <li onclick="window.location='blog.html'">Blog / Announcements</li>
+                    <li onclick="window.location='competitions.html'">Competitions</li>
+                    <li onclick="window.location='founder.html'">About the founder</li>
+                    <li onclick="window.location='index.html#contact-us'; MENU();">Contact us</li>
                 </ul>
             </div>
         

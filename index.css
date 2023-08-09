@@ -17,6 +17,7 @@ header{
 /*website name*/
 header .website-name{
     display:flex;
+    background-color: rgb(255, 166, 0);
 }
 header .website-name .image{
     width:50px;
@@ -29,6 +30,15 @@ header .website-name .name{
     font-size:larger;
     font-weight: 600;
     margin-top: 20px;
+}
+/*login*/
+header .login{
+    min-width:max-content;
+}
+header .login:hover{
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(255, 166, 0);
 }
 /*menu icon*/
 .menu-icon .bar1,.menu-icon .bar3{
@@ -57,6 +67,7 @@ header .website-name .name{
     border:1px solid lightgrey;
     display:flex;
     overflow-x: hidden;
+    background-color: rgb(219, 221, 226);
 }
 .horizontal-scroll .slogan{
     min-width:150px;
@@ -133,20 +144,20 @@ header .website-name .name{
     padding:10px 0;
 }
 .hero-section .text .buttons{
-    padding:10px 0;
+    border:1px solid lightgrey;
+    background-color: rgb(202, 202, 216);
 }
 .hero-section .text .buttons button{
     padding:15px;
 }
 .hero-section .text .buttons .view-projects{
-    background-color: unset;
+    background-color: rgb(91, 93, 94);
     border:1px solid; 
 }
 .hero-section .text .buttons .request-project{
-    background-image:linear-gradient(to right, rgb(114, 182, 82),rgb(226, 137, 21),rgb(185, 177, 69));
-    color:white;
+    background-color: rgb(255, 166, 0);
     font-weight: 600;
-    border:0;
+    border:1px solid;
 }
 /*summary section*/
 .summary-section{
@@ -321,18 +332,35 @@ header .website-name .name{
     list-style: none;
     min-width:max-content;
 }
+.wrap-menu .menu-list ul li{
+    border:1px solid lightgrey;
+    margin:5px 0;
+    padding:10px;
+}
+.wrap-menu .menu-list ul li:hover{
+    cursor: pointer;
+    background-color: rgb(255, 166, 0);
+    font-weight: 600;
+}
 .wrap-menu .buttons{
     padding:10px 0;
     border-top: 1px solid rgb(218, 216, 216);
     position: absolute;
     width: 100%;
-    bottom:30px;
+    bottom:50px;
+    left:1px;
+    background-color: rgb(217, 226, 231);
 }
 .wrap-menu .buttons button{
     padding:15px;
-    width:95%;
-    margin:10px 0 0 0;
+    width:90%;
+    margin:10px ;
+    font-weight: 600;
     min-width:max-content;
+}
+.wrap-menu .buttons button:hover{
+    background-color: rgb(255, 166, 0);
+    cursor: pointer;
 }
 .wrap-menu .buttons .create-account{
     background-color: unset;
@@ -340,8 +368,7 @@ header .website-name .name{
 }
 .wrap-menu .buttons #request-design{
     border:0;
-    background-color: rgb(228, 141, 28);
-    color:white;
+    background-color: rgb(255, 166, 0);
 }
 /*footer*/
 footer{
@@ -360,5 +387,16 @@ footer{
 /*skip-buttons*/
 .skip-buttons{
     display:none;
+}
+}
+/*SMALL SCREEN*/
+@media screen and  (max-width:500px){
+/*header*/
+header{
+    justify-content: end;
+}
+/*website name*/
+header .website-name{
+    width:100%;
 }
 }
