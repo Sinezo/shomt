@@ -1,6 +1,8 @@
 *{
     padding:0;
     margin:0;
+    color:rgb(37, 37, 37);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 ::-webkit-scrollbar{
     display:none;
@@ -17,7 +19,8 @@ header{
 /*website name*/
 header .website-name{
     display:flex;
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(60, 103, 151);
+    color:rgb(255, 166, 0);
 }
 header .website-name .image{
     width:50px;
@@ -67,10 +70,10 @@ header .login:hover{
     border:1px solid lightgrey;
     display:flex;
     overflow-x: hidden;
-    background-color: rgb(219, 221, 226);
+    background-color: rgb(255, 255, 255);
 }
 .horizontal-scroll .slogan{
-    min-width:150px;
+    min-width:max-content;
     height:fit-content;
     padding:10px
 }
@@ -96,7 +99,7 @@ header .login:hover{
 .scroll-content .content ul li{
     min-width:max-content;
     padding:10px;
-    color:rgb(27, 26, 26);
+    color:rgb(71, 71, 71);
 }
 
 /*skip-buttons*/
@@ -145,13 +148,16 @@ header .login:hover{
 }
 .hero-section .text .buttons{
     border:1px solid lightgrey;
-    background-color: rgb(202, 202, 216);
+    background-color: rgb(60, 103, 151);
+    padding:10px;
+    border-radius: 10px;
 }
 .hero-section .text .buttons button{
     padding:15px;
     font-weight: 600;
     border:0;
-    border:20px solid rgb(20, 20, 20);
+    width:100%;
+    margin:5px 0;
 }
 .hero-section .text .buttons button:hover{
     cursor: pointer;
@@ -178,8 +184,7 @@ header .login:hover{
 }
 .summary-section h2{
     padding:10px 0;
-    border-bottom: 1px solid rgb(43, 42, 42);;
-    width:fit-content;
+    border-bottom: 2px solid rgb(43, 42, 42);;
     margin-bottom: 5px;
 }
 /*services*/
@@ -199,11 +204,14 @@ header .login:hover{
     display:flex;
     flex-wrap: wrap;
     gap:20px;
+    background-color: rgb(60, 103, 151);
+    padding:10px;
+    border-radius: 10px;
 }
 .summary-section .services .services-list .one,.summary-section .services .services-list .two,.summary-section .services .services-list .three,.summary-section .services .services-list .four,.summary-section .services .services-list .five,.summary-section .services .services-list .six{
     padding:20px;
     width:fit-content;
-    border:1px solid lightgrey;
+    border:0;
 }
 .summary-section .services .services-list .one{
     background-color: chocolate;
@@ -237,7 +245,7 @@ header .login:hover{
 .summary-section .contact-us{
     width:500px;
     padding:10px;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(81, 124, 65);
 }
 .contact-us .form{
     padding:20px 0;
@@ -305,7 +313,7 @@ header .login:hover{
     overflow-x: hidden;
 }
 #horizontal-scroll #slogan{
-    min-width:150px;
+    min-width:max-content;
     height:fit-content;
     padding:10px
 }
@@ -353,7 +361,7 @@ header .login:hover{
     width: 100%;
     height:100%;
     left:1px;
-    background-color: rgb(217, 226, 231);
+    background-color: rgb(60, 103, 151);
 }
 .wrap-menu .buttons button{
     padding:15px;
@@ -378,7 +386,7 @@ header .login:hover{
 footer{
     text-align:center;
     padding:20px;
-    background-color: rgb(209, 122, 23);
+    background-color: rgb(22, 22, 22);
     color:white;
 
 }
@@ -403,8 +411,8 @@ header{
 header .website-name{
     width:100%;
 }
-/*.hero-section*/
-.hero-section .text .buttons{
-   background-color: rgb(20, 20, 20);;
+/*summary section*/
+.summary-section .services .services-list .one,.summary-section .services .services-list .two,.summary-section .services .services-list .three,.summary-section .services .services-list .four,.summary-section .services .services-list .five,.summary-section .services .services-list .six{
+    width:100%;
 }
 }
