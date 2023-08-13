@@ -6,67 +6,10 @@
     <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css">
     <title>blog| seedai</title>
-    <style>
-        *{
-    padding:0;
-    margin:0;
-}
-::-webkit-scrollbar{
-    display:none;
-}
-/*header*/
-header{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:30px;
-    padding:5px;
-    box-shadow:1px 1px 3px lightgrey;
-}
-/*website name*/
-header .website-name{
-    display:flex;
-    background-color: rgb(255, 166, 0);
-}
-header .website-name .image{
-    width:50px;
-    margin-top: 10px;
-}
-header .website-name .image img{
-    width:100%;
-}
-header .website-name .name{
-    font-size:larger;
-    font-weight: 600;
-    margin-top: 20px;
-}
-/*login*/
-header .login{
-    min-width:max-content;
-}
-/*menu icon*/
-.menu-icon .bar1,.menu-icon .bar3{
-    width:25px;
-    height:4px;
-    background-color: rgb(209, 122, 23);
-    transition: all 120ms linear;
 
-}
-.menu-icon .bar2{
-    display:flex;
-    margin:3px 0;
-}
-.menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar2,.menu-icon .bar2 .mini-bar3,.menu-icon .bar2 .mini-bar4{
-    width:6.25px;
-    height:4px;
-    background-color: rgb(209, 122, 23);
-    transition: all 400ms ease-in-out;
-}
-.menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
-    transition: all 250ms linear;
-}
-
+<style>
 /*SMALL SCREEN*/
 @media screen and  (max-width:500px){
 /*header*/
@@ -108,6 +51,7 @@ header .website-name{
         </div>
         <!--menu icon-->
         <div class="menu-icon">
+            <div>Menu</div>
            <!--wrap bars-->
            <div class="wrap-bars" onclick="MENU()">
             <div class="bar1"></div>
@@ -124,5 +68,117 @@ header .website-name{
     <p>There is nothing to show at the moment.</p>
     <span>It may be because the website is still under development process.</span>
     </div>
+
+        <!--MENU POPUP-->
+        <div class="menu-popup">
+            <!--wrap menu-->
+            <div class="wrap-menu">
+                <!--clode menu-->
+                <div class="close-menu">
+                    <div class="icon" onclick="MENU()"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <!--horizontal scroll-->
+                <div id="horizontal-scroll">
+                    <!--slogan-->
+                    <div id="slogan">
+                        <i class="fa-regular fa-lightbulb"></i> Showing light to <b>All</b>
+                    </div>
+                    <!--scroll content-->
+                    <div id="scroll-content">
+                        <div id="content">
+                            <ul>
+                                <li>electrical design</li>
+                                <li>electronic design</li>
+                                <li>arduino programming</li>
+                                <li>internet of things</li>
+                                <li>simulation</li>
+                                <li>installation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--menu list-->
+                <div class="menu-list">
+                    <ul>
+                        <li onclick="window.location='blog.html'">Blog / Announcements</li>
+                        <li onclick="window.location='competitions.html'">Competitions</li>
+                        <li onclick="window.location='founder.html'">About the founder</li>
+                        <li onclick="window.location='index.html#contact-us'; MENU();">Contact us</li>
+                    </ul>
+                </div>
+            
+                <!--buttons-->
+                <div class="buttons">
+                    <button class="create-account">Create Account</button> <br><button id="request-design">Request Design</button>
+                </div>
+            </div>
+            <!--blinder-->
+            <div class="blinder">
+                
+            </div>
+        </div>
+        <script>
+                //ONSCROLL
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.position='fixed';
+    document.getElementById("header").style.width='97%';
+    document.getElementById("header").style.zIndex='1';
+    document.getElementById("header").style.backgroundColor='rgb(255, 166, 0)';
+    document.querySelector('.skip-buttons').style.zIndex='0';
+  } else {
+    document.getElementById("header").style.position='unset';
+    document.getElementById("header").style.backgroundColor='white';
+    document.querySelector('.skip-buttons').style.zIndex='1';
+  }
+}
+
+//MENU ICON ONCLICK
+let menu_status='closed';
+function MENU(){
+    if(menu_status=='closed'){
+        document.querySelector('.bar1').style.transform='rotate(45deg)';
+        document.querySelector('.bar3').style.transform='rotate(-45deg)';
+        document.querySelector('.bar3').style.marginTop='-14px';
+        document.querySelector('.bar1').style.marginTop='10px';
+
+        document.querySelector('.mini-bar1').style.transform='translate(-1300%)';
+        document.querySelector('.mini-bar2').style.transform='translate(-1300%)';
+        document.querySelector('.mini-bar3').style.transform='translate(1300%)';
+        document.querySelector('.mini-bar4').style.transform='translate(1300%)';
+
+        document.querySelector('.mini-bar1').style.opacity='0';
+        document.querySelector('.mini-bar2').style.opacity='0';
+        document.querySelector('.mini-bar3').style.opacity='0';
+        document.querySelector('.mini-bar4').style.opacity='0';
+
+        document.querySelector('.menu-popup').style.width='100%';
+        document.querySelector('.blinder').style.display='block';
+        menu_status='open';
+    }
+    else{
+        document.querySelector('.bar1').style.transform='rotate(0)';
+        document.querySelector('.bar3').style.transform='rotate(0)';
+        document.querySelector('.bar3').style.marginTop='0';
+        document.querySelector('.bar1').style.marginTop='0';
+
+        document.querySelector('.mini-bar1').style.transform='translate(0%)';
+        document.querySelector('.mini-bar2').style.transform='translate(0%)';
+        document.querySelector('.mini-bar3').style.transform='translate(0%)';
+        document.querySelector('.mini-bar4').style.transform='translate(0%)';
+
+        document.querySelector('.mini-bar1').style.opacity='unset';
+        document.querySelector('.mini-bar2').style.opacity='unset';
+        document.querySelector('.mini-bar3').style.opacity='unset';
+        document.querySelector('.mini-bar4').style.opacity='unset';
+
+        document.querySelector('.menu-popup').style.width='0';
+        document.querySelector('.blinder').style.display='none';
+        menu_status='closed';
+    }
+}
+        </script>
 </body>
 </html>

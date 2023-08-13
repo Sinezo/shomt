@@ -7,9 +7,11 @@ function myFunction() {
     document.getElementById("header").style.width='97%';
     document.getElementById("header").style.zIndex='1';
     document.getElementById("header").style.backgroundColor='rgb(255, 166, 0)';
+    document.querySelector('.skip-buttons').style.zIndex='0';
   } else {
     document.getElementById("header").style.position='unset';
     document.getElementById("header").style.backgroundColor='white';
+    document.querySelector('.skip-buttons').style.zIndex='1';
   }
 }
 

@@ -18,7 +18,7 @@ header{
 /*website name*/
 header .website-name{
     display:flex;
-    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(212, 212, 175) ,rgb(237, 237, 245));
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 255, 255) ,rgb(255, 255, 255));
     color:rgb(255, 166, 0);
 }
 header .website-name .image{
