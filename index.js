@@ -1,3 +1,18 @@
+//ONSCROLL
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.position='fixed';
+    document.getElementById("header").style.width='97%';
+    document.getElementById("header").style.zIndex='1';
+    document.getElementById("header").style.backgroundColor='rgb(255, 166, 0)';
+  } else {
+    document.getElementById("header").style.position='unset';
+    document.getElementById("header").style.backgroundColor='white';
+  }
+}
+
 //MENU ICON ONCLICK
 let menu_status='closed';
 function MENU(){

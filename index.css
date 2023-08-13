@@ -152,9 +152,13 @@ header .login:hover{
     padding:10px 0;
 }
 .hero-section .text .buttons{
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(212, 212, 175) ,rgb(255, 255, 255));
     padding:10px;
     border-radius: 10px;
+}
+.hero-section .text .buttons p{
+    padding:10px;
+    text-align: center;
+    font-size: small;
 }
 .hero-section .text .buttons button{
     padding:15px;
@@ -208,7 +212,6 @@ header .login:hover{
     display:flex;
     flex-wrap: wrap;
     gap:20px;
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(212, 212, 175) ,rgb(255, 255, 255));
     padding:10px;
     border-radius: 10px;
 }
@@ -216,57 +219,40 @@ header .login:hover{
     padding:20px;
     width:fit-content;
     border:0;
+    box-shadow: 1px 1px 3px lightgray;
+}
+.summary-section .services .services-list .learn-more{
+    padding:15px;
+    width:50%;
+     background-color: rgb(181, 198, 206);
+     font-weight:600;
+     border:0;
+}
+.summary-section .services .services-list .learn-more:hover{
+    background-color: rgb(255, 166, 0);
+    cursor: pointer;
 }
 .summary-section .services .services-list .one{
-    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(99, 139, 172) ,rgb(237, 237, 245));
+    text-align: center;
 }
 .summary-section .services .services-list .two{
-    background-image: linear-gradient(to right, rgb(16, 73, 90), rgb(6, 181, 235) ,rgb(221, 89, 2));
+    text-align: center;
 }
 .summary-section .services .services-list .three{
-    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(99, 139, 172) ,rgb(237, 237, 245));
+    text-align: center;
 }
 .summary-section .services .services-list .four{
-    background-image: linear-gradient(to right, rgb(16, 73, 90), rgb(6, 181, 235) ,rgb(221, 89, 2));
+    text-align: center;
 }
 .summary-section .services .services-list .five{
-    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(99, 139, 172) ,rgb(237, 237, 245));
+   text-align: center;
 }
 .summary-section .services .services-list .six{
-    background-image: linear-gradient(to right, rgb(16, 73, 90), rgb(6, 181, 235) ,rgb(221, 89, 2));
+    text-align: center;
 }
 .summary-section .services .services-list p{
     font-size: small;
-    color:rgb(233, 227, 227);
-}
-/*contact us*/
-.summary-section .contact-us{
-    width:500px;
     padding:10px;
-    background-color: rgb(81, 124, 65);
-}
-.contact-us .form{
-    padding:20px 0;
-}
-.contact-us .form form{
-    display:grid;
-    gap:5px;
-}
-.contact-us .form form input{
-    padding:15px;
-    border:0;
-    background-color: rgb(27, 26, 26);
-    color:rgb(155, 150, 150);
-}
-.contact-us .form form  .message{
-    padding:30px 15px;
-}
-.contact-us .form form  button{
-    padding:15px;
-    border:0;
-    background-image:linear-gradient(to right, rgb(114, 182, 82),rgb(94, 82, 67),rgb(185, 177, 69));
-    color:white;
-    margin-top: 5px;
 }
 /*menu popup*/
 .menu-popup{
