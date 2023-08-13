@@ -43,8 +43,14 @@
     border-bottom:1px solid;
     padding:20px;
 }
+.competions-box .competition1 .about-test{
+    padding:10px 0
+}
 .competions-box .competition1 h3{
-    padding:10px 0;
+    border:1px solid lightgrey;
+    border-radius: 10px;
+    padding:5px;
+
 }
 .competions-box .competition1 .start-test{
     padding:15px;
@@ -56,6 +62,14 @@
 .competions-box .competition1 .start-test:hover{
     background-color: rgb(224, 129, 39);
     cursor: pointer;
+}
+.competions-box .competition1 i{
+    float:right;
+    transition: all 100ms ease-in-out;
+}
+.competions-box .text-competition1{
+    height:0;
+    overflow:hidden;
 }
     </style>
 </head>
@@ -153,18 +167,17 @@
                         <b>Duration</b>: 8 Minutes
                         <br>
                         <div class="about-test">
-                            <h3>About Test <i class="fa-solid fa-chevron-down"></i></h3>
+                            <h3  onclick="ABOUT_TEST()" class="about-test-heading">About Test <i class="fa-solid fa-chevron-down" id="chevron"></i></h3>
+                            <div class="text-competition1">
+                                Basic knowledge in electrical technology, no experience required. <br>
+                                <br>This test consists of <b>20</b> multiple choice questions on instrumentation, units of measurements, voltage and current and transfomers.
+                            </div>
                         </div>
-                        <button class="start-test">Start Test</button>
+                        <button class="start-test" onclick="window.location='test.html'">Start Test</button>
                     </p>
                 </div>
             </div>
         </div>
-
-        <footer>
-            Copyright &copy;2023 seedai.  All Rights Reserved 
-            Developed by: Sinethemba Lusawana
-        </footer>
 
 <script>
     //ONSCROLL
@@ -226,6 +239,25 @@ function MENU(){
         document.querySelector('.menu-popup').style.width='0';
         document.querySelector('.blinder').style.display='none';
         menu_status='closed';
+    }
+}
+
+//ABOUT TEST
+let about_test_state=1;
+function ABOUT_TEST(){
+    if(about_test_state==1){
+        document.querySelector('.text-competition1').style.height='100%';
+        document.querySelector('#chevron').style.transform='rotate(180deg)';
+        document.querySelector('.about-test-heading').style.borderBottom='0';
+        document.querySelector('.about-test-heading').style.borderRadius='10px 10px 0 0';
+        about_test_state=0;
+    }
+    else{
+        document.querySelector('.text-competition1').style.height='0';
+        document.querySelector('#chevron').style.transform='rotate(0deg)';
+        document.querySelector('.about-test-heading').style.borderBottom='1px solid lightgrey';
+        document.querySelector('.about-test-heading').style.borderRadius='10px';
+        about_test_state=1;
     }
 }
     </script>
