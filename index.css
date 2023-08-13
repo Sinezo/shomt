@@ -2,7 +2,6 @@
     padding:0;
     margin:0;
     color:rgb(37, 37, 37);
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 ::-webkit-scrollbar{
     display:none;
@@ -19,7 +18,7 @@ header{
 /*website name*/
 header .website-name{
     display:flex;
-    background-color: rgb(60, 103, 151);
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(212, 212, 175) ,rgb(237, 237, 245));
     color:rgb(255, 166, 0);
 }
 header .website-name .image{
@@ -27,16 +26,17 @@ header .website-name .image{
     margin-top: 10px;
 }
 header .website-name .image img{
-    width:100%;
+    width:70%;
 }
 header .website-name .name{
     font-size:larger;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 /*login*/
 header .login{
     min-width:max-content;
+    font-weight: 600;
 }
 header .login:hover{
     font-weight: 600;
@@ -44,6 +44,11 @@ header .login:hover{
     border-bottom: 2px solid rgb(255, 166, 0);
 }
 /*menu icon*/
+.menu-icon{
+    display:flex;
+    gap:10px;
+    font-weight: 600;;
+}
 .menu-icon .bar1,.menu-icon .bar3{
     width:25px;
     height:4px;
@@ -147,8 +152,7 @@ header .login:hover{
     padding:10px 0;
 }
 .hero-section .text .buttons{
-    border:1px solid lightgrey;
-    background-color: rgb(60, 103, 151);
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(212, 212, 175) ,rgb(255, 255, 255));
     padding:10px;
     border-radius: 10px;
 }
@@ -204,7 +208,7 @@ header .login:hover{
     display:flex;
     flex-wrap: wrap;
     gap:20px;
-    background-color: rgb(60, 103, 151);
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(212, 212, 175) ,rgb(255, 255, 255));
     padding:10px;
     border-radius: 10px;
 }
@@ -214,28 +218,22 @@ header .login:hover{
     border:0;
 }
 .summary-section .services .services-list .one{
-    background-color: chocolate;
-    color:white;
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(99, 139, 172) ,rgb(237, 237, 245));
 }
 .summary-section .services .services-list .two{
-    background-color: rgb(43, 87, 122);
-    color:white;
+    background-image: linear-gradient(to right, rgb(16, 73, 90), rgb(6, 181, 235) ,rgb(221, 89, 2));
 }
 .summary-section .services .services-list .three{
-    background-color: rgb(63, 30, 210);
-    color:white;
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(99, 139, 172) ,rgb(237, 237, 245));
 }
 .summary-section .services .services-list .four{
-    background-color: rgb(60, 47, 134);
-    color:white;
+    background-image: linear-gradient(to right, rgb(16, 73, 90), rgb(6, 181, 235) ,rgb(221, 89, 2));
 }
 .summary-section .services .services-list .five{
-    background-color: rgb(210, 30, 30);
-    color:white;
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(99, 139, 172) ,rgb(237, 237, 245));
 }
 .summary-section .services .services-list .six{
-    background-color: rgb(50, 145, 173);
-    color:white;
+    background-image: linear-gradient(to right, rgb(16, 73, 90), rgb(6, 181, 235) ,rgb(221, 89, 2));
 }
 .summary-section .services .services-list p{
     font-size: small;
