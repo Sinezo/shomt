@@ -104,8 +104,9 @@ header .login:hover{
 .skip-buttons{
     width:100%;
     z-index:1;
-    background-color: rgb(245, 238, 238);
-    padding:10px;
+    background-color: rgb(255, 255, 255);
+    padding:10px 5px;
+    box-shadow: 1px 1px 3px;
 }
 .skip-buttons h2{
     padding:10px 0;
@@ -168,10 +169,12 @@ header .login:hover{
     background-color:rgb(255, 166, 0) ;
 }
 .hero-section .text .buttons .view-projects{
-    background-color: rgb(181, 198, 206);
+    box-shadow: 1px 1px 3px;
+    background-color: unset;
 }
 .hero-section .text .buttons .request-project{
-    background-color: rgb(55, 139, 235);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px;
 }
 /*summary section*/
 .summary-section{
