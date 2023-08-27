@@ -1,5 +1,5 @@
 //ONSCROLL
-window.onscroll = function() {myFunction()};
+/*window.onscroll = function() {myFunction()};
 
 function myFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -14,7 +14,7 @@ function myFunction() {
     document.querySelector('.skip-buttons').style.zIndex='1';
   }
 }
-
+*/
 //MENU ICON ONCLICK
 let menu_status='closed';
 function MENU(){
@@ -74,9 +74,19 @@ function NEXT_IMAGES(){
     document.querySelector('#next-chevron').style.transform='rotate(360deg)';
     document.querySelector('#next-chevron').style.transition='all 300ms ease-in-out';
     position++;
+    if(position==2){
+        document.querySelector('.project-title').innerHTML='Measuring DC Current';
+    }
+    else if(position==3){
+        document.querySelector('.project-title').innerHTML='Measuring DC Voltage';
+    }
+    else if(position==4){
+        document.querySelector('.project-title').innerHTML='Implementation';
+    }
     }
     else{
         position=1;
+        document.querySelector('.project-title').innerHTML='Measuring 3 Phase AC RMS Voltage';
         for(let i=1;i<=4;i++){
             const photo = document.querySelector(`div[class="photo${i}"]`);
             photo.style.margin='0';
@@ -93,9 +103,20 @@ function BACK_IMAGES(){
     photo.style.transition='all 300ms ease-in';
     photo.style.filter='brightness(100%)';
     photo.style.overflow='hidden';
-
     document.querySelector('#back-chevron').style.transform='rotate(-360deg)';
     document.querySelector('#back-chevron').style.transition='all 300ms ease-in-out';
     position--;
+    if(position==1){
+        document.querySelector('.project-title').innerHTML='Measuring 3 Phase AC RMS Voltage';
+    }
+    else if(position==2){
+        document.querySelector('.project-title').innerHTML='Measuring DC Current';
+    }
+    else if(position==3){
+        document.querySelector('.project-title').innerHTML='Measuring DC Voltage';
+    }
+    else if(position==4){
+        document.querySelector('.project-title').innerHTML='Implementation';
+    }
     }
 }

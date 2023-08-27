@@ -12,26 +12,19 @@ header{
     justify-content: center;
     align-items: center;
     gap:30px;
-    padding:5px;
+    padding:15px;
     box-shadow:1px 1px 3px lightgrey;
+    margin-bottom:10px;
 }
 /*website name*/
 header .website-name{
     display:flex;
-    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 255, 255) ,rgb(255, 255, 255));
-    color:rgb(255, 166, 0);
-}
-header .website-name .image{
-    width:50px;
-    margin-top: 10px;
-}
-header .website-name .image img{
-    width:70%;
 }
 header .website-name .name{
     font-size:larger;
     font-weight: 600;
-    margin-top: 15px;
+    color:rgb(112, 109, 109);
+    font-family: 'Rubik Mono One', sans-serif;
 }
 /*login*/
 header .login{
@@ -52,7 +45,7 @@ header .login:hover{
 .menu-icon .bar1,.menu-icon .bar3{
     width:25px;
     height:4px;
-    background-color: rgb(209, 122, 23);
+    background-color: rgb(173, 175, 177);
     transition: all 120ms linear;
 
 }
@@ -63,7 +56,7 @@ header .login:hover{
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar2,.menu-icon .bar2 .mini-bar3,.menu-icon .bar2 .mini-bar4{
     width:6.25px;
     height:4px;
-    background-color: rgb(209, 122, 23);
+    background-color: rgb(173, 175, 177);
     transition: all 400ms ease-in-out;
 }
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
@@ -72,7 +65,7 @@ header .login:hover{
 /*horizontal-scroll*/
 .horizontal-scroll{
     padding:10px;
-    border:1px solid lightgrey;
+    border:1px solid rgb(247, 243, 243);
     display:flex;
     overflow-x: hidden;
     background-color: rgb(255, 255, 255);
@@ -88,7 +81,7 @@ header .login:hover{
 .scroll-content .content{
     width:400px;
     overflow-x: hidden;
-    border-left: 1px solid lightgray;
+    border-left: 1px solid rgb(233, 171, 39);
 
 }
 .scroll-content .content ul{
@@ -109,19 +102,22 @@ header .login:hover{
 
 /*skip-buttons*/
 .skip-buttons{
-    position:absolute;
-    margin:120px 0 0 0;
     width:100%;
     z-index:1;
+    background-color: rgb(245, 238, 238);
+    padding:10px;
+}
+.skip-buttons h2{
+    padding:10px 0;
 }
 .skip-buttons button{
-    padding:20px;
-    border-radius: 50%;
+    padding:15px;
     border:0;
-
+    border:1px solid;
+    font-weight: 600;;
 }
-.skip-buttons .next-btn{
-    float:right;
+.skip-buttons .learn-more{
+   background-color: rgb(255, 255, 255);
 }
 /*hero section*/
 .hero-section{
@@ -175,7 +171,7 @@ header .login:hover{
     background-color: rgb(181, 198, 206);
 }
 .hero-section .text .buttons .request-project{
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(55, 139, 235);
 }
 /*summary section*/
 .summary-section{
@@ -263,6 +259,7 @@ header .login:hover{
     top:0;
     display:flex;
     transition: width 300ms ease-in-out;
+    z-index:1;
 }
 .wrap-menu{
     padding:10px;
@@ -275,7 +272,7 @@ header .login:hover{
 .blinder{
     width:30%;
     height:100%;
-    background-color:black;
+    background-color:rgb(58, 57, 57);
     opacity:.9;
 }
 .menu-popup .close-menu{
@@ -285,8 +282,6 @@ header .login:hover{
 }
 .menu-popup .close-menu .icon{
     padding:10px;
-    background-color: red;
-    color:white;
     margin:-10px 
 }
 /*horizontal-scroll of menu popup*/
@@ -345,7 +340,7 @@ header .login:hover{
     width: 100%;
     height:100%;
     left:1px;
-    background-color: rgb(60, 103, 151);
+    background-color: rgb(20, 20, 20);
 }
 .wrap-menu .buttons button{
     padding:15px;
@@ -361,6 +356,7 @@ header .login:hover{
 .wrap-menu .buttons .create-account{
     background-color: unset;
     border:1px solid;
+    color:white;
 }
 .wrap-menu .buttons #request-design{
     border:0;
