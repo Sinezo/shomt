@@ -62,6 +62,21 @@ header .login:hover{
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
     transition: all 250ms linear;
 }
+/*our-slogan*/
+.our-slogan{
+    text-align: center;
+    padding:10px;
+}
+.top-projects #pos1,.top-projects #pos2,.top-projects #pos3,.top-projects #pos4{
+    width:10px;
+    height:10px;
+    border:1px solid;
+    border-radius: 2px;
+    background-color: white;
+}
+.top-projects #pos1{
+    background-color: rgb(199, 186, 68);
+}
 /*horizontal-scroll*/
 .horizontal-scroll{
     padding:10px;
@@ -99,7 +114,16 @@ header .login:hover{
     padding:10px;
     color:rgb(71, 71, 71);
 }
-
+/*top projects*/
+.top-projects{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    justify-content: start;
+    background-color: rgb(236, 233, 233);
+    width:100%;
+    padding:10px 0;
+}
 /*skip-buttons*/
 .skip-buttons{
     width:100%;
@@ -111,11 +135,19 @@ header .login:hover{
 .skip-buttons h2{
     padding:10px 0;
 }
+.skip-buttons p{
+    padding:5px 0;
+}
+.skip-buttons label{
+    font-weight: 600;
+    color:rgb(63, 62, 62);
+}
 .skip-buttons button{
     padding:15px;
     border:0;
-    border:1px solid;
-    font-weight: 600;;
+    font-weight: 600;
+    background-color: unset;
+    box-shadow: 1px 1px 3px;
 }
 .skip-buttons .learn-more{
    background-color: rgb(255, 255, 255);

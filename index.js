@@ -75,24 +75,38 @@ function NEXT_IMAGES(){
     document.querySelector('#next-chevron').style.transition='all 300ms ease-in-out';
     position++;
     if(position==2){
-        document.querySelector('.project-title').innerHTML='Measuring DC Current';
+        document.querySelector('.project-title').innerHTML='10A DC Ammeter';
+        document.querySelector('#pos2').style.backgroundColor='rgb(199, 186, 68)';
+        document.querySelector('#pos1').style.backgroundColor='white';
+        document.querySelector('#projects-paragraph').innerHTML='A project that measures up to 10A <b><i>DC</i></b> current.';
+        document.querySelector('.mentorship').innerHTML='<s>R300.00</s> <b>R199.99</b>';
     }
     else if(position==3){
-        document.querySelector('.project-title').innerHTML='Measuring DC Voltage';
+        document.querySelector('.project-title').innerHTML='30V DC Voltmeter';
+        document.querySelector('#pos3').style.backgroundColor='rgb(199, 186, 68)';
+        document.querySelector('#pos2').style.backgroundColor='white';
+        document.querySelector('#projects-paragraph').innerHTML='A project that measures up to 30V <b><i>DC</i></b> voltage.';
+        document.querySelector('.mentorship').innerHTML='<s>R300.00</s> <b>R199.99</b>';
     }
     else if(position==4){
         document.querySelector('.project-title').innerHTML='Implementation';
+        document.querySelector('#pos4').style.backgroundColor='rgb(199, 186, 68)';
+        document.querySelector('#pos3').style.backgroundColor='white';
+        document.querySelector('#projects-paragraph').innerHTML='Putting together and bringing the idea into reality.';
+        document.querySelector('.mentorship').innerHTML='from <s>R200.00</s> <b>R100.00</b>';
     }
     }
     else{
         position=1;
-        document.querySelector('.project-title').innerHTML='Measuring 3 Phase AC RMS Voltage';
+        document.querySelector('.project-title').innerHTML='240V - 3 Phase AC Voltmeter';
         for(let i=1;i<=4;i++){
             const photo = document.querySelector(`div[class="photo${i}"]`);
             photo.style.margin='0';
             photo.style.minWidth='100%';
             photo.style.filter='brightness(100%)';
+            document.querySelector(`div[id="pos${i}"]`).style.backgroundColor='white';
         }
+        document.querySelector('#pos1').style.backgroundColor='rgb(199, 186, 68)';
     }
 }
 
@@ -107,13 +121,13 @@ function BACK_IMAGES(){
     document.querySelector('#back-chevron').style.transition='all 300ms ease-in-out';
     position--;
     if(position==1){
-        document.querySelector('.project-title').innerHTML='Measuring 3 Phase AC RMS Voltage';
+        document.querySelector('.project-title').innerHTML='240V - 3 Phase AC Voltmeter';
     }
     else if(position==2){
-        document.querySelector('.project-title').innerHTML='Measuring DC Current';
+        document.querySelector('.project-title').innerHTML='10A DC Ammeter';
     }
     else if(position==3){
-        document.querySelector('.project-title').innerHTML='Measuring DC Voltage';
+        document.querySelector('.project-title').innerHTML='30V DC Voltmeter';
     }
     else if(position==4){
         document.querySelector('.project-title').innerHTML='Implementation';
