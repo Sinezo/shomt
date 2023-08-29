@@ -76,21 +76,21 @@ function NEXT_IMAGES(){
     position++;
     if(position==2){
         document.querySelector('.project-title').innerHTML='10A DC Ammeter';
-        document.querySelector('#pos2').style.backgroundColor='rgb(199, 186, 68)';
+        document.querySelector('#pos2').style.backgroundColor='rgb(158, 182, 235)';
         document.querySelector('#pos1').style.backgroundColor='white';
         document.querySelector('#projects-paragraph').innerHTML='A project that measures up to 10A <b><i>DC</i></b> current.';
         document.querySelector('.mentorship').innerHTML='<s>R300.00</s> <b>R199.99</b>';
     }
     else if(position==3){
         document.querySelector('.project-title').innerHTML='30V DC Voltmeter';
-        document.querySelector('#pos3').style.backgroundColor='rgb(199, 186, 68)';
+        document.querySelector('#pos3').style.backgroundColor='rgb(158, 182, 235)';
         document.querySelector('#pos2').style.backgroundColor='white';
         document.querySelector('#projects-paragraph').innerHTML='A project that measures up to 30V <b><i>DC</i></b> voltage.';
         document.querySelector('.mentorship').innerHTML='<s>R300.00</s> <b>R199.99</b>';
     }
     else if(position==4){
         document.querySelector('.project-title').innerHTML='Implementation';
-        document.querySelector('#pos4').style.backgroundColor='rgb(199, 186, 68)';
+        document.querySelector('#pos4').style.backgroundColor='rgb(158, 182, 235)';
         document.querySelector('#pos3').style.backgroundColor='white';
         document.querySelector('#projects-paragraph').innerHTML='Putting together and bringing the idea into reality.';
         document.querySelector('.mentorship').innerHTML='from <s>R200.00</s> <b>R100.00</b>';
@@ -106,7 +106,7 @@ function NEXT_IMAGES(){
             photo.style.filter='brightness(100%)';
             document.querySelector(`div[id="pos${i}"]`).style.backgroundColor='white';
         }
-        document.querySelector('#pos1').style.backgroundColor='rgb(199, 186, 68)';
+        document.querySelector('#pos1').style.backgroundColor='rgb(158, 182, 235)';
     }
 }
 
