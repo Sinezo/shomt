@@ -87,13 +87,17 @@ video{
     border:0;
     font-weight: 600;
 }
+.intro-paragraph .info{
+    font-size:small;
+    padding:20px;
+}
 /*horizontal-scroll*/
 .horizontal-scroll{
     padding:10px;
     border:1px solid rgb(247, 243, 243);
     display:flex;
     overflow-x: hidden;
-    background-color: rgb(33, 60, 117);
+    background-color: rgb(128, 49, 128);
     margin-top:-1px;
 }
 .horizontal-scroll .slogan{
@@ -180,9 +184,8 @@ video{
     width:23%
 }
 .skip-buttons .learn-more{
-   background-color: rgb(255, 255, 255);
    width:50%;
-   background-color: rgb(158, 182, 235);
+   background-color: rgb(236, 190, 236);
 }
 /*hero section*/
 .hero-section{
@@ -234,18 +237,18 @@ video{
 }
 .hero-section .text .buttons button:hover{
     cursor: pointer;
-    background-color:rgb(21, 47, 104) ;
+    background-color:rgb(151, 71, 151) ;
     color:white;
 }
 .hero-section .text .buttons .view-projects{
     background-color: unset;
 }
 .hero-section .text .buttons .request-project{
-    background-color: rgb(33, 60, 117);
+    background-color: rgb(128, 49, 128);
     color:white;
 }
 .hero-section .project-title{
-    color:rgb(33, 60, 117);
+    color:rgb(128, 49, 128);
 }
 /*menu popup*/
 .menu-popup{
@@ -334,7 +337,7 @@ video{
 }
 .wrap-menu .menu-list ul li:hover{
     cursor: pointer;
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(247, 236, 242);
     font-weight: 600;
 }
 .wrap-menu .buttons{
@@ -344,7 +347,7 @@ video{
     width: 100%;
     height:100%;
     left:1px;
-    background-color: rgb(33, 60, 117);
+    background-color: rgb(128, 49, 128);
 }
 .wrap-menu .buttons button{
     padding:15px;
@@ -355,7 +358,7 @@ video{
     border-radius: 4px;
 }
 .wrap-menu .buttons button:hover{
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(117, 23, 102);
     cursor: pointer;
 }
 .wrap-menu .buttons .create-account{
@@ -365,7 +368,7 @@ video{
 }
 .wrap-menu .buttons #request-design{
     border:0;
-    background-color: rgb(255, 166, 0);
+    background-color: white;
 }
 /*footer*/
 footer{
