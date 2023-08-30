@@ -3,6 +3,9 @@
     margin:0;
     color:rgb(37, 37, 37);
 }
+html{
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar{
     display:none;
 }
@@ -24,7 +27,7 @@ header .website-name .name{
     font-size:larger;
     font-weight: 600;
     color:rgb(112, 109, 109);
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family:cursive;
 }
 /*login*/
 header .login{
@@ -62,13 +65,27 @@ header .login:hover{
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
     transition: all 250ms linear;
 }
-/*our-slogan*/
-.our-slogan{
+/*video*/
+video{
+    width:100%;
+}
+/*intro-paragraph*/
+.intro-paragraph{
     text-align: center;
     padding:10px;
 }
-.our-slogan h1{
+.intro-paragraph h1{
     padding:10px 0;
+}
+.intro-paragraph .buttons{
+    padding:20px;
+    border-bottom: 2px dotted rgb(136, 42, 123);
+}
+.intro-paragraph .buttons button{
+    padding:15px;
+    border-radius:4px;
+    border:0;
+    font-weight: 600;
 }
 /*horizontal-scroll*/
 .horizontal-scroll{
@@ -354,7 +371,7 @@ header .login:hover{
 footer{
     text-align:center;
     padding:20px;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(141, 85, 113);
     color:white;
 
 }
