@@ -9,6 +9,44 @@ html{
 ::-webkit-scrollbar{
     display:none;
 }
+/*horizontal-scroll*/
+.horizontal-scroll{
+    padding:10px;
+    border:1px solid rgb(247, 243, 243);
+    display:flex;
+    overflow-x: hidden;
+    background-color: rgb(179, 26, 26);
+    margin-top:-1px;
+}
+.horizontal-scroll .slogan{
+    min-width:max-content;
+    height:fit-content;
+    padding:10px
+}
+.horizontal-scroll .slogan i{
+    color:rgb(255, 187, 0);
+}
+.scroll-content .content{
+    width:400px;
+    overflow-x: hidden;
+    border-left: 1px solid rgb(233, 171, 39);
+
+}
+.scroll-content .content ul{
+    display:flex;
+    gap:20px;
+    overflow-x: scroll;
+    animation: scroll 11400ms linear infinite;
+}
+@keyframes scroll {
+    from {margin:0;}
+    to {margin:0 0 0 -1000px;}
+}
+.scroll-content .content ul li{
+    min-width:max-content;
+    padding:10px;
+    color:rgb(226, 224, 217);
+}
 /*header*/
 header{
     display:flex;
@@ -18,6 +56,7 @@ header{
     padding:15px;
     box-shadow:1px 1px 3px lightgrey;
     margin-bottom:10px;
+    z-index:1;
 }
 /*website name*/
 header .website-name{
@@ -79,7 +118,7 @@ video{
 }
 .intro-paragraph .buttons{
     padding:20px;
-    border-bottom: 2px dotted rgb(136, 42, 123);
+    border-bottom: 2px dotted rgb(179, 26, 26);
 }
 .intro-paragraph .buttons button{
     padding:15px;
@@ -90,44 +129,6 @@ video{
 .intro-paragraph .info{
     font-size:small;
     padding:20px;
-}
-/*horizontal-scroll*/
-.horizontal-scroll{
-    padding:10px;
-    border:1px solid rgb(247, 243, 243);
-    display:flex;
-    overflow-x: hidden;
-    background-color: rgb(128, 49, 128);
-    margin-top:-1px;
-}
-.horizontal-scroll .slogan{
-    min-width:max-content;
-    height:fit-content;
-    padding:10px
-}
-.horizontal-scroll .slogan i{
-    color:rgb(255, 187, 0);
-}
-.scroll-content .content{
-    width:400px;
-    overflow-x: hidden;
-    border-left: 1px solid rgb(233, 171, 39);
-
-}
-.scroll-content .content ul{
-    display:flex;
-    gap:20px;
-    overflow-x: scroll;
-    animation: scroll 11400ms linear infinite;
-}
-@keyframes scroll {
-    from {margin:0;}
-    to {margin:0 0 0 -1000px;}
-}
-.scroll-content .content ul li{
-    min-width:max-content;
-    padding:10px;
-    color:rgb(238, 197, 14);
 }
 /*top projects*/
 .top-projects{
@@ -185,48 +186,59 @@ video{
 }
 .skip-buttons .learn-more{
    width:50%;
-   background-color: rgb(236, 190, 236);
+   background-color: rgb(231, 53, 53);
+   color:white;
 }
-/*hero section*/
-.hero-section{
+/*top-projects-container*/
+.top-projects-container{
     display:flex;
     flex-wrap: wrap;
     justify-content:center;
     padding:20px;
     text-align: center;
 }
-.hero-section .images{
+.top-projects-container .images{
     width:500px;
     height:200px;
     display:flex;
     overflow-x: hidden;
 }
-.hero-section .images .photo1,.hero-section .images .photo2,.hero-section .images .photo3,.hero-section .images .photo4{
+.top-projects-container .images .photo1,.top-projects-container .images .photo2,.top-projects-container .images .photo3,.top-projects-container .images .photo4{
     min-width:100%;
 }
-.hero-section .images img{
+.top-projects-container .images img{
     width:100%; 
     height:100%;
 }
-.hero-section .text{
+.top-projects-container .project-title{
+    color:rgb(179, 26, 26);
+}
+
+/*about us*/
+.about-us{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.about-us .text{
     width:500px;
     padding:50px 10px 10px 10px;
     box-shadow: 1px 1px 3px lightgrey;
 
 }
-.hero-section .text p{
+.about-us .text p{
     padding:20px;
 }
-.hero-section .text .buttons{
+.about-us .text .buttons{
     padding:10px;
     border-radius: 10px;
 }
-.hero-section .text .buttons p{
+.about-us .text .buttons p{
     padding:10px;
     text-align: center;
     font-size: small;
 }
-.hero-section .text .buttons button{
+.about-us .text .buttons button{
     padding:15px;
     font-weight: 600;
     border:0;
@@ -235,20 +247,17 @@ video{
     border-radius: 4px;
     box-shadow: 1px 1px 3px lightgrey; 
 }
-.hero-section .text .buttons button:hover{
+.about-us .text .buttons button:hover{
     cursor: pointer;
-    background-color:rgb(151, 71, 151) ;
+    background-color:rgb(209, 50, 50);
     color:white;
 }
-.hero-section .text .buttons .view-projects{
+.about-us .text .buttons .view-projects{
     background-color: unset;
 }
-.hero-section .text .buttons .request-project{
-    background-color: rgb(128, 49, 128);
+.about-us .text .buttons .request-project{
+    background-color: rgb(179, 26, 26);
     color:white;
-}
-.hero-section .project-title{
-    color:rgb(128, 49, 128);
 }
 /*menu popup*/
 .menu-popup{
@@ -347,7 +356,7 @@ video{
     width: 100%;
     height:100%;
     left:1px;
-    background-color: rgb(128, 49, 128);
+    background-color: rgb(179, 26, 26);
 }
 .wrap-menu .buttons button{
     padding:15px;
@@ -358,7 +367,7 @@ video{
     border-radius: 4px;
 }
 .wrap-menu .buttons button:hover{
-    background-color: rgb(117, 23, 102);
+    background-color: rgb(204, 60, 60);
     cursor: pointer;
 }
 .wrap-menu .buttons .create-account{
@@ -374,7 +383,7 @@ video{
 footer{
     text-align:center;
     padding:20px;
-    background-color: rgb(141, 85, 113);
+    background-color: rgb(245, 108, 108);
     color:white;
 
 }
@@ -385,8 +394,8 @@ footer{
     justify-content: center;
 }
 /*skip-buttons*/
-.skip-buttons{
-    display:none;
+.skip-buttons {
+    width:500px;
 }
 }
 /*SMALL SCREEN*/
