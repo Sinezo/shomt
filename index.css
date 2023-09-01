@@ -15,7 +15,7 @@ html{
     border:1px solid rgb(247, 243, 243);
     display:flex;
     overflow-x: hidden;
-    background-color: rgb(179, 26, 26);
+    background-color: rgb(216, 19, 19);
     margin-top:-1px;
 }
 .horizontal-scroll .slogan{
@@ -36,16 +36,33 @@ html{
     display:flex;
     gap:20px;
     overflow-x: scroll;
-    animation: scroll 11400ms linear infinite;
+    animation: scroll 20s linear infinite;
 }
 @keyframes scroll {
     from {margin:0;}
-    to {margin:0 0 0 -1000px;}
+    to {margin:0 0 0 -1300px;}
 }
 .scroll-content .content ul li{
     min-width:max-content;
     padding:10px;
     color:rgb(226, 224, 217);
+}
+.scroll-content .join-competition{
+    padding:10px;
+    background-color: rgb(90, 51, 122);
+    border:0;
+    color:white;
+    font-weight: 600;
+}
+.scroll-content .buy{
+    padding:10px;
+    border:0;
+    background-color: rgb(57, 179, 57);
+    color:white;
+    font-weight: 600;
+}
+.scroll-content b{
+    color:white;
 }
 /*header*/
 header{
@@ -103,6 +120,21 @@ header .login:hover{
 }
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
     transition: all 250ms linear;
+}
+/*services*/
+.services{
+    text-align: center;
+    padding:20px;
+    background-color: rgb(60, 60, 150);
+}
+.services button{
+    padding:20px;
+    border-radius: 100px;
+    background-color: unset;
+    border:1px solid;
+    color:white;
+    margin-top:4px;
+    font-weight: 600;
 }
 /*video*/
 video{
@@ -175,7 +207,7 @@ video{
     font-weight: 600;
     color:rgb(63, 62, 62);
 }
-.skip-buttons button{
+.skip-buttons .next-btn,.skip-buttons .back-btn{
     padding:15px;
     border:0;
     font-weight: 600;
@@ -186,8 +218,24 @@ video{
 }
 .skip-buttons .learn-more{
    width:50%;
+   padding:15px;
+   border:0;
+   font-weight: 600;
+   box-shadow: 1px 1px 3px lightgrey;
+   border-radius: 4px;
    background-color: rgb(231, 53, 53);
    color:white;
+}
+.skip-buttons .more-projects{
+    padding:15px;
+    width:100%;
+    background-color: unset;
+    border:1px solid;
+    border-radius:100px;
+    font-weight: 600;
+}
+.skip-buttons .more-projects{
+    display:none;
 }
 /*top-projects-container*/
 .top-projects-container{
@@ -213,7 +261,6 @@ video{
 .top-projects-container .project-title{
     color:rgb(179, 26, 26);
 }
-
 /*about us*/
 .about-us{
     display: flex;
@@ -342,7 +389,8 @@ video{
 .wrap-menu .menu-list ul li{
     box-shadow: 1px 1px 3px lightgrey;
     margin:5px 0;
-    padding:10px;
+    padding:20px;
+    font-weight: 600;
 }
 .wrap-menu .menu-list ul li:hover{
     cursor: pointer;
@@ -365,6 +413,7 @@ video{
     font-weight: 600;
     min-width:max-content;
     border-radius: 4px;
+    box-shadow: 1px 1px 3px rgb(37, 37, 37);
 }
 .wrap-menu .buttons button:hover{
     background-color: rgb(204, 60, 60);
