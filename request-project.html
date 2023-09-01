@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css">
+    <title>Request Project| seedai</title>
+<style>
+/*info box*/
+.info-box{
+    padding:30px;
+    text-align: center;
+}
+.info-box h1{
+    padding:10px;
+}
+.info-box p{
+    padding:10px;
+}
+.info-box span{
+    color:red;
+}
+.info-box button{
+    padding:15px;
+    margin:10px 0;
+    background-color: rgb(89, 89, 226);
+    color:rgb(238, 232, 232);
+    border:1px solid;
+    font-weight: 600;
+}
+    </style>
+</head>
+<body>
+ <!--HEADER-->
+ <header id="header">
+    <!--website name-->
+    <div class="website-name" onclick="window.location='index.html'">
+        <div class="name">PROJECTS</div>
+    </div>
+    <!--login-->
+    <div class="login">
+        <i class="fa-regular fa-circle-user"></i> Login
+    </div>
+    <!--menu icon-->
+    <div class="menu-icon">
+        <div>Menu</div>
+       <!--wrap bars-->
+       <div class="wrap-bars" onclick="MENU()">
+        <div class="bar1"></div>
+        <div class="bar2">
+            <div class="mini-bar1"></div><div class="mini-bar2"></div><div class="mini-bar3"></div><div class="mini-bar4"></div>
+        </div>
+        <div class="bar3"></div>
+       </div>
+    </div>
+</header>
+
+    <div class="info-box">
+        <h1>Opps!</h1>
+    <p>There is nothing to show at the moment.</p>
+    <span>It may be because the website is still under development process.</span>
+    <button onclick="window.location='https://www.facebook.com/snetembar.luserwerner'">Visit Facebook Profile</button>
+    </div>
+
+        <!--MENU POPUP-->
+        <div class="menu-popup">
+            <!--wrap menu-->
+            <div class="wrap-menu">
+                <!--clode menu-->
+                <div class="close-menu">
+                    <div class="icon" onclick="MENU()"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <!--horizontal scroll-->
+                <div id="horizontal-scroll">
+                    <!--slogan-->
+                    <div id="slogan">
+                        <i class="fa-regular fa-lightbulb"></i> Showing light to <b>All</b>
+                    </div>
+                    <!--scroll content-->
+                    <div id="scroll-content">
+                        <div id="content">
+                            <ul>
+                                <li>electrical design</li>
+                                <li>electronic design</li>
+                                <li>arduino programming</li>
+                                <li>internet of things</li>
+                                <li>simulation</li>
+                                <li>installation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--menu list-->
+                <div class="menu-list">
+                    <ul>
+                        <li onclick="window.location='blog.html'">Blog / Announcements</li>
+                        <li onclick="window.location='competitions.html'">Competitions</li>
+                        <li onclick="window.location='founder.html'">About the founder</li>
+                        <li onclick="window.location='index.html#contact-us'; MENU();">Contact us</li>
+                    </ul>
+                </div>
+            
+                <!--buttons-->
+                <div class="buttons">
+                    <button class="create-account">Create Account</button> <br><button id="request-design">Request Design</button>
+                </div>
+            </div>
+            <!--blinder-->
+            <div class="blinder">
+                
+            </div>
+        </div>
+
+        
+
+    <script>
+            //ONSCROLL
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.position='fixed';
+    document.getElementById("header").style.width='97%';
+    document.getElementById("header").style.zIndex='1';
+    document.getElementById("header").style.backgroundColor='rgb(255, 166, 0)';
+    document.querySelector('.skip-buttons').style.zIndex='0';
+  } else {
+    document.getElementById("header").style.position='unset';
+    document.getElementById("header").style.backgroundColor='white';
+    document.querySelector('.skip-buttons').style.zIndex='1';
+  }
+}
+
+//MENU ICON ONCLICK
+let menu_status='closed';
+function MENU(){
+    if(menu_status=='closed'){
+        document.querySelector('.bar1').style.transform='rotate(45deg)';
+        document.querySelector('.bar3').style.transform='rotate(-45deg)';
+        document.querySelector('.bar3').style.marginTop='-14px';
+        document.querySelector('.bar1').style.marginTop='10px';
+
+        document.querySelector('.mini-bar1').style.transform='translate(-1300%)';
+        document.querySelector('.mini-bar2').style.transform='translate(-1300%)';
+        document.querySelector('.mini-bar3').style.transform='translate(1300%)';
+        document.querySelector('.mini-bar4').style.transform='translate(1300%)';
+
+        document.querySelector('.mini-bar1').style.opacity='0';
+        document.querySelector('.mini-bar2').style.opacity='0';
+        document.querySelector('.mini-bar3').style.opacity='0';
+        document.querySelector('.mini-bar4').style.opacity='0';
+
+        document.querySelector('.menu-popup').style.width='100%';
+        document.querySelector('.blinder').style.display='block';
+        menu_status='open';
+    }
+    else{
+        document.querySelector('.bar1').style.transform='rotate(0)';
+        document.querySelector('.bar3').style.transform='rotate(0)';
+        document.querySelector('.bar3').style.marginTop='0';
+        document.querySelector('.bar1').style.marginTop='0';
+
+        document.querySelector('.mini-bar1').style.transform='translate(0%)';
+        document.querySelector('.mini-bar2').style.transform='translate(0%)';
+        document.querySelector('.mini-bar3').style.transform='translate(0%)';
+        document.querySelector('.mini-bar4').style.transform='translate(0%)';
+
+        document.querySelector('.mini-bar1').style.opacity='unset';
+        document.querySelector('.mini-bar2').style.opacity='unset';
+        document.querySelector('.mini-bar3').style.opacity='unset';
+        document.querySelector('.mini-bar4').style.opacity='unset';
+
+        document.querySelector('.menu-popup').style.width='0';
+        document.querySelector('.blinder').style.display='none';
+        menu_status='closed';
+    }
+}
+    </script>
+</body>
+</html>
