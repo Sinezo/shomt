@@ -8,6 +8,8 @@ function myFunction() {
     document.getElementById("header").style.zIndex='1';
     document.getElementById("header").style.top='0';
     document.querySelector('.skip-buttons').style.zIndex='0';
+    document.getElementById("header").style.backgroundColor='white';
+    document.getElementById("header").style.color='white';
   } else {
     document.getElementById("header").style.position='unset';
     document.getElementById("header").style.backgroundColor='white';

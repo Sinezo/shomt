@@ -15,7 +15,7 @@ html{
     border:1px solid rgb(247, 243, 243);
     display:flex;
     overflow-x: hidden;
-    background-color: rgb(216, 19, 19);
+    background-color: rgb(255, 255, 255);
     margin-top:-1px;
 }
 .horizontal-scroll .slogan{
@@ -45,7 +45,7 @@ html{
 .scroll-content .content ul li{
     min-width:max-content;
     padding:10px;
-    color:rgb(226, 224, 217);
+    color:rgb(68, 68, 67);
 }
 .scroll-content .join-competition{
     padding:10px;
@@ -62,7 +62,7 @@ html{
     font-weight: 600;
 }
 .scroll-content b{
-    color:white;
+    color:rgb(0, 0, 0);
 }
 /*header*/
 header{
@@ -82,7 +82,6 @@ header .website-name{
 header .website-name .name{
     font-size:larger;
     font-weight: 600;
-    color:rgb(112, 109, 109);
     font-family:cursive;
 }
 /*login*/
@@ -222,7 +221,7 @@ video{
    border:0;
    font-weight: 600;
    box-shadow: 1px 1px 3px lightgrey;
-   border-radius: 4px;
+   border-radius: 100px;
    background-color: rgb(231, 53, 53);
    color:white;
 }
@@ -288,24 +287,26 @@ video{
 .about-us .text .buttons button{
     padding:15px;
     font-weight: 600;
-    border:0;
+    border:1px solid;
     width:100%;
     margin:5px 0;
-    border-radius: 4px;
+    border-radius: 100px;
     box-shadow: 1px 1px 3px lightgrey; 
+    background-color: unset;
+}
+.about-us .text .buttons .about-founder{
+    background-color: rgb(32, 59, 146);
+    color:white;
 }
 .about-us .text .buttons button:hover{
     cursor: pointer;
-    background-color:rgb(209, 50, 50);
+    background-color:rgb(36, 71, 189);
     color:white;
 }
 .about-us .text .buttons .view-projects{
     background-color: unset;
 }
-.about-us .text .buttons .request-project{
-    background-color: rgb(179, 26, 26);
-    color:white;
-}
+
 /*menu popup*/
 .menu-popup{
     position:fixed;
@@ -412,7 +413,7 @@ video{
     margin:10px ;
     font-weight: 600;
     min-width:max-content;
-    border-radius: 4px;
+    border-radius: 100px;
     box-shadow: 1px 1px 3px rgb(37, 37, 37);
 }
 .wrap-menu .buttons button:hover{
@@ -432,9 +433,37 @@ video{
 footer{
     text-align:center;
     padding:20px;
-    background-color: rgb(245, 108, 108);
+    background-color: rgb(60, 60, 150);
     color:white;
 
+}
+footer .login-form{
+    padding:10px;
+}
+footer .login-form input{
+    padding:15px;
+    border-radius: 100px;
+    border:0;
+    width:100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+footer .login-form button{
+    padding:15px;
+    width:100%;
+    border-radius: 100px;
+    border:0;
+    margin: 10px 0;
+}
+footer .login-form label{
+    color:rgb(228, 222, 222);
+}
+footer .login-form h3{
+    color:rgb(228, 222, 222);
+    padding:10px;
+}
+footer .login-form a{
+    color:rgb(0, 255, 0);
 }
 /*BIG SCREEN*/
 @media  screen and (min-width:700px){
