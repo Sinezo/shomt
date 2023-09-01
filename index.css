@@ -120,21 +120,6 @@ header .login:hover{
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
     transition: all 250ms linear;
 }
-/*services*/
-.services{
-    text-align: center;
-    padding:20px;
-    background-color: rgb(60, 60, 150);
-}
-.services button{
-    padding:20px;
-    border-radius: 100px;
-    background-color: unset;
-    border:1px solid;
-    color:white;
-    margin-top:4px;
-    font-weight: 600;
-}
 /*video*/
 video{
     width:100%;
@@ -156,10 +141,40 @@ video{
     border-radius:4px;
     border:0;
     font-weight: 600;
+    border-radius: 100px;
+}
+.intro-paragraph .buttons .request-project{
+    background-color: blueviolet;
+    color:white;
+}
+.intro-paragraph .buttons button:hover{
+    cursor: pointer;
+    background-color: rgb(226, 43, 43);
+    color:white;
 }
 .intro-paragraph .info{
     font-size:small;
     padding:20px;
+}
+/*services*/
+.services{
+    text-align: center;
+    padding:20px;
+    background-color: rgb(60, 60, 150);
+}
+.services button{
+    padding:20px;
+    border-radius: 100px;
+    background-color: unset;
+    border:1px solid;
+    color:white;
+    margin-top:4px;
+    font-weight: 600;
+}
+.services button:hover{
+    background-color: rgb(226, 43, 43);
+    color:white;
+    cursor: pointer;
 }
 /*top projects*/
 .top-projects{
@@ -206,6 +221,10 @@ video{
     font-weight: 600;
     color:rgb(63, 62, 62);
 }
+.skip-buttons button:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
 .skip-buttons .next-btn,.skip-buttons .back-btn{
     padding:15px;
     border:0;
@@ -215,7 +234,7 @@ video{
     border-radius: 4px;
     width:23%
 }
-.skip-buttons .learn-more{
+.skip-buttons .buy-mentorship{
    width:50%;
    padding:15px;
    border:0;

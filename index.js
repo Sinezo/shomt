@@ -95,7 +95,7 @@ function NEXT_IMAGES(){
         document.querySelector('#pos3').style.backgroundColor='white';
         document.querySelector('#projects-paragraph').innerHTML='Putting together and bringing the idea into reality.';
         document.querySelector('.mentorship').innerHTML='from <s>R200.00</s> <b>R100.00</b>';
-        document.querySelector('.learn-more').style.display='none';
+        document.querySelector('.buy-mentorship').style.display='none';
         document.querySelector('.next-btn').style.display='none';
         document.querySelector('.back-btn').style.display='none';
         document.querySelector('.more-projects').style.display='block';

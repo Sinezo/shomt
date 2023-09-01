@@ -39,7 +39,7 @@
             <div class="name">SEEDAI</div>
         </div>
         <!--login-->
-        <div class="login">
+        <div class="login" onclick="window.location='index.html#login-form'">
             <i class="fa-regular fa-circle-user"></i> Login
         </div>
         <!--menu icon-->
@@ -68,7 +68,7 @@
             each and every step taken to achieve your goal. 
         </p>
         <div class="buttons">
-            <button class="view-projects" onclick="window.location='index.html#top-projects-container'">View Projects</button> <button class="request-project">Request Project</button>
+            <button class="view-projects" onclick="window.location='index.html#top-projects-container'">View Projects</button> <button class="request-project" onclick="window.location='request-project.html'">Request Project</button>
         </div>
         <p class="info">
             In all that we do, we do it with integrity and out of love for electrical and electronic design. 
@@ -114,7 +114,7 @@
         <p>
             <label>Mentorship:</label> <span class="mentorship"><s>R600</s> <b>R399.99</b></span>
         </p>
-        <button class="learn-more">Learn More</button> <button onclick="BACK_IMAGES()" class="back-btn"><i class="fa-solid fa-chevron-left" id="back-chevron"></i></button> <button onclick="NEXT_IMAGES()" class="next-btn"><i class="fa-solid fa-chevron-right" id=next-chevron></i></button>
+        <button class="buy-mentorship">Buy</button> <button onclick="BACK_IMAGES()" class="back-btn"><i class="fa-solid fa-chevron-left" id="back-chevron"></i></button> <button onclick="NEXT_IMAGES()" class="next-btn"><i class="fa-solid fa-chevron-right" id=next-chevron></i></button>
         <br><button class="more-projects">More Projects <i class="fa-solid fa-chevron-down"></i></button>
     </div>
     </div>
@@ -183,7 +183,7 @@
     <!--FOOTER-->
     <footer>
         <!--login-->
-        <div class="login-form">
+        <div class="login-form" id=login-form>
             <h3>LOGIN</h3>
             <form>
                 <input type="text" placeholder="Username">
