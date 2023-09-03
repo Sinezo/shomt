@@ -84,6 +84,12 @@ header .website-name .name{
     font-weight: 600;
     font-family:cursive;
 }
+header .website-name label{
+    color:rgb(255, 255, 255);
+    background-color: rgb(146, 146, 219);
+    padding:0 5px;
+    border-radius: 10px;
+}
 /*login*/
 header .login{
     min-width:max-content;
@@ -285,6 +291,9 @@ video{
     justify-content: center;
     text-align: center;
 }
+.about-us .text label{
+    color:rgb(146, 146, 219);
+}
 .about-us .text{
     width:500px;
     padding:50px 10px 10px 10px;
@@ -312,14 +321,15 @@ video{
     border-radius: 100px;
     box-shadow: 1px 1px 3px lightgrey; 
     background-color: unset;
+    color:rgb(146, 146, 219);
 }
 .about-us .text .buttons .about-founder{
-    background-color: rgb(32, 59, 146);
+    background-color: rgb(233, 66, 54);
     color:white;
 }
 .about-us .text .buttons button:hover{
     cursor: pointer;
-    background-color:rgb(36, 71, 189);
+    background-color:rgb(42, 52, 85);
     color:white;
 }
 .about-us .text .buttons .view-projects{
@@ -329,13 +339,16 @@ video{
 /*menu popup*/
 .menu-popup{
     position:fixed;
-    width:0;
+    width:100%;
     overflow:hidden;
     height:100%;
     top:0;
     display:flex;
-    transition: width 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
     z-index:1;
+    transform: translate(-100%);
+    background-color: rgb(146, 146, 219);
+    justify-content: center;
 }
 .wrap-menu{
     padding:10px;
@@ -343,17 +356,8 @@ video{
     width:70%;
     height:100%;
     position:relative;
-    border-radius: 0 100px 100px 0;
+    border-radius:100px 100px;
     z-index:1;
-    box-shadow:1px 1px 3px;
-}
-.blinder{
-    width:50%;
-    height:100%;
-    background-color:rgb(58, 57, 57);
-    opacity:.9;
-    margin-left:-90px;
-    z-index:0;
 }
 .menu-popup .close-menu{
     display:flex;
@@ -367,38 +371,6 @@ video{
     margin:0 0 0 -120px;
     font-size: 30px;
 }
-/*horizontal-scroll of menu popup*/
-#horizontal-scroll{
-    padding:10px;
-    border:1px solid lightgrey;
-    display:flex;
-    overflow-x: hidden;
-}
-#horizontal-scroll #slogan{
-    min-width:max-content;
-    height:fit-content;
-    padding:10px
-}
-#horizontal-scroll #slogan i{
-    color:rgb(255, 187, 0);
-}
-#scroll-content #content{
-    width:400px;
-    overflow-x: hidden;
-    border-left: 1px solid lightgray;
-
-}
-#scroll-content #content ul{
-    display:flex;
-    gap:20px;
-    overflow-x: scroll;
-    animation: scroll 11400ms linear infinite;
-}
-#scroll-content #content ul li{
-    min-width:max-content;
-    padding:10px;
-    color:rgb(27, 26, 26);
-}
 
 .wrap-menu .menu-list ul{
     padding:10px 0;
@@ -407,10 +379,11 @@ video{
     min-width:max-content;
 }
 .wrap-menu .menu-list ul li{
-    box-shadow: 1px 1px 3px lightgrey;
+    border:1px solid rgb(247, 244, 244);
     margin:5px 0;
     padding:20px;
     font-weight: 600;
+    text-align:center;
 }
 .wrap-menu .menu-list ul li:hover{
     cursor: pointer;
@@ -424,7 +397,7 @@ video{
     width: 100%;
     height:100%;
     left:1px;
-    background-color: rgb(179, 26, 26);
+    background-color: rgb(146, 146, 219);
 }
 .wrap-menu .buttons button{
     padding:15px;

@@ -35,8 +35,7 @@ function MENU(){
         document.querySelector('.mini-bar3').style.opacity='0';
         document.querySelector('.mini-bar4').style.opacity='0';
 
-        document.querySelector('.menu-popup').style.width='100%';
-        document.querySelector('.blinder').style.display='block';
+        document.querySelector('.menu-popup').style.transform='translate(0)';
         document.querySelector('.skip-buttons').style.zIndex='0';
         menu_status='open';
     }
@@ -56,8 +55,7 @@ function MENU(){
         document.querySelector('.mini-bar3').style.opacity='unset';
         document.querySelector('.mini-bar4').style.opacity='unset';
 
-        document.querySelector('.menu-popup').style.width='0';
-        document.querySelector('.blinder').style.display='none';
+        document.querySelector('.menu-popup').style.transform='translate(-100%)';
         document.querySelector('.skip-buttons').style.zIndex='1';
         menu_status='closed';
     }
@@ -139,4 +137,9 @@ function BACK_IMAGES(){
         document.querySelector('.project-title').innerHTML='Implementation';
     }
     }
+}
+
+//BUY BUTTON
+function BUY_BTN(){
+  alert("Please WhatsApp or call this number (0786052462) to buy mentorship.");
 }
