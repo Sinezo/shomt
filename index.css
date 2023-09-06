@@ -49,7 +49,7 @@ html{
 }
 .scroll-content .join-competition{
     padding:10px;
-    background-color: rgb(90, 51, 122);
+    background-color: rgb(51, 122, 81);
     border:0;
     color:white;
     font-weight: 600;
@@ -57,7 +57,7 @@ html{
 .scroll-content .buy{
     padding:10px;
     border:0;
-    background-color: rgb(57, 179, 57);
+    background-color: rgb(179, 85, 57);
     color:white;
     font-weight: 600;
 }
@@ -109,7 +109,7 @@ header .login:hover{
 .menu-icon .bar1,.menu-icon .bar3{
     width:25px;
     height:4px;
-    background-color: rgb(173, 175, 177);
+    background-color: rgb(146, 146, 219);
     transition: all 120ms linear;
 
 }
@@ -120,7 +120,7 @@ header .login:hover{
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar2,.menu-icon .bar2 .mini-bar3,.menu-icon .bar2 .mini-bar4{
     width:6.25px;
     height:4px;
-    background-color: rgb(173, 175, 177);
+    background-color: rgb(146, 146, 219);
     transition: all 400ms ease-in-out;
 }
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
@@ -148,14 +148,16 @@ video{
     border:0;
     font-weight: 600;
     border-radius: 100px;
+    width:100%;
+    margin:5px 0;
 }
 .intro-paragraph .buttons .request-project{
-    background-color: blueviolet;
+    background-color: rgb(226, 43, 43);
     color:white;
 }
 .intro-paragraph .buttons button:hover{
     cursor: pointer;
-    background-color: rgb(226, 43, 43);
+    background-color: rgb(199, 36, 36);
     color:white;
 }
 .intro-paragraph .info{
@@ -457,6 +459,23 @@ footer .login-form h3{
 footer .login-form a{
     color:rgb(0, 255, 0);
 }
+footer .content-wrap .faqs h3{
+    padding:10px;
+}
+footer .content-wrap .faqs .quest1,footer .content-wrap .faqs .quest2,footer .content-wrap .faqs .quest3,footer .content-wrap .faqs .quest4,footer .content-wrap .faqs .quest5,footer .content-wrap .faqs .quest6,footer .content-wrap .faqs .quest7,footer .content-wrap .faqs .quest8,footer .content-wrap .faqs .quest9,footer .content-wrap .faqs .quest10{
+    display:flex;
+    gap:10px;
+    border:1px solid;
+    width:fit-content;
+    align-items: center;
+    padding:0 0 0 5px;
+    margin:10px 0;
+}
+footer .content-wrap .faqs .icon{
+    border:1px solid;
+    padding:10px;
+}
+
 /*BIG SCREEN*/
 @media  screen and (min-width:700px){
 /*horizontal-scroll*/
