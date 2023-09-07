@@ -35,7 +35,8 @@ function MENU(){
         document.querySelector('.mini-bar3').style.opacity='0';
         document.querySelector('.mini-bar4').style.opacity='0';
 
-        document.querySelector('.menu-popup').style.transform='translate(0)';
+        document.querySelector('.menu-popup').style.height='100%';
+        document.querySelector('.ul').style.overflowY='scroll';
         document.querySelector('.skip-buttons').style.zIndex='0';
         menu_status='open';
     }
@@ -55,7 +56,7 @@ function MENU(){
         document.querySelector('.mini-bar3').style.opacity='unset';
         document.querySelector('.mini-bar4').style.opacity='unset';
 
-        document.querySelector('.menu-popup').style.transform='translate(-100%)';
+        document.querySelector('.menu-popup').style.height='0';
         document.querySelector('.skip-buttons').style.zIndex='1';
         menu_status='closed';
     }
