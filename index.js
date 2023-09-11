@@ -4,14 +4,13 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("header").style.position='fixed';
-    document.getElementById("header").style.width='92%';
+    document.getElementById("header").style.width='100%';
     document.getElementById("header").style.zIndex='1';
     document.getElementById("header").style.top='0';
     document.querySelector('.skip-buttons').style.zIndex='0';
     document.getElementById("header").style.backgroundColor='white';
-    document.getElementById("header").style.color='white';
   } else {
-    document.getElementById("header").style.position='unset';
+    document.getElementById("header").style.position='fixed';
     document.getElementById("header").style.backgroundColor='white';
     document.querySelector('.skip-buttons').style.zIndex='1';
   }
@@ -148,4 +147,18 @@ function BACK_IMAGES(){
 //BUY BUTTON
 function BUY_BTN(){
   alert("Please WhatsApp or call this number (0786052462) to buy mentorship.");
+}
+
+//FAQs
+function question1(){
+    document.querySelector('.ans1').style.display='block';
+}
+function question2(){
+    document.querySelector('.ans2').style.display='block';
+}
+function question3(){
+    document.querySelector('.ans3').style.display='block';
+}
+function question4(){
+    document.querySelector('.ans4').style.display='block';
 }

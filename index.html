@@ -145,7 +145,7 @@
             <li>Contact us</li>
         </ul>
         <div class="button">
-            <button class="request-project">Request Project</button>
+            <button class="request-project">Request Project</button> <button class="close" onclick="MENU()">CLOSE</button>
         </div>
     </div>
 
@@ -156,36 +156,37 @@
         <div class="content-wrap">
             <!--frequently asked questions-->
             <div class="faqs">
-                <div class="quest1">
-                    <div class="question-box">What is the main purpose of seedai?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest2">
-                    <div class="question-box">Where is seedai located?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest3">
-                    <div class="question-box">What does buying mentorship mean?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest4">
-                    <div class="question-box">How do I pay for mentorship?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest5">
-                    <div class="question-box">How many projects I can buy mentorship on?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest6">
-                    <div class="question-box">Does buying mentorship really helps?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest7">
-                    <div class="question-box">How do you make sure students achieve their goals?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest8">
-                    <div class="question-box">How many students have you helped?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest9">
-                    <div class="question-box">What is the main purpose of seedai?</div> <div class="icon">+</div>
-                </div>
-                <div class="quest10">
-                    <div class="question-box">What is the main purpose of seedai?</div> <div class="icon">+</div>
-                </div>
+                <ul class="quest1" onclick="question1()"><label>What is the main purpose of seedai?</label>
+                    <li class="ans1">The main purpose of seedai is to share knowledge and skills by 
+                        providing mentorship to help students and electrical enthusiasts build 
+                        projects and learn from them.
+                    </li>
+                </ul>
+
+                <ul class="quest2" onclick="question2()"><label>Where is seedai located?</label>
+                    <li class="ans2">Below is the physical address of the founder of seedai:
+                        <br><br>
+                        <address>
+                            13 Sisson St
+                            <br>Fortgale <br>
+                            Umthatha
+                            <br>5200 
+                        </address>
+                    </li>
+                </ul>
+
+                <ul class="quest3" onclick="question3()"><label>What does buying mentorship mean?</label>
+                    <li class="ans3">Buying mentorship means you have read and understood our <a href="#">terms and conditions</a>. 
+                        It means that you have payed for the mentor to help you in building an electrical project 
+                        to help you achieve your goal.
+                    </li>
+                </ul>
+
+                <ul class="quest4" onclick="question4()"><label>Does buying mentorship help?</label>
+                    <li class="ans4">From what we have seen, yes it does. We have helped a number students making their ideas 
+                        less overwhelming.
+                    </li>
+                </ul>
             </div>
             <!--login-->
             <div class="login-form" id=login-form>
@@ -202,8 +203,10 @@
                 </form>
             </div>
         </div>
-        Copyright &copy;2023 seedai.  All Rights Reserved 
-        Developed by: Sinethemba Lusawana
+        <div class="footer-below">
+            Copyright &copy;2023 seedai.  All Rights Reserved <br>
+        Website Developed by: Sinethemba Lusawana
+        </div>
     </footer>
 
 <script src="index.js"></script>

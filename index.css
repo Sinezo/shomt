@@ -1,7 +1,9 @@
 *{
     padding:0;
     margin:0;
-    color:rgb(37, 37, 37);
+}
+body{
+    color:rgb(43, 42, 42);
 }
 html{
     scroll-behavior: smooth;
@@ -19,6 +21,11 @@ header{
     box-shadow:1px 1px 3px lightgrey;
     margin-bottom:10px;
     z-index:1;
+    box-sizing: border-box;
+    position:fixed;
+    background-color: white;
+    width: 100%;
+    top:0;
 }
 /*website name*/
 header .website-name{
@@ -74,7 +81,8 @@ header .login i:hover{
 }
 /*video*/
 .video{
-    padding:20px;
+    
+    margin-top: 80px;
 }
 video{
     width:100%;
@@ -91,13 +99,13 @@ video{
     border-bottom: 2px dotted rgb(86, 96, 185);
 }
 .intro-paragraph .buttons button{
-    padding:15px;
-    border-radius:4px;
+    padding:20px;
     border:0;
     font-weight: 600;
-    border-radius: 100px;
+    border-radius: 10px;
     width:47%;
     margin:5px 0;
+    box-shadow: 1px 1px 3px lightgrey;
 }
 .intro-paragraph .buttons .request-project{
     background-color: rgb(79, 199, 79);
@@ -119,13 +127,18 @@ video{
     background-color: rgb(60, 60, 150);
 }
 .services button{
-    padding:20px;
-    border-radius: 100px;
+    padding:30px;
+    border-radius: 10px;
     background-color: unset;
     border:1px solid;
-    color:white;
+    color:rgb(60, 60, 150);
     margin-top:4px;
     font-weight: 600;
+    width:100%;
+    background-color: white;
+    font-weight:600;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .services button:hover{
     background-color: rgb(226, 43, 43);
@@ -172,6 +185,9 @@ video{
     padding:5px;
     font-size: small;
 }
+.skip-buttons b{
+    font-size: 20px;
+}
 .skip-buttons label{
     font-weight: 600;
     color:rgb(63, 62, 62);
@@ -195,7 +211,7 @@ video{
    border:0;
    font-weight: 600;
    box-shadow: 1px 1px 3px lightgrey;
-   border-radius: 100px;
+   border-radius: 10px;
    background-color: rgb(155, 216, 57);
    color:white;
 }
@@ -266,7 +282,7 @@ video{
     border:1px solid;
     width:100%;
     margin:5px 0;
-    border-radius: 100px;
+    border-radius: 10px;
     box-shadow: 1px 1px 3px lightgrey; 
     background-color: unset;
     color:rgb(146, 146, 219);
@@ -290,10 +306,12 @@ video{
     width:100%;
     overflow:hidden;
     height:0;
-    top:101px;
+    top:0px;
     transition: height 800ms ease-in-out;
     z-index:1;
     background-color: rgb(146, 146, 219);
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 .menu-popup ul{
     list-style: none;
@@ -301,7 +319,6 @@ video{
     line-height: 3;
     font-size: 30px;
     font-weight: 600;
-    height:400px;
 }
 .menu-popup ul li{
     background-color: rgb(255, 255, 255);
@@ -316,18 +333,29 @@ video{
     color:white;
 }
 .menu-popup .button{
-    position:absolute;
     bottom:110px;
     width:100%;
+    padding:10px 0;
+    text-align: center;
+    box-sizing: border-box;
 }
 .menu-popup .request-project{
     padding:15px;
-    width:100%;
+    width:50%;
     background-color: rgb(52, 180, 52);
     color:white;
     font-weight: 600;
     border-radius: 10px;
     border:2px solid white;
+}
+.menu-popup .button .close{
+    padding:15px;
+    width:40%;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: red;
+    color:white;
+    border:2px solid;
 }
 /*footer*/
 footer{
@@ -337,21 +365,31 @@ footer{
     color:white;
 
 }
+footer .content-wrap{
+    display:flex;
+    justify-content: center;
+}
 footer .login-form{
     padding:10px;
+    background-color: rgb(58, 66, 110);
+    width:400px;
 }
 footer .login-form input{
     padding:15px;
-    border-radius: 100px;
+    border-radius: 10px;
     border:0;
     width:100%;
     box-sizing: border-box;
     margin-top: 5px;
 }
+footer .login-form p{
+    color:white;
+    padding:10px;
+}
 footer .login-form button{
     padding:15px;
     width:100%;
-    border-radius: 100px;
+    border-radius: 10px;
     border:0;
     margin: 10px 0;
 }
@@ -372,23 +410,33 @@ footer .content-wrap{
 /*frequently asked questions*/
 footer .content-wrap .faqs{
     background-color: rgb(65, 65, 160);
+    text-align: start;
+    width:400px;
+    margin-bottom: 20px;
 }
 footer .faqs-heading{
     padding:10px;
     color:rgb(189, 183, 183);
 }
-footer .content-wrap .faqs .quest1,footer .content-wrap .faqs .quest2,footer .content-wrap .faqs .quest3,footer .content-wrap .faqs .quest4,footer .content-wrap .faqs .quest5,footer .content-wrap .faqs .quest6,footer .content-wrap .faqs .quest7,footer .content-wrap .faqs .quest8,footer .content-wrap .faqs .quest9,footer .content-wrap .faqs .quest10{
-    display:flex;
-    gap:10px;
-    border:1px solid;
-    width:fit-content;
-    align-items: center;
-    padding:0 0 0 5px;
-    margin:10px 0;
-    color:rgb(189, 183, 183);
-    background-color: rgb(235, 225, 225);
+footer .faqs ul{
+    padding:10px;
+    list-style: none;
+    font-weight: 600;
+    background-color: white;
+    margin-bottom: 4px;
     border-radius: 10px;
-    text-align: start;
+
+}
+footer .faqs ul label{
+    color:rgb(69, 69, 155);
+}
+footer .faqs ul li{
+    font-weight: 100;
+    color:rgb(69, 69, 155);
+    padding: 10px 0;
+}
+footer .faqs ul li{
+    display: none;
 }
 footer .content-wrap .faqs .icon{
     border:1px solid rgb(58, 99, 153);;
@@ -398,7 +446,10 @@ footer .content-wrap .faqs .icon{
 footer .content-wrap .faqs .question-box{
     color:rgb(58, 99, 153);
 }
-
+footer .footer-below{
+    padding:20px;
+    color:rgb(230, 224, 224);
+}
 /*BIG SCREEN*/
 @media  screen and (min-width:700px){
 /*horizontal-scroll*/
