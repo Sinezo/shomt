@@ -31,7 +31,9 @@
     background-color: unset;
     border:1px solid lightgrey;
 }
-.wrapper .text .cell-number{
+.wrapper .text .cell-number a{
+    color:black;
+    text-decoration: none;
     color:rgb(55, 128, 83);
 }
 .wrapper .text .email{
@@ -40,7 +42,61 @@
 .wrapper .text p{
     padding:10px;
 }
-
+/*fault-location*/
+.fault-location{
+    border:1px solid lightgrey;
+    margin-top: 10px;
+    padding:0 20px;
+}
+.fault-location h2{
+    padding:10px 0;
+}
+.fault-location .images{
+    display:flex;
+    gap:3px
+}
+.fault-location .images img{
+    width:50%;
+}
+.fault-location .text{
+    border-bottom: 0;
+}
+/*on site*/
+.on-site{
+    padding:0 20px;
+    border:1px solid lightgrey;
+    margin-top:10px;
+}
+.on-site .h2{
+    margin-left:-12px;
+    padding:10px 0;
+}
+.on-site .wrap-boxes{
+    display:flex;
+    gap:15px;
+    overflow-x: scroll;
+}
+.on-site .wrap-boxes .box{
+    min-width:260px;
+}
+.on-site .wrap-boxes .box h2{
+    padding:10px 2px;
+    border: 1px solid lightgrey;
+    border-bottom: 0;
+}
+.wrapper .whatsapp-chat{
+    padding:20px;
+    background-color: rgb(68, 70, 68);
+}
+.wrapper .whatsapp-chat button{
+    width:100%;
+    padding:20px;
+    background-color: rgb(57, 167, 71);
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0;
+    border:0;
+}
 </style>
 </head>
 <body>
@@ -75,12 +131,103 @@
         <!--TEXT-->
         <div class="text">
             <h2>Sinethemba Lusawana</h2>
-            <button class="cell-number">078 605 2462</button> <button class="email">lusawanasinethemba@gmail.com</button>
+            <button class="cell-number"><a href="https://wa.me/27786052462?text=Hello there">078 605 2462</a></button> <button class="email" onclick="window.location='mailto:lusawanasinethemba@gmail.com'">lusawanasinethemba@gmail.com</button>
             <p>
                 I am a <i><b>qualified</b></i> electrician in possession of a National Diploma in Electrical Engineering graduated from <b><i>Walter Sisulu University</i></b>. I have 1 year experience in working on <b>11kV</b> distribution level and I am familiar with ring networks with its main components like <b>RMU</b>. 
                 <br><br>I have worked with Low Voltage distribution (less than 600V) and I am familiar with single phase and three phase transformers as well as mini-substations fed by overhead lines and underground cables.
             </p>
         </div>
+
+        <!--FAULT LOCATION-->
+        <div class="fault-location">
+            <h2>Underground Fault Location</h2>
+            <div class="images">
+                <img src="Screenshot_20231014_155623_Gallery.jpg" alt="img">
+                <img src="Screenshot_20231014_155634_Gallery.jpg" alt="img">
+            </div>
+            <div class="text">
+                <button>Post St Johns, Telecomunications Tower</button>
+                <p>
+                    I have had the priviledge to work with High Voltage <b>Surge Generator</b> (Thumper) to test and locate underground cables.
+                    
+                    <br><br><b style="color:rgb(61, 124, 196);">Prelocated</b> underground cable faults using a Time Domain Reflectometer (Scope).
+                    
+                    <br><br><b style="color:rgb(196, 61, 61);">Pin-pointed</b> the exact location of underground cable faults using an acoustic device, or simply a ground microphone.
+                   <br><br> <b style="color:rgb(196, 133, 61);">Pressure tested</b> underground cables to determine whether the insulation of the cable has failed or is still in good condition.
+                </p>
+            </div>
+        </div>
+        <!--ON THE SITE PHOTOS-->
+        <div class="on-site">
+            <h2 class="h2">On The Site Snaps</h2>
+            <div class="wrap-boxes">
+                <div class="box">
+                    <h2>11kV/415V, 315kVA Mini-Substation</h2>
+                    <img src="Screenshot_20231014_155528_Gallery.jpg" alt="img">
+                    <div class="text">
+                        <button>Sports Field, Umtata</button>
+                        <p>
+                            Have done installation and reparing faulty cables on a mini-substation. I have installed MCB and MCCB circuit breakers considering the load as well as protection of the cable.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Tesing Insulation Resistance</h2>
+                    <img src="Screenshot_20231014_155803_Gallery.jpg" alt="img">
+                    <div class="text">
+                        <button>R61 Road, Central Police Station, Umtata</button>
+                        <p>
+                            Tested Insulation Resistance on LV cable with 1kV rated voltage and on MV cables using a <b>Megger</b>.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>LV Cable Joint</h2>
+                    <img src="Screenshot_20231014_155543_Gallery.jpg" alt="img">
+                    <div class="text">
+                        <button>Ultracity, Umtata</button>
+                        <p>
+                            I have done Low Voltage cable joints on cables feeding electrical kiosks, street lights and houses.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Street Light Control System</h2>
+                    <img src="Screenshot_20231014_155644_Gallery.jpg" alt="img">
+                    <div class="text">
+                        <button>Ultracity, Umtata</button>
+                    <p>
+                        I have designed and installed the street light control systems using a  day/night photocell and a contactor.
+                    </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Laying Underground Cable</h2>
+                    <img src="Screenshot_20231014_155606_Gallery.jpg" alt="img">
+                    <div class="text">
+                        <button>Southernwood, Umtata</button>
+                        <p>
+                            Done LV joint and termination on an underground cable feeding an electrical kiosk.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Climbling Wooden Pole</h2>
+                    <img src="Screenshot_20231014_155520_Gallery.jpg" alt="img">
+                    <div class="text">
+                        <button>Sisson St, Umtata</button>
+                        <p>
+                            Climbed wooden pole to work on overhead lines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CHAT ON WHATSAPP-->
+    <div class="whatsapp-chat">
+        <button>Chat on WhatsApp</button>
     </div>
 </div>
 
