@@ -79,41 +79,38 @@ header .login i:hover{
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
     transition: all 250ms linear;
 }
-/*video*/
-.video{
-    
-    margin-top: 80px;
-}
-video{
-    width:100%;
-}
 /*intro-paragraph*/
 .intro-paragraph{
     padding:20px;
+    margin-top:100px;
+}
+.intro-paragraph .about-website-box{
+    padding:20px;
+    border:1px solid rgb(202, 200, 200);
+    color:rgb(24, 89, 150);
 }
 .intro-paragraph h1{
     padding:10px 0;
 }
 .intro-paragraph .buttons{
     padding:20px 0;
-    border-bottom: 2px dotted rgb(86, 96, 185);
 }
 .intro-paragraph .buttons button{
     padding:20px;
     border:0;
     font-weight: 600;
     border-radius: 10px;
-    width:47%;
+    font-size: small;
     margin:5px 0;
-    box-shadow: 1px 1px 3px lightgrey;
+    background-color: unset;
+    border:1px solid
 }
 .intro-paragraph .buttons .request-project{
-    background-color: rgb(228, 124, 26);
-    color:white;
+    color:rgb(48, 43, 43);
 }
 .intro-paragraph .buttons button:hover{
     cursor: pointer;
-    background-color: rgb(202, 118, 40);
+    background-color: rgb(101, 134, 206);
     color:white;
 }
 .intro-paragraph .info{
