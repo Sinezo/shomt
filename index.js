@@ -78,21 +78,21 @@ function NEXT_IMAGES(){
         document.querySelector('#pos2').style.backgroundColor='rgb(158, 182, 235)';
         document.querySelector('#pos1').style.backgroundColor='white';
         document.querySelector('#projects-paragraph').innerHTML='A system that measures and lets you observe <b><i>AC</i></b> phase  voltage from them mains (<b>Max = 240V</b>).';
-        document.querySelector('.mentorship').innerHTML='<s>R500.00</s> <b>R399.99</b>';
+        document.querySelector('.mentorship').innerHTML='<s>R500.00</s> <b class="price" >R399.99</b>';
     }
     else if(position==3){
-        document.querySelector('.project-title').innerHTML='30V DC Voltmeter';
+        document.querySelector('.project-title').innerHTML='Smart Filling & Pricing System';
         document.querySelector('#pos3').style.backgroundColor='rgb(158, 182, 235)';
         document.querySelector('#pos2').style.backgroundColor='white';
-        document.querySelector('#projects-paragraph').innerHTML='A project that measures up to 30V <b><i>DC</i></b> voltage.';
-        document.querySelector('.mentorship').innerHTML='<s>R300.00</s> <b>R199.99</b>';
+        document.querySelector('#projects-paragraph').innerHTML='A smart filling system that calculates the amount of litres filled and price accordingly.';
+        document.querySelector('.mentorship').innerHTML='<s>R2000.00</s> <b class="price" >R1599.99</b>';
     }
     else if(position==4){
         document.querySelector('.project-title').innerHTML='Implementation';
         document.querySelector('#pos4').style.backgroundColor='rgb(158, 182, 235)';
         document.querySelector('#pos3').style.backgroundColor='white';
         document.querySelector('#projects-paragraph').innerHTML='Putting together and bringing the idea into reality.';
-        document.querySelector('.mentorship').innerHTML='from <s>R200.00</s> <b>R100.00</b>';
+        document.querySelector('.mentorship').innerHTML='from <s>R200.00</s> <b class="price">R100.00</b>';
         document.querySelector('.buy-mentorship').style.display='none';
         document.querySelector('.next-btn').style.display='none';
         document.querySelector('.back-btn').style.display='none';
@@ -127,16 +127,16 @@ function BACK_IMAGES(){
     if(position==1){
         document.querySelector('.project-title').innerHTML='Password Lock System';
         document.querySelector('#projects-paragraph').innerHTML='A security system that only gives access to those entered the correct password.';
-        document.querySelector('.mentorship').innerHTML='<s>R1200.00</s> <b>R899.99</b>';
+        document.querySelector('.mentorship').innerHTML='<s>R1200.00</s> <b class="price" >R899.99</b>';
     }
     else if(position==2){
         document.querySelector('.project-title').innerHTML='3 Phase Voltage Monitor';
         document.querySelector('#projects-paragraph').innerHTML='A system that measures and lets you observe <b><i>AC</i></b> phase  voltage from them mains (<b>Max = 240V</b>).';
-        document.querySelector('.mentorship').innerHTML='<s>R500.00</s> <b>R399.99</b>';
+        document.querySelector('.mentorship').innerHTML='<s>R500.00</s> <b class="price">R399.99</b>';
     }
     else if(position==3){
-        document.querySelector('.project-title').innerHTML='30V DC Voltmeter';
-        document.querySelector('#projects-paragraph').innerHTML='A security system that only gives access to those entered the correct password.';
+        document.querySelector('.project-title').innerHTML='Smart Filling & Pricing System';
+        document.querySelector('#projects-paragraph').innerHTML='A smart filling system that calculates the amount of litres filled and price accordingly.';
     }
     else if(position==4){
         document.querySelector('.projects-title').innerHTML='Implementation';

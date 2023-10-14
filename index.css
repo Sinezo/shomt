@@ -4,6 +4,7 @@
 }
 body{
     color:rgb(43, 42, 42);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -79,69 +80,6 @@ header .login i:hover{
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
     transition: all 250ms linear;
 }
-/*intro-paragraph*/
-.intro-paragraph{
-    padding:20px;
-    margin-top:100px;
-}
-.intro-paragraph .about-website-box{
-    padding:20px;
-    border:1px solid rgb(202, 200, 200);
-    color:rgb(24, 89, 150);
-}
-.intro-paragraph h1{
-    padding:10px 0;
-}
-.intro-paragraph .buttons{
-    padding:20px 0;
-}
-.intro-paragraph .buttons button{
-    padding:20px;
-    border:0;
-    font-weight: 600;
-    border-radius: 10px;
-    font-size: small;
-    margin:5px 0;
-    background-color: unset;
-    border:1px solid
-}
-.intro-paragraph .buttons .request-project{
-    color:rgb(48, 43, 43);
-}
-.intro-paragraph .buttons button:hover{
-    cursor: pointer;
-    background-color: rgb(101, 134, 206);
-    color:white;
-}
-.intro-paragraph .info{
-    font-size:small;
-    padding:20px;
-}
-/*services*/
-.services{
-    text-align: center;
-    padding:20px;
-    background-color: rgb(57, 139, 216);
-}
-.services button{
-    padding:30px;
-    border-radius: 10px;
-    background-color: unset;
-    border:1px solid;
-    color:rgb(57, 139, 216);
-    margin-top:4px;
-    font-weight: 600;
-    width:100%;
-    background-color: white;
-    font-weight:600;
-    font-size:20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.services button:hover{
-    background-color: rgb(228, 124, 26);
-    color:white;
-    cursor: pointer;
-}
 /*top projects*/
 .top-projects{
     display:flex;
@@ -154,7 +92,7 @@ header .login i:hover{
     border-top:1px solid rgb(229, 232, 238);
     border-right: 1px solid rgb(229, 232, 238);
     border-left: 1px solid rgb(229, 232, 238);
-    
+    margin-top: 70px;
 }
 .top-projects #pos1,.top-projects #pos2,.top-projects #pos3,.top-projects #pos4{
     width:10px;
@@ -182,7 +120,7 @@ header .login i:hover{
     padding:5px;
     font-size: small;
 }
-.skip-buttons b{
+.skip-buttons .price{
     font-size: 20px;
 }
 .skip-buttons label{
@@ -306,7 +244,13 @@ header .login i:hover{
 
 }
 .about-us .text p{
-    padding:20px;
+    padding:20px 0;
+}
+.about-us .text h3{
+    border:1px solid lightgrey;
+    padding:5px;
+    width:fit-content;
+    color:rgb(74, 133, 180);
 }
 .about-us .text .buttons{
     padding:10px;
@@ -407,47 +351,15 @@ footer{
     color:white;
 
 }
-footer .content-wrap{
-    display:flex;
-    justify-content: center;
-}
-footer .login-form{
-    padding:10px;
-    background-color: unset;
-    width:400px;
-}
-footer .login-form input{
-    padding:15px;
-    border-radius: 10px;
+footer .book-class{
+    padding:20px;
+    color:rgb(55, 105, 214);
+    font-weight: 900;
     border:0;
-    width:100%;
-    box-sizing: border-box;
-    margin-top: 5px;
-}
-footer .login-form p{
-    color:white;
-    padding:10px;
-}
-footer .login-form button{
-    padding:15px;
-    width:100%;
     border-radius: 10px;
-    border:0;
-    margin: 10px 0;
 }
-footer .login-form label{
-    color:rgb(228, 222, 222);
-}
-footer .login-form h3{
-    color:rgb(228, 222, 222);
-    padding:10px;
-}
-footer .login-form a{
-    color:rgb(0, 255, 0);
-}
-footer .content-wrap{
-    display:flex;
-    flex-wrap: wrap;
+footer .book-class:hover{
+    cursor: pointer;
 }
 /*frequently asked questions*/
 footer .content-wrap .faqs{
