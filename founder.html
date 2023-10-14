@@ -9,36 +9,46 @@
     <link rel="stylesheet" href="index.css">
     <title>Founder| seedai</title>
 <style>
-/*info box*/
-.info-box{
-    padding:30px;
-    text-align: center;
+.wrapper{
+    padding:0 20px;
 }
-.info-box h1{
+.wrapper .image{
+    margin-top: 100px;;
+}
+.wrapper .image img{
+    width:100%;
+}
+.wrapper .text{
+    border:1px solid lightgrey;
+    border-top: 0;
+    padding:5px;
+}
+.wrapper .text h2{
+    padding:10px 0;
+}
+.wrapper .text button{
+    padding:5px;
+    background-color: unset;
+    border:1px solid lightgrey;
+}
+.wrapper .text .cell-number{
+    color:rgb(55, 128, 83);
+}
+.wrapper .text .email{
+    color:rgb(42, 80, 204);
+}
+.wrapper .text p{
     padding:10px;
 }
-.info-box p{
-    padding:10px;
-}
-.info-box span{
-    color:red;
-}
-.info-box button{
-    padding:15px;
-    margin:10px 0;
-    background-color: rgb(89, 89, 226);
-    color:rgb(238, 232, 232);
-    border:1px solid;
-    font-weight: 600;
-}
-    </style>
+
+</style>
 </head>
 <body>
  <!--HEADER-->
  <header id="header">
     <!--website name-->
     <div class="website-name" onclick="window.location='index.html'">
-        <div class="name">FOUNDER</div>
+        <div class="name">MR</div>
     </div>
     <!--login-->
     <div class="login">
@@ -58,12 +68,21 @@
     </div>
 </header>
 
-    <div class="info-box">
-        <h1>Opps!</h1>
-    <p>There is nothing to show at the moment.</p>
-    <span>It may be because the website is still under development process.</span>
-    <button onclick="window.location='https://www.facebook.com/snetembar.luserwerner'">Visit Facebook Profile</button>
+<div class="wrapper">
+    <!--IMAGE-->
+    <div class="image">
+        <img src="IMG-20230929-WA0017.jpg" alt="snezo">
+        <!--TEXT-->
+        <div class="text">
+            <h2>Sinethemba Lusawana</h2>
+            <button class="cell-number">078 605 2462</button> <button class="email">lusawanasinethemba@gmail.com</button>
+            <p>
+                I am a <i><b>qualified</b></i> electrician in possession of a National Diploma in Electrical Engineering graduated from <b><i>Walter Sisulu University</i></b>. I have 1 year experience in working on <b>11kV</b> distribution level and I am familiar with ring networks with its main components like <b>RMU</b>. 
+                <br><br>I have worked with Low Voltage distribution (less than 600V) and I am familiar with single phase and three phase transformers as well as mini-substations fed by overhead lines and underground cables.
+            </p>
+        </div>
     </div>
+</div>
 
         <!--MENU POPUP-->
         <div class="menu-popup">
@@ -113,71 +132,5 @@
                 
             </div>
         </div>
-
-        
-
-    <script>
-            //ONSCROLL
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.position='fixed';
-    document.getElementById("header").style.width='97%';
-    document.getElementById("header").style.zIndex='1';
-    document.getElementById("header").style.backgroundColor='rgb(255, 166, 0)';
-    document.querySelector('.skip-buttons').style.zIndex='0';
-  } else {
-    document.getElementById("header").style.position='unset';
-    document.getElementById("header").style.backgroundColor='white';
-    document.querySelector('.skip-buttons').style.zIndex='1';
-  }
-}
-
-//MENU ICON ONCLICK
-let menu_status='closed';
-function MENU(){
-    if(menu_status=='closed'){
-        document.querySelector('.bar1').style.transform='rotate(45deg)';
-        document.querySelector('.bar3').style.transform='rotate(-45deg)';
-        document.querySelector('.bar3').style.marginTop='-14px';
-        document.querySelector('.bar1').style.marginTop='10px';
-
-        document.querySelector('.mini-bar1').style.transform='translate(-1300%)';
-        document.querySelector('.mini-bar2').style.transform='translate(-1300%)';
-        document.querySelector('.mini-bar3').style.transform='translate(1300%)';
-        document.querySelector('.mini-bar4').style.transform='translate(1300%)';
-
-        document.querySelector('.mini-bar1').style.opacity='0';
-        document.querySelector('.mini-bar2').style.opacity='0';
-        document.querySelector('.mini-bar3').style.opacity='0';
-        document.querySelector('.mini-bar4').style.opacity='0';
-
-        document.querySelector('.menu-popup').style.width='100%';
-        document.querySelector('.blinder').style.display='block';
-        menu_status='open';
-    }
-    else{
-        document.querySelector('.bar1').style.transform='rotate(0)';
-        document.querySelector('.bar3').style.transform='rotate(0)';
-        document.querySelector('.bar3').style.marginTop='0';
-        document.querySelector('.bar1').style.marginTop='0';
-
-        document.querySelector('.mini-bar1').style.transform='translate(0%)';
-        document.querySelector('.mini-bar2').style.transform='translate(0%)';
-        document.querySelector('.mini-bar3').style.transform='translate(0%)';
-        document.querySelector('.mini-bar4').style.transform='translate(0%)';
-
-        document.querySelector('.mini-bar1').style.opacity='unset';
-        document.querySelector('.mini-bar2').style.opacity='unset';
-        document.querySelector('.mini-bar3').style.opacity='unset';
-        document.querySelector('.mini-bar4').style.opacity='unset';
-
-        document.querySelector('.menu-popup').style.width='0';
-        document.querySelector('.blinder').style.display='none';
-        menu_status='closed';
-    }
-}
-    </script>
 </body>
 </html>
