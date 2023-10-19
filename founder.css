@@ -1,0 +1,99 @@
+.wrapper{
+    padding:0 20px;
+}
+.wrapper .image{
+    margin-top: 100px;;
+}
+.wrapper .image img{
+    width:100%;
+}
+.wrapper .text{
+    border:1px solid lightgrey;
+    border-top: 0;
+    padding:5px;
+}
+.wrapper .text h2{
+    padding:10px 0;
+}
+.wrapper .text ul{
+    list-style-position: inside;
+}
+.wrapper .text ul li{
+    padding:5px; 
+}
+.wrapper .text button{
+    padding:10px;
+    background-color: unset;
+    border:1px solid lightgrey;
+    text-align: start;
+    color:rgb(109, 108, 108);
+}
+.wrapper .text .cell-number a{
+    color:black;
+    text-decoration: none;
+    color:rgb(55, 128, 83);
+}
+.wrapper .text .email{
+    color:rgb(42, 80, 204);
+}
+.wrapper .text p{
+    padding:10px;
+}
+/*fault-location*/
+.fault-location{
+    border:1px solid lightgrey;
+    margin-top: 10px;
+    padding:0 20px;
+}
+.fault-location h2{
+    padding:10px 0;
+}
+.fault-location .images{
+    display:flex;
+    gap:3px
+}
+.fault-location .images img{
+    width:50%;
+}
+.fault-location .text{
+    border-bottom: 0;
+}
+/*on site*/
+.on-site{
+    padding:0 20px;
+    border:1px solid lightgrey;
+    margin-top:10px;
+}
+.on-site .h2{
+    margin-left:-12px;
+    padding:10px 0;
+}
+.on-site .wrap-boxes{
+    display:flex;
+    gap:15px;
+    overflow-x: scroll;
+}
+.on-site .wrap-boxes .box{
+    min-width:260px;
+}
+.on-site .wrap-boxes .box h2{
+    padding:10px 2px;
+    border: 1px solid lightgrey;
+    border-bottom: 0;
+}
+.wrapper .whatsapp-chat{
+    padding:20px;
+    background-color: rgb(68, 70, 68);
+}
+.wrapper .whatsapp-chat button{
+    width:100%;
+    padding:20px;
+    background-color: rgb(57, 167, 71);
+    border-radius: 10px;
+    box-shadow: 0;
+    border:0;
+}
+.wrapper .whatsapp-chat button a{
+    color:white;
+    text-decoration: none;
+}
