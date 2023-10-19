@@ -4,122 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="founder.css">
     <title>Founder| seedai</title>
-<style>
-.wrapper{
-    padding:0 20px;
-}
-.wrapper .image{
-    margin-top: 100px;;
-}
-.wrapper .image img{
-    width:100%;
-}
-.wrapper .text{
-    border:1px solid lightgrey;
-    border-top: 0;
-    padding:5px;
-}
-.wrapper .text h2{
-    padding:10px 0;
-}
-.wrapper .text button{
-    padding:5px;
-    background-color: unset;
-    border:1px solid lightgrey;
-}
-.wrapper .text .cell-number a{
-    color:black;
-    text-decoration: none;
-    color:rgb(55, 128, 83);
-}
-.wrapper .text .email{
-    color:rgb(42, 80, 204);
-}
-.wrapper .text p{
-    padding:10px;
-}
-/*fault-location*/
-.fault-location{
-    border:1px solid lightgrey;
-    margin-top: 10px;
-    padding:0 20px;
-}
-.fault-location h2{
-    padding:10px 0;
-}
-.fault-location .images{
-    display:flex;
-    gap:3px
-}
-.fault-location .images img{
-    width:50%;
-}
-.fault-location .text{
-    border-bottom: 0;
-}
-/*on site*/
-.on-site{
-    padding:0 20px;
-    border:1px solid lightgrey;
-    margin-top:10px;
-}
-.on-site .h2{
-    margin-left:-12px;
-    padding:10px 0;
-}
-.on-site .wrap-boxes{
-    display:flex;
-    gap:15px;
-    overflow-x: scroll;
-}
-.on-site .wrap-boxes .box{
-    min-width:260px;
-}
-.on-site .wrap-boxes .box h2{
-    padding:10px 2px;
-    border: 1px solid lightgrey;
-    border-bottom: 0;
-}
-.wrapper .whatsapp-chat{
-    padding:20px;
-    background-color: rgb(68, 70, 68);
-}
-.wrapper .whatsapp-chat button{
-    width:100%;
-    padding:20px;
-    background-color: rgb(57, 167, 71);
-    color:white;
-    border-radius: 10px;
-    box-shadow: 0;
-    border:0;
-}
-</style>
 </head>
 <body>
  <!--HEADER-->
  <header id="header">
     <!--website name-->
-    <div class="website-name" onclick="window.location='index.html'">
-        <div class="name">MR</div>
+    <div class="website-name">
+        <div class="name" style="color:rgb(175, 178, 179);">.........</div>
     </div>
     <!--login-->
     <div class="login">
-        <i class="fa-regular fa-circle-user"></i> Login
     </div>
     <!--menu icon-->
     <div class="menu-icon">
-        <div>Menu</div>
-       <!--wrap bars-->
-       <div class="wrap-bars" onclick="MENU()">
-        <div class="bar1"></div>
-        <div class="bar2">
-            <div class="mini-bar1"></div><div class="mini-bar2"></div><div class="mini-bar3"></div><div class="mini-bar4"></div>
-        </div>
-        <div class="bar3"></div>
+        <div style="min-width: 100px;border:1px solid;padding:10px;" onclick="window.location='index.html'">My Projects</div>
        </div>
     </div>
 </header>
@@ -133,8 +37,18 @@
             <h2>Sinethemba Lusawana</h2>
             <button class="cell-number"><a href="https://wa.me/27786052462?text=Hello there">078 605 2462</a></button> <button class="email" onclick="window.location='mailto:lusawanasinethemba@gmail.com'">lusawanasinethemba@gmail.com</button>
             <p>
-                I am a <i><b>qualified</b></i> electrician in possession of a National Diploma in Electrical Engineering graduated from <b><i>Walter Sisulu University</i></b>. I have 1 year experience in working on <b>11kV</b> distribution level and I am familiar with ring networks with its main components like <b>RMU</b>. 
-                <br><br>I have worked with Low Voltage distribution (less than 600V) and I am familiar with single phase and three phase transformers as well as mini-substations fed by overhead lines and underground cables.
+                    I am a <i><b>qualified</b></i> electrician in possession of a National Diploma in Electrical Engineering, graduated from <b><i>Walter Sisulu University</i></b>.
+
+
+                <ul>
+                    <li>
+                        I have 1 year experience in working on <b>11kV</b> distribution level and I am familiar with ring networks with its main components like <b>RMU</b>.
+                    </li>
+
+                    <li>
+                        I have worked with Low Voltage distribution (less than 600V) and I am familiar with single phase and three phase transformers as well as mini-substations fed by overhead lines and underground cables.
+                    </li>
+                </ul>
             </p>
         </div>
 
@@ -148,7 +62,7 @@
             <div class="text">
                 <button>Post St Johns, Telecomunications Tower</button>
                 <p>
-                    I have had the priviledge to work with High Voltage <b>Surge Generator</b> (Thumper) to test and locate underground cables.
+                    I was fortunate to work with High Voltage <b>Surge Generator</b> (Thumper) to test and locate underground cables.
                     
                     <br><br><b style="color:rgb(61, 124, 196);">Prelocated</b> underground cable faults using a Time Domain Reflectometer (Scope).
                     
@@ -159,7 +73,7 @@
         </div>
         <!--ON THE SITE PHOTOS-->
         <div class="on-site">
-            <h2 class="h2">On The Site Snaps</h2>
+            <h2 class="h2">On Site Snaps</h2>
             <div class="wrap-boxes">
                 <div class="box">
                     <h2>11kV/415V, 315kVA Mini-Substation</h2>
@@ -227,57 +141,8 @@
 
     <!--CHAT ON WHATSAPP-->
     <div class="whatsapp-chat">
-        <button>Chat on WhatsApp</button>
+        <button><a href="https://wa.me/27786052462?text=Hi Sinethemba Lusawana, ">Chat on WhatsApp</a></button>
     </div>
 </div>
-
-        <!--MENU POPUP-->
-        <div class="menu-popup">
-            <!--wrap menu-->
-            <div class="wrap-menu">
-                <!--clode menu-->
-                <div class="close-menu">
-                    <div class="icon" onclick="MENU()"><i class="fa-solid fa-xmark"></i></div>
-                </div>
-                <!--horizontal scroll-->
-                <div id="horizontal-scroll">
-                    <!--slogan-->
-                    <div id="slogan">
-                        <i class="fa-regular fa-lightbulb"></i> Showing light to <b>All</b>
-                    </div>
-                    <!--scroll content-->
-                    <div id="scroll-content">
-                        <div id="content">
-                            <ul>
-                                <li>electrical design</li>
-                                <li>electronic design</li>
-                                <li>arduino programming</li>
-                                <li>internet of things</li>
-                                <li>simulation</li>
-                                <li>installation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--menu list-->
-                <div class="menu-list">
-                    <ul>
-                        <li onclick="window.location='blog.html'">Blog / Announcements</li>
-                        <li onclick="window.location='competitions.html'">Competitions</li>
-                        <li onclick="window.location='founder.html'">About the founder</li>
-                        <li onclick="window.location='index.html#contact-us'; MENU();">Contact us</li>
-                    </ul>
-                </div>
-            
-                <!--buttons-->
-                <div class="buttons">
-                    <button class="create-account">Create Account</button> <br><button id="request-design">Request Design</button>
-                </div>
-            </div>
-            <!--blinder-->
-            <div class="blinder">
-                
-            </div>
-        </div>
 </body>
 </html>
