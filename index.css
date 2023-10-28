@@ -33,13 +33,13 @@ header .website-name{
     display:flex;
 }
 header .website-name .name{
-    font-size:50px;
+    font-size:20px;
     font-weight: 600;
     font-family:cursive;
 }
 header .website-name label{
     color:rgb(255, 255, 255);
-    background-color: rgb(57, 139, 216);
+    background-color: rgb(180, 195, 204);
     padding:0 5px;
     border-radius: 10px;
 }
@@ -63,7 +63,7 @@ header .login i:hover{
 .menu-icon .bar1,.menu-icon .bar3{
     width:25px;
     height:4px;
-    background-color: rgb(57, 139, 216);
+    background-color: rgb(180, 195, 204);
     transition: all 120ms linear;
 
 }
@@ -74,7 +74,7 @@ header .login i:hover{
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar2,.menu-icon .bar2 .mini-bar3,.menu-icon .bar2 .mini-bar4{
     width:6.25px;
     height:4px;
-    background-color: rgb(57, 139, 216);
+    background-color: rgb(180, 195, 204);
     transition: all 400ms ease-in-out;
 }
 .menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
@@ -143,12 +143,10 @@ header .login i:hover{
 .skip-buttons .buy-mentorship{
    width:50%;
    padding:15px;
-   border:0;
+   border:1px solid;
    font-weight: 600;
-   box-shadow: 1px 1px 3px lightgrey;
-   border-radius: 10px;
-   background-color: rgb(57, 139, 216);
-   color:white;
+   background-color: unset;
+   color:rgb(75, 72, 72);
 }
 .skip-buttons .more-projects{
     padding:15px;
@@ -182,7 +180,7 @@ header .login i:hover{
     height:100%;
 }
 .top-projects-container .project-title{
-    color:rgb(228, 124, 26);
+    color:rgb(43, 42, 42);
 }
 /*basic-projects*/
 .basic-projects{
@@ -208,7 +206,7 @@ header .login i:hover{
     padding:5px 0 0 0;
 }
 .basic-projects .wrap .text h3{
-    color:rgb(228, 124, 26);
+    color:rgb(15, 15, 15);
     padding:0 0 5px 5px;
 }
 .basic-projects .wrap .text span{
@@ -217,15 +215,14 @@ header .login i:hover{
 .basic-projects .wrap div button{
     padding:10px;
     width:100%;
-    background-color: rgb(57, 139, 216);
-    color:white;
+    background-color: unset;
+    color:rgb(75, 72, 72);;
     font-weight: 600;
-    border:0;
-    border-radius: 10px;
+    border:1px solid;
     margin-top: 3px;;
 }
 .basic-projects .wrap div button:hover{
-    background-color: rgb(228, 124, 26);
+    background-color: rgb(243, 235, 230);
     cursor: pointer;
 }
 /*about us*/
@@ -235,7 +232,7 @@ header .login i:hover{
     padding:20px;
 }
 .about-us .text label{
-    color:rgb(57, 139, 216);
+    color:rgb(171, 199, 224);
 }
 .about-us .text{
     width:500px;
@@ -250,7 +247,7 @@ header .login i:hover{
     border:1px solid lightgrey;
     padding:5px;
     width:fit-content;
-    color:rgb(74, 133, 180);
+    color:rgb(127, 140, 151);
 }
 .about-us .text .buttons{
     padding:10px;
@@ -266,21 +263,21 @@ header .login i:hover{
     font-weight: 600;
     border:1px solid;
     width:100%;
-    margin:5px 0;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px lightgrey; 
+    margin:5px 0; 
     background-color: unset;
-    color:rgb(57, 139, 216);
+    color:rgb(188, 216, 241);
+}
+.about-us .text .buttons button a{
+    text-decoration: none;
+    color:rgb(125, 153, 125);
 }
 .about-us .text .buttons .about-founder{
-    background-color: rgb(228, 124, 26);
-    color:white;
-    border:0;
+    background-color: unset;
+    color:rgb(135, 160, 194);
+    border:1px solid rgb(188, 216, 241);;
 }
 .about-us .text .buttons button:hover{
     cursor: pointer;
-    background-color:rgb(201, 111, 28);
-    color:white;
 }
 .about-us .text .buttons .view-projects{
     background-color: unset;
@@ -303,7 +300,6 @@ header .login i:hover{
     list-style: none;
     padding:20px;
     line-height: 3;
-    font-size: 30px;
     font-weight: 600;
 }
 .menu-popup ul li{
@@ -331,32 +327,30 @@ header .login i:hover{
     background-color: rgb(52, 180, 52);
     color:white;
     font-weight: 600;
-    border-radius: 10px;
     border:2px solid white;
+    border:0;
 }
 .menu-popup .button .close{
     padding:15px;
     width:40%;
-    border-radius: 10px;
     font-weight: 600;
-    background-color: red;
-    color:white;
-    border:2px solid;
+    background-color: rgb(255, 255, 255);
+    color:rgb(165, 31, 31);
+    border:0;
 }
 /*footer*/
 footer{
     text-align:center;
     padding:20px;
-    background-color: rgb(57, 139, 216);
+    background-color: rgb(139, 164, 187);
     color:white;
 
 }
 footer .book-class{
     padding:20px;
-    color:rgb(55, 105, 214);
+    color:rgb(105, 129, 180);
     font-weight: 900;
     border:0;
-    border-radius: 10px;
 }
 footer .book-class:hover{
     cursor: pointer;
