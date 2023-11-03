@@ -2,425 +2,184 @@
     padding:0;
     margin:0;
 }
-body{
-    color:rgb(43, 42, 42);
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-html{
-    scroll-behavior: smooth;
-}
-::-webkit-scrollbar{
-    display:none;
-}
+
 /*header*/
 header{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:30px;
-    padding:15px;
-    box-shadow:1px 1px 3px lightgrey;
-    margin-bottom:10px;
-    z-index:1;
-    box-sizing: border-box;
-    position:fixed;
-    background-color: white;
-    width: 100%;
-    top:0;
-}
-/*website name*/
-header .website-name{
-    display:flex;
-}
-header .website-name .name{
-    font-size:20px;
-    font-weight: 600;
-    font-family:cursive;
-}
-header .website-name label{
-    color:rgb(255, 255, 255);
-    background-color: rgb(180, 195, 204);
-    padding:0 5px;
-    border-radius: 10px;
-}
-/*login*/
-header .login{
-    min-width:max-content;
-    font-weight: 600;
-    margin-top: 4px;
-}
-header .login i:hover{
-    font-weight: 600;
-    cursor: pointer;
-    color:rgb(57, 139, 216);
-}
-/*menu icon*/
-.menu-icon{
-    display:flex;
-    gap:10px;
-    font-weight: 600;;
-}
-.menu-icon .bar1,.menu-icon .bar3{
-    width:25px;
-    height:4px;
-    background-color: rgb(180, 195, 204);
-    transition: all 120ms linear;
-
-}
-.menu-icon .bar2{
-    display:flex;
-    margin:3px 0;
-}
-.menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar2,.menu-icon .bar2 .mini-bar3,.menu-icon .bar2 .mini-bar4{
-    width:6.25px;
-    height:4px;
-    background-color: rgb(180, 195, 204);
-    transition: all 400ms ease-in-out;
-}
-.menu-icon .bar2 .mini-bar1,.menu-icon .bar2 .mini-bar3{
-    transition: all 250ms linear;
-}
-/*top projects*/
-.top-projects{
-    display:flex;
-    gap:5px;
-    background-color: rgb(255, 255, 255);
-    width:100%;
     padding:10px;
-    align-items: center;
-    border-radius: 10px 10px 0 0;
-    border-top:1px solid rgb(229, 232, 238);
-    border-right: 1px solid rgb(229, 232, 238);
-    border-left: 1px solid rgb(229, 232, 238);
-    margin-top: 70px;
+    border-bottom: 1px solid rgb(242, 244, 245);
 }
-.top-projects #pos1,.top-projects #pos2,.top-projects #pos3,.top-projects #pos4{
-    width:10px;
-    height:10px;
-    border:1px solid rgb(229, 232, 238);
-    border-radius: 2px;
-    background-color: white;
+header .company-name{
+    font-size:20px;
 }
-.top-projects #pos1{
-    background-color: rgb(158, 182, 235);
-}
-/*skip-buttons*/
-.skip-buttons{
-    width:100%;
-    z-index:1;
+header .company-name label{
     background-color: rgb(255, 255, 255);
-    padding:10px 5px 30px 5px;
-    box-shadow: 1px 1px 3px lightgrey;
-    border-radius: 0 0 10px 10px;
+    color:rgb(20, 65, 102);
 }
-.skip-buttons h2{
-    padding:10px 0;
+.short-about{
+    padding:10px;
 }
-.skip-buttons p{
-    padding:5px;
+.short-about span{
+    color:rgb(116, 158, 175);
     font-size: small;
 }
-.skip-buttons .price{
-    font-size: 20px;
+
+/*wrapper*/
+.wrapper{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.skip-buttons label{
+.wrapper .selection-section{
+    padding:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:10px;
+    width:400px;
+}
+.wrapper .selection-section div{
+    padding:20px;
+    text-align: center;
+    width:70%;
+    border:2px solid lightblue;
+    border-radius: 10px;
     font-weight: 600;
-    color:rgb(63, 62, 62);
 }
-.skip-buttons button:hover{
-    box-shadow: none;
+.wrapper .selection-section div:hover{
     cursor: pointer;
+    background-color: lightblue;
+    color:white;
 }
-.skip-buttons .next-btn,.skip-buttons .back-btn{
-    padding:15px;
-    border:0;
-    font-weight: 600;
-    background-color: unset;
-    box-shadow: 1px 1px 3px lightgrey;
-    border-radius: 4px;
-    width:23%
+/*mentorship*/
+.wrapper .mentorship{
+    border:1px solid rgb(248, 244, 244);
 }
-.skip-buttons .buy-mentorship{
-   width:50%;
-   padding:15px;
-   border:1px solid;
-   font-weight: 600;
-   background-color: unset;
-   color:rgb(75, 72, 72);
-}
-.skip-buttons .more-projects{
-    padding:15px;
-    width:100%;
-    background-color: unset;
-    border:1px solid;
-    border-radius:100px;
-    font-weight: 600;
-}
-.skip-buttons .more-projects{
+.wrapper .mentorship{
     display:none;
 }
-/*top-projects-container*/
-.top-projects-container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    padding:20px;
+.wrapper .mentorship .projects-header{
+    background-image:linear-gradient(to right, rgb(196, 202, 187), rgb(157, 216, 129),rgb(20, 94, 163));
+    width:100%;
+    height: 100px;
 }
-.top-projects-container .images{
-    width:500px;
-    height:200px;
-    display:flex;
-    overflow-x: hidden;
+.wrapper .mentorship .projects-icon{
+    width:70px;
+    height:70px;
+    background-color: rgb(127, 127, 240);
+    border-radius: 50%;
+    margin:-30px 0px 0 10px;
 }
-.top-projects-container .images .photo1,.top-projects-container .images .photo2,.top-projects-container .images .photo3,.top-projects-container .images .photo4{
-    min-width:100%;
-}
-.top-projects-container .images img{
-    width:100%; 
-    height:100%;
-}
-.top-projects-container .project-title{
-    color:rgb(43, 42, 42);
-}
-/*basic-projects*/
-.basic-projects{
+.wrapper .mentorship h2{
     padding:10px;
 }
-.basic-projects .wrap{
-    display:flex;
-    overflow-x: scroll;
-    gap:10px;
-    padding:10px;
+.wrapper .mentorship .breaker-line{
+    width:100%;
+    height:10px;
+    background-color: rgb(247, 243, 243);
 }
-.basic-projects .wrap .container{
-    box-shadow: 1px 1px 3px lightgrey;
+.wrapper .mentorship h2 span{
+    float:right;
+    color:rgb(53, 119, 97);
+}
+.wrapper .mentorship img{
+    width:100%;
     border-radius: 10px;
-    min-width:100px;
 }
-.basic-projects .wrap img{
-    width:100%;
-    height:100px; 
-    border-radius: 10px 10px 0 0;
-}
-.basic-projects .wrap .text{
-    padding:5px 0 0 0;
-}
-.basic-projects .wrap .text h3{
-    color:rgb(15, 15, 15);
-    padding:0 0 5px 5px;
-}
-.basic-projects .wrap .text span{
-    padding:0 0 0 5px;
-}
-.basic-projects .wrap div button{
-    padding:10px;
-    width:100%;
-    background-color: unset;
-    color:rgb(75, 72, 72);;
-    font-weight: 600;
-    border:1px solid;
-    margin-top: 3px;;
-}
-.basic-projects .wrap div button:hover{
-    background-color: rgb(243, 235, 230);
-    cursor: pointer;
-}
-/*about us*/
-.about-us{
-    display: flex;
-    justify-content: center;
-    padding:20px;
-}
-.about-us .text label{
-    color:rgb(171, 199, 224);
-}
-.about-us .text{
-    width:500px;
-    padding:50px 10px 10px 10px;
-    box-shadow: 1px 1px 3px lightgrey;
 
+.mentorship .projects-wrap{
+    padding:20px;
 }
-.about-us .text p{
-    padding:20px 0;
+.mentorship .projects-wrap .project-box{
+    padding:10px 0;
 }
-.about-us .text h3{
-    border:1px solid lightgrey;
-    padding:5px;
-    width:fit-content;
-    color:rgb(127, 140, 151);
+.mentorship .project-title{
+    padding:0px;
 }
-.about-us .text .buttons{
-    padding:10px;
-    border-radius: 10px;
+.mentorship .projects-wrap p{
+    padding:10px 0;
 }
-.about-us .text .buttons p{
-    padding:10px;
-    text-align: center;
-    font-size: small;
-}
-.about-us .text .buttons button{
+.mentorship .projects-wrap button{
     padding:15px;
+    width:45%;
+    border:0;
     font-weight: 600;
-    border:1px solid;
-    width:100%;
-    margin:5px 0; 
-    background-color: unset;
-    color:rgb(188, 216, 241);
 }
-.about-us .text .buttons button a{
-    text-decoration: none;
-    color:rgb(125, 153, 125);
-}
-.about-us .text .buttons .about-founder{
-    background-color: unset;
-    color:rgb(135, 160, 194);
-    border:1px solid rgb(188, 216, 241);;
-}
-.about-us .text .buttons button:hover{
-    cursor: pointer;
-}
-.about-us .text .buttons .view-projects{
-    background-color: unset;
+.mentorship .projects-wrap .buy-mentorship{
+    background-color: lightgreen;
 }
 
-/*menu popup*/
-.menu-popup{
-    position:fixed;
-    width:100%;
-    overflow:hidden;
-    height:0;
-    top:0px;
-    transition: height 800ms ease-in-out;
-    z-index:1;
-    background-color: rgb(57, 139, 216);
-    overflow-y: scroll;
-    box-sizing: border-box;
+/*contact us*/
+.contact-us{
+    display:none;
 }
-.menu-popup ul{
-    list-style: none;
+.contact-us p{
     padding:20px;
     line-height: 3;
+}
+.contact-us .whatsapp-us{
+    padding:10px;
+    background-color: grey;
+    margin-bottom: 10px;
+}
+.contact-us .whatsapp-us button{
+    padding:15px;
+    background-color: lightgreen;
+    border:0;
     font-weight: 600;
 }
-.menu-popup ul li{
-    background-color: rgb(255, 255, 255);
-    margin:5px 0 0 0;
-    color:rgb(57, 139, 216);
-    padding:5px;
-    border-radius: 10px;
-}
-.menu-popup ul li:hover{
-    cursor: pointer;
-    background-color:rgb(44, 112, 175);
-    color:white;
-}
-.menu-popup .button{
-    bottom:110px;
+
+/*founder-header*/
+.founder .founder-header{
     width:100%;
+    height:150px;
+    background-image:linear-gradient(to right, rgb(196, 202, 187), rgb(129, 206, 216),rgb(20, 94, 163));
+}
+.founder .image-box{
+    display:flex;
+    justify-content: center;
+}
+.founder .image-box .picture{
+    width:220px;
+    background-color: rgb(101, 138, 136);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -70px;
+    border:7px solid rgb(255, 255, 255);
+}
+.founder .image-box .picture img{
+    width:100%;
+}
+.founder .paragraph{
+    padding:20px;
+}
+.founder h3{
     padding:10px 0;
+    border:1px solid rgb(235, 241, 235);
     text-align: center;
-    box-sizing: border-box;
 }
-.menu-popup .request-project{
-    padding:15px;
-    width:50%;
-    background-color: rgb(52, 180, 52);
-    color:white;
-    font-weight: 600;
-    border:2px solid white;
-    border:0;
+.founder h2{
+    padding: 0px 0 10px 0;
+    text-align: center;
 }
-.menu-popup .button .close{
+.founder .buttons{
+    padding:10px;
+    background-color: rgb(116, 179, 204);
+    margin-top: 5px;
+}
+.founder button{
     padding:15px;
-    width:40%;
-    font-weight: 600;
-    background-color: rgb(255, 255, 255);
-    color:rgb(165, 31, 31);
     border:0;
+    font-weight: 600;
+}
+.founder .facebook{
+    background-color: lightblue;
+}
+.founder .whatsapp{
+    background-color: lightgreen;
 }
 /*footer*/
 footer{
-    text-align:center;
+    text-align: center;
     padding:20px;
-    background-color: rgb(139, 164, 187);
-    color:white;
-
-}
-footer .book-class{
-    padding:20px;
-    color:rgb(105, 129, 180);
-    font-weight: 900;
-    border:0;
-}
-footer .book-class:hover{
-    cursor: pointer;
-}
-/*frequently asked questions*/
-footer .content-wrap .faqs{
-    background-color: unset;
-    text-align: start;
-    width:400px;
-    margin-bottom: 20px;
-}
-footer .faqs-heading{
-    padding:10px;
-    color:rgb(236, 232, 232);
-}
-footer .faqs ul{
-    padding:10px;
-    list-style: none;
-    font-weight: 600;
-    background-color: white;
-    margin-bottom: 4px;
-    border-radius: 10px;
-
-}
-footer .faqs ul label{
-    color:rgb(57, 139, 216);
-}
-footer .faqs ul li{
-    font-weight: 100;
-    color:rgb(57, 139, 216);
-    padding: 10px 0;
-}
-footer .faqs ul li{
-    display: none;
-}
-footer .content-wrap .faqs .icon{
-    border:1px solid rgb(58, 99, 153);;
-    padding:20px;
-    border-radius: 10px;
-}
-footer .content-wrap .faqs .question-box{
-    color:rgb(58, 99, 153);
-}
-footer .footer-below{
-    padding:20px;
-    color:rgb(230, 224, 224);
-}
-/*BIG SCREEN*/
-@media  screen and (min-width:700px){
-/*horizontal-scroll*/
-.horizontal-scroll{
-    justify-content: center;
-}
-/*skip-buttons*/
-.skip-buttons {
-    width:500px;
-}
-}
-/*SMALL SCREEN*/
-@media screen and  (max-width:500px){
-/*header*/
-header{
-    justify-content: end;
-}
-/*website name*/
-header .website-name{
-    width:100%;
-}
-/*summary section*/
-.summary-section .services .services-list .one,.summary-section .services .services-list .two,.summary-section .services .services-list .three,.summary-section .services .services-list .four,.summary-section .services .services-list .five,.summary-section .services .services-list .six{
-    width:100%;
-}
+    background-color: rgb(218, 223, 223);
 }

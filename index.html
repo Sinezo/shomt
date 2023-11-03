@@ -2,161 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>seedai</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Home | sineluTec</title>
 </head>
 <body>
     <!--HEADER-->
-    <header id="header">
-        <!--website name-->
-        <div class="website-name" onclick="window.location='index.html'">
-            <div class="name">Sinelu<label>Tec</label></div>
-        </div>
-        <!--login-->
-        <div class="login" onclick="window.location='index.html#login-form'">
-            Login <i class="fa-regular fa-circle-user"></i>
-        </div>
-        <!--menu icon-->
-        <div class="menu-icon">Menu
-           <!--wrap bars-->
-           <div class="wrap-bars" onclick="MENU()">
-            <div class="bar1"></div>
-            <div class="bar2">
-                <div class="mini-bar1"></div><div class="mini-bar2"></div><div class="mini-bar3"></div><div class="mini-bar4"></div>
-            </div>
-            <div class="bar3"></div>
-           </div>
-        </div>
+    <header>
+        <div class="company-name" onclick="window.location='index.html'">sine<label>lutec</label></div>
     </header>
 
-    <!--TOP PROJECTS CONTAINER-->
-    <div class="top-projects-container" id="top-projects-container">
-        <div class="top-projects" id=top-projects>
-            <h2>Top Projects</h2>
-        </div>
-        <!--image-->
-        <div class="images">
-            <!--photo1-->
-            <div class="photo1">
-                <img src="12.04.2023_19.02.46_REC.png" alt="image">
-            </div>
-            <!--photo2-->
-            <div class="photo2">
-                <img src="Screenshot (13).png" alt="image">
-            </div>
-            <!--photo3-->
-            <div class="photo3">
-                <img src="BOTTLE FILLING AND PRICING SYSTEM.png" alt="image">
-            </div>
-            <!--photo4-->
-            <div class="photo4">
-                <img src="Screenshot_20230806_173159_Gallery.jpg" alt="image">
-            </div>
-        </div>
-        <!--skip buttons-->
-    <div class="skip-buttons">
-        <h2 class="project-title">Password Lock System</h2>
-        <p id="projects-paragraph">
-            A security system that only gives access to those entered the correct password.
-        </p>
-        <p>
-            <label>Mentorship:</label> <span class="mentorship"><s>R1200.00</s> <b class=price>R899.99</b></span>
-        </p>
-        <button class="buy-mentorship" onclick="BUY_BTN()">Buy</button> <button onclick="BACK_IMAGES()" class="back-btn"><i class="fa-solid fa-chevron-left" id="back-chevron"></i></button> <button onclick="NEXT_IMAGES()" class="next-btn"><i class="fa-solid fa-chevron-right" id=next-chevron></i></button>
-        <br><button class="more-projects">More Projects <i class="fa-solid fa-chevron-down"></i></button>
-    </div>
+    <!--short about-->
+    <div class="short-about">
+        > <span>fascinating innovative engineering</span>
     </div>
 
-    <!--BASIC PROJECTS-->
-    <div class="basic-projects">
-        <h2>Basic Projects (educational)</h2>
-        <div class="wrap">
-            <!--ohmeter-->
-            <div class="container">
-                <img src="ohmeter.png" alt="">
-                <div class="text">
-                    <h3>Ohmeter</h3>
-                    <span>Mentorship: <b>R200.00</b></span>
-                    <button class="buy-mentorship">Buy</button>
+    <!--WRAPPER-->
+    <div class="wrapper">
+        <!--selection section-->
+        <div class="selection-section">
+            <div class="mentorship-select" onclick="MENTORSHIP()">Mentorship</div> 
+            <div class="education">Education</div>
+            <div class="services">Services</div>
+            <div class="contact-us-select" onclick="CONTACT_US()">Contact us</div>
+        </div>
+
+        <!--mentorship-->
+        <div class="mentorship">
+            <div class="projects-header"></div>
+            <div class="projects-icon"></div>
+            <h2>Projects <span>Total : 2</span></h2>
+            <div class="breaker-line"></div>
+            <h4 style="padding:10px;">Arduino Based</h4>
+            <div class="breaker-line"></div>
+            <div class="projects-wrap">
+                <div class="project-box">
+                    <img src="BOTTLE FILLING AND PRICING SYSTEM.png" alt="bottle filling">
+                    <h1 class="project-title">SMART FILLING AND PRICING SYSTEM</h1>
+                    <div class="price">R1400.00</div>
+                    <p>
+                        A system that fills any container at your command, measures the amount 
+                        of litres filled and calculates the price accordingly;
+                    </p>
+                    <button class="buy-mentorship">Buy mentorship</button> <button class="learn-more">Learn more</button>
                 </div>
-            </div>
-            <!--dc voltmenter-->
-            <div class="container">
-                <img src="dcvoltmeter.png" alt="">
-                <div class="text">
-                    <h3>DC Voltmeter</h3>
-                    <span>Mentorship: <b>R210.00</b></span>
-                    <button class="buy-mentorship">Buy</button>
+                <div class="breaker-line"></div>
+
+                <div class="project-box">
+                    <img src="PASSWORD LOCK SYSTEM.png" alt="password lock">
+                    <h1 class="project-title">PASSWORD LOCK SYSTEM</h1>
+                    <div class="price">R1100.00</div>
+                    <p>
+                        A system that ensures security by giving access only to those entered 
+                        the correct password and denies access when the password entered is incorrect.
+                    </p>
+                    <button class="buy-mentorship">Buy mentorship</button> <button class="learn-more">Learn more</button>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--ABOUT US-->
-    <div class="about-us">
-        <!--text-->
-        <div class="text">
-            <h1>About Sinelu<label>Tec</label></h1>
+        <!--CONTACT US-->
+        <div class="contact-us">
             <p>
-                Sinethemba Lusawana Technologies <i>(sineluTec)</i> is an engineering company whose main focus is on the 
-                design of electrical and electronic systems with significance of solving real world problems.
+                <h2>Contact us</h2>
+            PHONE:+27786052462 <br>
+            EMAIL: <a href="mailto:lusawanasinethemba@gmail.com">lusawanasinethemba@gmail.com</a>
+            <br><br>
+            13 Sisson Street Fortgale Umtata
             </p>
-            <!--our mission-->
-            <div class="mission">
-                <h3>Our Mission</h3>
-                <p>
-                    Our mission is to solve daily real world problems by employing modern technology and science. We want to be known 
-                    as one of the best electrical design companies that produce outstanding products and systems.
-                </p>
-            </div>
-            <!--our vision-->
-            <div class="our-vision">
-                <h3>Our Vision</h3>
-                <p>
-                    We would like to see knowledgable and enthusiastic electrical students, electricians and young electrical engineers.
-                We want to share knowledge and skills to everyone, that is why we offer <b>mentorship</b> at affordable prices to 
-                    unirvesity students and electrial enthusiasts.
-                </p>
-            </div>
-            <div class="buttons">
-                <button class="jwhatspp-us"><a href="https://wa.me/27786052462?text=Hello there">WhatsApp Us</a></button><button class="about-founder" onclick="window.location='founder.html'">About the Founder</button>
-                <p>
-                    Our projects are user-friendly and have good protection where applicable. <i class="fa-regular fa-circle-check"></i>
-                </p>
+
+            <div class="whatsapp-us">
+                <button>Chat on WhatsApp</button>
             </div>
         </div>
     </div>
+    <!--FOUNDER-->
+    <div class="founder">
+        <div class="founder-header"></div>
 
-    <!--MENU POPUP-->
-    <div class="menu-popup">
-        <!--wrap menu-->
-        <ul class="ul">
-            <li>Blog/Announcement</li>
-            <li>Competitions</li>
-            <li onclick="window.location='founder.html'">About the Founder</li>
-            <li>Contact us</li>
-        </ul>
-        <div class="button">
-            <button class="request-project">Request Project</button> <button class="close" onclick="MENU()">CLOSE</button>
+        <div class="image-box">
+                <div class="picture">
+                    <img src="Picture1.png" alt="">
+                </div>
+        </div>
+        <div class="paragraph">
+            <h3>Founder</h3>
+            <h2>Sinethemba Lusawana</h2>
+            <p>
+                Sinethemba Lusawana was born in rural Ntsimba Engcobo in the Eastern Cape. He is holding a National Diploma 
+                in Electrical Engineering obtained it from Walter Sisulu University.
+
+                <br><br>He founded <b>sineluTec</b> with the aim of transforming his creative ideas into reality. With all his creativity he also 
+                has the aim of sharing knowledge by mentoring students to build projects of their choices from their creative minds. 
+            </p>
+            <div class="buttons">
+                <button class="facebook">Facebook Profile</button> <button class="whatsapp">WhatsApp</button>
+            </div>
         </div>
     </div>
 
     <!--FOOTER-->
     <footer>
-        <button class="book-class">BOOK AN ONLINE CLASS</button>
-        <div class="footer-below">
-            Copyright &copy;2023 seedai.  All Rights Reserved <br>
-        Website Developed by: Sinethemba Lusawana
-        </div>
+        copyright &copy;2023 sinelutec All Rights Reserved
     </footer>
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
