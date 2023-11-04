@@ -2,12 +2,15 @@
     padding:0;
     margin:0;
 }
+body{
+font-family: 'Ubuntu', sans-serif;
+}
 
 /*header*/
 header{
     padding:10px;
     border-bottom: 1px solid rgb(242, 244, 245);
-    background-color: rgb(24, 86, 221);
+    background-image:linear-gradient(to right, rgb(26, 75, 167), rgb(129, 167, 216),rgb(25, 42, 194));
     box-shadow: 1px 3px 3px rgb(229, 231, 231);
 }
 header .company-name{
@@ -37,28 +40,32 @@ header .company-name label{
 .wrapper .selection-section{
     padding:20px;
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap:10px;
-    width:400px;
 }
 .wrapper .selection-section div{
     padding:20px;
     text-align: center;
-    width:70%;
     border:0;
     border-radius: 10px;
-    font-weight: 600;
     box-shadow:1px 5px 3px rgb(185, 185, 184);
-    color:rgb(255, 255, 255);
-    text-shadow: 1px 3px 4px rgb(149, 156, 140);
-    background-color:rgb(24, 86, 221); ;
-    
+    color:rgb(110, 109, 109);
+    background-color: rgb(255, 255, 255);
+    width:200px;
 }
-.wrapper .selection-section div:hover{
-    cursor: pointer;
-    background-color: rgb(13, 59, 158);
+.wrapper .selection-section div p{
+    padding:10px;
+}
+.wrapper .selection-section div button{
+    padding:15px;
+    width:100%;
+    border:0;
+    font-weight: 600;
+    background-color: rgb(75, 117, 233);;
     color:white;
+    box-shadow: 1px 2px 3px rgb(114, 113, 113);
+    border-radius: 10px;
 }
 /*mentorship*/
 .mentorship{
@@ -81,7 +88,7 @@ header .company-name label{
     border: 4px solid white;;
 }
 .mentorship h2{
-    
+    font-family:serif;
     padding:10px;
 }
 .mentorship .breaker-line{
@@ -111,6 +118,7 @@ header .company-name label{
 .mentorship .project-title{
     padding:0px;
     text-transform:unset;
+    font-family: serif;
 }
 .mentorship .projects-wrap p{
     padding:10px 0;
@@ -120,11 +128,12 @@ header .company-name label{
     width:45%;
     border:0;
     font-weight: 600;
-    box-shadow: 1px 2px 3px;
+    box-shadow: 1px 2px 3px black;
     border-radius: 10px;
 }
 .mentorship .projects-wrap .buy-mentorship{
     background-color: rgb(75, 117, 233);
+    color:white;
 }
 .mentorship .project-box{
     display:flex;
@@ -143,9 +152,11 @@ header .company-name label{
     }
 }
 /*contact us*/
+.contact-us{
+    padding: 10px;;
+}
 .contact-us p{
-    padding:20px;
-    line-height: 3;
+    padding:40px;
 }
 .contact-us .whatsapp-us{
     padding:10px;
@@ -154,9 +165,12 @@ header .company-name label{
 }
 .contact-us .whatsapp-us button{
     padding:15px;
-    background-color: lightgreen;
+    background-color: rgb(24, 168, 55);
+    color: white;
     border:0;
     font-weight: 600;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 10px;
 }
 
 /*founder-header*/
