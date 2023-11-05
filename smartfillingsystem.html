@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Smart Filling and Pricing System</title>
+    <style>
+        .wrapper-box{
+            
+        }
+        .wrapper-box .box{
+            padding:30px
+        }
+        .wrapper-box .buttons{
+            padding:10px;
+            position:fixed;
+            background-color: rgb(242, 243, 223);
+            width:100%;
+            bottom:0;
+        }
+        .wrapper-box .buttons button{
+            padding:15px;
+            width:50%;
+            background-color: rgb(29, 148, 29);
+            font-weight: 600;
+            border:0;
+            border-radius: 10px;
+            color:white;
+        }
+        .wrapper-box .answers{
+            margin:20px 0;
+            line-height: 3;
+            box-shadow: 1px 1px 3px;
+            padding:5px;
+            border-radius: 10px;
+        }
+        .wrapper-box .header{
+            padding:10px;
+            text-align: end;
+            border:1px solid rgb(247, 242, 242);
+            margin-bottom: 20px;
+            color:rgb(124, 123, 123);
+        }
+    </style>
+</head>
+<body>
+    <!--WRAPPER-->
+    <div class="wrapper-box">
+        <!--intro-->
+        <div class="box" id="intro-theory">
+            A Smart Filling and Pricing System is a system that is capable of filling containers using a dc pump.
+            <br><br> It measures the amount of litres filled by the dc pump and calculates the price for those litres.
+        </div>
+
+        <div class="box" id="intro-questions" style="display:none;">
+            <div class="header">
+                Points: <span class="mypoints1">0</span>
+            </div>
+            This Smart Filling and Pricing System uses _______________ to pump the liquid to fill the container. 
+            <div class="answers">
+                <input type="radio" name="pump" value="a"> <b>A</b>) Induction Motor 
+                <br><input type="radio" name="pump" value="b" id="dc-pump"> <b>B</b>) DC pump 
+                <br><input type="radio" name="pump" value="c"> <b>C</b>) AC pump 
+                <br><input type="radio" name="pump" value="d"> <b>D</b>) Stepper motor 
+            </div>
+        </div>
+
+        <!--second theory-->
+        <div class="box" id="second-theory" style="display:none;">
+            To determine how many litres this DC pump pumps per specific time, a stop watch was used and time was recorded down. 
+
+            <br><br>
+            <h4 style="font-weight: 100;padding:10px 0;text-decoration: underline;">Findings</h4>
+            After experimenting it was found that the pump pumps <b>100ml per 3 seconds</b>.
+
+            <div class="note" style="margin-top: 30px;border:1px solid lightgrey;padding:10px;">
+               <b><i><u>Note</u></i></b> This, of course, will differ with respect to the diameter of the tube and the voltage applied to the pump.
+               <br><br><span style="color:grey;font-size: small;">We suggest you do your own experiment using a stopwatch and record down your own findings.</span>
+            </div>
+        </div>
+        <div class="box" id="second-theory-questions" style="display:none;">
+            <div class="header">
+                Points: <span class="mypoints2">0</span>
+            </div>
+            If we have 100ml filled per 3 seconds, how many litres will be filled in 12 seconds?
+            <div class="answers">
+                <input type="radio" name="litres_filled" value="1200"> <b>A</b>) 1200ml 
+                <br><input type="radio" name="litres_filled" value="300"> <b>B</b>) 300ml
+                <br><input type="radio" name="litres_filled" value="400"> <b>C</b>) 400ml
+                <br><input type="radio" name="litres_filled" value="1"> <b>D</b>) 1L 
+            </div>
+        </div>
+        <!--buttons-->
+        <div class="buttons">
+            <button class="next" onclick="CONTINUE()">Continue</button>
+        </div>
+    </div>
+
+    <script>
+        var position=1;
+        var points =12;
+        var a=0;
+        function CONTINUE(){
+            if(position==1){
+                document.querySelector('#intro-theory').style.display='none';
+                document.querySelector('#intro-questions').style.display='block';
+                position=2;
+                document.querySelector('.mypoints1').innerHTML=points; 
+            }
+            else if(position==2){
+                if(document.querySelector('#dc-pump').checked){
+                    for(let i=0;i<3;i++){
+                        setTimeout(function(){
+                            points++;
+                            a++;
+                            document.querySelector('.mypoints1').innerHTML=points;
+                        },i*100);
+                        if(a>=3){
+                            document.querySelector('#intro-questions').style.display='none';
+                            document.querySelector('#second-theory').style.display='block';
+                        }
+                    }
+                }
+                position=3;
+            }
+            else if(position==3){
+                document.querySelector('.mypoints2').innerHTML=points;
+                document.querySelector('#second-theory').style.display='none';
+                document.querySelector('#second-theory-questions').style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
