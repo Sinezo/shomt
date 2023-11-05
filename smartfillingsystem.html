@@ -64,10 +64,10 @@
             </div>
             This Smart Filling and Pricing System uses _______________ to pump the liquid to fill the container. 
             <div class="answers">
-                <input type="radio" name="pump" value="a"> <b>A</b>) Induction Motor 
+                <input type="radio" name="pump" value="a" id="induction-motor"> <b>A</b>) Induction Motor 
                 <br><input type="radio" name="pump" value="b" id="dc-pump"> <b>B</b>) DC pump 
-                <br><input type="radio" name="pump" value="c"> <b>C</b>) AC pump 
-                <br><input type="radio" name="pump" value="d"> <b>D</b>) Stepper motor 
+                <br><input type="radio" name="pump" value="c" id="ac-pump"> <b>C</b>) AC pump 
+                <br><input type="radio" name="pump" value="d" id="stepper-motor"> <b>D</b>) Stepper motor 
             </div>
         </div>
 
@@ -90,21 +90,21 @@
             </div>
             If we have 100ml filled per 3 seconds, how many litres will be filled in 12 seconds?
             <div class="answers">
-                <input type="radio" name="litres_filled" value="1200"> <b>A</b>) 1200ml 
-                <br><input type="radio" name="litres_filled" value="300"> <b>B</b>) 300ml
-                <br><input type="radio" name="litres_filled" value="400"> <b>C</b>) 400ml
-                <br><input type="radio" name="litres_filled" value="1"> <b>D</b>) 1L 
+                <input type="radio" name="litres_filled" value="1200ml" id="A-1200ml"> <b>A</b>) 1200ml 
+                <br><input type="radio" name="litres_filled" value="300ml" id="B-300ml"> <b>B</b>) 300ml
+                <br><input type="radio" name="litres_filled" value="400ml" id="C-400ml"> <b>C</b>) 400ml
+                <br><input type="radio" name="litres_filled" value="1l" id="D-1L"> <b>D</b>) 1L 
             </div>
         </div>
         <!--buttons-->
         <div class="buttons">
-            <button class="next" onclick="CONTINUE()">Continue</button>
+            <button class="next" onclick="CONTINUE()">Continue</button> <button class="feedback" style="width:40%;background-color: unset;color:red;"></button>
         </div>
     </div>
 
     <script>
         var position=1;
-        var points =12;
+        var points =0;
         var a=0;
         function CONTINUE(){
             if(position==1){
@@ -115,24 +115,72 @@
             }
             else if(position==2){
                 if(document.querySelector('#dc-pump').checked){
+                    document.querySelector('.feedback').innerHTML='Correct Answer';
+                    document.querySelector('.feedback').style.color='green';
                     for(let i=0;i<3;i++){
                         setTimeout(function(){
-                            points++;
-                            a++;
+                            points=i;
                             document.querySelector('.mypoints1').innerHTML=points;
+                            if(i==2){
+                                setTimeout(function(){
+                                    document.querySelector('#intro-questions').style.display='none';
+                                    document.querySelector('#second-theory').style.display='block';
+                                    position=3;
+                                    document.querySelector('.feedback').innerHTML='';
+                                },2000);
+                            }
                         },i*100);
-                        if(a>=3){
-                            document.querySelector('#intro-questions').style.display='none';
-                            document.querySelector('#second-theory').style.display='block';
-                        }
+                    }
+                    
+                }
+                else{
+                    if(document.querySelector('#ac-pump').checked || document.querySelector('#induction-motor').checked || document.querySelector('#stepper-motor').checked){
+                        document.querySelector('.feedback').innerHTML='Wrong Answer';
+                        document.querySelector('.feedback').style.color='red';
+                    }
+                    else{
+                        document.querySelector('.feedback').innerHTML='Please Select';
+                        document.querySelector('.feedback').style.color='chocolate';
                     }
                 }
-                position=3;
+                
             }
             else if(position==3){
                 document.querySelector('.mypoints2').innerHTML=points;
                 document.querySelector('#second-theory').style.display='none';
                 document.querySelector('#second-theory-questions').style.display='block';
+                position=4;
+            }
+            else if(position==4){
+                if(document.querySelector('#C-400ml').checked){
+                    document.querySelector('.feedback').innerHTML='Correct Answer';
+                    document.querySelector('.feedback').style.color='green';
+                    for(let i=2;i<6;i++){
+                        setTimeout(function(){
+                            points=i;
+                            document.querySelector('.mypoints2').innerHTML=points;
+                            if(i==4){
+                                setTimeout(function(){
+                                    document.querySelector('#intro-questions').style.display='none';
+                                    document.querySelector('#second-theory').style.display='none';
+                                    position=3;
+                                },2000);
+                            }
+                        },i*100);
+                    }
+                    
+                }
+                else{
+                    if(document.querySelector('#A-1200ml').checked || document.querySelector('#B-300ml').checked || document.querySelector('#D-1L').checked){
+                        document.querySelector('.feedback').innerHTML='Wrong Answer';
+                        document.querySelector('.feedback').style.color='red';
+                    }
+                    else{
+                        document.querySelector('.feedback').innerHTML='Please Select';
+                        document.querySelector('.feedback').style.color='chocolate';
+                    }
+                }
+                
             }
         }
     </script>
