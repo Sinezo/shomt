@@ -11,9 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
     <title>Smart Filling and Pricing System</title>
     <style>
-        .wrapper-box{
-            
-        }
         .wrapper-box .box{
             padding:30px
         }
@@ -54,8 +51,13 @@
     <div class="wrapper-box">
         <!--intro-->
         <div class="box" id="intro-theory">
-            A Smart Filling and Pricing System is a system that is capable of filling containers using a dc pump.
+            This Smart Filling and Pricing System is a system that is capable of filling containers using a dc pump.
             <br><br> It measures the amount of litres filled by the dc pump and calculates the price for those litres.
+            <br><br><p style="border-top:1px solid lightgrey;padding:30px 0;">
+                <img src="images (2).jpeg" alt="" style="width:100%;box-shadow: 1px 1px 3px;border-radius: 10px;"><br><br>
+                Yes you have seen this filling machine on Petrol Stations where you give the number of litres you want to fill or give amount of money you want to fill with. It then does 
+                its thing and calculates what needs to be calculated depending on what the user entered. (money/litres)
+            </p><br><br><br>
         </div>
 
         <div class="box" id="intro-questions" style="display:none;">
@@ -77,7 +79,7 @@
 
             <br><br>
             <h4 style="font-weight: 100;padding:10px 0;text-decoration: underline;">Findings</h4>
-            After experimenting it was found that the pump pumps <b>100ml per 3 seconds</b>.
+            After experimenting, it was found that the pump pumps <b>100ml per 3 seconds</b>.
 
             <div class="note" style="margin-top: 30px;border:1px solid lightgrey;padding:10px;">
                <b><i><u>Note</u></i></b> This, of course, will differ with respect to the diameter of the tube and the voltage applied to the pump.
@@ -96,93 +98,45 @@
                 <br><input type="radio" name="litres_filled" value="1l" id="D-1L"> <b>D</b>) 1L 
             </div>
         </div>
-        <!--buttons-->
+
+        <!--third theory-->
+        <div class="box" id="third-theory" style="display:none;">
+            Knowing how long it will take to fill a specific amount of liquid has been our great achievement so far. 
+            <br><br>We now know it will take 3 seconds to fill 100ml . We can go on and try to figure out how long it will take 
+            to fill any amount of liquid using the formula: <br><br><br>
+            <label style="border:1px dotted;padding:10px;">T = t/100 * L</label> 
+            <br><br>
+            Where,
+            <br><br>T = total time
+            <br>t = time it takes per specific litres 
+            <br>L = litres to be filled
+            <br><br><label><u>Example</u></label>
+            <p style="padding:10px 0;color:rgb(41, 40, 40);">
+                You went to a soccer game with this machine, 4 of your friends were so excited to see this amazing piece of work that 
+                they wanted to see it in action. 2 of them were carrying 300ml bottles and the other 2 were carrying 800ml bottles. How long did it take to fill 
+                all their bottles without considering the time where you had to stop and fill the following bottle? 
+                <br><br><label><i><u>Solution</u></i></label><br><br>
+                Data: T = ?<br>
+                L = 2 * 300 + 2 * 800 = 2200ml <br>
+                t = 3 seconds <br>
+                <br>
+                using the formula <label style="border:1px dotted;padding:10px;">T = t/100 * L</label>
+                <br><br>T = 3/100 * 2200 
+                <br> = 66 seconds
+                <br><br>That is 1 minute and 6 seconds.
+                <br>
+            </p><br><br><br><br>
+        </div>
+
+
+
+        <!--BUTTONS-->
         <div class="buttons">
             <button class="next" onclick="CONTINUE()">Continue</button> <button class="feedback" style="width:40%;background-color: unset;color:red;"></button>
         </div>
     </div>
 
-    <script>
-        var position=1;
-        var points =0;
-        var a=0;
-        function CONTINUE(){
-            if(position==1){
-                document.querySelector('#intro-theory').style.display='none';
-                document.querySelector('#intro-questions').style.display='block';
-                position=2;
-                document.querySelector('.mypoints1').innerHTML=points; 
-            }
-            else if(position==2){
-                if(document.querySelector('#dc-pump').checked){
-                    document.querySelector('.feedback').innerHTML='Correct Answer';
-                    document.querySelector('.feedback').style.color='green';
-                    for(let i=0;i<3;i++){
-                        setTimeout(function(){
-                            points=i;
-                            document.querySelector('.mypoints1').innerHTML=points;
-                            if(i==2){
-                                setTimeout(function(){
-                                    document.querySelector('#intro-questions').style.display='none';
-                                    document.querySelector('#second-theory').style.display='block';
-                                    position=3;
-                                    document.querySelector('.feedback').innerHTML='';
-                                },2000);
-                            }
-                        },i*100);
-                    }
-                    
-                }
-                else{
-                    if(document.querySelector('#ac-pump').checked || document.querySelector('#induction-motor').checked || document.querySelector('#stepper-motor').checked){
-                        document.querySelector('.feedback').innerHTML='Wrong Answer';
-                        document.querySelector('.feedback').style.color='red';
-                    }
-                    else{
-                        document.querySelector('.feedback').innerHTML='Please Select';
-                        document.querySelector('.feedback').style.color='chocolate';
-                    }
-                }
-                
-            }
-            else if(position==3){
-                document.querySelector('.mypoints2').innerHTML=points;
-                document.querySelector('#second-theory').style.display='none';
-                document.querySelector('#second-theory-questions').style.display='block';
-                position=4;
-            }
-            else if(position==4){
-                if(document.querySelector('#C-400ml').checked){
-                    document.querySelector('.feedback').innerHTML='Correct Answer';
-                    document.querySelector('.feedback').style.color='green';
-                    for(let i=2;i<6;i++){
-                        setTimeout(function(){
-                            points=i;
-                            document.querySelector('.mypoints2').innerHTML=points;
-                            if(i==4){
-                                setTimeout(function(){
-                                    document.querySelector('#intro-questions').style.display='none';
-                                    document.querySelector('#second-theory').style.display='none';
-                                    position=3;
-                                },2000);
-                            }
-                        },i*100);
-                    }
-                    
-                }
-                else{
-                    if(document.querySelector('#A-1200ml').checked || document.querySelector('#B-300ml').checked || document.querySelector('#D-1L').checked){
-                        document.querySelector('.feedback').innerHTML='Wrong Answer';
-                        document.querySelector('.feedback').style.color='red';
-                    }
-                    else{
-                        document.querySelector('.feedback').innerHTML='Please Select';
-                        document.querySelector('.feedback').style.color='chocolate';
-                    }
-                }
-                
-            }
-        }
+    <script src="smartfillingsystem.js">
     </script>
 </body>
 </html>
