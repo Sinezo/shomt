@@ -68,6 +68,9 @@ header .company-name label{
     padding:10px;
     box-shadow: 1px 2px 3px grey;
 }
+.wrapper .selection-section .box .icon div i{
+    font-size: larger;
+}
 .wrapper .selection-section div p{
     padding:10px;
 }
@@ -135,10 +138,12 @@ header .company-name label{
 .mentorship .project-title{
     padding:0px;
     text-transform:unset;
-    font-family: serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .mentorship .projects-wrap p{
     padding:10px 0;
+
+    font-size: small;
 }
 .mentorship .projects-wrap button{
     padding:15px;
@@ -149,7 +154,7 @@ header .company-name label{
     border-radius: 10px;
 }
 .mentorship .projects-wrap .buy-mentorship{
-    background-color: rgb(180, 192, 16);;
+    background-color: rgb(177, 64, 20);
     color:white;
 }
 .mentorship .project-box{

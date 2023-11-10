@@ -11,6 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
     <title>Smart Filling and Pricing System</title>
     <style>
+        .project-title{
+            padding:10px;
+            color:grey;
+            box-shadow: 1px 1px 3px grey;
+            position: fixed;
+            width:100%;
+            background-color: white;
+        }
         .wrapper-box .box{
             padding:30px
         }
@@ -24,7 +32,7 @@
         .wrapper-box .buttons button{
             padding:15px;
             width:50%;
-            background-color: rgb(29, 148, 29);
+            background-color: rgb(177, 64, 20);
             font-weight: 600;
             border:0;
             border-radius: 10px;
@@ -47,6 +55,10 @@
     </style>
 </head>
 <body>
+    <!--PROJECT TITLE-->
+    <div class="project-title">
+        SMART FILLING AND PRICING SYSTEM
+    </div><br><br><br>
     <!--WRAPPER-->
     <div class="wrapper-box">
         <!--intro-->
@@ -64,6 +76,7 @@
             <div class="header">
                 Points: <span class="mypoints1">0</span>
             </div>
+            <h3 style="padding:20px 0;">Question 1 (2)</h3>
             This Smart Filling and Pricing System uses _______________ to pump the liquid to fill the container. 
             <div class="answers">
                 <input type="radio" name="pump" value="a" id="induction-motor"> <b>A</b>) Induction Motor 
@@ -86,10 +99,12 @@
                <br><br><span style="color:grey;font-size: small;">We suggest you do your own experiment using a stopwatch and record down your own findings.</span>
             </div>
         </div>
+        <!--second-theory questions-->
         <div class="box" id="second-theory-questions" style="display:none;">
             <div class="header">
                 Points: <span class="mypoints2">0</span>
             </div>
+            <h3 style="padding:20px 0;">Question 2 (3)</h3>
             If we have 100ml filled per 3 seconds, how many litres will be filled in 12 seconds?
             <div class="answers">
                 <input type="radio" name="litres_filled" value="1200ml" id="A-1200ml"> <b>A</b>) 1200ml 
@@ -126,6 +141,20 @@
                 <br><br>That is 1 minute and 6 seconds.
                 <br>
             </p><br><br><br><br>
+        </div>
+        <!--third-theory questions-->
+        <div class="box" id="third-theory-questions" style="display:none;">
+                <div class="header">
+                    Points: <span class="mypoints3">0</span>
+                </div>
+                <h3 style="padding:20px 0;">Question 3 (3)</h3>
+                Using the information discussed on the previous slide, how long would it take to fill a 1.23L bottle?
+                <div class="answers">
+                    <input type="radio" name="time-will-take" id="A-notverylong"> <b>A</b>) Not very long 
+                    <br><input type="radio" name="time-will-take" id="B-10seconds"> <b>B</b>) 10 seconds
+                    <br><input type="radio" name="time-will-take" id="C-36seconds"> <b>C</b>) 36.9 seconds
+                    <br><input type="radio" name="time-will-take"  id="D-37seconds"> <b>D</b>) 37 seconds
+                </div>
         </div>
 
 

@@ -65,7 +65,7 @@ function CONTINUE(){
                             document.querySelector('#second-theory-questions').style.display='none';
                             document.querySelector('#third-theory').style.display='block';
                             document.querySelector('.feedback').innerHTML='';
-                            position=3;
+                            position=5;
                         },2000);
                     }
                 },i*100);
@@ -74,6 +74,49 @@ function CONTINUE(){
         }
         else{
             if(document.querySelector('#A-1200ml').checked || document.querySelector('#B-300ml').checked || document.querySelector('#D-1L').checked){
+                document.querySelector('.feedback').innerHTML='Wrong Answer';
+                document.querySelector('.feedback').style.color='red';
+                /*setTimeout(function(){
+                            document.querySelector('#intro-questions').style.display='none';
+                            document.querySelector('#second-theory').style.display='none';
+                            position=3;
+                        },2000);*/
+            }
+            else{
+                document.querySelector('.feedback').innerHTML='Please Select';
+                document.querySelector('.feedback').style.color='chocolate';
+            }
+        }
+        
+    }
+    else if(position==5){
+        document.querySelector('.mypoints3').innerHTML=points;
+        document.querySelector('#third-theory').style.display='none';
+        document.querySelector('#third-theory-questions').style.display='block';
+        position=6;
+    }
+    else if(position==6){
+        if(document.querySelector('#C-36seconds').checked){
+            document.querySelector('.feedback').innerHTML='Correct Answer';
+            document.querySelector('.feedback').style.color='green';
+            for(let i=5;i<9;i++){
+                setTimeout(function(){
+                    points=i;
+                    document.querySelector('.mypoints3').innerHTML=points;
+                    if(i==8){
+                        setTimeout(function(){
+                            document.querySelector('#third-theory-questions').style.display='none';
+                            //document.querySelector('#fourth-theory').style.display='block';
+                            document.querySelector('.feedback').innerHTML='';
+                            position=5;
+                        },2000);
+                    }
+                },i*100);
+            }
+            
+        }
+        else{
+            if(document.querySelector('#A-notverylong').checked || document.querySelector('#B-10seconds').checked || document.querySelector('#D-37seconds').checked){
                 document.querySelector('.feedback').innerHTML='Wrong Answer';
                 document.querySelector('.feedback').style.color='red';
                 /*setTimeout(function(){
