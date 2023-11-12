@@ -186,4 +186,10 @@ function CONTINUE(){
         }
         
     }
+    else if(position==9){
+        document.querySelector('.mypoints4').innerHTML=points;
+        document.querySelector('#info-box1').style.display='none';
+        document.querySelector('#dive-deep').style.display='block';
+        position=10;
+    }
 }

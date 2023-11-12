@@ -11,13 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
     <title>Smart Filling and Pricing System</title>
     <style>
+        body{
+            background-color: rgb(240, 234, 234);
+        }
         .project-title{
             padding:10px;
-            color:grey;
+            color:rgb(243, 238, 238);
             box-shadow: 1px 1px 3px grey;
             position: fixed;
             width:100%;
-            background-color: white;
+            background-color: rgb(80, 79, 79);
         }
         .wrapper-box .box{
             padding:30px
@@ -32,7 +35,7 @@
         .wrapper-box .buttons button{
             padding:15px;
             width:50%;
-            background-color: rgb(177, 64, 20);
+            background-color: green;
             font-weight: 600;
             border:0;
             border-radius: 10px;
@@ -94,7 +97,7 @@
     <div class="wrapper-box" style="display:none;">
         <!--intro-->
         <div class="box" id="intro-theory">
-            <h2 style="padding:10px 0;">What is Smart Filling and Pricing System?</h2>
+            <h2 style="padding:10px 0;color:chocolate;">What is Smart Filling and Pricing System?</h2>
             This Smart Filling and Pricing System is a system that is capable of filling containers using a dc pump.
             <br><br> It measures the amount of litres filled by the dc pump and calculates the price for those litres.
             <br><br><p style="border-top:1px solid lightgrey;padding:30px 0;">
@@ -120,7 +123,7 @@
 
         <!--second theory-->
         <div class="box" id="second-theory" style="display:none;">
-            <h2 style="padding:10px 0;">Determining the number of litres filled per specific time</h2>
+            <h2 style="padding:10px 0;color:chocolate;">Determining the number of litres filled per specific time</h2>
             To determine how many litres this DC pump pumps per specific time, a stop watch was used and time was recorded down. 
 
             <br><br>
@@ -149,7 +152,7 @@
 
         <!--third theory-->
         <div class="box" id="third-theory" style="display:none;">
-            <h2 style="padding:10px 0;">Determining how long it will take to fill a specific amaount of litres</h2>
+            <h2 style="padding:10px 0;color:chocolate;">Determining how long it will take to fill a specific amaount of litres</h2>
             Knowing how long it will take to fill a specific amount of liquid has been our great achievement so far. 
             <br><br>We now know it will take 3 seconds to fill 100ml . We can go on and try to figure out how long it will take 
             to fill any amount of liquid using the formula: <br><br><br>
@@ -192,7 +195,7 @@
         </div>
         <!--fourth-theory-->
         <div class="box" id="fourth-theory" style="display:none;">
-            <h2 style="padding:10px 0;">Determining the Total Price</h2>
+            <h2 style="padding:10px 0;color:chocolate;">Determining the Total Price</h2>
             From obtaining the number of litres filled we can then calculate the amount of money to 
             be paid for those litres. <br><br>
             <p style="padding:20px 10px;border:1px  solid rgb(235, 233, 233);font-size: small;border-radius: 10px;">
@@ -224,7 +227,7 @@
     </div>
     <!--information box 1-->
     <div class="box" id="info-box1" style="display:none;">
-        <h2 style="padding:10px 0;">We now dive deep into project settings and configuration</h2>
+        <h2 style="padding:10px 0;color:chocolate;">We now dive deep into project settings and configuration</h2>
         <p>
             You will learn: 
             <br><br><ul style="box-shadow: 1px 1px 4px grey;padding:10px;border-radius: 10px;">
@@ -242,6 +245,78 @@
                     understand how the project operates and how the components used communicate with each other.
                 </ul> </li>
             </ul>
+        </p>
+        <br><br><br><br>
+    </div>
+
+    <!--dive deep box-->
+    <div class="box" id="dive-deep" style="display:none;">
+        <h2 style="padding:10px 0;color:chocolate;">Components functions</h2>
+        <h3><u>8 x Push Buttons</u></h3>
+        <ol style="padding:10px 0;list-style-position: inside;line-height: 1.6;box-shadow:1px 1px 4px grey;padding:5px;border-radius: 10px;">
+            <li>reset the device or system</li>
+            <li>manually fill a container</li>
+            <li>go to settings</li>
+            <li>increment (go up arrow) a number</li>
+            <li>decrement (go down arrow) a number</li>
+            <li>navigate to the left</li>
+            <li>navigate to the right</li>
+            <li>Ok, to save or continue</li>
+        </ol>
+        <br>
+
+        <h3><u>Liquid Crystal Display</u></h3>
+        <p style="padding:10px 0;">
+            - display the data on the screen. 
+            <ul style="list-style-position: inside;list-style-type: square;box-shadow:1px 1px 4px grey;padding:5px;border-radius: 10px;">
+                <li>gives instructions to the user</li>
+                <li>displays the number of litres filled</li>
+                <li>displays the amount of money to be paid</li>
+                <li>displays the settings</li>
+            </ul>
+        </p>
+        <br>
+        <h3><u>Arduino Uno</u></h3>
+        <p style="padding:5px;border-radius: 10px;box-shadow:1px 1px 4px grey;">
+            - to take instructions from the user and executive them as instructed.
+        </p>
+        <br>
+        <h3><u>SPST Relay</u></h3>
+        <p style="box-shadow:1px 1px 4px grey;padding:5px;border-radius: 10px;">
+            - to open and close everytime it recieves a signal, it will help in introducing a voltage source that is higher than what arduino can supply.
+        </p>
+        <br>
+        
+        <h3><u>Diode</u></h3>
+        <p style="box-shadow:1px 1px 4px grey;padding:5px;border-radius: 10px;">
+            to protect arduino from back emf by blocking current to flow back to arduino.
+        </p>
+        <br>
+        <h3><u>Buzzer</u></h3>
+        <p style="box-shadow:1px 1px 4px grey;padding:5px;border-radius: 10px;">
+            to make beep sound when the device is done filling.
+        </p>
+        <br>
+        <h3><u>3x Light Emitting Diodes</u></h3> 
+        <ol style="list-style-position: inside;box-shadow:1px 1px 4px grey;padding:5px;border-radius: 10px;">
+            <li>green, to indicate ready to fill</li>
+            <li>blue, to indicate filling in progress</li>
+            <li>red, to indicate done filling</li>
+        </ol>       
+        <br>
+        <h3><u>Transistor</u></h3>
+        <p style="box-shadow:1px 1px 4px grey;">
+            used as a switch to close and open the relay.
+        </p>
+        <br>
+        <h3><u>Power Supply</u></h3>
+        <p style="box-shadow:1px 1px 4px grey;padding:5px;border-radius: 10px;">
+            to step down 230V AC voltage and convert it to a 12V DC voltage to supply the arduino.
+        </p>
+        <br>
+        <h3><u>Voltage Divider Circuit</u></h3>
+        <p style="box-shadow:1px 1px 4px grey;padding:5px;border-radius: 10px;">
+            to step down the 12V DC voltage to 5V to power arduino.
         </p>
         <br><br><br><br>
     </div>

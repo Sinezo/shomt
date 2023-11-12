@@ -4,18 +4,18 @@
 }
 body{
 font-family: 'Ubuntu', sans-serif;
+background-color: rgb(240, 234, 234);
 }
 
 /*header*/
 header{
-    padding:30px;
+    padding:20px 5px;
     border-bottom: 1px solid rgb(242, 244, 245);
-    background-image:linear-gradient(to right, rgb(136, 167, 26), rgb(210, 216, 129),rgb(79, 194, 25));
+    background-color: rgb(80, 79, 79);
     box-shadow: 1px 3px 3px rgb(229, 231, 231);
 }
 header .company-name{
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 0 3px rgb(255, 255, 255);
+    color: chocolate;
 }
 header .company-name label{
     color:rgb(20, 65, 102);
@@ -87,6 +87,7 @@ header .company-name label{
 /*mentorship*/
 .mentorship{
     border:1px solid rgb(248, 244, 244);
+    background-color: rgb(240, 234, 234);
 }
 .mentorship .projects-header{
     
@@ -139,6 +140,7 @@ header .company-name label{
     padding:0px;
     text-transform:unset;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:chocolate;
 }
 .mentorship .projects-wrap p{
     padding:10px 0;
@@ -154,7 +156,7 @@ header .company-name label{
     border-radius: 10px;
 }
 .mentorship .projects-wrap .buy-mentorship{
-    background-color: rgb(177, 64, 20);
+    background-color: green;
     color:white;
 }
 .mentorship .project-box{
