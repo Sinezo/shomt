@@ -79,8 +79,8 @@ header .company-name label{
     width:100%;
     border:0;
     font-weight: 600;
-    background-color: rgb(177, 64, 20);
-    color:white;
+    background-color: rgb(46, 45, 44);
+    color:chocolate;
     box-shadow: 1px 2px 3px rgb(114, 113, 113);
     border-radius: 10px;
 }
@@ -156,8 +156,8 @@ header .company-name label{
     border-radius: 10px;
 }
 .mentorship .projects-wrap .buy-mentorship{
-    background-color: green;
-    color:white;
+    background-color: rgb(46, 45, 44);
+    color:chocolate;
 }
 .mentorship .project-box{
     display:flex;

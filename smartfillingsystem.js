@@ -23,6 +23,8 @@ function CONTINUE(){
         if(document.querySelector('#dc-pump').checked){
             document.querySelector('.feedback').innerHTML='Correct Answer';
             document.querySelector('.feedback').style.color='green';
+            document.querySelector('#question1-ans').style.backgroundColor='lightgreen';
+            //document.querySelector('#question1-ans').style.color='white';
             for(let i=0;i<3;i++){
                 setTimeout(function(){
                     points=i;
@@ -67,6 +69,8 @@ function CONTINUE(){
         if(document.querySelector('#C-400ml').checked){
             document.querySelector('.feedback').innerHTML='Correct Answer';
             document.querySelector('.feedback').style.color='green';
+            document.querySelector('#question2-ans').style.backgroundColor='lightgreen';
+            //document.querySelector('#question2-ans').style.color='white';
             for(let i=2;i<6;i++){
                 setTimeout(function(){
                     points=i;
@@ -110,6 +114,8 @@ function CONTINUE(){
         if(document.querySelector('#C-36seconds').checked){
             document.querySelector('.feedback').innerHTML='Correct Answer';
             document.querySelector('.feedback').style.color='green';
+            document.querySelector('#question3-ans').style.backgroundColor='lightgreen';
+            //document.querySelector('#question3-ans').style.color='white';
             for(let i=5;i<9;i++){
                 setTimeout(function(){
                     points=i;
@@ -153,6 +159,8 @@ function CONTINUE(){
         if(document.querySelector('#D-price').checked){
             document.querySelector('.feedback').innerHTML='Correct Answer';
             document.querySelector('.feedback').style.color='green';
+            document.querySelector('#question4-ans').style.backgroundColor='lightgreen';
+            //document.querySelector('#question4-ans').style.color='white';
             for(let i=8;i<12;i++){
                 setTimeout(function(){
                     points=i;
