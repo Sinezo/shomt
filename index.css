@@ -9,13 +9,19 @@ background-color: rgb(240, 234, 234);
 
 /*header*/
 header{
-    padding:20px 5px;
     border-bottom: 1px solid rgb(242, 244, 245);
-    background-color: rgb(80, 79, 79);
+    background-color: rgb(214, 21, 21);
     box-shadow: 1px 3px 3px rgb(229, 231, 231);
+    position: fixed;
+    width:100%;
+    display:flex;
+    align-items: center;
 }
 header .company-name{
-    color: chocolate;
+    color: rgb(228, 222, 222);
+    padding:0 10px;
+    font-weight: 600;
+    font-family: arial;
 }
 header .company-name label{
     color:rgb(20, 65, 102);
@@ -26,6 +32,19 @@ header .company-name label{
 .short-about span{
     color:rgb(140, 142, 143);
     font-size: small;
+}
+header .menu-icon{
+    background-color: rgb(129, 35, 35);
+    flex:1;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+}
+header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
+    width:20px;
+    height:3px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 4px;;
 }
 
 /*wrapper*/
@@ -57,7 +76,7 @@ header .company-name label{
     margin-top:-40px;
 }
 .wrapper .selection-section .box .icon div{
-    background-color: rgb(180, 192, 16);
+    background-color: rgb(156, 189, 238);
     color:white;
     width:50px;
     height:50px;
@@ -79,8 +98,8 @@ header .company-name label{
     width:100%;
     border:0;
     font-weight: 600;
-    background-color: rgb(46, 45, 44);
-    color:chocolate;
+    background-color: rgb(214, 21, 21);
+    color:rgb(214, 206, 201);
     box-shadow: 1px 2px 3px rgb(114, 113, 113);
     border-radius: 10px;
 }
@@ -140,7 +159,7 @@ header .company-name label{
     padding:0px;
     text-transform:unset;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:chocolate;
+    color:rgb(214, 21, 21);
 }
 .mentorship .projects-wrap p{
     padding:10px 0;
@@ -152,12 +171,12 @@ header .company-name label{
     width:45%;
     border:0;
     font-weight: 600;
-    box-shadow: 1px 2px 3px black;
+    box-shadow: 1px 2px 3px rgb(161, 158, 158);
     border-radius: 10px;
 }
 .mentorship .projects-wrap .buy-mentorship{
-    background-color: rgb(46, 45, 44);
-    color:chocolate;
+    background-color: rgb(214, 21, 21);
+    color:rgb(219, 215, 213);
 }
 .mentorship .project-box{
     display:flex;
