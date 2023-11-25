@@ -3,15 +3,16 @@
     margin:0;
 }
 body{
+    color:grey;
+}
+body{
 font-family: 'Ubuntu', sans-serif;
 background-color: rgb(240, 234, 234);
 }
 
 /*header*/
 header{
-    border-bottom: 1px solid rgb(242, 244, 245);
-    background-color: rgb(214, 21, 21);
-    box-shadow: 1px 3px 3px rgb(229, 231, 231);
+    background-color: rgb(23, 118, 226);
     position: fixed;
     width:100%;
     display:flex;
@@ -34,7 +35,7 @@ header .company-name label{
     font-size: small;
 }
 header .menu-icon{
-    background-color: rgb(129, 35, 35);
+    background-color: rgb(126, 167, 221);
     flex:1;
     padding:20px;
     display:flex;
@@ -45,225 +46,6 @@ header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
     height:3px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 4px;;
-}
-
-/*wrapper*/
-.wrapper{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.wrapper .selection-section{
-    padding:20px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:40px;
-}
-.wrapper .selection-section .box{
-    padding:20px;
-    text-align: center;
-    border:0;
-    border-radius: 10px;
-    box-shadow:1px 5px 3px rgb(185, 185, 184);
-    color:rgb(110, 109, 109);
-    background-color: rgb(255, 255, 255);
-    width:230px;
-}
-.wrapper .selection-section .box .icon{
-    display:flex;
-    justify-content: center;
-    margin-top:-40px;
-}
-.wrapper .selection-section .box .icon div{
-    background-color: rgb(156, 189, 238);
-    color:white;
-    width:50px;
-    height:50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding:10px;
-    box-shadow: 1px 2px 3px grey;
-}
-.wrapper .selection-section .box .icon div i{
-    font-size: larger;
-}
-.wrapper .selection-section div p{
-    padding:10px;
-}
-.wrapper .selection-section div button{
-    padding:15px;
-    width:100%;
-    border:0;
-    font-weight: 600;
-    background-color: rgb(214, 21, 21);
-    color:rgb(214, 206, 201);
-    box-shadow: 1px 2px 3px rgb(114, 113, 113);
-    border-radius: 10px;
-}
-/*mentorship*/
-.mentorship{
-    border:1px solid rgb(248, 244, 244);
-    background-color: rgb(240, 234, 234);
-}
-.mentorship .projects-header{
-    
-    background-image:linear-gradient(to right, rgb(26, 75, 167), rgb(129, 167, 216),rgb(25, 42, 194));
-    width:100%;
-    height: 100px;
-    box-shadow: 1px 1px 3px;
-}
-.mentorship .projects-icon{
-    
-    width:70px;
-    height:70px;
-    background-color: rgb(89, 142, 221);
-    border-radius: 50%;
-    margin:-30px 0px 0 10px;
-    border: 4px solid white;;
-}
-.mentorship h2{
-    font-family:serif;
-    padding:10px;
-    color:grey;
-}
-.mentorship .breaker-line{
-    
-    width:100%;
-    height:10px;
-    background-color: rgb(247, 243, 243);
-}
-.mentorship h2 span{
-    float:right;
-    color:rgb(53, 119, 97);
-}
-.mentorship img{
-    width:100%;
-    border-radius: 10px;
-}
-.mentorship .price{
-    font-size: 30px;
-    color:grey;
-}
-.mentorship .projects-wrap{
-    padding:20px;
-}
-.mentorship .projects-wrap .project-box{
-    padding:10px;
-    border-radius:10px;
-    box-shadow:1px 5px 3px rgb(185, 185, 184);
-}
-.mentorship .project-title{
-    padding:0px;
-    text-transform:unset;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(214, 21, 21);
-}
-.mentorship .projects-wrap p{
-    padding:10px 0;
-
-    font-size: small;
-}
-.mentorship .projects-wrap button{
-    padding:15px;
-    width:45%;
-    border:0;
-    font-weight: 600;
-    box-shadow: 1px 2px 3px rgb(161, 158, 158);
-    border-radius: 10px;
-}
-.mentorship .projects-wrap .buy-mentorship{
-    background-color: rgb(214, 21, 21);
-    color:rgb(219, 215, 213);
-}
-.mentorship .project-box{
-    display:flex;
-    gap:10px;
-}
-.mentorship .project-box .image{
-    width:300px;
-}
-.mentorship .paragraph{
-    width:300px;
-}
-@media screen and (max-width:650px){
-    .mentorship .projects-wrap button{
-        width:100%;
-        margin-bottom: 10px;
-    }
-}
-/*contact us*/
-.contact-us{
-    padding: 10px;;
-}
-.contact-us p{
-    padding:40px;
-}
-.contact-us .whatsapp-us{
-    padding:10px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-}
-.contact-us .whatsapp-us button{
-    padding:15px;
-    background-color: rgb(180, 192, 16);;
-    color: white;
-    border:0;
-    font-weight: 600;
-    box-shadow: 1px 1px 3px black;
-    border-radius: 10px;
-}
-
-/*founder-header*/
-.founder .founder-header{
-    width:100%;
-    height:150px;
-    background-image:linear-gradient(to right, rgb(196, 202, 187), rgb(129, 206, 216),rgb(20, 94, 163));
-}
-.founder .image-box{
-    display:flex;
-    justify-content: center;
-}
-.founder .image-box .picture{
-    width:220px;
-    background-color: rgb(101, 138, 136);
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -70px;
-    border:7px solid rgb(255, 255, 255);
-}
-.founder .image-box .picture img{
-    width:100%;
-}
-.founder .paragraph{
-    padding:20px;
-}
-.founder h3{
-    padding:10px 0;
-    border:1px solid rgb(235, 241, 235);
-    text-align: center;
-}
-.founder h2{
-    padding: 0px 0 10px 0;
-    text-align: center;
-}
-.founder .buttons{
-    padding:10px;
-    background-color: rgb(116, 179, 204);
-    margin-top: 5px;
-}
-.founder button{
-    padding:15px;
-    border:0;
-    font-weight: 600;
-}
-.founder .facebook{
-    background-color: lightblue;
-}
-.founder .whatsapp{
-    background-color: lightgreen;
 }
 /*footer*/
 footer{
