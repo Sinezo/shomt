@@ -7,6 +7,9 @@ font-family: 'Ubuntu', sans-serif;
 background-color: rgb(240, 234, 234);
 color:grey;
 }
+::-webkit-scrollbar{
+    display:none;
+}
 
 /*header*/
 header{
@@ -68,19 +71,20 @@ header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
 }
 /*side-section*/
 .side-sections{
-    width:45%;
     height:100dvh;
-    background-color: blue;
+    background-color: rgb(255, 0, 0);
 }
 .side-sections .left-section{
+    width:50%;
     height:100%;
     display:flex;
 }
 .side-sections .left-section .menu-section{
-    width:40%;
+    width:50%;
     height:100%;
     background-color: red;
     padding:20px;
+    overflow-y: scroll;
 }
 .side-sections .left-section .menu-section p{
     padding:20px;
@@ -88,17 +92,23 @@ header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
     background-color: rgb(204, 45, 45);
     font-size: small;
 }
+.side-sections .left-section .menu-section p span{
+    font-weight: 600;
+    font-size: 25px;
+}
 .side-sections .left-section .menu-section p button{
     padding:15px;
     width:100%;
     border:0;
-    background-color: orange;
-    color:white;
+    background-color: rgb(255, 255, 255);
+    color:rgb(255, 0, 0);
     border-radius: 4px;
+    font-weight: 600;
+    margin:10px 0;
 }
 .side-sections .left-section .images-section{
     background-image: url('IMG-20230929-WA0017.jpg');
-    width:60%;
+    width:50%;
     height:100%;
     background-size: cover;
     background-color: red;
@@ -121,4 +131,32 @@ footer{
     text-align: center;
     padding:20px;
     background-color: rgb(218, 223, 223);
+}
+
+@media screen and (max-width:600px) {
+    header{
+        z-index: 1;
+    }
+    .side-sections .left-section{
+        flex-wrap: wrap;
+        width:100%;
+    }
+    .side-sections .left-section .menu-section{
+        position: absolute;
+        width:100%;
+        opacity: .9;
+        background-color: rgb(153, 149, 149);
+    }
+    .side-sections .left-section .images-section{
+        flex:2 ;
+    }
+    .side-sections .left-section .menu-section p{
+        background-color: rgb(59, 56, 56);
+         color: rgb(255, 255, 255);
+         font-size: medium;
+    }
+    .side-sections .left-section .menu-section p button{
+        background-color: red;
+        color:rgb(255, 255, 255);
+    }
 }
