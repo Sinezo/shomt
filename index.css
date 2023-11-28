@@ -18,6 +18,7 @@ header{
     width:100%;
     display:flex;
     align-items: center;
+    z-index:1;
 }
 header .company-name{
     color: rgb(36, 34, 34);
@@ -54,14 +55,28 @@ header .company-name .logo .line3{
     background-color: red;
     border-radius: 50%;
 }
+/*menu-nav*/
+header .menu-nav{
+    width:70%;
+    display:flex;
+    justify-content: end;
+}
+header .menu-nav ul{
+    display:flex;
+    gap:20px;
+    list-style: none;
+    padding:0 10px;
+
+}
 /*menu icon*/
 header .menu-icon{
-    background-color: unset;
     flex:1;
     padding:15px;
     display:flex;
     justify-content: end;
     background-color: red;
+    align-items: center;
+    gap:20px;
 }
 header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
     width:20px;
@@ -69,10 +84,18 @@ header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
     background-color: rgb(228, 223, 223);
     margin-bottom: 4px;;
 }
+header .menu-icon .whatsapp button{
+    padding:5px;
+    background-color: rgb(79, 180, 79);
+    border:0;
+    color:white;
+    font-weight: 600;
+    border-radius: 4px;
+}
 /*side-section*/
 .side-sections{
-    height:100dvh;
-    background-color: rgb(255, 0, 0);
+    height:134dvh;
+    display:flex;
 }
 .side-sections .left-section{
     width:50%;
@@ -84,7 +107,7 @@ header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
     height:100%;
     background-color: red;
     padding:20px;
-    overflow-y: scroll;
+    box-sizing: border-box;
 }
 .side-sections .left-section .menu-section p{
     padding:20px;
@@ -113,7 +136,82 @@ header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
     background-size: cover;
     background-color: red;
     background-position: center;
-    animation: photos 20s infinite;
+    animation: photo 20s infinite;
+}
+.side-sections .right-section{
+    padding:10px;
+    background-color: white;
+    border-radius: 20px;
+    flex:1;
+    margin:5px;
+    position: relative;
+}
+.side-sections .right-section nav{
+    display:flex;
+    gap:5px;
+    flex-wrap: wrap;
+}
+.side-sections .right-section button{
+    padding:15px;
+    background-color: white;
+    color:rgb(51, 50, 50);
+    font-weight: 600;
+    border:1px solid;
+    border-radius: 4px;
+}
+.side-sections .right-section .arduino-box{
+    padding:5px 0;
+}
+.side-sections .right-section .arduino-box .header{
+    display:flex;
+    gap:5px;
+}
+.side-sections .right-section nav .arduno-btn{
+    color:rgb(192, 188, 188);
+    border:2px solid;
+}
+.side-sections .right-section .arduino-box .picture{
+    border:1px solid red;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-image:url('BOTTLE FILLING AND PRICING SYSTEM.png') ;
+    background-position: center;
+    background-size: cover;
+}
+.side-sections .right-section .arduino-box .paragraph{
+    padding:5px 0;
+    font-size: small;
+    display:flex;
+    flex-wrap: wrap;
+}
+.side-sections .right-section .arduino-box .paragraph .demo{
+    padding:10px 0;
+    display:flex;
+    gap:5px;
+    flex:2;
+}
+.side-sections .right-section .arduino-box .paragraph .demo .code{
+    width:50%;
+    border:1px solid;
+    overflow: scroll;
+    border-radius: 10px;
+    background-color: rgb(245, 238, 238);
+}
+.side-sections .right-section .arduino-box .paragraph .demo pre{
+    margin-left: -200px;
+    background-color: rgb(245, 238, 238);
+ 
+}
+.side-sections .right-section .arduino-box .paragraph .demo .video{
+    width:50%;
+}
+.side-sections .right-section .arduino-box .paragraph .demo .video p{
+    padding:10px 0;
+}
+.side-sections .right-section .arduino-box .paragraph .demo video{
+    width:100%;
+    border-radius: 4px;
 }
 @keyframes photos {
     0% {
@@ -137,18 +235,26 @@ footer{
     header{
         z-index: 1;
     }
-    .side-sections .left-section{
+    header .menu-nav{
+        display:none;
+    }
+    .side-sections {
         flex-wrap: wrap;
+    }
+    .side-sections .left-section{
+        display:grid;
+        background-color: red;
         width:100%;
     }
     .side-sections .left-section .menu-section{
         position: absolute;
         width:100%;
-        opacity: .9;
+        opacity: .8;
         background-color: rgb(153, 149, 149);
+        box-sizing: border-box;
     }
     .side-sections .left-section .images-section{
-        flex:2 ;
+        width:100%;
     }
     .side-sections .left-section .menu-section p{
         background-color: rgb(59, 56, 56);
@@ -158,5 +264,23 @@ footer{
     .side-sections .left-section .menu-section p button{
         background-color: red;
         color:rgb(255, 255, 255);
+    }
+    .side-sections .right-section .arduino-box .paragraph .demo{
+        flex-wrap: wrap;
+    }
+    .side-sections .right-section .arduino-box .paragraph .demo .code{
+        display:none;
+    }
+    .side-sections .right-section .arduino-box .paragraph .demo .video{
+        width:100%;
+    }
+}
+@media screen and (max-width:1080px){
+    .side-sections{
+        flex-wrap: wrap;
+    }
+    .side-sections .left-section{
+        width:100%
+        
     }
 }

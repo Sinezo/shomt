@@ -23,8 +23,20 @@
             </div>
             <div class="full-web-name">Sinelutec</div>
         </div>
+        <!--menu navigation-->
+        <div class="menu-nav">
+            <ul>
+                <li>Mentorship</li>
+                <li>Tutoring</li>
+                <li>Resources</li>
+                <li>Register</li>
+            </ul>
+        </div>
         <!--menu icon-->
         <div class="menu-icon">
+            <div class="whatsapp">
+                <button>Chat On WhatsApp</button>
+            </div>
             <div class="wrap-bars">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -60,7 +72,96 @@
         </div>
         <!--right section-->
         <div class="right-section">
+            <!--navigation-->
+            <nav>
+                <button class="arduno-btn">Arduino Programming</button> <button class="electrical-btn">Electrical Systems</button> <button class="electronic-btn">Electronic Systems</button> <button class="implementation-btn">Implementation</button> 
+                <!--arduino box-->
+                <div class="arduino-box">
+                    <!--header-->
+                    <div class="header">
+                        <div class="picture">
+                            
+                        </div>
+                        <div class="text" style="width:100%;">
+                            <div>
+                                <h3>C Programming 
+                                    <br><span style="font-size:small;">star star star star star</span>
+                                </h3>
+                            </div>
+                            <div class="number" style="font-size: 40px;float:right;margin:-50px 0 0 0">
+                                +10
+                            </div>
+                        </div>
+                    </div>
+                    <!--paragraph-->
+                    <div class="paragraph">
+                        <div class="text">
+                            Programming arduino is one of our exciting and interesting topics we 
+                            love diving deep into and bring out the unimaginable. We design and automate 
+                            electrical systems and devices to make things easier and more fun for everyone. With our smart and interactive projects programmed by <b>C Programming</b> 
+                            we guarantee amazement and satisfaction.
+                        </div>
+                        <!--demo-->
+                        <div class="demo">
+                            <div class="code">
+                                <pre>
+                                    <font color="#95a5a6">&#47;*</font>
+                                    <font color="#95a5a6"> &nbsp;Fade</font>
+                                    <font color="#95a5a6"></font>
+                                    <font color="#95a5a6"> &nbsp;This example shows how to fade an LED on pin 9 using the analogWrite()</font>
+                                    <font color="#95a5a6"> &nbsp;function.</font>
+                                    <font color="#95a5a6"></font>
+                                    <font color="#95a5a6"> &nbsp;The analogWrite() function uses PWM, so if you want to change the pin you&#39;re</font>
+                                    <font color="#95a5a6"> &nbsp;using, be sure to use another PWM capable pin. On most Arduino, the PWM pins</font>
+                                    <font color="#95a5a6"> &nbsp;are identified with a &#34;~&#34; sign, like ~3, ~5, ~6, ~9, ~10 and ~11.</font>
+                                    <font color="#95a5a6"></font>
+                                    <font color="#95a5a6"> &nbsp;This example code is in the public domain.</font>
+                                    <font color="#95a5a6"></font>
+                                    <font color="#95a5a6"> &nbsp;</font><u><font color="#95a5a6">https:&#47;&#47;www.arduino.cc&#47;en&#47;Tutorial&#47;BuiltInExamples&#47;Fade</font></u><font color="#95a5a6"></font>
+                                    <font color="#95a5a6">*&#47;</font>
+                                    
+                                    <font color="#00979c">int</font> <font color="#000000">led</font> <font color="#434f54">=</font> <font color="#000000">9</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; the PWM pin the LED is attached to</font>
+                                    <font color="#00979c">int</font> <font color="#000000">brightness</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; how bright the LED is</font>
+                                    <font color="#00979c">int</font> <font color="#000000">fadeAmount</font> <font color="#434f54">=</font> <font color="#000000">5</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; how many points to fade the LED by</font>
+                                    
+                                    <font color="#434f54">&#47;&#47; the setup routine runs once when you press reset:</font>
+                                    <font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+                                     &nbsp;<font color="#434f54">&#47;&#47; declare pin 9 to be an output:</font>
+                                     &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">led</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+                                    <font color="#000000">}</font>
+                                    
+                                    <font color="#434f54">&#47;&#47; the loop routine runs over and over again forever:</font>
+                                    <font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+                                     &nbsp;<font color="#434f54">&#47;&#47; set the brightness of pin 9:</font>
+                                     &nbsp;<font color="#d35400">analogWrite</font><font color="#000000">(</font><font color="#000000">led</font><font color="#434f54">,</font> <font color="#000000">brightness</font><font color="#000000">)</font><font color="#000000">;</font>
+                                    
+                                     &nbsp;<font color="#434f54">&#47;&#47; change the brightness for next time through the loop:</font>
+                                     &nbsp;<font color="#000000">brightness</font> <font color="#434f54">=</font> <font color="#000000">brightness</font> <font color="#434f54">+</font> <font color="#000000">fadeAmount</font><font color="#000000">;</font>
+                                    
+                                     &nbsp;<font color="#434f54">&#47;&#47; reverse the direction of the fading at the ends of the fade:</font>
+                                     &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">brightness</font> <font color="#434f54">&lt;=</font> <font color="#000000">0</font> <font color="#434f54">||</font> <font color="#000000">brightness</font> <font color="#434f54">&gt;=</font> <font color="#000000">255</font><font color="#000000">)</font> <font color="#000000">{</font>
+                                     &nbsp;&nbsp;&nbsp;<font color="#000000">fadeAmount</font> <font color="#434f54">=</font> <font color="#434f54">-</font><font color="#000000">fadeAmount</font><font color="#000000">;</font>
+                                     &nbsp;<font color="#000000">}</font>
+                                     &nbsp;<font color="#434f54">&#47;&#47; wait for 30 milliseconds to see the dimming effect</font>
+                                     &nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">30</font><font color="#000000">)</font><font color="#000000">;</font>
+                                    <font color="#000000">}</font>
+                                    
+                                    </pre>
+                            </div>
 
+                            <!--video-->
+                            <div class="video">
+                                <video src="" controls></video>
+                                <p>
+                                    <button class="projects">See Projects</button> <button class="videos" style="background-color: red;color:white;border:0;font-weight: 600;">Watch Videos</button>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
         </div>
     </div>
 
