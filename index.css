@@ -2,6 +2,9 @@
     padding:0;
     margin:0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
 font-family: 'Ubuntu', sans-serif;
 background-color: rgb(240, 234, 234);
@@ -71,21 +74,23 @@ header .menu-nav ul{
 /*menu icon*/
 header .menu-icon{
     flex:1;
-    padding:15px;
+    padding:2px 10px;;
     display:flex;
     justify-content: end;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     gap:20px;
 }
 header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
     width:20px;
     height:3px;
-    background-color: rgb(228, 223, 223);
     margin-bottom: 4px;;
+    background-color: rgb(141, 139, 139);
+    border-radius: 2px;
+    transition: all 300ms ease-in-out;
 }
 header .menu-icon .whatsapp button{
-    padding:5px;
+    padding:15px;
     background-color: rgb(79, 180, 79);
     border:0;
     color:white;
@@ -101,19 +106,20 @@ header .menu-icon .whatsapp button{
     width:50%;
     height:100%;
     display:flex;
+    background-color: rgb(109, 105, 105);
 }
 .side-sections .left-section .menu-section{
     width:50%;
     height:100%;
-    background-color: red;
     padding:20px;
     box-sizing: border-box;
 }
 .side-sections .left-section .menu-section p{
     padding:20px;
     color:rgb(233, 229, 229);
-    background-color: rgb(204, 45, 45);
+    background-color: rgb(77, 75, 75);
     font-size: small;
+    border-radius: 10px;
 }
 .side-sections .left-section .menu-section p span{
     font-weight: 600;
@@ -138,6 +144,7 @@ header .menu-icon .whatsapp button{
     background-position: center;
     animation: photo 20s infinite;
 }
+/*right section*/
 .side-sections .right-section{
     padding:10px;
     background-color: white;
@@ -159,10 +166,13 @@ header .menu-icon .whatsapp button{
     border:1px solid;
     border-radius: 4px;
 }
-.side-sections .right-section .arduino-box{
+.side-sections .right-section .stream-box{
     padding:5px 0;
+    background-color: white;
+    padding:10px;
+    border-radius: 20px;
 }
-.side-sections .right-section .arduino-box .header{
+.side-sections .right-section .stream-box .header{
     display:flex;
     gap:5px;
 }
@@ -170,7 +180,7 @@ header .menu-icon .whatsapp button{
     color:rgb(192, 188, 188);
     border:2px solid;
 }
-.side-sections .right-section .arduino-box .picture{
+.side-sections .right-section nav .picture{
     border:1px solid red;
     width:50px;
     height:50px;
@@ -179,39 +189,42 @@ header .menu-icon .whatsapp button{
     background-position: center;
     background-size: cover;
 }
-.side-sections .right-section .arduino-box .paragraph{
+.side-sections .right-section nav .paragraph{
     padding:5px 0;
     font-size: small;
     display:flex;
     flex-wrap: wrap;
 }
-.side-sections .right-section .arduino-box .paragraph .demo{
+.side-sections .right-section nav .paragraph .demo{
     padding:10px 0;
     display:flex;
     gap:5px;
     flex:2;
 }
-.side-sections .right-section .arduino-box .paragraph .demo .code{
+.side-sections .right-section nav .paragraph .demo .code{
     width:50%;
     border:1px solid;
     overflow: scroll;
     border-radius: 10px;
     background-color: rgb(245, 238, 238);
 }
-.side-sections .right-section .arduino-box .paragraph .demo pre{
+.side-sections .right-section nav .paragraph .demo pre{
     margin-left: -200px;
     background-color: rgb(245, 238, 238);
  
 }
-.side-sections .right-section .arduino-box .paragraph .demo .video{
+.side-sections .right-section nav .paragraph .demo .video{
     width:50%;
 }
-.side-sections .right-section .arduino-box .paragraph .demo .video p{
+.side-sections .right-section nav .paragraph .demo .video p{
     padding:10px 0;
 }
-.side-sections .right-section .arduino-box .paragraph .demo video{
+.side-sections .right-section nav .paragraph .demo video{
     width:100%;
     border-radius: 4px;
+}
+.side-sections .right-section #electrical-box,.side-sections .right-section #electronic-box{
+    display:none
 }
 @keyframes photos {
     0% {
@@ -240,21 +253,22 @@ footer{
     }
     .side-sections {
         flex-wrap: wrap;
+        height: fit-content;
     }
     .side-sections .left-section{
-        display:grid;
-        background-color: red;
+        background-color: rgb(109, 105, 105);
         width:100%;
+        flex-wrap: wrap;
     }
     .side-sections .left-section .menu-section{
-        position: absolute;
         width:100%;
-        opacity: .8;
-        background-color: rgb(153, 149, 149);
+        
         box-sizing: border-box;
+        text-align: center;
     }
     .side-sections .left-section .images-section{
         width:100%;
+        display:none;
     }
     .side-sections .left-section .menu-section p{
         background-color: rgb(59, 56, 56);
@@ -262,16 +276,16 @@ footer{
          font-size: medium;
     }
     .side-sections .left-section .menu-section p button{
-        background-color: red;
+        background-color: rgb(255, 0, 0);
         color:rgb(255, 255, 255);
     }
-    .side-sections .right-section .arduino-box .paragraph .demo{
+    .side-sections .right-section nav .paragraph .demo{
         flex-wrap: wrap;
     }
-    .side-sections .right-section .arduino-box .paragraph .demo .code{
+    .side-sections .right-section nav .paragraph .demo .code{
         display:none;
     }
-    .side-sections .right-section .arduino-box .paragraph .demo .video{
+    .side-sections .right-section nav .paragraph .demo .video{
         width:100%;
     }
 }
@@ -283,4 +297,51 @@ footer{
         width:100%
         
     }
+}
+
+/*MENU*/
+.menu-box{
+    padding:10px;
+    position: fixed;
+    background-color: rgb(36, 35, 35);
+    top:0px;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    transform: translate(100%);
+    transition: all 300ms ease-in-out;
+    z-index: 1;
+}
+.menu-box .header{
+    display:flex;
+    gap:5px;
+}
+.menu-box .picture{
+    border:1px solid red;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-image:url('BOTTLE FILLING AND PRICING SYSTEM.png') ;
+    background-position: center;
+    background-size: cover;
+}
+.menu-box ul{
+    padding:5px;
+    
+}
+.menu-box ul li{
+    margin:10px 0;
+    border:1px solid;
+    border-radius:10px;
+    padding:5px;
+
+}
+.menu-box ul p{
+    padding:10px 0;
+}
+.menu-box ul p button{
+    padding:15px;
+    background-color: orange;
+    border:0;
+    border-radius: 4px;
 }
