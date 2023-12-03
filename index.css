@@ -106,7 +106,21 @@ header .menu-icon .whatsapp button{
     width:50%;
     height:100%;
     display:flex;
-    background-color: rgb(109, 105, 105);
+    /*background-color: rgb(109, 105, 105);*/
+    background-image: url('pexels-pixabay-163100.jpg');
+    background-size: cover;
+    animation: photo 20s infinite;
+}
+@keyframes photos {
+    0% {
+        background-image: url('IMG-20230929-WA0009.jpg');
+    }
+    25% {
+        background-image: url('pexels-thisisengineering-3912373.jpg');
+    }
+    50% {
+        background-image: url('IMG-20230929-WA0006.jpg');
+    }
 }
 .side-sections .left-section .menu-section{
     width:50%;
@@ -116,10 +130,18 @@ header .menu-icon .whatsapp button{
 }
 .side-sections .left-section .menu-section p{
     padding:20px;
-    color:rgb(233, 229, 229);
-    background-color: rgb(77, 75, 75);
+    color:rgb(29, 27, 27);
+    background-color: rgb(255, 255, 255);
     font-size: small;
+    opacity:.9;
     border-radius: 10px;
+}
+.side-sections .left-section .menu-section img{
+    width:100%;
+    border-radius: 10px;
+}
+.side-sections .left-section .menu-section img{
+    display:none;
 }
 .side-sections .left-section .menu-section p span{
     font-weight: 600;
@@ -129,21 +151,20 @@ header .menu-icon .whatsapp button{
     padding:15px;
     width:100%;
     border:0;
-    background-color: rgb(255, 255, 255);
-    color:rgb(255, 0, 0);
+    background-color: red;
+    color:rgb(255, 255, 255);
     border-radius: 4px;
     font-weight: 600;
     margin:10px 0;
 }
-.side-sections .left-section .images-section{
+/*.side-sections .left-section .images-section{
     background-image: url('IMG-20230929-WA0017.jpg');
-    width:50%;
-    height:100%;
-    background-size: cover;
+    
     background-color: red;
     background-position: center;
     animation: photo 20s infinite;
-}
+}*/
+
 /*right section*/
 .side-sections .right-section{
     padding:10px;
@@ -226,17 +247,7 @@ header .menu-icon .whatsapp button{
 .side-sections .right-section #electrical-box,.side-sections .right-section #electronic-box{
     display:none
 }
-@keyframes photos {
-    0% {
-        background-image: url('IMG-20230929-WA0009.jpg');
-    }
-    25% {
-        background-image: url('IMG-20230929-WA0007.jpg');
-    }
-    50% {
-        background-image: url('IMG-20230929-WA0006.jpg');
-    }
-}
+
 /*footer*/
 footer{
     text-align: center;
@@ -271,9 +282,12 @@ footer{
         display:none;
     }
     .side-sections .left-section .menu-section p{
-        background-color: rgb(59, 56, 56);
-         color: rgb(255, 255, 255);
          font-size: medium;
+    }
+    .side-sections .left-section .menu-section img{
+        display:block;
+        width:100%;
+        border-radius: 10px;
     }
     .side-sections .left-section .menu-section p button{
         background-color: rgb(255, 0, 0);
