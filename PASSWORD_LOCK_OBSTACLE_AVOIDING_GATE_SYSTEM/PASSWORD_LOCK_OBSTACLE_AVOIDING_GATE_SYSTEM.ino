@@ -1,11 +1,10 @@
-/* @file CustomKeypad.pde
-|| @version 1.0
-|| @author Alexander Brevig
-|| @contact alexanderbrevig@gmail.com
+/*
+|| @Password Lock Obstacle Avoiding Gate System
+|| @author Sinethemba Lusawana
+|| @contact lusawanasinethemba@gmail.com
 ||
 || @description
-|| | Demonstrates changing the keypad size and key values.
-|| #PASSWORD LOCK OBSTACLE AVOIDING GATE SYSTEM
+|| | A gate that opens only when the correct password is entered.
 */
 
 #include <Keypad.h>
@@ -46,25 +45,39 @@ String PASSWORD;
 int ATTEMPTS = 3;
 String change_password_option = "NOT_SELECTED";
 String MODE="RETRY";
+String obstacle = "clear";
 
 //PINS
 #define RED_LED 4;
-#define MODE_BUTTON 3;
-#define SENSOR2 2;
-#define SENSOR1 1;
+#define MODE_BUTTON 1;
+int SENSOR2= 3;
+int SENSOR1= 2;
 //#define EXIT 1;
 #define BUZZER 0,
+
+void IR_SENSORS(){
+  //obstacle detected
+  if(digitalRead(SENSOR1)==LOW || digitalRead(SENSOR2)==LOW){
+    obstacle="detected";
+  }
+  //obstacle not detected
+  else{
+    obstacle="clear";
+  }
+}
 
 void setup() {
   Serial.begin(9600);
   lcd.begin(16, 2);
   myservo.attach(5);
   myservo.write(0); //servo at 0 degrees
+  attachInterrupt(digitalPinToInterrupt(2),IR_SENSORS,CHANGE);
+  attachInterrupt(digitalPinToInterrupt(3),IR_SENSORS,CHANGE);
   pinMode(5, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(3, INPUT_PULLUP);
   pinMode(1,INPUT_PULLUP); 
-  pinMode(2,OUTPUT);
+  pinMode(2,INPUT_PULLUP);
   pinMode(0,OUTPUT);
   lcd.setCursor(2, 0);
   lcd.print("PASSWORD LOCK");
@@ -98,9 +111,9 @@ void loop() {
   }
 
   //EXITING
-  if(digitalRead(1)==LOW){
+  /*if(digitalRead(1)==LOW){
       EXITING();
-  }
+  }*/
   char customKey = customKeypad.getKey();
   
   //entering password to open the gate
@@ -118,7 +131,7 @@ void loop() {
   }
 
   // changing mode
-  if(digitalRead(3)==LOW){
+  if(digitalRead(1)==LOW){
     CHANGING_MODE();
   }
 
@@ -412,27 +425,18 @@ void CORRECT_PASSWORD(){
       lcd.setCursor(2, 0);
       lcd.print("DOOR OPENING");
       ENTERED_PASSWORD = "";
-      //SERVO MOTOR OPENING
+      
+      //opening the gate
       for(int pos=0;pos<=180;pos++){
         myservo.write(pos);
         delay(1);
       }
-      delay(300);
-      lcd.clear();
-      lcd.setCursor(2, 0);
-      lcd.print("DOOR CLOSING");
-      digitalWrite(5, 0);  
+      
+      delay(300);  
        //closing the gate
-      for(int pos=180;pos>0;pos--){
-        myservo.write(pos);
-        delay(1);
-      }
-      delay(100);
-      lcd.clear();
-      lcd.setCursor(2, 0);
-      lcd.print("DOOR LOCKED");
+      CLOSE_GATE();
       delay(50);
-      HOME = 1;
+      //HOME = 1;
 }
 
 //EXITING
@@ -456,4 +460,31 @@ void HOME_SCREEN(){
     lcd.print("ENTER PASSWORD:");
     lcd.setCursor(0, 1);
     HOME = 0;
+}
+
+//CLOSE GATE
+void CLOSE_GATE(){
+  if(obstacle=="clear"){
+    //close gate
+    digitalWrite(5,HIGH); //stopping the gate
+    lcd.clear();
+    lcd.print("Obstacle");
+    lcd.setCursor(0,1);
+    lcd.print("clear");
+    delay(20);
+    for(int pos=180;pos>=0;pos--){
+        myservo.write(pos);
+        delay(2);
+      }
+    HOME = 1; //if the gate is fully closed
+  }
+  else if(obstacle=="detected"){
+    //stop  gate and get current location
+    digitalWrite(5,LOW); //stopping the gate
+    lcd.clear();
+    lcd.print("Obstacle");
+    lcd.setCursor(0,1);
+    lcd.print("Detected");
+    delay(20);
+  }
 }

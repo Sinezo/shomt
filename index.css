@@ -9,6 +9,7 @@ body{
 font-family: 'Ubuntu', sans-serif;
 background-color: rgb(240, 234, 234);
 color:grey;
+overflow-x: hidden;
 }
 ::-webkit-scrollbar{
     display:none;
@@ -130,15 +131,15 @@ header .menu-icon .whatsapp button{
 }
 .side-sections .left-section .menu-section p{
     padding:20px;
-    color:rgb(29, 27, 27);
-    background-color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    background-color: rgb(30, 34, 30);
     font-size: small;
     opacity:.9;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 .side-sections .left-section .menu-section img{
     width:100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .side-sections .left-section .menu-section img{
     display:none;
@@ -181,11 +182,11 @@ header .menu-icon .whatsapp button{
 }
 .side-sections .right-section button{
     padding:15px;
-    background-color: white;
+    border:0;
     color:rgb(51, 50, 50);
     font-weight: 600;
-    border:1px solid;
     border-radius: 4px;
+    min-width: max-content;
 }
 .side-sections .right-section .stream-box{
     padding:5px 0;
@@ -196,6 +197,20 @@ header .menu-icon .whatsapp button{
 .side-sections .right-section .stream-box .header{
     display:flex;
     gap:5px;
+   
+}
+.side-sections .right-section nav .nav-menu{
+    padding:10px;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-radius: 10px;
+    gap:10px;
+    border: 1px solid rgb(238, 235, 235);
+    margin:0 0 20px 0;
+    width:100%;
+
 }
 .side-sections .right-section nav .arduno-btn{
     color:rgb(192, 188, 188);
@@ -245,7 +260,7 @@ header .menu-icon .whatsapp button{
     border-radius: 4px;
 }
 .side-sections .right-section #electrical-box,.side-sections .right-section #electronic-box{
-    display:none
+   
 }
 
 /*footer*/
@@ -285,9 +300,7 @@ footer{
          font-size: medium;
     }
     .side-sections .left-section .menu-section img{
-        display:block;
-        width:100%;
-        border-radius: 10px;
+        /*display:block;*/
     }
     .side-sections .left-section .menu-section p button{
         background-color: rgb(255, 0, 0);
