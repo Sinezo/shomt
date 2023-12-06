@@ -2,28 +2,17 @@ function electrical(){
     document.querySelector("#electrical-box").style.display="block";
     document.querySelector("#arduino-box").style.display="none";
     document.querySelector("#electronic-box").style.display="none";
-
-    document.querySelector(".arduino-btn").style.color="black";
-    document.querySelector(".electronic-btn").style.color="black";
-    document.querySelector(".electrical-btn").style.color="red";
 };
 
 function electronic(){
-    document.querySelector("#electrical-box").style.transform="translate(-100%)";;
-    document.querySelector("#arduino-box").style.transform="translate(-100%)";;
-    document.querySelector("#electronic-box").style.transform="translate(0)";
-
-    document.querySelector(".arduino-btn").style.color="black";
-    document.querySelector(".electronic-btn").style.color="grey";
-    document.querySelector(".electrical-btn").style.color="black";
+    ocument.querySelector("#electrical-box").style.display="none";
+    document.querySelector("#arduino-box").style.display="none";
+    document.querySelector("#electronic-box").style.display="block";
 };
 function arduino(){
-    document.querySelector("#electrical-box").style.transform="translate(0)";
+    ocument.querySelector("#electrical-box").style.display="none";
     document.querySelector("#arduino-box").style.display="block";
     document.querySelector("#electronic-box").style.display="none";
-    document.querySelector(".arduino-btn").style.color="grey";
-    document.querySelector(".electronic-btn").style.color="black";
-    document.querySelector(".electrical-btn").style.color="black";
 };
 
 //MENU ICON
