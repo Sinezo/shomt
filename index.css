@@ -45,19 +45,19 @@ header .company-name .logo{
 header .company-name .logo .line1{
     width:3px;
     height: 20px;
-    background-color: red;
+    background-color: rgb(255, 115, 0);
     border-radius: 50%;
 }
 header .company-name .logo .line2{
     width:3px;
     height: 10px;
-    background-color: red;
+    background-color: rgb(255, 115, 0);
     border-radius: 50%;
 }
 header .company-name .logo .line3{
     width:3px;
     height: 20px;
-    background-color: red;
+    background-color: rgb(255, 115, 0);
     border-radius: 50%;
 }
 /*menu-nav*/
@@ -87,183 +87,65 @@ header .menu-icon .bar1,header .menu-icon .bar2,header .menu-icon .bar3{
     width:20px;
     height:3px;
     margin-bottom: 4px;;
-    background-color: rgb(141, 139, 139);
+    background-color: unset;
+    border:1px solid rgb(206, 202, 202);
     border-radius: 2px;
     transition: all 300ms ease-in-out;
 }
 header .menu-icon .whatsapp button{
     padding:15px;
-    background-color: rgb(79, 180, 79);
-    border:0;
-    color:white;
-    font-weight: 600;
+    background-color: unset;
+    border: 1px solid;
+    color:rgb(79, 180, 79);
     border-radius: 4px;
 }
-/*side-section*/
-.side-sections{
-    height:134dvh;
+
+/*welcome-box*/
+.welcome-box{
     display:flex;
-}
-.side-sections .left-section{
-    width:50%;
-    height:100%;
-    display:flex;
-    /*background-color: rgb(109, 105, 105);*/
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    height:80dvh;
     background-image: url('pexels-pixabay-163100.jpg');
     background-size: cover;
-    animation: photo 20s infinite;
+    color:white;
+    text-align: center;
 }
-@keyframes photos {
-    0% {
-        background-image: url('IMG-20230929-WA0009.jpg');
-    }
-    25% {
-        background-image: url('pexels-thisisengineering-3912373.jpg');
-    }
-    50% {
-        background-image: url('IMG-20230929-WA0006.jpg');
-    }
+.welcome-box .paragraph h1{
+    font-size: 50px;;
 }
-.side-sections .left-section .menu-section{
-    width:50%;
-    height:100%;
-    padding:20px;
-    box-sizing: border-box;
+.welcome-box .paragraph p{
+    padding:10px 0;
 }
-.side-sections .left-section .menu-section p{
-    padding:20px;
-    color:rgb(255, 255, 255);
-    background-color: rgb(30, 34, 30);
-    font-size: small;
-    opacity:.9;
-    border-radius: 0 0 10px 10px;
+.welcome-box .paragraph .buttons{
+    padding:20px 0;
+    text-align: center;
+    border-top: 4px solid;
 }
-.side-sections .left-section .menu-section img{
-    width:100%;
-    border-radius: 10px 10px 0 0;
-}
-.side-sections .left-section .menu-section img{
-    display:none;
-}
-.side-sections .left-section .menu-section p span{
-    font-weight: 600;
-    font-size: 25px;
-}
-.side-sections .left-section .menu-section p button{
+.welcome-box .paragraph .buttons button{
     padding:15px;
-    width:100%;
+    width:40%;
     border:0;
-    background-color: red;
-    color:rgb(255, 255, 255);
+    background-color: rgb(255, 115, 0);
+    color:white;
     border-radius: 4px;
     font-weight: 600;
-    margin:10px 0;
 }
-/*.side-sections .left-section .images-section{
-    background-image: url('IMG-20230929-WA0017.jpg');
-    
-    background-color: red;
-    background-position: center;
-    animation: photo 20s infinite;
-}*/
-
-/*right section*/
-.side-sections .right-section{
+/*what-we-do*/
+.what-we-do{
     padding:10px;
-    background-color: white;
-    border-radius: 20px;
-    flex:1;
-    margin:5px;
-    position: relative;
 }
-.side-sections .right-section nav{
+.what-we-do .wrap{
     display:flex;
-    gap:5px;
-    flex-wrap: wrap;
-}
-.side-sections .right-section button{
-    padding:15px;
-    border:0;
-    color:rgb(51, 50, 50);
-    font-weight: 600;
-    border-radius: 4px;
-    min-width: max-content;
-}
-.side-sections .right-section .stream-box{
-    padding:5px 0;
-    background-color: white;
-    padding:10px;
-    border-radius: 20px;
-}
-.side-sections .right-section .stream-box .header{
-    display:flex;
-    gap:5px;
-   
-}
-.side-sections .right-section nav .nav-menu{
-    padding:10px;
-    background-color: rgb(255, 255, 255);
-    display:flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    border-radius: 10px;
     gap:10px;
-    border: 1px solid rgb(238, 235, 235);
-    margin:0 0 20px 0;
-    width:100%;
-
-}
-.side-sections .right-section nav .arduno-btn{
-    color:rgb(192, 188, 188);
-    border:2px solid;
-}
-.side-sections .right-section nav .picture{
-    border:1px solid red;
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    background-image:url('BOTTLE FILLING AND PRICING SYSTEM.png') ;
-    background-position: center;
-    background-size: cover;
-}
-.side-sections .right-section nav .paragraph{
-    padding:5px 0;
-    font-size: small;
-    display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
-.side-sections .right-section nav .paragraph .demo{
-    padding:10px 0;
-    display:flex;
-    gap:5px;
-    flex:2;
-}
-.side-sections .right-section nav .paragraph .demo .code{
-    width:50%;
+.what-we-do .wrap div{
     border:1px solid;
-    overflow: scroll;
-    border-radius: 10px;
-    background-color: rgb(245, 238, 238);
+    padding:20px;
 }
-.side-sections .right-section nav .paragraph .demo pre{
-    margin-left: -200px;
-    background-color: rgb(245, 238, 238);
- 
-}
-.side-sections .right-section nav .paragraph .demo .video{
-    width:50%;
-}
-.side-sections .right-section nav .paragraph .demo .video p{
-    padding:10px 0;
-}
-.side-sections .right-section nav .paragraph .demo video{
-    width:100%;
-    border-radius: 4px;
-}
-.side-sections .right-section #electrical-box,.side-sections .right-section #electronic-box{
-   display:none;
-}
-
 /*footer*/
 footer{
     text-align: center;
@@ -278,96 +160,16 @@ footer{
     header .menu-nav{
         display:none;
     }
-    .side-sections {
-        flex-wrap: wrap;
-        height: fit-content;
+    .welcome-box{
+        text-align: start;
     }
-    .side-sections .left-section{
-        background-color: rgb(109, 105, 105);
-        width:100%;
-        flex-wrap: wrap;
-    }
-    .side-sections .left-section .menu-section{
-        width:100%;
-        
-        box-sizing: border-box;
-        text-align: center;
-    }
-    .side-sections .left-section .images-section{
-        width:100%;
-        display:none;
-    }
-    .side-sections .left-section .menu-section p{
-         font-size: medium;
-    }
-
-    .side-sections .left-section .menu-section p button{
-        background-color: rgb(255, 0, 0);
-        color:rgb(255, 255, 255);
-    }
-    .side-sections .right-section nav .paragraph .demo{
-        flex-wrap: wrap;
-    }
-    .side-sections .right-section nav .paragraph .demo .code{
-        display:none;
-    }
-    .side-sections .right-section nav .paragraph .demo .video{
+    .welcome-box .paragraph .buttons button{
+        padding:15px;
         width:100%;
     }
-}
-@media screen and (max-width:1080px){
-    .side-sections{
-        flex-wrap: wrap;
-    }
-    .side-sections .left-section{
-        width:100%
-        
+    .what-we-do .wrap div{
+        width:75%;
+        border-radius: 4px;
     }
 }
 
-/*MENU*/
-.menu-box{
-    padding:10px;
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    top:0px;
-    width:100%;
-    height:100%;
-    box-sizing: border-box;
-    transform: translate(100%);
-    transition: all 300ms ease-in-out;
-    z-index: 1;
-}
-.menu-box .header{
-    display:flex;
-    gap:5px;
-}
-.menu-box .picture{
-    border:1px solid red;
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    background-image:url('BOTTLE FILLING AND PRICING SYSTEM.png') ;
-    background-position: center;
-    background-size: cover;
-}
-.menu-box ul{
-    padding:5px;
-    
-}
-.menu-box ul li{
-    margin:10px 0;
-    border:1px solid;
-    border-radius:10px;
-    padding:5px;
-
-}
-.menu-box ul p{
-    padding:10px 0;
-}
-.menu-box ul p button{
-    padding:15px;
-    background-color: orange;
-    border:0;
-    border-radius: 4px;
-}

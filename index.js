@@ -27,7 +27,6 @@ function MENU_ICON(){
         document.querySelector('.wrap-bars').style.height='20px';
         document.querySelector('.bar2').style.transform='translate(100%)';
         document.querySelector('.bar2').style.opacity='0';
-        document.querySelector('.menu-box').style.transform='translate(0)';
         state=1;
     }
     else{
@@ -41,6 +40,5 @@ function MENU_ICON(){
         document.querySelector('.bar2').style.transform='translate(0)';
         document.querySelector('.bar2').style.opacity='1';
         state=0;
-        document.querySelector('.menu-box').style.transform='translate(100%)';
     }
 }
