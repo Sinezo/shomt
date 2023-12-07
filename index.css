@@ -162,6 +162,7 @@ footer{
     }
     .welcome-box{
         text-align: start;
+        height:fit-content;
     }
     .welcome-box .paragraph .buttons button{
         padding:15px;
