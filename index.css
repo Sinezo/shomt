@@ -99,18 +99,68 @@ header .menu-icon .whatsapp button{
     color:rgb(79, 180, 79);
     border-radius: 4px;
 }
-
+/*wrap all*/
+.wrap-all{
+    display:flex;
+    gap:10px;
+}
+.wrap-all .left-side-bar{
+    width:800px;
+    background-color:black;
+    color:white;
+    z-index:1;
+    transition: all 300ms ease-in-out;
+}
+.wrap-all .left-side-bar .menu-list ul{
+    list-style: none;
+    line-height:3;
+    padding:5px;
+}
+.wrap-all .left-side-bar .menu-list ul li{
+    background-color: rgb(20, 19, 19);
+    padding:10px;
+    margin-bottom: 5px;
+}
+.wrap-all .left-side-bar .menu-list ul li:hover{
+    background-color: rgb(240, 234, 234);
+    color:orange;
+    cursor: pointer;
+}
+/*
+.wrap-all .left-side-bar .menu-list ul li{
+    border:1px solid;
+    background-color: black;
+    padding:10px;
+    border-radius:10px;
+}
+*/
+.wrap-all .right-side-bar{
+    height:80vdh;
+}
+.wrap-all .left-side-bar{
+    transform: translate(-100%);
+    position: absolute;
+ }
 /*welcome-box*/
 .welcome-box{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding:20px;
+    
     height:80dvh;
     background-image: url('pexels-pixabay-163100.jpg');
     background-size: cover;
     color:white;
     text-align: center;
+}
+.welcome-box .wrap{
+    background-color: black;
+    opacity:.8;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-box .paragraph{
+    padding:15px;
 }
 .welcome-box .paragraph h1{
     font-size: 50px;;
@@ -134,7 +184,7 @@ header .menu-icon .whatsapp button{
 }
 /*what-we-do*/
 .what-we-do{
-    padding:10px;
+    padding:40px 10px;
 }
 .what-we-do .wrap{
     display:flex;
@@ -145,6 +195,71 @@ header .menu-icon .whatsapp button{
 .what-we-do .wrap div{
     border:1px solid;
     padding:20px;
+}
+/*aim-feedback*/
+.aim-feedback{
+    padding:10px;
+    gap:10px;
+    align-items: center;
+}
+/*our-aim*/
+.our-aim {
+    padding:30px;
+    background-color: rgb(248, 246, 244);
+    height: fit-content;
+    
+}
+.our-aim p{
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+/*feedback*/
+.feedback{
+    padding:30px;
+    gap:20px;
+}
+.feedback .wrap-people{
+    display:flex;
+    justify-content: center;
+    height: 400px;
+    gap:20px;
+}
+.feedback .wrap-people .photo{
+    text-align: center;
+}
+.feedback .wrap-people img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+.feedback .wrap-people .name{
+    text-align: center;
+    padding: 5px;
+}
+.feedback .wrap-people .box{
+    text-align: center;
+    padding:10px;
+    background-color: rgb(246, 246, 247);
+    min-width: 230px;
+    height: 100%;
+}
+.feedback .wrap-people .buttons{
+    text-align: center;
+    padding:10px;
+}
+.feedback .wrap-people .buttons button{
+    padding:15px;
+    color:white;
+    border:0;
+    border-radius: 4px;
+    width:100%;
+    margin-bottom: 5px;
+}
+.feedback .wrap-people .buttons .view-fb-profile{
+    background-color: rgb(69, 79, 223);
+}
+.feedback .wrap-people .buttons .whatsapp{
+    background-color: lightgreen;
 }
 /*footer*/
 footer{
@@ -164,13 +279,24 @@ footer{
         text-align: start;
         height:fit-content;
     }
+    .welcome-box .paragraph .buttons{
+        text-align: start;
+    }
     .welcome-box .paragraph .buttons button{
         padding:15px;
-        width:100%;
     }
     .what-we-do .wrap div{
         width:75%;
         border-radius: 4px;
+    }
+    .aim-feedback{
+        flex-wrap: wrap;
+    }
+    .feedback .wrap-people{
+        flex-wrap: wrap;
+    }
+    footer{
+        display:none;
     }
 }
 
