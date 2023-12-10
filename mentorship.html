@@ -9,88 +9,186 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
     <title>Mentorship</title>
+    <style>
+        body{
+            background-color: rgb(219, 160, 50);
+        }
+        .projects-wrap{
+            padding:10px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:20px;
+        }
+        .projects-wrap .box{
+            width:400px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .projects-wrap .box video{
+            width: 100%;
+        }
+        .projects-wrap .box h2{
+            padding:10px;
+            background-color: rgb(230, 233, 238);
+            color:orange;
+            border-radius: 10px 10px 0 0;
+        }
+        .projects-wrap .box p{
+            padding:10px;
+        }
+        .projects-wrap .box .buttons{
+            padding:10px;
+        }
+        .projects-wrap .box .buttons button{
+            padding:10px;
+        }
+        .projects-wrap .box .buttons .demo{
+            background-color: unset;
+            border:1px solid;
+            color:grey;
+            border-radius: 4px;
+        }
+        .projects-wrap .box .buttons .circuit{
+            background-color: rgb(220, 224, 230);
+            border:0;
+            border-radius: 4px;
+        }
+        .wrap-all .menu-list{
+            background-color: orange;
+        }
+        .wrap-all ul li{
+            background-color: rgb(36, 33, 33);
+            color:orange;
+        }
+        
+    </style>
 </head>
 <body>
     <!--HEADER-->
     <header>
         <!--company name-->
-        <div class="company-name" onclick="window.location='index.html'"><span class="full-web-name">Sinethemba Student Support Services</span></div>
+        <div class="company-name" onclick="window.location='index.html'">
+            <div class="full-web-name" style="color:orange;">Mentorship</div>
+        </div>
+        <!--menu navigation-->
+        <div class="menu-nav">
+            
+        </div>
         <!--menu icon-->
         <div class="menu-icon">
-            <div class="wrap-bars">
+            <div class="whatsapp">
+                <button><i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp</button>
+            </div>
+            <div class="wrap-bars" onclick="MENU_ICON()">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
         </div>
-    </header><br><br><br><br>
-
-            <!--mentorship-->
-            <div class="mentorship">
-                <div class="breaker-line"></div>
-                <h4 style="padding:10px;font-weight:100;border:1px solid rgb(241, 238, 238);width:fit-content;margin:5px;">Arduino Based</h4>
-                <div class="breaker-line"></div>
-                <div class="projects-wrap">
-                    <div class="project-box">
-                        <div class="image">
-                            <img src="BOTTLE FILLING AND PRICING SYSTEM.png" alt="bottle filling">
-                        </div>
-                        
-                        <div class="paragraph">
-                            <h3 class="project-title">Smart Filling and Pricing System</h3>
-                        <div class="price"><sup>R</sup>1400.00</div>
-                        <div class="info">
-                            <p>
-                                A system that fills any container at your command, measures the amount 
-                                of litres filled and calculates the price accordingly;
-                            </p>
-                            <button class="buy-mentorship">Buy mentorship</button> <button class="learn-more" onclick="window.location='smartfillingsystem.html'">Learn more</button>
-                        </div>
-                        </div>
-                    </div>
+    </header><br><br><br>
+    <!--terms and conditions-->
+    <div class="terms-conditions" style="padding:20px;text-align: center;background-color: white;margin:10px;border-radius: 10px;">
+        Proceeding with requesting mentorship means you have read and understood our <a href="#">terms and conditions</a>.
+    </div>
     
-                    <div class="project-box">
-                        <div class="image">
-                            <img src="PASSWORD LOCK SYSTEM.png" alt="password lock">
-                        </div>
-                        <div class="paragraph">
-                            <h3 class="project-title">Password Lock System</h3>
-                        <div class="price"><sup>R</sup>1100.00</div>
-                        <p>
-                            A system that ensures security by giving access only to those entered 
-                            the correct password and denies access when the password entered is incorrect.
-                        </p>
-                        <button class="buy-mentorship">Buy mentorship</button> <button class="learn-more">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="breaker-line"></div>
-                <h4 style="padding:10px;font-weight:100;border:1px solid rgb(241, 238, 238);width:fit-content;margin:5px;">Electrical</h4>
-                <div class="breaker-line"></div>
-                <div class="projects-wrap">
-                    <div class="project-box">
-                        <div class="image">
-                            <img src="Screenshot (37).png" alt="bottle filling">
-                        </div>
-                        
-                        <div class="paragraph">
-                            <h3 class="project-title">Start-Stop Foward/Reverse Single Phase Motor Control</h3>
-                        <div class="price"><sup>R</sup>900.00</div>
-                        <div class="info">
-                            <p>
-                                A control system that uses start-stop push buttons and relays to make the motor rotate in foward and reverse direction.
-                            </p>
-                            <button class="buy-mentorship">Buy mentorship</button> <button class="learn-more" onclick="window.location='smartfillingsystem.html'">Learn more</button>
-                        </div>
-                        </div>
-                    </div>
-
-                </div>
+    <!--PROJECTS WRAP-->
+    <div class="projects-wrap">
+        <!--password lock systeme-->
+        <div class="box">
+            <h2>PASSWORD LOCK SYSTEM</h2>
+            
+            <p>
+                A password lock system is a security system that only gives access to the 
+                user entered the correct password.
+            </p>
+            <div class="video">
+                <video src="" controls></video>
             </div>
+            <div class="buttons">
+                <button class="demo">Demo</button> <button class="circuit">Circuit diagram</button>
+            </div>
+        </div>
+
+        <!--smart filling and pricing system-->
+        <div class="box">
+            <h2>SMART FILLING & PRICING SYSTEM</h2>
+            
+            <p>
+                A system that fills liquid into containers according to the 
+                instructions given by the user and calculates the amount of money that needs to be payed for the specific litres.
+            </p>
+            <div class="video">
+                <video src="" controls></video>
+            </div>
+            <div class="buttons">
+                <button class="demo">Demo</button> <button class="circuit">Circuit diagram</button>
+            </div>
+        </div>
+
+        <!--distribution system-->
+        <div class="box">
+            <h2>LOW VOLTAGE DISTRIBUTION + GSM CONTROLLED SYSTEM</h2>
+            
+            <p>
+                A system that can either be switched ON/OFF manually or remotely just by 
+                sending an SMS with instructions to be excecuted by the system.
+            </p>
+            <div class="video">
+                <video src="" controls></video>
+            </div>
+            <div class="buttons">
+                <button class="demo">Demo</button> <button class="circuit">Circuit diagram</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrap-all">
+           <!--LEFT SIDE BAR-->
+           <div class="left-side-bar">
+            <!--HEADER-->
+    <header style="background-color: black;">
+        <!--company name-->
+        <div class="company-name" onclick="window.location='index.html'">
+            <div class="logo">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="full-web-name" style="color:white;">Sinelutec</div>
+        </div>
+      
+        <!--menu icon-->
+        <div class="menu-icon" style="background-color: black;">
+            <div class="whatsapp">
+                <button><i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp</button>
+            </div>
+            <div class="wrap-bars" onclick="MENU_ICON()">
+                <div class="bar1" style="margin:9px 0 0 0;transform:rotate(45deg);"></div>
+                <div class="bar2" style="margin:-10px 0 0 0;transform: translate(100%);opacity:0;"></div>
+                <div class="bar3" style="transform:rotate(-45deg);"></div>
+            </div>
+        </div>
+    </header><br><br><br>
+
+            <div class="menu-list">
+                <ul>
+                    <li onclick="window.location='mentorship.html'">Password Lock System</li>
+                    <li>Smart Filling and Pricing System</li>
+                    <li>Low Voltage Distribution + GSM Controlled System</li>
+                    <li>Obstacle Avoiding Password Lock Gate System</li>
+                    <li>DOL Single Phase Motor Control Circuit</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!--FOOTER-->
     <footer>
         copyright &copy;2023 sinelutec All Rights Reserved
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -195,6 +195,10 @@ header .menu-icon .whatsapp button{
 .what-we-do .wrap div{
     border:1px solid;
     padding:20px;
+    text-align:center;
+    font-weight:600;
+    font-size: larger;
+    padding:30px ;
 }
 /*aim-feedback*/
 .aim-feedback{
@@ -223,6 +227,7 @@ header .menu-icon .whatsapp button{
     justify-content: center;
     height: 400px;
     gap:20px;
+    padding:20px 0;
 }
 .feedback .wrap-people .photo{
     text-align: center;
