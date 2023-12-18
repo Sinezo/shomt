@@ -31,15 +31,15 @@
         <!--top navigation-->
         <nav>
             <!--whatsapp-->
-            <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="whatsapp" style="color:green;"><i class="fa-brands fa-whatsapp"></i></div>
             <!--mode-->
-            <div class="mode"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div class="mode" onclick="MODE()"><i class="fa-solid fa-circle-half-stroke"></i></div>
             <!--menu icon-->
             <div class="menu-icon">
                 <!--info-->
                 <div class="menu-info">Menu</div>
                 <!--wrap bars-->
-                <div class="wrap-bars">
+                <div class="wrap-bars" onclick="MENU_ICON()">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -69,12 +69,15 @@
     <!--SERVICES-->
     <div class="services">
         <div class="introduction">
-            <h2>Our Services</h2> <button><i class="fa-solid fa-chevron-down"></i></button>
+            <div class="intro-wrap">
+                <h2>Our Services</h2> <button><i class="fa-solid fa-chevron-down"></i></button>
+            </div>
         </div>
         <!--servces wrap-->
-        <div class="wrap">
-            <div class="arduino">
-                <h3><i class="fa-solid fa-code"></i> Arduino Programming</h3>
+        <div class="wrap" id="wrap-services">
+            <div class="arduino" >
+                <i class="fa-solid fa-code"></i> 
+                <h3>Arduino Programming</h3>
                 <p>
                     Automating electrical and electronic systems and devices.
                 </p>
@@ -85,7 +88,8 @@
             </div>
 
             <div class="electrical-systems">
-                <h3><i class="fa-solid fa-plug-circle-bolt"></i> Electrical Systems</h3>
+                <i class="fa-solid fa-plug-circle-bolt"></i>
+                <h3> Electrical Systems</h3>
                 <p>
                     Automating electrical and electronic systems and devices.
                 </p>
@@ -96,7 +100,8 @@
             </div>
 
             <div class="electronic-systems">
-                <h3><i class="fa-solid fa-microchip"></i> Electronic Systems</h3>
+                <i class="fa-solid fa-microchip"></i> 
+                <h3>Electronic Systems</h3>
                 <p>
                     Automating electrical and electronic systems and devices.
                 </p>
@@ -107,7 +112,8 @@
             </div>
 
             <div class="powerpoint">
-                <h3><i class="fa-solid fa-file-powerpoint"></i> PowerPoint Presentations</h3>
+                <i class="fa-solid fa-file-powerpoint"></i>
+                <h3> PowerPoint Presentations</h3>
                 <p>
                     Automating electrical and electronic systems and devices.
                 </p>
@@ -116,6 +122,23 @@
                     <button class="request-project">Request Project</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!--MENU-->
+    <div class="menu-box">
+        <div class="blinder">
+            <div class="wrap-bars" onclick="MENU_ICON()">
+                <div class="bar-1" style="width:4px;height:30px;background-color: rgb(197, 194, 194);transform:rotate(45deg);margin:0 0 0 0;"></div>
+                <div class="bar-3" style="width:4px;height:30px;background-color: rgb(197, 194, 194);transform:rotate(-45deg);margin:-30px 0 0 0;"></div>
+            </div>
+        </div>
+        <div class="list">
+            <ul>
+                <li>Projects</li>
+                <li>Announcements</li>
+            </ul>
+            <button>Design with us</button>
         </div>
     </div>
 
