@@ -95,6 +95,7 @@ header nav .menu-icon .wrap-bars .bar1,header nav .menu-icon .wrap-bars .bar2,he
 .welcome-box h1{
     padding:20px;
     text-align: center;
+    line-height: 2;
 }
 .welcome-box .founder{
     border:1px solid lightgrey;
@@ -124,7 +125,7 @@ header nav .menu-icon .wrap-bars .bar1,header nav .menu-icon .wrap-bars .bar2,he
     height: 0;
     overflow: hidden;
     position: fixed;
-    bottom: 0;
+    bottom: -100px;
     background-color: white;
     border-radius: 10px 10px 0 0;
     box-sizing: border-box;
@@ -180,8 +181,11 @@ header nav .menu-icon .wrap-bars .bar1,header nav .menu-icon .wrap-bars .bar2,he
 }
 .services .introduction .intro-wrap h2{
     background-color: rgb(255, 255, 255);
-    padding:10px;
     border-radius:4px 0 0 4px;
+    padding:0 0 0 3px;
+}
+.services .introduction .intro-wrap i{
+    padding:10px;
 }
 .services .introduction button{
     padding:17px;
@@ -201,26 +205,26 @@ header nav .menu-icon .wrap-bars .bar1,header nav .menu-icon .wrap-bars .bar2,he
     background-color: white;
     padding:30px;
     border-radius: 4px 4px 0 0;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(250, 170, 51);
 }
 .services .wrap .electrical-systems{
     background-color: white;
     padding:30px;
     border-radius: 4px 4px 0 0;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(250, 170, 51);
 }
 
 .services .wrap .electronic-systems{
     background-color: white;
     padding:10px;
     border-radius: 4px 4px 0 0;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(250, 170, 51);
 }
 .services .wrap .powerpoint{
     background-color: white;
     padding:30px;
     border-radius: 4px 4px 0 0;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(250, 170, 51);
 }
 .services .wrap i{
     font-size: 40px;
@@ -253,9 +257,9 @@ header nav .menu-icon .wrap-bars .bar1,header nav .menu-icon .wrap-bars .bar2,he
     border:2px solid
 }
 .services .buttons .request-project{
-    background-color: orangered;
+    background-color: rgb(61, 57, 56);
     border:0;
-    color:white;
+    color:orangered;
 }
 /*menu box*/
 .menu-box{

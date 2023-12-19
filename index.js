@@ -106,6 +106,7 @@ function FOUNDER(){
             document.querySelector('.founder-paragraph').style.width='100%'
             document.querySelector('.founder-paragraph').style.height='fit-content';
             document.querySelector('.founder-paragraph').style.padding='30px';
+            document.querySelector('.founder-paragraph').style.bottom='0';
         },2000);
 
         
