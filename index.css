@@ -106,8 +106,8 @@ header nav .menu-icon .wrap-bars .bar1,header nav .menu-icon .wrap-bars .bar2,he
     align-items: center;
 }
 .welcome-box .founder .photo{
-    width:40px;
-    height: 40px;
+    min-width:40px;
+    min-height: 40px;
     background-image: url('Picture1.png');
     border:1px solid orangered;
     background-size: cover;
@@ -135,12 +135,16 @@ header nav .menu-icon .wrap-bars .bar1,header nav .menu-icon .wrap-bars .bar2,he
     padding:10px;
     margin: 10px 0 0 0;
     border-radius: 4px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:3px;
 }
 .welcome-box .founder .founder-paragraph .buttons button{
     padding:15px;
     border:0;
     border-radius: 4px;
     font-weight: 600;
+    flex:content;
 }
 .welcome-box .founder .about-founder{
     background-color: orangered;
@@ -322,7 +326,7 @@ header nav .menu-icon .wrap-bars .bar1,header nav .menu-icon .wrap-bars .bar2,he
 
 
 footer{
-    background-color: grey;
+    background-color: rgb(218, 160, 73);
     color:white;
     padding: 10px;
     text-align: center;
