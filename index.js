@@ -85,18 +85,37 @@ function MODE(){
 var founder_state=1;
 function FOUNDER(){
     if(founder_state==1){
+        document.querySelector('.about-founder').style.position='fixed';
+        document.querySelector('.about-founder').style.zIndex='1';
+        document.querySelector('.about-founder').style.width='100%';
+        document.querySelector('.about-founder').style.height='100%';
         document.querySelector('#founder-photo').style.width='50px';
         document.querySelector('#founder-photo').style.height='50px';
+        document.querySelector('.about-founder').style.left='0';
+        document.querySelector('.about-founder').style.top='0';
         document.querySelector('#founder-photo').style.border='1px solid orangered';
         document.querySelector('#founder-photo').style.position='absolute';
         document.querySelector('#founder-photo').style.transform='scale(5)';
         document.querySelector('#founder-photo').style.zIndex='1';
         document.querySelector('#founder-photo').style.transform='translate(-50% -50%)';
         document.querySelector('#founder-photo').style.left='40%';
-        document.querySelector('#founder-photo').style.boxShadow='1px 2px 5px 5px grey';
+        document.querySelector('#founder-photo').style.top='50%';
+        document.querySelector('#founder-photo').style.boxShadow='';
+        setTimeout(function(){
+            document.querySelector('#founder-photo').style.top='20%';
+            document.querySelector('.founder-paragraph').style.width='100%'
+            document.querySelector('.founder-paragraph').style.height='fit-content';
+            document.querySelector('.founder-paragraph').style.padding='30px';
+        },2000);
+
+        
         founder_state=0;
     }
     else{
+        document.querySelector('.about-founder').style.position='fixed';
+        document.querySelector('.about-founder').style.zIndex='1';
+        document.querySelector('.about-founder').style.width='0';
+        document.querySelector('.about-founder').style.height='0';
         document.querySelector('#founder-photo').style.width='0';
         document.querySelector('#founder-photo').style.height='0';
         document.querySelector('#founder-photo').style.border='0';
@@ -105,6 +124,9 @@ function FOUNDER(){
         document.querySelector('#founder-photo').style.transform='translate(0)';
         document.querySelector('#founder-photo').style.left='0';
         document.querySelector('#founder-photo').style.boxShadow='none';
+        document.querySelector('.founder-paragraph').style.width='0'
+        document.querySelector('.founder-paragraph').style.height='0';
+        document.querySelector('.founder-paragraph').style.padding='0';
         founder_state=1;
     }
 }
