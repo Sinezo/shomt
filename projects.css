@@ -23,6 +23,7 @@ header{
     background-repeat: no-repeat;
     background-color: rgb(247, 242, 242);
     position: fixed;
+    width:100%;
 }
 header .wrap{
     width:100%;

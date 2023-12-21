@@ -17,9 +17,23 @@ function SMART_FILLING_AND_PRICING_SYSTEM(){
     document.querySelector('#smart-filling-and-pricing-system-popup').style.top='15%';
 }
 
+//SMART LV DISTRIBUTION SYSTEM
+function SMART_LV_DISTRIBUTION_SYSTEM(){
+    document.querySelector('.projects-popup').style.transform='translate(0)';
+    document.querySelector('#smart-lv-distribution-system-popup').style.top='15%';
+}
+
+//DOL SINGLE PHASE MOTOR CONTROL
+function DOL_SINGLE_PHASE_MOTOR_CONTROL(){
+    document.querySelector('.projects-popup').style.transform='translate(0)';
+    document.querySelector('#dol-single-phase-motor-control-popup').style.top='15%';
+}
+
 function CLOSE(){
     document.querySelector('.projects-popup').style.transform='translate(100%)';
     document.querySelector('#password-lock-popup').style.top='100%';
     document.querySelector('#obstacle-avoiding-password-lock-popup').style.top='100%';
     document.querySelector('#smart-filling-and-pricing-system-popup').style.top='100%';
+    document.querySelector('#smart-lv-distribution-system-popup').style.top='100%';
+    document.querySelector('#dol-single-phase-motor-control-popup').style.top='100%';
 }
