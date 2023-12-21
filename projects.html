@@ -15,9 +15,19 @@
     <!--HEADER-->
     <header>
         <div class="wrap">
-            <h2>Our Projects <i class="fa-solid fa-chevron-down" style="background-color: orangered;"></i></h2>
+            <div class="filter">
+                <div class="arduino" onclick="window.location='projects.html#arduino-based'">Arduino Based</div>
+                <div class="electrical" onclick="window.location='projects.html#electrical-systems'">Electrical Systems</div>
+                <div class="elctronic">Electronic Systems</div>
+            </div>
         </div>
-    </header>
+    </header><br><br><br><br><br><br><br><br><br><br>
+    <div class="terms-conditions">
+        <p>
+            Requesting <b>Mentorship</b> or <b>Guidance </b> on building one of our projects means you have read and understood 
+            our <a href="#">terms & conditions</a> of our services.
+        </p>
+    </div>
 
     <!--PROJECTS-->
     <div class="projects">
@@ -28,10 +38,10 @@
                 <div class="image1"></div>
                 <div class="text"><h3>Password Lock</h3>
                     <p>
-                        Opens only when a correct password is entered
+                        Opens only when a correct password is entered.
                     </p>
                 </div>
-                    <div class="view">View</div>
+                    <div class="view" onclick="PASSWORD_LOCK();">View</div>
             </div>
             <!--obstale avoiding password lock-->
             <div class="box">
@@ -41,7 +51,7 @@
                         Opens only when a correct password is entered and avoids hitting obstacle.
                     </p>
                 </div>
-                    <div class="view">View</div>
+                    <div class="view" onclick="OBSTACLE_AVOIDING_PASSWORD_LOCK();">View</div>
             </div>
             <!--smart filling and pricing system-->
             <div class="box">
@@ -51,7 +61,7 @@
                         Fills containers and prices according to the amount of litres filled.
                     </p>
                 </div>
-                    <div class="view">View</div>
+                    <div class="view" onclick="SMART_FILLING_AND_PRICING_SYSTEM();">View</div>
             </div>
             <!--smart lv distribution system-->
             <div class="box">
@@ -89,10 +99,90 @@
             
         </div>
     </div>
+
+    <!--PROJECTS POPUP-->
+    <div class="projects-popup">
+        <!--blinder-->
+        <div class="blinder">
+            <div class="wrap-bars" onclick="CLOSE()">
+                <div class="bar-1" style="width:4px;height:30px;background-color: rgb(197, 194, 194);transform:rotate(45deg);margin:0 0 0 0;"></div>
+                <div class="bar-3" style="width:4px;height:30px;background-color: rgb(197, 194, 194);transform:rotate(-45deg);margin:-30px 0 0 0;"></div>
+            </div>
+        </div>
+        <!--password lock-->
+        <div id="password-lock-popup" class="box">
+            <h1>Password Lock System</h1>
+            <div class="image"><img src="PASSWORD LOCK SYSTEM.png" alt=""></div>
+            <div class="text">
+                <div class="buttons"><button>Code</button> <button>References</button></div>
+                <p>
+                    A security system that only gives access to the user entered the correct 
+                    password and denies access when an incorrect password is entered.
+
+                    <ul>
+                        <h4><u>Specifications</u></h4>
+                        <li>230VAC or 12VDC supply</li>
+                        <li>5 characters long password</li>
+                        <li>2 modes (blocking & try again)</li>
+                        <li>Changeable password</li>
+                    </ul>
+                    <button class="design">Design with us</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- obstacle avoiding password lock-->
+        <div id="obstacle-avoiding-password-lock-popup" class="box">
+            <h1>Obstacle Avoiding Password Lock System</h1>
+            <div class="image"><img src="PASSWORD LOCK SYSTEM.png" alt=""></div>
+            <div class="text">
+                <div class="buttons"><button>Code</button> <button>References</button></div>
+                <p>
+                    A security system that only gives access to the user entered the correct 
+                    password and denies access when an incorrect password is entered and avoids hitting an obstacle when closing the gate.
+
+                    <ul>
+                        <h4><u>Specifications</u></h4>
+                        <li>230VAC or 12VDC supply</li>
+                        <li>5 characters long password</li>
+                        <li>2 modes (blocking & try again)</li>
+                        <li>Changeable password</li>
+                        <li>Detects up to 4m</li>
+                    </ul>
+                    <button class="design">Design with us</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- smart filling and pricing system-->
+        <div id="smart-filling-and-pricing-system-popup" class="box">
+            <h1>Smart Filling and Pricing System</h1>
+            <div class="image"><img src="PASSWORD LOCK SYSTEM.png" alt=""></div>
+            <div class="text">
+                <div class="buttons"><button>Code</button> <button>References</button></div>
+                <p>
+                    A systems that fills containers with liquid and calculates the price according to the amount of litres filled.
+
+                    <ul>
+                        <h4><u>Specifications</u></h4>
+                        <li>230VAC or 12VDC supply</li>
+                        <li>Can fill up to 2L</li>
+                        <li>Can fill manually</li>
+                        <li>Fills 100ml/s</li>
+                    </ul>
+                    <button class="design">Design with us</button>
+                </p>
+            </div>
+        </div>
+        
+    </div>
     
     <!--FOOTER-->
     <footer>
         copyright &copy;2023 sinelutec All Rights Reserved
     </footer>
+    <script src="projects.js">
+        
+    </script>
 </body>
 </html>
