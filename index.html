@@ -3,171 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="index.css">
+    <title>Projects</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Home | Sinelutec</title>
 </head>
 <body>
     <!--HEADER-->
     <header>
-
-        <!--website name-->
-        <div class="web-name">
-            <!--icon-->
-            <div class="icon">
-                <div class="box1"></div>
-                <div class="box2"></div>
-                <div class="box3"></div>
-                <div class="box4"></div>
+        <div class="wrap">
+            <h1>S' NEZO ELECTRICAL DESIGN</h1>
+            <div class="filter">
+                <div class="arduino" onclick="window.location='index.html#arduino-based'">Arduino Based</div>
+                <div class="electrical" onclick="window.location='index.html#electrical-systems'">Electrical Systems</div>
+                <div class="elctronic">Electronic Systems</div>
             </div>
-            <!--text-->
-            <div class="text">Sinelutec</div>
         </div>
-
-        <!--top navigation-->
-        <nav>
-            <!--whatsapp-->
-            <div class="whatsapp" style="color:green;"><i class="fa-brands fa-whatsapp"></i></div>
-            <!--mode-->
-            <div class="mode" onclick="MODE()"><i class="fa-solid fa-circle-half-stroke"></i></div>
-            <!--menu icon-->
-            <div class="menu-icon">
-                <!--info-->
-                <div class="menu-info">Menu</div>
-                <!--wrap bars-->
-                <div class="wrap-bars" onclick="MENU_ICON()">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </div>
-        </nav>
-
     </header>
+    <div class="spacer" style="width:100%;height:30vh"></div>
+    <div class="terms-conditions">
+        <p>
+            Requesting <b>Mentorship</b> or <b>Guidance </b> on building one of our projects means you have read and understood 
+            our <a href="#">terms & conditions</a> of our services.
+        </p>
+    </div>
 
-    <!--WELCOME BOX-->
-    <div class="welcome-box">
-        <!--welcome text-->
-        <div class="text">
-            <h1>Connecting Possibilities, Designing Realities.</h1>
-        </div>
-        <!--founder-->
-        <div class="founder">
-            <!--about founder onclick-->
-            <div class="photo" onclick="FOUNDER();"></div>
-            <!--popup-->
-            <div class="about-founder"><div id="founder-photo" onclick="FOUNDER();"></div>
-
-            <div class="founder-paragraph">
-               A qualified electrican who graduated from <b style="color:orangered;">Walter Sisulu Unirvesity</b> in September 2023.
-               <p>
-                An electrical enthusiast who has passion for designing electrical and electronic systems using current skills and knowledge acquired to innovate and solve real world problems.
-               </p>
-                <div class="buttons">
-                    <button>Sinethemba Lusawana</button> <button style="background-color: rgb(0, 174, 255);color:white;"><i class="fa-solid fa-phone-flip"></i></button>
-                    <br>
-                    <br><button style="background-color: rgb(45, 196, 45);color:white;">WhatsApp</button>
-                    <button style="background-color: blue;color:white;">Facebook</button>
+    <!--PROJECTS-->
+    <div class="projects">
+        <div class="wrap">
+            <div id="arduino-based" class="category">Arduino Based <i class="fa-solid fa-code"></i> </div>
+            <!--password lock-->
+            <div class="box">
+                <div class="image1"><i class="fa-solid fa-microchip"></i></div>
+                <div class="text"><h3>Password Lock</h3>
+                    <p>
+                        Opens only when a correct password is entered.
+                    </p>
                 </div>
+                    <div class="view" onclick="PASSWORD_LOCK();">View</div>
             </div>
-        
+            <!--obstale avoiding password lock-->
+            <div class="box">
+                <div class="image1"><i class="fa-solid fa-microchip"></i> </div>
+                <div class="text"><h3>Obstacle Avoiding Password Lock</h3>
+                    <p>
+                        Opens only when a correct password is entered and avoids hitting obstacle.
+                    </p>
+                </div>
+                    <div class="view" onclick="OBSTACLE_AVOIDING_PASSWORD_LOCK();">View</div>
+            </div>
+            <!--smart filling and pricing system-->
+            <div class="box">
+                <div class="image1"><i class="fa-solid fa-microchip"></i> </div>
+                <div class="text"><h3>Smart Filling & Pricing System</h3>
+                    <p>
+                        Fills containers and prices according to the amount of litres filled.
+                    </p>
+                </div>
+                    <div class="view" onclick="SMART_FILLING_AND_PRICING_SYSTEM();">View</div>
+            </div>
+            <!--smart lv distribution system-->
+            <div class="box">
+                <div class="image1"><i class="fa-solid fa-microchip"></i> </div>
+                <div class="text"><h3>Smart LV Distribution System</h3>
+                    <p>
+                        Can be swiched ON/OFF manually or remotely by sending an SMS.
+                    </p>
+                </div>
+                    <div class="view" onclick="SMART_LV_DISTRIBUTION_SYSTEM();">View</div>
+            </div>
+            <!--wireless controlled cooling system-->
+            <div class="box">
+                <div class="image1"><i class="fa-solid fa-microchip"></i> </div>
+                <div class="text"><h3>Wireless Controlled Cooling System</h3>
+                    <p>
+                        can be controlled with a remote and has several cool settings.
+                    </p>
+                </div>
+                    <div class="view" style="background-color: rgb(247, 244, 244);color:rgb(202, 197, 197);">View</div>
             </div>
 
-            <div class="paragraph">
-                <h4>Sinethemba Lusawana</h4>
-                <p>Founder * Qualified Electrician</p>
+            <!--electrical systems-->
+            <div id="electrical-systems" class="category">Electrical Systems <i class="fa-solid fa-plug-circle-bolt"></i></div>
+            <!--dol motor control circuit-->
+            <div class="box">
+                <div class="image1"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+                <div class="text"><h3>DOL Single Phase Motor Control</h3>
+                    <p>
+                        cab be controlled with a remote and has several cool settings.
+                    </p>
+                </div>
+                    <div class="view" onclick="DOL_SINGLE_PHASE_MOTOR_CONTROL();">View</div>
             </div>
-            <div class="call" onclick="FOUNDER()">View</div>
+            
         </div>
     </div>
 
-    <!--SERVICES-->
-    <div class="services">
-        <div class="introduction">
-            <div class="intro-wrap">
-                <h2 onclick="window.location='index.html#wrap-services'">Our Services <i class="fa-solid fa-chevron-down" style="background-color: orangered;"></i></h2>
-            </div>
-        </div>
-        <!--servces wrap-->
-        <div class="wrap" id="wrap-services">
-            <div class="arduino" >
-                <i class="fa-solid fa-code"></i> 
-                <h3>Arduino Programming</h3>
-                <p>
-                    Automating electrical and electronic systems and devices.
-                </p>
-                <div class="buttons">
-                    <button class="see-projects" onclick="window.location='projects.html#arduino-based'">See Projects</button>
-                    <button class="request-project">Request Project</button>
-                </div>
-            </div>
-
-            <div class="electrical-systems">
-                <i class="fa-solid fa-plug-circle-bolt"></i>
-                <h3> Electrical Systems</h3>
-                <p>
-                    Automating electrical and electronic systems and devices.
-                </p>
-                <div class="buttons">
-                    <button class="see-projects" onclick="window.location='projects.html#electrical-systems'">See Projects</button>
-                    <button class="request-project">Request Project</button>
-                </div>
-            </div>
-
-            <div class="electronic-systems">
-                <i class="fa-solid fa-microchip"></i> 
-                <h3>Electronic Systems</h3>
-                <p>
-                    Automating electrical and electronic systems and devices.
-                </p>
-                <div class="buttons">
-                    <button class="see-projects">See Projects</button>
-                    <button class="request-project">Request Project</button>
-                </div>
-            </div>
-
-            <div class="powerpoint">
-                <i class="fa-solid fa-file-powerpoint"></i>
-                <h3> PowerPoint Presentations</h3>
-                <p>
-                    Automating electrical and electronic systems and devices.
-                </p>
-                <div class="buttons">
-                    <button class="see-projects">See Projects</button>
-                    <button class="request-project">Request Project</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--MENU-->
-    <div class="menu-box">
+    <!--PROJECTS POPUP-->
+    <div class="projects-popup">
+        <!--blinder-->
         <div class="blinder">
-            <div class="wrap-bars" onclick="MENU_ICON()">
+            <div class="wrap-bars" onclick="CLOSE()">
                 <div class="bar-1" style="width:4px;height:30px;background-color: rgb(197, 194, 194);transform:rotate(45deg);margin:0 0 0 0;"></div>
                 <div class="bar-3" style="width:4px;height:30px;background-color: rgb(197, 194, 194);transform:rotate(-45deg);margin:-30px 0 0 0;"></div>
             </div>
         </div>
-        <div class="list">
-            <ul>
-                <li onclick="window.location='projects.html'">Projects</li>
-                <li>Announcements</li>
-            </ul>
-            <button>Design with us</button>
-        </div>
-    </div>
+        <!--password lock-->
+        <div id="password-lock-popup" class="box">
+            <h1>Password Lock System</h1>
+            <div class="image"><img src="PASSWORD LOCK SYSTEM.png" alt=""></div>
+            <div class="text">
+                <div class="buttons"><button>Code</button> <button>References</button></div>
+                <p>
+                    A security system that only gives access to the user entered the correct 
+                    password and denies access when an incorrect password is entered.
 
+                    <ul>
+                        <h4><u>Specifications</u></h4>
+                        <li>230VAC or 12VDC supply</li>
+                        <li>5 characters long password</li>
+                        <li>2 modes (blocking & try again)</li>
+                        <li>Changeable password</li>
+                    </ul>
+                    <ul>
+                        <h4><u>Applications</u></h4>
+                        <li>Can be used for security to avoid unwanted visitors.</li>
+                        <li>Can be used as a lock for privacy to prevent people from having access to your things without your permission.</li>
+                        <li>Can be used for safety in engineerign industry to only the authorised to operate on the systems.</li>
+                    </ul>
+                    <button class="design">Design with us</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- obstacle avoiding password lock-->
+        <div id="obstacle-avoiding-password-lock-popup" class="box">
+            <h1>Obstacle Avoiding Password Lock System</h1>
+            <div class="image"><img src="OBSTACLE AVOIDING PASSWORD LOCK.png" alt=""></div>
+            <div class="text">
+                <div class="buttons"><button>Code</button> <button>References</button></div>
+                <p>
+                    A security system that only gives access to the user entered the correct 
+                    password and denies access when an incorrect password is entered and avoids hitting an obstacle when closing the gate.
+
+                    <ul>
+                        <h4><u>Specifications</u></h4>
+                        <li>230VAC or 12VDC supply</li>
+                        <li>5 characters long password</li>
+                        <li>2 modes (blocking & try again)</li>
+                        <li>Changeable password</li>
+                        <li>Detects up to 4m</li>
+                    </ul>
+                    <ul>
+                        <h4>Applications</h4>
+                        <li>Can be used to open and block entrance in any premises.</li>
+                    </ul>
+                    <button class="design">Design with us</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- smart filling and pricing system-->
+        <div id="smart-filling-and-pricing-system-popup" class="box">
+            <h1>Smart Filling and Pricing System</h1>
+            <div class="image"><img src="BOTTLE FILLING AND PRICING SYSTEM.png" alt=""></div>
+            <div class="text">
+                <div class="buttons"><button>Code</button> <button>References</button></div>
+                <p>
+                    A systems that fills containers with liquid and calculates the price according to the amount of litres filled.
+
+                    <ul>
+                        <h4><u>Specifications</u></h4>
+                        <li>230VAC or 12VDC supply</li>
+                        <li>Can fill up to 2L</li>
+                        <li>Can fill manually</li>
+                        <li>Fills 100ml/s</li>
+                    </ul>
+
+                    <ul>
+                        <h4>Applications</h4>
+                        <li>Can be used in shop for selling drinks</li>
+                        <li>Can be used for filling paraffin, petrol and more.</li>
+                    </ul>
+                    <button class="design">Design with us</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- smart lv distribution system-->
+        <div id="smart-lv-distribution-system-popup" class="box">
+            <h1>Smart LV Distribution System</h1>
+            <div class="image"><img src="SMART LV DISTRIBUTION SYSTEM.png" alt=""></div>
+            <div class="text">
+                <div class="buttons"><button>Code</button> <button>References</button></div>
+                <p>
+                    A systems that can be controlled manually or remotely just by sending an SMS.
+
+                    <ul>
+                        <h4><u>Specifications</u></h4>
+                        <li>230VAC Single Phase System</li>
+                        <li>12VDC Backup Control System</li>
+                        <li>4 Distribution outgoing panel feeders + 1 Main Feeder</li>
+                    </ul>
+
+                    <ul>
+                        <h4>Applications</h4>
+                        <li>Easy control in  low voltage electrical distribution system.</li>
+                        <li>Can be used in hostels or school residences to easily control each outgoing feeder.</li>
+                    </ul>
+                    <button class="design">Design with us</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- DOL Single Phase Motor Control-->
+        <div id="dol-single-phase-motor-control-popup" class="box">
+            <h1> DOL Single Phase Motor Control</h1>
+            <div class="image"><img src="DOL MOTOR COTROL.png" alt=""></div>
+            <div class="text">
+                <div class="buttons"><button>Code</button> <button>References</button></div>
+                <p>
+                    A control system that uses START/STOP buttons and make it possible for the 
+                    motor to run in FORWARD/REVERSE direction.
+
+                    <ul>
+                        <h4><u>Specifications</u></h4>
+                        <li>230VAC Supply</li>
+                        <li>Rotation: Forward & Reverse</li>
+                    </ul>
+                    <ul>
+                        <h4>Applications</h4>
+                        <li>Can be used in conveyor belts</li>
+                        <li>Can be used in escalator systsem</li>
+                        <li>and more</li>
+                    </ul>
+                    <button class="design">Design with us</button>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    
     <!--FOOTER-->
     <footer>
         copyright &copy;2023 sinelutec All Rights Reserved
     </footer>
-    </div>
-</div>
-
-    <script src="index.js"></script>
+    <script src="projects.js">
+        
+    </script>
 </body>
 </html>

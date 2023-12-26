@@ -77,10 +77,10 @@ header h2 i{
     padding:10px;
     display:grid;
     gap: 10px;
-    background-color: rgb(243, 238, 235);
+    background-color: unset;
 }
 .projects .wrap .category{
-    color:rgb(221, 107, 50);
+    color:rgb(92, 91, 90);
 }
 .projects .box{
     display:flex;
@@ -111,10 +111,11 @@ header h2 i{
     padding: 15px;
     flex:1;
     text-align: center;
-    background-color: blue;
-    color:white;
+    background-color: unset;
+    color:rgb(0, 0, 0);
     border-radius: 4px;
     height:fit-content;
+    border:1px solid;
 }
 .projects .box .view:hover{
     cursor: pointer;
