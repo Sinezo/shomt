@@ -8,227 +8,143 @@ html{
 body{
 font-family: 'Ubuntu', sans-serif;
 overflow-x: hidden;
+background-color: rgb(169, 199, 37);
 }
 ::-webkit-scrollbar{
     display:none;
 }
-button:hover{
-    opacity: .4;
-    cursor: pointer;
+.welcome-intro{
+ display:flex;
 }
-header{
-    height:30vh;
-    background-image: url('pexels-pixabay-163100.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(247, 242, 242);
-    position: fixed;
-    width:100%;
-    box-shadow: 1px 1px 3px;
-    z-index:1;
-}
-header .wrap{
-    width:100%;
-    height:100%;
-    background-color: rgb(255, 255, 255);
-    display:grid;
-    justify-content: center;
-    align-items: center;
-    opacity: .8;
-  
-}
-header .wrap h1{
-    background-color: rgb(20, 19, 19);
-    color:white;
-    padding:10px
-}
-header .wrap .filter{
+.welcome-intro header{
     display:flex;
-    padding:20px;
-    gap:10px;
-    overflow-x: scroll;
 }
-header .wrap .filter div{
-    background-color: rgb(0, 0, 0);
-    padding:20px;
-    border-radius: 4px;
-    color:rgb(255, 255, 255);
-    font-size: large;
-    min-width:200px;
-    text-align: center;
-}
-header .wrap .filter div:hover{
-    cursor: pointer;
-    background-color: rgb(7, 26, 54);
-    color:rgb(255, 255, 255);
-}
-header h2{
-    background-color: rgb(255, 255, 255);
-    padding: 0 0 0 3px;
-    border-radius: 4px;
-    color:rgb(0, 0, 0);
-}
-header h2 i{
+.welcome-intro header .letter{
     padding:10px;
-    border-radius:  0 4px 4px 0;
-    color:white;
-}
-/*terms-conditions*/
-.terms-conditions{
-    padding:20px;
-    font-size: small;
-}
-.terms-conditions p{
-    border-bottom: 4px solid rgb(221, 215, 213);
-    padding-bottom: 10px;
-    background-color: rgb(247, 243, 243);
-    padding:20px;
-    border-radius: 10px;
-}
-/*projects*/
-.projects .wrap{
-    padding:10px;
-    display:grid;
-    gap: 10px;
-    background-color: black;
-}
-.projects .wrap .category{
-    color:rgb(92, 91, 90);
-}
-.projects .background-project{
-    background-image: url('pexels-pixabay-163100.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-    box-shadow: 1px 1px 3px white;
-    background-color: white;
-}
-.projects .box{
-    display:flex;
-    gap:5px;
     border:0;
-    padding:5px;
-    border-radius: 4px;
-    background-color:white;
-    opacity:.8;
-    z-index: 0;
-    color:rgb(0, 0, 0);
-
+    width:10%;
+    height:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
 }
-.projects .box h3{
-    color:rgb(255, 116, 3);
-}
-.projects .box .image1{
-    min-width:40px;
-    max-height:40px;
-    font-size: 30px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    border:1px solid rgb(255, 255, 255);
-    color:rgb(197, 191, 187);
+.welcome-intro header .letter div{
+    width:80%;
+    height:80%;
+    border:1px dotted;
     display:flex;
     justify-content: center;
     align-items: center;
+    padding:10px;
 }
-.projects .box p{
-    font-size: small;
+.welcome-intro header .letter:nth-child(even){
+    background-color: rgb(255, 255, 255);
+    color:rgb(253, 201, 30);
 }
-.projects .box .view{
-    padding: 15px;
-    flex:1;
-    text-align: center;
-    background-color:rgb(0, 0, 0);
+.welcome-intro header .letter:nth-child(odd){
+    background-color: rgb(169, 199, 37);;
     color:rgb(255, 255, 255);
-    border-radius: 10px;
-    height:fit-content;
-    border-bottom: 2px solid;
 }
-.projects .box .view:hover{
-    cursor: pointer;
-    opacity: .4;
-}
-
-/*projects-popup*/
-.projects-popup{
-    position: fixed;
-    width:100%;
-    height:100%;
-    top:0;
-    z-index: 1;
-}
-.projects-popup{
-    transform: translate(100%);
-}
-.projects-popup .blinder .wrap-bars{
-    width:30px;
-    height: fit-content;
-    margin: 0 0 0 -30px;
-}
-.projects-popup .blinder{
-    background-color: rgb(0, 0, 0);
-    width:inherit;
-    height: inherit;
-    opacity: .9;
+.welcome-intro nav{
     display:flex;
     justify-content: end;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    color:rgb(41, 38, 38);
+    padding:0 10px;
 }
-.projects-popup .image img{
-    width:100%;
+.welcome-intro nav ul{
+    display:flex;
+    list-style: none;
+    gap:20px;
+}
+.welcome-intro nav ul li{
+    padding:10px;
+}
+.welcome-intro nav ul :nth-child(4){
+    background-color: blue;
     border-radius: 4px;
-    filter:brightness(30%)
-}
-.projects-popup .image img:hover{
-    filter: brightness(100%);
-    cursor:zoom-in;
-}
-.projects-popup .box{
-    padding:30px;
-    background-color: rgb(10, 10, 10);
-    position: inherit;
-    top:100%;
-    bottom: 0;
-    overflow-y: scroll;
-    border-radius: 10px 10px 0 0;
-    transition: all 300ms ease-in-out;
     color:white;
-    opacity:.8;
 }
-.projects-popup .text .buttons{
+/*welcome-page*/
+.welcome-page{
+    padding:10px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.welcome-page .left-side{
+    background-color: white;
+    width:500px;
+}
+.welcome-page .left-side img{
+    width:100%;
+
+}
+.welcome-page .left-side .text{
+    padding:30px;
+}
+.welcome-page .left-side .buttons{
+    margin-top: 10px;
+    padding:10px 0;
+    border-top: 1px solid rgb(243, 238, 238) ;
+}
+.welcome-page .left-side .buttons :nth-child(1){
+    background-color: white;
+    color:rgb(169, 199, 37);
+}
+.welcome-page .left-side button{
+    padding:15px;
+    background-color: rgb(169, 199, 37);
+    color:white;
+    border:1px solid yellow;
+    border-radius: 4px;
+}
+/*right side*/
+.welcome-page .right-side{
+    width:500px;
+    background-color: rgb(255, 255, 255) ;
+}
+.welcome-page .right-side .text{
+    padding:20px;
+    background-color: rgb(153, 165, 42);
+}
+.welcome-page .right-side .text div{
+    border:1px solid lightgrey;
+    padding:10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.welcome-page .right-side h1{
+    background-color: rgb(153, 165, 42);
+    color:white;
+    padding:10px 20px;
+}
+.welcome-page .right-side .text h2{
+    border-bottom: 3px solid rgb(153, 165, 42);
     padding:10px 0;
 }
-.projects-popup .text .buttons button{
+.welcome-page .right-side .text p{
+    padding:5px 0;
+}
+.welcome-page .right-side .text button{
     padding:15px;
-    border:1px solid;
+    border:1px solid lightgrey;
     background-color: unset;
     border-radius: 4px;
-    color:white;
+    margin-top: 10px;
 }
-.projects-popup .text p{
-    font-size: small;
-}
-.projects-popup .text ul{
-    list-style-position: inside;
-    font-size: small;
-    padding:10px 0;
-}
-.projects-popup .text ul h4{
-    padding:5px 0;
-    color:rgb(233, 133, 19);
-    text-decoration: underline;
-}
-.projects-popup .text .design{
-    padding:15px;
-    width:100%;
-    background-color: orange;
-    border: 0;
-    color:white;
-    font-weight: 600;
-    border-radius: 4px;
-}
-footer{
-    background-color: rgb(107, 106, 105);
-    color:white;
-    padding: 10px;
-    text-align: center;
+@media screen and (max-width:500px) {
+    .welcome-intro header{
+       display:block;
+       position: fixed;
+       background-color: unset;
+       padding:5px;
+    }
+    .welcome-intro nav{
+        display:none;
+    }
+    
 }
