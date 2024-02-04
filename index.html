@@ -5,93 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="index.css">
-    <title>Projects</title>
+    <title>sinelutec engineering</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-        <!--welcome intro-->
-        <section class="welcome-intro">
-            <header>
-                <div class="letter"><div class="decor">S</div></div>
-                <div class="letter"><div class="decor">i</div></div>
-                <div class="letter"><div class="decor">n</div></div>
-                <div class="letter"><div class="decor">e</div></div>
-                <div class="letter"><div class="decor">l</div></div>
-                <div class="letter"><div class="decor">u</div></div>
-                <div class="letter"><div class="decor">t</div></div>
-                <div class="letter"><div class="decor">e</div></div>
-                <div class="letter"><div class="decor">c</div></div>
-            </header>
-           <nav>
+    <!--CONTACT DETAILS-->
+    <div class="contact-details">
+        <div class="text">
+             <p>
+                <a href="#">enquiries@sinelutecengineering.co.za</a> <br>
+            <a href="#">078 605 2462</a><br>
+            <label>13 Sisson St, Umtata 5100</label>
+             </p>
+        </div>
+    </div>
+    <!--HEADER-->
+    <header>
+        <!--website name-->
+        <div class="web-name"><label>sinelutec engineering</label></div>
+        <!--big screen navigation-->
+        <div class="big-screen-navigation">
             <ul>
-                <li>Projects</li>
+                <li>Our Products</li>
+                <li>Services</li>
                 <li>Team</li>
-                <li>Participate</li>
                 <li>Contact us</li>
+                <li>Our vision</li>
             </ul>
-           </nav>
-        </section>
+        </div>
+        <!--navigation-->
+        <nav>
+            <div class="wrap-bars" onclick="MENU();">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
 
-        <!--WELCOME PAGE-->
-        <section class="welcome-page">
-            <!--left side-->
-            <div class="left-side">
-                <div class="image">
-                    <img src="pexels-thisisengineering-3912373.jpg" alt="">
+    <!--WELCOME BOX-->
+    <div class="welcome-box">
+        <div class="text">
+            <h1>
+                Transforming ideas into reallity.
+            </h1>
+            <p>
+                As sinelutec engineering we are so passionate in transforming our creative ideas into reality to solve 
+                real world problems. We are confident in delivering our services by designing quality products and significant operational systems.
+
+                <div class="buttons">
+                    <button class="read-more">Find out more</button> <button class="contact-us">Contact us</button>
                 </div>
-                <!--text-->
-                <div class="text">
-                    <h1>Transforming engineering ideas into reality.</h1>
-                    <p>
-                        We can help you learn, think and design your first engineering project to meet your specific objectives.
-                    </p>
-                    <div class="buttons">
-                        <button>Learn more</button>
-                        <button>Satrt learning</button>
-                    </div>
-                </div>
-            </div>
-            <!--right side-->
-            <div class="right-side">
-                <h1>What we offer</h1>
-                <div class="text">
-                    <div class="electrical">
-                        <h2>Electrical</h2>
-                        <p>
-                            Learn basic electrical theories and principles to help you get 
-                            started to work with Direct Current and Alternating Current low voltage systems.
-                        <br><button>Sart Learning</button>
-                        </p>
-                    </div>
-                    <div class="electronics">
-                        <h2>Electronics</h2>
-                        <p>
-                            Learn the basics of electronics and start design cool and significant electronic projects that you find interesting. 
-                            <br><button>Start Learning</button>
-                        </p>
-                    </div>
-                    <div class="cpp">
-                        <h2>C++ Programming</h2>
-                        <p>
-                            Start learning one of the popular and useful programming languages, C++ and start giving instruction to computers.
-                            <br><button>Sart Learning</button>
-                        </p>
-                    </div>
-                    <div class="embedde-systems">
-                        <h2>Embedded Systems</h2>
-                        <p>
-                            Start controlling electrical and electronic systems with with instructions given to the microcontroller. 
-                            <br><button>Sart Learning</button>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <script src="projects.js">
-        
-    </script>
+            </p>
+        </div>
+    </div>
+
+    <!--MENU-->
+    <div class="menu-box">
+        <div class="blinder"></div>
+        <div class="menu-list">
+            <ul>
+                <li>Our products</li>
+                <li>Services</li>
+                <li>Team</li>
+                <li>Contact us</li>
+                <li>Our vision</li>
+                <li>Competitions</li>
+            </ul>
+            
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
