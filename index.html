@@ -12,23 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--CONTACT DETAILS-->
-    <div class="contact-details">
-        <div class="text">
-             <p>
-                <a href="#">enquiries@sinelutecengineering.co.za</a> <br>
-            <a href="#">078 605 2462</a><br>
-            <label>13 Sisson St, Umtata 5100</label>
-             </p>
-        </div>
-    </div>
     <!--HEADER-->
     <header>
         <!--website name-->
-        <div class="web-name"><label>sinelutec engineering</label></div>
+        <div class="web-name" onclick="window.location='index.html'"><label>sinelutec engineering</label></div>
         <!--big screen navigation-->
         <div class="big-screen-navigation">
             <ul>
+                <li onclick="window.location='index.html'">Home</li>
                 <li>Our Products</li>
                 <li>Services</li>
                 <li>Team</li>
@@ -66,7 +57,18 @@
     <!--MENU-->
     <div class="menu-box">
         <div class="blinder"></div>
+
         <div class="menu-list">
+            <!--close icon-->
+            <div class="close-icon">
+                <div class="wrap-bars" onclick="MENU();">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+            <!--nav list-->
             <ul>
                 <li>Our products</li>
                 <li>Services</li>
@@ -78,9 +80,177 @@
             
         </div>
     </div>
+
+    <div class="brief-numbers">
+        <!--electrical services-->
+        <div>
+            <span>plus</span>
+            <h1>4</h1>
+            <p>
+                electrical services
+            </p>
+        </div>
+
+        <!--project ideas-->
+        <div>
+            <span>plus</span>
+            <h1>210</h1>
+            <p>
+                project ideas
+            </p>
+        </div>
+
+        <!--numbe of products-->
+        <div>
+            <span>plus</span>
+            <h1>100</h1>
+            <p>
+                completed products
+            </p>
+        </div>
+        <!--educational projects-->
+        <div>
+            <span>plus</span>
+            <h1>20</h1>
+            <p>educational projects</p>
+        </div>
+    </div>
+
+    <!--SLOGAN-->
+    <div class="slogan">
+        <p>
+            <h2>No matter how hard it may sound, we will always give it a <span style="color:red;">try</span>.</h2>
+            make mistakes . learn . and improve
+        </p>
+        <button>See what makes us confident</button>
+    </div>
+
+    <!--WHAT WE DO-->
+    <div class="what-we-do">
+        <!--what we do-->
+        <h1>WHAT WE DO</h1>
+        <!--embedded systems-->
+        <div class="embedded-systems">
+            <!--image-->
+            <div class="image">
+                <div class="number">1</div>
+                <img src="pexels-thisisengineering-3912373.jpg" alt="img">
+            </div>
+            <!--text-->
+            <div class="text">
+                <h1>Embedded Systems</h1>
+                <p>
+                    Embedding electronic systems that are emporewed by C programming into electrical systems, mechanical systems and more to advance these systems, make them to be user-friendly and  have good operation.
+                </p>
+                <button>Explore embedded systems</button>
+            </div>
+        </div>
+
+        <!--electrical systems-->
+        <div class="electrical-systems">
+            <!--image-->
+            <div class="image">
+                <div class="number">2</div>
+                <img src="pexels-thisisengineering-3912373.jpg" alt="img">
+            </div>
+            <!--text-->
+            <div class="text">
+                <h1>Electrical Systems</h1>
+                <p>
+                    Employing electrical laws and principles to design significant electrical systems to 
+                    help in solving real word challanges and be innovative in the field of engineering.
+                </p>
+                <button>Explore electrical systems</button>
+            </div>
+        </div>
+
+        <!--installation-->
+        <div class="installation">
+            <!--image-->
+            <div class="image">
+                <div class="number">3</div>
+                <img src="pexels-thisisengineering-3912373.jpg" alt="img">
+            </div>
+            <!--text-->
+            <div class="text">
+                <h1>Installation</h1>
+                <p>
+                    Employing electrical laws and principles to design significant Installation to 
+                    help in solving real word challanges and be innovative in the field of engineering.
+                </p>
+                <button>Explore installation</button>
+            </div>
+        </div>
+
+        <!--web development-->
+        <div class="web-development">
+            <!--image-->
+            <div class="image">
+                <div class="number">4</div>
+                <img src="pexels-thisisengineering-3912373.jpg" alt="img">
+            </div>
+            <!--text-->
+            <div class="text">
+                <h1><span>Bonus</span>: Web development</h1>
+                <p>
+                    We can even help you in bringing your idea, bussiness and anything online with our amazing skills in front-end 
+                    web development at affordable prices.
+                </p>
+                <button>Explore web development</button>
+            </div>
+        </div>
+    </div>
+
     <!--FOOTER-->
     <footer>
+        <!--quick links-->
+        <div class="quick-links">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li>Home</li>
+                <li>Our products</li>
+                <li>Services</li>
+                <li>Team</li>
+                <li>Our vision</li>
+                <li>Competitions</li>
+            </ul>
+        </div>
 
+        <!--contanct us-->
+        <div class="contact-us">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>WhatsApp 078 605 2462</li>
+                <li>Call 078 605 2462</li>
+            </ul>
+            <address>
+                13 Sisson St 
+                <br>Fortgale 
+                <br>Umtata 
+                <br>Eastern Cape 
+            </address>
+        
+        </div>
+
+        <!--company-->
+        <div class="company">
+            <h3>COMPANY</h3>
+            <ul>
+                <li>About</li>
+                <li>Founder</li>
+                <li>Registration</li>
+                <li>Terms & Conditions</li>
+            </ul>
+        </div>
+
+        <!--eductation-->
+        <div class="education">
+            <h3>EDUCATION</h3>
+            <ul>
+                <li>Mentorship / Tutoring</li>
+                <li>Competitions</li>
+            </ul>
+        </div>
     </footer>
 
     <script src="index.js"></script>
