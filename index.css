@@ -6,7 +6,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-font-family: 'Ubuntu', sans-serif;
+/*font-family: 'Ubuntu', sans-serif;*/
+font-family:Verdana, Geneva, Tahoma, sans-serif;
 overflow-x: hidden;
 background-color: rgb(0, 0, 0);
 }
@@ -20,6 +21,12 @@ header{
     gap:10px;
     align-items: center;
     padding:10px;
+    position: fixed;
+    width:100%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px black;
+    z-index:1;
+    top:0;
 }
 header .web-name{
     padding:5px;
@@ -234,8 +241,8 @@ nav .bar1, nav .bar3, nav .bar2{
 .what-we-do > div .text{
     padding:10px;
     width:500px;
-    background-color: rgb(22, 22, 22);
-    color:white;
+    background-color: rgb(238, 230, 230);
+    color:rgb(24, 23, 23);
 }
 .what-we-do > div .text p{
     padding:10px 0;
@@ -265,6 +272,10 @@ footer ul{
     list-style: none;
 }
 @media screen and (max-width:700px) {
+    /*welcome-box*/
+    .welcome-box{
+        margin-top: 50px;
+    }
     /*contact-details*/
     .contact-details{
         display:none;
