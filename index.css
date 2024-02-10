@@ -71,6 +71,9 @@ nav .bar1, nav .bar3, nav .bar2{
     display:flex;
     justify-content: center;
 }
+.welcome-box  h1{
+    color:red;
+}
 .welcome-box .text{
     width:800px;
 }
