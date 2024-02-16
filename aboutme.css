@@ -1,0 +1,117 @@
+body{
+    background-color: white;
+}
+.page-title{
+    background-color: red;
+    color:white;
+    margin-top: 50px;
+    padding:20px;
+    text-align: center;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding:20px;
+    gap:5px;
+}
+.products >div{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+}
+/*big-screen-navigation*/
+.big-screen-navigation ul :nth-child(2){
+    border:1px solid;
+    padding:3px;
+    border-radius: 4px;
+}
+.big-screen-navigation ul :nth-child(3){
+    background-color: rgb(92, 94, 92);
+    color:white;
+    padding:3px;
+
+    border-radius: 4px;
+}
+/*section*/
+section{
+    margin-top: 68px;
+    display:flex;
+    gap:5px;
+}
+section .left-section{
+    width:100%;
+    height:100dvh;
+    background-color: red;
+}
+section .right-section{
+    width:100%;
+    height:100dvh;
+    background-color: rgb(255, 255, 255);
+}
+section .right-section .top-info{
+    display:flex;
+    gap:10px;
+    padding:10px;
+    overflow-x: scroll;
+    width:100%;
+    height:100px;
+    background-color: rgb(243, 243, 247);
+    margin-top: 10px;
+}
+section .right-section .top-info div{
+    min-width:150px;
+    min-height:50px;
+    background-color: white;
+    padding:10px;
+}
+section .right-section .top-info h1{
+    color:red;
+}
+/*wrap-content*/
+.wrap-content{
+    display:flex;
+    gap:10px;
+    padding:10px;
+    background-color: rgb(243, 243, 247);
+    height:76%;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+.wrap-content > div{
+    width:300px;
+    height:90%;
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+}
+.wrap-content h2{
+    color:red;
+}
+/*experience*/
+.experience ul{
+    list-style: none;
+}
+.experience .buttons{
+    padding:10px 0;
+}
+.experience .buttons button{
+    width:100%;
+    padding:15px;
+    border:0;
+    background-color: red;
+    color:white;
+    border-radius: 4px;
+}
+/*SMALL SCREENS*/
+@media screen  and (max-width:800px){
+    /*section*/
+section{
+    flex-wrap: wrap;
+    gap:10px;
+}
+/*wrap-content*/
+.wrap-content{
+    flex-wrap: wrap;
+    border-bottom: 2px solid;
+}
+}
