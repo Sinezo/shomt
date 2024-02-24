@@ -61,8 +61,8 @@ nav .wrap-bars{
 nav .bar1, nav .bar3, nav .bar2{
     width:30px;
     height:3px;
-    background-color: rgb(191, 196, 211);
-    border-radius: 10px;
+    background-color: orange;
+    border-radius: 2px;
 }
 /*welcome-box*/
 .welcome-box{
@@ -85,13 +85,27 @@ nav .bar1, nav .bar3, nav .bar2{
 .welcome-box .text{
     padding:10px;
     min-width: max-content;
+    font-weight: 600;
 }
 /*login-signup*/
 .login-signup{
-    background-color: rgb(228, 228, 238);
+    /*background-color: rgb(228, 228, 238);*/
+    background-image: url('Screenshot_20240211_192010_Gallery.jpg');
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
     padding:50px;
     display:flex;
     justify-content: center;
+    gap:20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.login-signup .image .text button{
+    padding:10px;
+    background-color: orange;
+    border: 0;
+    border-radius: 4px;
 }
 .login-signup .login{
     display:grid;
@@ -100,6 +114,7 @@ nav .bar1, nav .bar3, nav .bar2{
     width:400px;
     gap:5px;
     border-radius: 10px;
+    opacity: .9;
 }
 .login-signup .login input{
     padding:15px;
@@ -113,10 +128,15 @@ nav .bar1, nav .bar3, nav .bar2{
     border-radius: 4px;
     color:rgb(226, 156, 4);
 }
+.login-signup .login .guest{
+    background-color: unset;
+    border: 1px solid;
+}
 /*about us*/
 .about-us{
     margin-bottom: 200px;
     padding:30px;
+    font-size: small;
 }
 .about-us .text{
     border-top: 3px solid;
@@ -136,10 +156,10 @@ nav .bar1, nav .bar3, nav .bar2{
 }
 .menu-box{
     transform: translate(100%);
-    transition: all 200ms linear;
+    transition: all 150ms linear;
 }
 .menu-box .close-icon{
-    background-color: rgb(228, 228, 238);
+    background-color: orange;
     padding:5px;
 }
 .menu-box .wrap-bars{
@@ -157,7 +177,7 @@ nav .bar1, nav .bar3, nav .bar2{
 .menu-box .bar1, .menu-box .bar3{
     width:30px;
     height:3px;
-    background-color: rgb(184, 36, 36);
+    background-color: rgb(255, 0, 0);
     border-radius: 10px;
 }
 .menu-box .bar1{
@@ -178,11 +198,11 @@ nav .bar1, nav .bar3, nav .bar2{
 .menu-box .menu-list ul{
     list-style: none; 
     padding:20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(14, 15, 63);;
     height:100%;
 }
 .menu-box .menu-list ul li{
-    background-color: rgb(255, 255, 255);
+    background-color: unset;
     padding:10px;
     margin-bottom: 5px;
     border-radius: 10px;
