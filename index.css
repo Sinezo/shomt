@@ -75,20 +75,24 @@ nav .bar1, nav .bar3, nav .bar2{
     flex-wrap: wrap;
 }
 .welcome-box .text{
-    padding:10px;
+    padding:30px;
 }
 .welcome-box .text a{
     color:rgb(235, 41, 41);
+}
+.welcome-box .intro{
+    padding:20px;
 }
 .welcome-box .what-we-do{
     display:flex;
     gap:10px;
     overflow-x: scroll;
-    padding:0 20px;
+    padding:0 20px; 
 }
 .welcome-box .what-we-do > div{
     border:1px solid;
     padding:10px;
+    background-color: white;;
 }
 /*login-signup*/
 .login-signup{
@@ -143,6 +147,14 @@ nav .bar1, nav .bar3, nav .bar2{
 }
 .about-us span{
     color:rgb(226, 156, 4);
+}
+.about-us .text button{
+    padding:10px;
+    background-color: rgb(17, 17, 82);
+    border:1px solid;
+    border-radius: 4px;
+    margin:10px 0;
+    color:orange;
 }
 /*menu-box*/
 .menu-box{
