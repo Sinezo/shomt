@@ -16,10 +16,13 @@
     <header>
         <!--website name-->
         <div class="web-name" onclick="window.location='index.html'">
-            <div class="photo"><img src="Screenshot_20240219_172414_Chrome.jpg" alt=""></div>
+            <div class="photo"><img src="Screenshot_20240311_124229_Chrome.jpg" alt=""></div>
             <div class="label">SHOMT</div>
         </div>
-
+        <!--signup-->
+        <div class="signup">
+            <button>Register</button>
+        </div>
         <!--navigation-->
         <nav>
             <div class="wrap-bars" onclick="MENU();">
@@ -32,9 +35,6 @@
 
     <!--WELCOME PAGE-->
     <div class="welcome-box">
-        <div class="text"><h3>Hello student!</h3>
-            Proceeding taking part in our online activities means you have read and accepted our <a href="#">terms and conditions</a> .
-        </div>
         <!--what we do-->
         <div class="what-we-do">
             <div>Electrical</div>
@@ -46,54 +46,39 @@
         </div>
     </div>
 
+    <!--OVERLAYER INFO-->
+    <div class="overlayer-info">
+        <div class="status">
+            <input type="radio" name="status" id="" checked> Student
+            <input type="radio" name="status" id=""> Admin
+        </div>
+        <div class="box">
+            <h1></h1>
+
+        </div>
+    </div>
+
     <!--LOGIN PAGE-->
     <div class="login-signup">
         <!--login-->
         <div class="login">
             <h1>LOGIN</h1>
-            <label for="">Username</label>
-            <input type="text" placeholder="username">
-            <label for="">Password</label>
-            <input type="password" name="" id="" placeholder="password">
-            <br>
-            <button>LOGIN</button>
-            <button class="guest">Continue as guest</button>
-            <br>
-            <div class="links"><label for="">Forgot Password?</label> <a href="#">Sign Up</a></div>
+            <form action="">
+                <label for="">Username:</label>
+                <input type="text" placeholder="username" required>
+                <label for="">Password:</label>
+                <input type="password" name="" id="" placeholder="password" required>
+                <br>
+                <button>LOGIN</button>
+                <button class="guest">Continue as guest</button>
+                <br>
+            </form>
+            <div class="links"><label for="">Forgot Password?</label> <a href="#">Register</a></div>
         </div>
     </div>
 
-    <!--ABOUT-->
-    <div class="about-us">
-        <div class="text">
-           <h3>Onlline platform</h3>
-           <p>
-              This online platform is for online activities such as online tests, investigation, research projects, study material and even competitions. 
-           </p>
-           <button>Create Online Activity</button>
-           <p>
-            You can create an online activity, be it an online test, assignment for your students, quiz game and even more.
-           </p>
-           <br> 
-           <h3>About us</h3>
-           <p>
-            <b>S</b>inethemba <b>H</b>ands <b>O</b>n <b>M</b>entoring & <b>T</b>utoring (<b>SHOMT</b>) is progrmame that is designed to help school and tertiary students by exposing them to practical applications of the theories being taught in class. 
-
-           <br><br>We focus more on Science, Technology,Engineering and Mathematics (STEM).
-           <br><br>SHOMT was founded by <b>Sinethemba Lusawana</b> who possesses a National Diploma in Electrical Engineering. His primary objective is to see students understanding and mastering the engineering related topics and able to innovate and bring their ideas into reality to solve real world problems.
-           </p>
-           <button style="width:100%;">Sign up</button>
-           <button style="width:100%;background-color: white;color:rgb(22, 45, 80);margin:0;">Login</button>
-        </div>
-    </div>
-
-    
     <!--MENU-->
     <div class="menu-box">
-        <!--blinder-->
-        <div class="blinder">
-            
-        </div>
 
         <div class="menu-list">
             <!--close icon-->
@@ -114,95 +99,6 @@
             
         </div>
     </div>
-
-    <div class="brief-numbers">
-        <!--electrical services-->
-        <div>
-            <span>plus</span>
-            <h1>15</h1>
-            <p>
-                sign ups
-            </p>
-        </div>
-
-        <!--project ideas-->
-        <div>
-            <span>plus</span>
-            <h1>10</h1>
-            <p>
-               active students
-            </p>
-        </div>
-
-        <!--numbe of products-->
-        <div>
-            <span>plus</span>
-            <h1>100</h1>
-            <p>
-                completed products
-            </p>
-        </div>
-        <!--educational projects-->
-        <div>
-            <span>plus</span>
-            <h1>2</h1>
-            <p>competitions held</p>
-        </div>
-    </div>
-
-    
-
-    <!--FOOTER-->
-    <footer>
-        <!--quick links-->
-        <div class="quick-links">
-            <h3>QUICK LINKS</h3>
-            <ul>
-                <li>Home</li>
-                <li>My products</li>
-                <li>Services</li>
-                <li>Team</li>
-                <li>My vision</li>
-                <li>Competitions</li>
-            </ul>
-        </div>
-
-        <!--contanct us-->
-        <div class="contact-us">
-            <h3>CONTACT US</h3>
-            <ul>
-                <li>WhatsApp 078 605 2462</li>
-                <li>Call 078 605 2462</li>
-            </ul>
-            <address>
-                13 Sisson St 
-                <br>Fortgale 
-                <br>Umtata 
-                <br>Eastern Cape 
-            </address>
-        
-        </div>
-
-        <!--company-->
-        <div class="company">
-            <h3>COMPANY</h3>
-            <ul>
-                <li>About</li>
-                <li>Founder</li>
-                <li>Registration</li>
-                <li>Terms & Conditions</li>
-            </ul>
-        </div>
-
-        <!--eductation-->
-        <div class="education">
-            <h3>EDUCATION</h3>
-            <ul>
-                <li>Mentorship / Tutoring</li>
-                <li>Competitions</li>
-            </ul>
-        </div>
-    </footer>
 
     <script src="index.js"></script>
 </body>
