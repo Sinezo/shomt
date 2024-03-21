@@ -11,7 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="ONLOAD_ANIMATION();">
+    <!--WRAP HEADER-->
+    <div class="wrap-header">
+        <!--SLOGAN-->
+    <div class="slogan">
+        <h2>SHOMT:</h2>
+        <h3>Your revision companion</h3>
+    </div>
     <!--HEADER-->
     <header>
         <!--website name-->
@@ -32,31 +39,84 @@
             </div>
         </nav>
     </header>
+    </div>
 
-    <!--WELCOME PAGE-->
-    <div class="welcome-box">
+    <!--ANIMATION-->
+    <div class="animation">
+        <!--animation1-->
+        <div class="animation1">
+            <!--question-->
+           <div class="wrap-question">
+            <label>If <b>x = 2</b></label>, what is
+            <br>
+            <h1><span>2x</span> + <span>x <sup>2</sup> </span> = <span>?</span></h1>
+            <!--answers-->
+            <div class="answers">
+                <ul>
+                    <li>4x</li>
+                    <li class="correct-ans1">8</li>
+                    <li>x <sup>2</sup> + 8</li>
+                    <li>None of the above</li>
+                </ul>
+            </div>
+            <!--hand-select-->
+            <div class="hand-select">
+                <div class="pointer"></div>
+            </div>
+           </div>
+
+            <!--mark-->
+            <div class="mark">
+                <div class="circle">
+                    <div class="wrap">
+                        <div class="short-tick"></div>
+                    <div class="long-tick"></div>
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <h1>Awesome!</h1>
+                    Keep scoring and get to know how ready you are for that upcoming test.
+
+                    <br><br><button>Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!--SUBJECTS-->
+      <div class="subjects">
         <!--what we do-->
-        <div class="what-we-do">
-            <div>Electrical</div>
-            <div>Electronic</div>
-            <div>Coding</div>
-            <div>Science</div>
-            <div>Technology</div>
-            <div>Mathematics</div>
+        <div class="subject-list">
+            <ul>
+                <li>Electrical Technology</li>
+            <li>Coding</li>
+            <li>Science</li>
+            <li>Technology</li>
+            <li>Mathematics</li>
+            </ul>
         </div>
     </div>
 
-    <!--OVERLAYER INFO-->
-    <div class="overlayer-info">
-        <div class="status">
-            <input type="radio" name="status" id="" checked> Student
-            <input type="radio" name="status" id=""> Admin
+    <!--SUBJECT MISSING-->
+    <div class="subject-missing">
+        <!--box-->
+        <div class="circle"><br>
+            <button class="eye1"></button> <button class="eye2"></button>
+            <br>
+            <br><button class="mouth"></button>
         </div>
-        <div class="box">
-            <h1></h1>
-
+        <div class="paragraph">
+            <h1>Don't see your subject?</h1>
+            <p>
+                Don't worry we have got you. <br>
+                Send us a chapter in your subject that you would to be tested on.
+                 We will do research and collect all 
+                the possible questions to prepare you for your upcoming examnination.
+            </p><br>
+            <button class="pricing">See pricing</button> <button>Send chapter</button>
         </div>
     </div>
+
 
     <!--LOGIN PAGE-->
     <div class="login-signup">

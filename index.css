@@ -15,6 +15,21 @@ font-size: small;
 ::-webkit-scrollbar{
     display:none;
 }
+/*wrap header*/
+.wrap-header{
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index:1;
+}
+/*slogan*/
+.slogan{
+    display:flex;
+    gap:10px;
+    padding:10px;
+    align-items: center;
+    background-color: rgb(243, 234, 148);
+}
 /*header*/
 header{
     background-color: rgb(255, 255, 255);
@@ -22,8 +37,6 @@ header{
     gap:10px;
     align-items: center;
     padding:10px;
-    position: fixed;
-    width:100%;
     box-sizing: border-box;
     box-shadow: 1px 1px 3px rgb(224, 221, 221);
     z-index:1;
@@ -33,7 +46,7 @@ header .web-name{
     padding:5px;
     border-radius: 4px;
     font-weight: 600;
-    color:rgb(15, 56, 190);
+    color:rgb(31, 172, 26);
     flex:1;
     min-width: max-content;
     display: flex;
@@ -44,7 +57,7 @@ header .web-name .photo{
     width:30px;
     height:30px;
     border-radius: 50%;
-    border:1px solid rgb(21, 89, 190);
+    border:3px solid rgb(49, 190, 21);
 }
 header .web-name img{
     width:100%;
@@ -55,73 +68,182 @@ header .web-name img{
 nav .wrap-bars{
     display:grid;
     gap:4px;
-    background-color: rgb(142, 151, 228);
+    background-color: rgb(255, 255, 255);
     padding:10px;
     border-radius: 4px;
     border:1px solid rgb(221, 218, 218);
 }
 nav .bar1, nav .bar3, nav .bar2{
-    width:30px;
-    height:3px;
-    background-color:rgb(255, 255, 255);
+    width:20px;
+    height:1px;
+    background-color:rgb(0, 0, 0);
     border-radius: 2px;
 }
 header .signup button{
-    padding:10px;
-    background-color: rgb(14, 73, 100);
-    color:white;
-    border:1px solid rgb(20, 90, 156);
-    font-weight: bold;
+    padding:9px;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(225, 229, 233);
     border-radius: 4px;
 
 }
-/*welcome-box*/
-.welcome-box{
-    margin-top: 60px;
-    padding:10px 0 30px 0;
-    display:flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    flex-wrap: wrap;
-}
-.welcome-box .text{
-    padding:30px;
-}
-.welcome-box .text a{
-    color:rgb(235, 41, 41);
-}
-.welcome-box .intro{
-    padding:20px;
-}
-.welcome-box .what-we-do{
-    display:flex;
-    gap:10px;
-    overflow-x: scroll;
-    padding:20px; 
-}
-.welcome-box .what-we-do > div{
-    box-shadow: 1px 2px 3px rgb(175, 174, 174);
-    padding:10px;
-    background-color: white;;
-}
-/*overlayer-info*/
-.overlayer-info{
-    display:flex;
-    justify-content: center;
-}
-.overlayer-info .box{
-    width:120px;
-    height: 120px;
-    background-image: url('_9508730c-75e2-4206-9ab9-19764b5bc9de.jpeg');
-    margin: 0 0 0 170px;
-    z-index: 1;
-    border-radius: 50%;
+
+/*animation*/
+.animation{
     display: flex;
     justify-content: center;
+    background-color: rgb(245, 248, 250);
+    margin-top: 100px;
+}
+.animation > div{
+    width:500px;
+    padding:30px;
+}
+.animation .mark{
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.animation .mark .circle{
+    background-color: green;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
     align-items: center;
-   opacity: .5;
+    transform: rotate(-45deg);
+}
+.animation .mark .short-tick{
+    width:8px;
+    height:0px;
+    background-color: rgb(255, 255, 255);
+    transition: all 300ms ease-in-out;
+}
+.animation .mark .long-tick{
+    width:0px;
+    height:8px;
+    background-color: rgb(255, 255, 255);
+    transition: all 300ms ease-in-out;
+}
+.animation .animation1{
+    display:flex;
+}
+.animation .animation1 .wrap-question{
+    width:100%;
+}
+.animation .animation1 .mark{
+    width:0;
+    overflow: hidden;
+}
+.animation .animation1 .answers{
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+}
+.animation .animation1 .answers ul li{
+    list-style: none;
+    border: 1px solid rgb(240, 236, 236);
+    margin-top: 5px;
+    padding:10px;
+    width:100%;
+    box-sizing: border-box;
+    transition: all 400ms ease-in-out;
+}
+.animation .animation1 .hand-select{
+    position: absolute;
+    transition: all 500ms linear;
+    transform: translate(-1000%);
+}
+.animation .animation1 .hand-select > div{
+    border-radius:0 100px 100px 0 0;
+    width:10px;
+    height:10px;
+    background-color: rgb(255, 175, 2);
+    transform: rotate(-45deg);
+    border-radius: 50%;
+}
+.animation .animation1 .paragraph{
+    text-align: center;
+}
+.animation .animation1 .paragraph button{
+    padding:15px;
+    width:70%;
+    background-color: rgb(82, 88, 82);
+    color:white;
+    border:0;
+    border-radius: 4px;
+}
+/*subjects*/
+.subjects{
+    padding:30px;
+    display:flex;
+    justify-content: center;
+}
+.subjects .subject-list{
+    width:700px;
+}
+.subjects .subject-list ul{
+    list-style: none;
+    display:flex;
     flex-wrap: wrap;
-    background-size: cover;
+    gap:10px;
+}
+.subjects .subject-list ul li{
+    border:1px solid;
+    padding:10px;
+    width:40%;
+    text-align:center;
+    height:fit-content
+}
+/*subject-missing*/
+.subject-missing{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:30px;
+    background-color: rgb(250, 206, 149);
+}
+.subject-missing .circle{
+    width:100px;
+    height:100px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+.subject-missing .circle button{
+    padding:3px;
+    border:0;
+}
+.subject-missing .circle .eye1{
+    margin: 0 0 0 0px;
+    border-radius: 50%;
+}
+.subject-missing .circle .eye2{
+    margin: 0 0 0 30px;
+    border-radius: 50%;
+}
+.subject-missing .circle .mouth{
+    margin: 15px 0 0 5px;
+    width:40px;
+}
+.subject-missing .paragraph{
+    width:100%;
+    padding:0 30px;
+}
+.subject-missing .paragraph button{
+    padding:15px;
+    margin-bottom: 5px;
+}
+.subject-missing .paragraph .pricing{
+    background-color: rgb(82, 88, 82);
+    color:white;
+    border:0;
+}
+.subject-missing .paragraph button{
+    border:1px solid rgb(253, 253, 253);
+    border-radius: 4px;
+    background-color: rgb(53, 113, 192);
+    color:white;
 }
 /*login-signup*/
 .login-signup{
@@ -130,7 +252,6 @@ header .signup button{
     justify-content: center;
     gap:20px;
     align-items: center;
-    margin-top: -50px;
 }
 .login-signup .image .text button{
     padding:10px;
@@ -145,7 +266,6 @@ header .signup button{
     width:400px;
     gap:5px;
     opacity: .9;
-    box-shadow: 1px 2px 3px grey;
 }
 .login-signup .login form{
     display:grid;
@@ -161,7 +281,7 @@ header .signup button{
 }
 .login-signup .login button{
     padding:15px;
-    background-color: rgb(38, 41, 197);
+    background-color: rgb(98, 182, 77);
     border:0px;
     border-radius: 4px;
     color:white;
@@ -237,32 +357,9 @@ header .signup button{
 
 
 @media screen and (max-width:700px) {
-    .overlayer-info .status{
-        position: absolute;
-        background-color: rgb(255, 255, 255);
-        padding:20px;
-        box-shadow: 1px 2px 3px grey;
-    }
+
 }
 @media screen and (min-width:700px) {
 
-    /*brief numbers*/
-    .brief-numbers{
-        justify-content: center;
-    }
-    /*slogan*/
-.slogan{
-    text-align: center;
-}
-.what-we-do section{
-    display: flex;
-    justify-content: center;
-    
-    padding:20px;
-}
-.what-we-do section > h1{
-    width:fit-content;
-    padding:30px;
-}
 
 }
