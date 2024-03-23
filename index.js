@@ -3,10 +3,23 @@ var menu_nav =1;
 function MENU(){
     if(menu_nav==1){
         document.querySelector('.menu-box').style.transform='translate(0)';
+        document.querySelector('.bar3').style.transform='translate(100%)';
+        document.querySelector('.bar3').style.opacity='0';
+        document.querySelector('.bar1').style.transform='rotate(405deg)';
+        document.querySelector('.bar1').style.margin='3px 0 0 0';
+        document.querySelector('.bar2').style.transform='rotate(-405deg)';
+        document.querySelector('.bar2').style.margin='-5px 0 0 0';
+
         menu_nav=0;
     }
     else{
         document.querySelector('.menu-box').style.transform='translate(100%)';
+        document.querySelector('.bar2').style.transform='rotate(0)';
+        document.querySelector('.bar2').style.margin='0';
+        document.querySelector('.bar1').style.transform='rotate(0)';
+        document.querySelector('.bar1').style.margin='0';
+        document.querySelector('.bar3').style.transform='translate(0)';
+        document.querySelector('.bar3').style.opacity='1';
         menu_nav=1;
     }
 }
@@ -25,18 +38,18 @@ function ONLOAD_ANIMATION(){
             document.querySelector('.correct-ans1').style.background='green';
             document.querySelector('.correct-ans1').style.color='white';
             document.querySelector('.pointer').style.width='0';
-        },3670);
+        },3900);
     
         setTimeout(()=>{
             document.querySelector('.wrap-question').style.display='none';
             document.querySelector('.mark').style.width='100%';
-        },4000);
+        },4800);
         setTimeout(()=>{
             document.querySelector('.short-tick').style.height='20px';
-        },4300);
+        },4870);
         setTimeout(()=>{
             document.querySelector('.long-tick').style.width='70px';
-        },4400);
+        },5000);
     }
     else{
 

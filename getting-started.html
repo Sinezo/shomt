@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="index.css">
+    <title>SHOMT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        .info-box{
+            margin-top: 140px;
+            padding:30px;
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .info-box p{
+            width:100%;
+            padding:20px;
+        }
+        .info-box ul{
+            list-style: none;
+            background-color: rgb(248, 247, 244);
+            padding:20px;
+        }
+    </style>
+</head>
+<body onload="ONLOAD_ANIMATION();">
+    <!--WRAP HEADER-->
+    <div class="wrap-header">
+        <!--SLOGAN-->
+    <div class="slogan">
+        <h2>SHOMT:</h2>
+        <h3>Your revision companion</h3>
+    </div>
+    <!--HEADER-->
+    <header>
+        <!--website name-->
+        <div class="web-name" onclick="window.location='index.html'">
+            <div class="photo"><img src="Screenshot_20240311_124229_Chrome.jpg" alt=""></div>
+            <div class="label">SHOMT</div>
+        </div>
+        <!--signup-->
+        <div class="login" onclick="window.location='getting-started.html#login-signup'">
+            <div>&#128100</div>
+            <div>Login</div>
+        </div>
+        <!--navigation-->
+        <nav onclick="MENU();">
+            <div class="wrap-bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div><div style="font-size: x-small;margin:-10px 0 0 6px;">Menu</div>
+        </nav>
+    </header>
+    </div>
+
+    <!--INFO BOX-->
+    <div class="info-box">
+        <h1>Getting started</h1>
+        <p>
+            Please whatsApp <b>078 605 2462</b> if this is your first time requesting our services, indicating the following: 
+            <ul>
+                <li>Name + Surname</li>
+                <li>Subject name</li>
+                <li>Chapter</li>
+                <li>Number of questions to attempt (10 to 50)</li>
+            </ul>
+        </p>
+        <div>--------OR---------</div>
+        <p>
+            Login if you already have an account.
+        </p>
+
+    </div>
+    <hr>
+   
+
+    <!--LOGIN PAGE-->
+    <div class="login-signup" id="login-signup">
+        <!--login-->
+        <div class="login">
+            <div class="login-icon">
+                <!--box-->
+                <div class="circle"><br>
+                    <button class="eye1"></button> <button class="eye2"></button>
+                    <br>
+                    <br><button class="mouth"></button>
+                </div>
+                <div class="paragraph">
+                    <h1>Login</h1>
+                    <p>
+                        Track your progress and have access to your dashboard whenever you want.
+                    </p>
+                </div>
+            </div>
+
+            <form action="">
+                <label for="">Username:</label>
+                <input type="text" placeholder="username" required>
+                <label for="">Password:</label>
+                <input type="password" name="" id="" placeholder="password" required>
+                <br>
+                <button>LOGIN</button>
+                <button class="guest">Continue as guest</button>
+                <br>
+            </form>
+            <div class="links"><label for="">Forgot Password?</label> <a href="#">Register</a></div>
+        </div>
+    </div>
+
+    <!--MENU-->
+    <div class="menu-box">
+
+        <div class="menu-list">
+
+            <!--nav list-->
+            <ul>
+                
+            </ul>
+            
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

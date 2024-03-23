@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "Blinking LED",
+			"path": "../../Documents/PlatformIO/Projects/Blinking LED"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SHOMT"
+	}
+}

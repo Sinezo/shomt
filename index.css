@@ -15,6 +15,10 @@ font-size: small;
 ::-webkit-scrollbar{
     display:none;
 }
+button:hover{
+    cursor: pointer;
+    opacity: .7;
+}
 /*wrap header*/
 .wrap-header{
     position: fixed;
@@ -45,19 +49,15 @@ header{
 header .web-name{
     padding:5px;
     border-radius: 4px;
-    font-weight: 600;
-    color:rgb(31, 172, 26);
+    font-size: x-small;
     flex:1;
     min-width: max-content;
-    display: flex;
-    align-items: center;
-    gap:10px;
+    font-weight:1;
 }
 header .web-name .photo{
     width:30px;
     height:30px;
     border-radius: 50%;
-    border:3px solid rgb(49, 190, 21);
 }
 header .web-name img{
     width:100%;
@@ -65,26 +65,37 @@ header .web-name img{
     border-radius: 50%;
 }
 /*nav*/
+nav:hover{
+    cursor: pointer;
+    opacity: .7;
+}
 nav .wrap-bars{
     display:grid;
     gap:4px;
     background-color: rgb(255, 255, 255);
     padding:10px;
     border-radius: 4px;
-    border:1px solid rgb(221, 218, 218);
+    border:0
 }
 nav .bar1, nav .bar3, nav .bar2{
     width:20px;
     height:1px;
     background-color:rgb(0, 0, 0);
     border-radius: 2px;
+    transition: all 200ms ease-in-out;
 }
-header .signup button{
-    padding:9px;
-    background-color: rgb(255, 255, 255);
-    border:1px solid rgb(225, 229, 233);
-    border-radius: 4px;
-
+header .login{
+    margin-top: 5px;;
+}
+header .login :nth-child(1){
+    text-align: center;
+}
+header .login :nth-child(2){
+    font-size: x-small;
+}
+header .login:hover{
+    cursor: pointer;
+    opacity: .7;
 }
 
 /*animation*/
@@ -137,7 +148,7 @@ flex-wrap: wrap;
 }
 .animation .animation1 .answers{
     padding: 10px;
-    background-color: white;
+    background-color: unset;
     margin-top: 10px;
 }
 .animation .animation1 .answers ul li{
@@ -148,6 +159,8 @@ flex-wrap: wrap;
     width:100%;
     box-sizing: border-box;
     transition: all 400ms ease-in-out;
+    background-color: white;
+    border-radius: 10px;
 }
 .animation .animation1 .hand-select{
     position: absolute;
@@ -158,9 +171,9 @@ flex-wrap: wrap;
     border-radius:0 100px 100px 0 0;
     width:10px;
     height:10px;
-    background-color: rgb(255, 175, 2);
+    background-color: unset;
     transform: rotate(-45deg);
-    border-radius: 50%;
+    font-size: large;
 }
 .animation .animation1 .paragraph{
     text-align: center;
@@ -249,7 +262,7 @@ flex-wrap: wrap;
 /*pricing*/
 .pricing{
     padding:30px;
-    background-color: orangered;
+    background-color: rgb(255, 255, 255);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -257,7 +270,7 @@ flex-wrap: wrap;
 .pricing .pricing-icon .circle{
     width:100px;
     height:100px;
-    background-color: rgb(157, 255, 0);
+    background-color: rgb(228, 224, 170);
     border-radius: 50%;
     display:flex;
     justify-content: center;
@@ -277,15 +290,31 @@ flex-wrap: wrap;
     text-align: start;
     padding:10px;
 }
+.pricing  table tr{
+    padding: 30px;
+}
 .pricing  table td{
     padding:5px;
     text-align: center;
 }
 tr:nth-child(even){
-    background-color: rgb(230, 240, 88);
+    background-color: rgb(251, 252, 250);
+    color:rgb(0, 0, 0);
 }
 tr:nth-child(odd){
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(205, 219, 200);
+}
+.pricing .buttons{
+    text-align: center;
+    padding:20px;
+}
+.pricing button{
+    padding:15px;
+    width:200px;
+    background-color: rgb(82, 88, 82);
+    color:white;
+    border:0;
+    border-radius: 4px;
 }
 /*login-signup*/
 .login-signup{
@@ -294,6 +323,7 @@ tr:nth-child(odd){
     justify-content: center;
     gap:20px;
     align-items: center;
+    background-color: rgb(243, 220, 117);
 }
 .login-signup .image .text button{
     padding:10px;
@@ -303,7 +333,7 @@ tr:nth-child(odd){
 }
 .login-signup .login{
     display:grid;
-    background-color: rgb(255, 255, 255);
+    background-color: unset;
     padding:10px;
     width:400px;
     gap:5px;
@@ -329,7 +359,7 @@ tr:nth-child(odd){
     color:white;
 }
 .login-signup .login .guest{
-    background-color: rgb(240, 237, 230);
+    background-color: rgb(226, 207, 124);
     border: 1px solid;
     color:unset;
 }
@@ -338,7 +368,7 @@ tr:nth-child(odd){
     position: fixed;
     width:100%;
     height:100%;
-    top:0;
+    top:120px;
     z-index:1;
     display:flex;
     background-color: rgb(255, 255, 255);
@@ -347,39 +377,11 @@ tr:nth-child(odd){
     transform: translate(100%);
     transition: all 150ms linear;
 }
-.menu-box .close-icon{
-    padding:5px;
-}
-.menu-box .wrap-bars{
-    display:grid;
-    gap:4px;
-    padding:10px;
-    border-radius: 4px;
-    width:fit-content;
-}
-.menu-box .wrap-bars:hover{
-    cursor: pointer;
-    scale:1.2;
-}
-.menu-box .bar1, .menu-box .bar3{
-    width:30px;
-    height:3px;
-    background-color: rgb(214, 27, 27);
-    border-radius: 10px;
-}
-.menu-box .bar1{
-    transform: rotate(-45deg);
-    margin:10px 0 0 0;
-}
-.menu-box .bar3{
-    transform: rotate(45deg);
-    margin:-10px 0 0 0;
-}
-.menu-box .blinder{
-    background-color: unset;
-    width:100%;
-    color:white;
-    padding:30px;
+.menu-box .menu-list{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(190, 241, 131);
+    border-radius:0 50% 0 0;
 }
 .menu-box .menu-list ul{
     list-style: none; 
@@ -390,18 +392,14 @@ tr:nth-child(odd){
     background-color: unset;
     padding:10px;
     margin-bottom: 5px;
-    border:1px solid rgb(230, 224, 224);
 }
 .menu-box .menu-list ul li:hover{
     cursor: pointer;
-    color:rgb(226, 156, 4);
+    opacity: .7;
 }
 
-
-@media screen and (max-width:700px) {
-
-}
-@media screen and (min-width:700px) {
-
-
+/*footer*/
+footer{
+    padding:20px;
+    background-color: yellowgreen;
 }
