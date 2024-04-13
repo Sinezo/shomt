@@ -1,0 +1,233 @@
+body{
+    background-color: rgb(245, 248, 250);
+}
+.animation{
+    margin: 40px 0 0 0;
+}
+.animation .intro .circle{
+    background-color: green;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+.animation .intro .short-tick{
+    width:8px;
+    height:0px;
+    background-color: rgb(255, 255, 255);
+    transition: all 300ms ease-in-out;
+}
+.animation .intro .long-tick{
+    width:0px;
+    height:8px;
+    background-color: rgb(255, 255, 255);
+    transition: all 300ms ease-in-out;
+}
+
+/*x- mark*/
+.animation .intro .x-mark{
+    background-color: red;
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin:50px 0 0 90px;
+    position: absolute;
+}
+.animation .intro{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.animation .intro .x-mark .wrap > div{
+    width:30px;
+    height:5px;
+    background-color: white;
+}
+.animation .intro .x-mark .wrap :nth-child(1){
+    transform: rotate(45deg);
+}
+.animation .intro .x-mark .wrap :nth-child(2){
+    transform: rotate(-45deg);
+    margin-top: -5px;
+}
+/*test-details*/
+.test-details{
+    padding:20px;
+    background-color: rgb(177, 177, 144);
+    height:50dvh;
+}
+.test-details .wrap{
+    background-color: white;
+    padding:10px;
+    margin-top: -40px;
+    border-radius: 10px;
+    border-top: 2px solid rgb(177, 177, 144);
+}
+
+/*test content*/
+.test-content .header{
+    position: fixed;
+    top:0;
+    width:100%;
+    box-shadow: 1px 1px 3px rgb(197, 194, 194);
+}
+.test-content .header .header-in{
+    display:flex;
+    gap:10px;
+    padding:10px;
+    align-items: center;
+    background-color: rgb(243, 234, 148);
+}
+.test-content .wrap-questions{
+    padding:10px;
+    margin-top: 30px;
+}
+.test-content .wrap-questions > div{
+    border-bottom: 2px solid rgb(209, 205, 205);
+    padding:20px 0;
+}
+.test-content .wrap-questions ul{
+    padding:20px 0;
+    list-style: none;
+}
+.test-content .wrap-questions ul li{
+    background-color: white;
+    margin-top: 4px;
+    padding:10px;
+    border-radius: 4px;
+}
+.test-content .wrap-questions ul li:hover{
+    background-color: rgb(218, 183, 87);
+    color:white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.test-content .wrap-questions span{
+    border-right: 1px solid rgb(238, 232, 232);
+    padding:5px;
+    margin-right: 10px;
+    font-weight: bold;
+    color:orange;
+}
+.test-content{
+    display:none;
+}
+/*submit-box*/
+.submit-box{
+    background-color: rgb(229, 236, 127);
+    position: fixed;
+    padding:20px;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1;
+    bottom:0;
+}
+.submit-box{
+    display:none;
+}
+.submit-box .buttons{
+    display:flex;
+    gap:10px;
+}
+.submit-box button{
+    padding:10px;
+    width:100%;
+    background-color: rgb(64, 96, 185);
+    border:0;
+    border-radius: 4px;
+    color:white;
+}
+.submit-box .buttons :nth-child(1){
+    background-color: white;
+    color:red;
+    font-weight: bold;
+}
+
+/*marks-report*/
+.marks-report .intro{
+    background-color: rgb(129, 224, 100);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding:20px;
+}
+.marks-report{
+    display:none;
+}
+.marks-report .paragraph{
+    width:100%;
+}
+.marks-report .intro .circle{
+    background-color: rgb(235, 181, 66);
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+.marks-report .intro .short-tick{
+    width:8px;
+    height:0px;
+    background-color: rgb(255, 255, 255);
+    transition: all 300ms ease-in-out;
+}
+.marks-report .intro .long-tick{
+    width:0px;
+    height:8px;
+    background-color: rgb(255, 255, 255);
+    transition: all 300ms ease-in-out;
+}
+
+/*x- mark*/
+.marks-report .intro .x-mark{
+    background-color: rgb(35, 202, 20);
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin:50px 0 0 70px;
+    position: absolute;
+}
+.marks-report .intro .x-mark .wrap > div{
+    width:30px;
+    height:5px;
+    background-color: white;
+}
+.marks-report .intro .x-mark .wrap :nth-child(1){
+    transform: rotate(45deg);
+    width:10px;
+    margin:5px 0 0 -10px;
+    position: absolute;
+}
+.marks-report .intro .x-mark .wrap :nth-child(2){
+    transform: rotate(-50deg);
+    position: absolute;
+    margin:0 0 0 -7px;
+}
+.marks-report .intro button{
+    padding:15px;
+    width:60%;
+    background-color: rgb(82, 88, 82);
+    color:white;
+    border:0;
+    border-radius: 4px;
+}
+.marks-report .bonus-info{
+    padding: 30px;
+    border:1px solid grey;
+}
+.highlighted{
+    background-color: red;
+}

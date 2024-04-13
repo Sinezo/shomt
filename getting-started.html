@@ -29,6 +29,17 @@
             background-color: rgb(248, 247, 244);
             padding:20px;
         }
+        .info-box button{
+            padding:15px;
+            background-color: rgb(107, 107, 224);
+            width:70%;
+            margin: 10px;
+            border:0;
+            border-radius: 4px;
+            color:white;
+            font-weight: 600;
+
+        }
     </style>
 </head>
 <body onload="ONLOAD_ANIMATION();">
@@ -43,7 +54,7 @@
     <header>
         <!--website name-->
         <div class="web-name" onclick="window.location='index.html'">
-            <div class="photo"><img src="Screenshot_20240311_124229_Chrome.jpg" alt=""></div>
+            <div class="photo"><img src="OIG4.jpeg" alt=""></div>
             <div class="label">SHOMT</div>
         </div>
         <!--signup-->
@@ -66,17 +77,19 @@
     <div class="info-box">
         <h1>Getting started</h1>
         <p>
-            Please whatsApp <b>078 605 2462</b> if this is your first time requesting our services, indicating the following: 
+            Please whatsApp <b>078 605 2462</b> if this is your first time requesting our services or you have not created an account yet, indicating the following: 
             <ul>
                 <li>Name + Surname</li>
                 <li>Subject name</li>
                 <li>Chapter</li>
                 <li>Number of questions to attempt (10 to 50)</li>
             </ul>
+            <button>Send chapter</button>
         </p>
-        <div>--------OR---------</div>
+
+        <div>-------- OR ---------</div>
         <p>
-            Login if you already have an account.
+            Login if you already have an account. [Coming Soon!]
         </p>
 
     </div>
@@ -113,6 +126,7 @@
                 <br>
             </form>
             <div class="links"><label for="">Forgot Password?</label> <a href="#">Register</a></div>
+            <br><span style="color:red;"><b>Please note:</b> the login feature is not available at the moment.</span>
         </div>
     </div>
 
@@ -123,7 +137,8 @@
 
             <!--nav list-->
             <ul>
-                
+                <li onclick="window.location='index.html#pricing';MENU();">Pricing</li>
+                <li onclick="alert('WhasApp 078 605 2462.')">Send chapter</li>
             </ul>
             
         </div>

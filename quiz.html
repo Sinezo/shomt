@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="index.css">
+    <title>SHOMT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet">
+
+   <style>
+    .demo{
+        padding:20px;
+    }
+    .demo button{
+        padding:10px;
+        width:100%;
+        margin: 10px 0;
+        background-color: rgb(119, 98, 81);
+        border:0;
+        border-radius: 4px;
+        color:white;
+    }
+    /*quiz test*/
+    .quiz-test{
+        padding:20px; 
+        position: fixed;
+        bottom: 0;
+        border-top: 1px solid;
+        border-radius: 30px;;
+    }
+    .quiz-test button{
+        background-color: unset;
+        border:1px solid grey;
+        padding:1px;
+    }
+   </style>
+</head>
+<body onload="ONLOAD_ANIMATION();">
+    <div class="demo">
+        <p>
+            Click on <u>See Demo</u> to have an idea of how the quiz is structured and how you will be marked.
+
+            <br><br><b>NB:</b> Choose any option, when the answer is correct the option selected will turn <span style="color:green">green</span> and when the answer is incorrect the option selected will turn <span style="color:red;">red</span>.
+        </p>
+        <button onclick="window.location='electromagnetism.html'">See Demo</button>
+    </div>
+
+    <!--ATTEMPT QUIZ-->
+    <div class="quiz-test">
+        <div class="wrap">
+            <h1>START A QUIZ TEST</h1>
+        <label>Quiz ID</label>
+        <br><input type="text" name="" id=""> <button>Submit</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

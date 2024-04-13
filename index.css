@@ -15,6 +15,9 @@ font-size: small;
 ::-webkit-scrollbar{
     display:none;
 }
+button{
+    font-weight: 600;
+}
 button:hover{
     cursor: pointer;
     opacity: .7;
@@ -206,10 +209,11 @@ flex-wrap: wrap;
     padding:10px;
     width:40%;
     text-align:center;
-    height:fit-content
+    height:fit-content;
+    border-radius: 4px;
 }
-/*subject-missing*/
-.subject-missing{
+/*where-to-start*/
+.where-to-start{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -217,42 +221,42 @@ flex-wrap: wrap;
     padding:30px;
     background-color: rgb(250, 206, 149);
 }
-.subject-missing .circle{
+.where-to-start .circle{
     width:100px;
     height:100px;
     background-color: rgb(255, 0, 0);
     border-radius: 50%;
 }
-.subject-missing .circle button{
+.where-to-start .circle button{
     padding:3px;
     border:0;
 }
-.subject-missing .circle .eye1{
+.where-to-start .circle .eye1{
     margin: 0 0 0 0px;
     border-radius: 50%;
 }
-.subject-missing .circle .eye2{
+.where-to-start .circle .eye2{
     margin: 0 0 0 30px;
     border-radius: 50%;
 }
-.subject-missing .circle .mouth{
+.where-to-start .circle .mouth{
     margin: 2px 0 0 5px;
     width:40px;
 }
-.subject-missing .paragraph{
+.where-to-start .paragraph{
     width:100%;
     padding:0 30px;
 }
-.subject-missing .paragraph button{
+.where-to-start .paragraph button{
     padding:15px;
     margin-bottom: 5px;
 }
-.subject-missing .paragraph .pricing-btn{
+.where-to-start .paragraph .pricing-btn{
     background-color: rgb(82, 88, 82);
     color:white;
     border:0;
 }
-.subject-missing .paragraph button{
+.where-to-start .paragraph button{
     border:1px solid rgb(253, 253, 253);
     border-radius: 4px;
     background-color: rgb(53, 113, 192);
@@ -286,23 +290,21 @@ flex-wrap: wrap;
 .pricing .paragraph{
     width:100%;
 }
+
 .pricing  table th{
     text-align: start;
     padding:10px;
+    border:1px solid rgb(231, 229, 229);
 }
 .pricing  table tr{
     padding: 30px;
+    border:1px solid rgb(231, 229, 229);
+    border:1px solid;
 }
 .pricing  table td{
     padding:5px;
     text-align: center;
-}
-tr:nth-child(even){
-    background-color: rgb(251, 252, 250);
-    color:rgb(0, 0, 0);
-}
-tr:nth-child(odd){
-    background-color: rgb(205, 219, 200);
+    border:1px solid rgb(231, 229, 229);
 }
 .pricing .buttons{
     text-align: center;
@@ -380,7 +382,7 @@ tr:nth-child(odd){
 .menu-box .menu-list{
     display: flex;
     justify-content: end;
-    background-color: rgb(190, 241, 131);
+    background-color: unset;
     border-radius:0 50% 0 0;
 }
 .menu-box .menu-list ul{
@@ -389,9 +391,10 @@ tr:nth-child(odd){
     height:100%;
 }
 .menu-box .menu-list ul li{
-    background-color: unset;
+    border:1px solid rgb(223, 220, 220);
     padding:10px;
     margin-bottom: 5px;
+    border-radius: 4px;
 }
 .menu-box .menu-list ul li:hover{
     cursor: pointer;
