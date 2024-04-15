@@ -258,7 +258,7 @@ footer{
     <div class="header" id="header">
         <!--SLOGAN-->
         <div class="header-in">
-            <h3 style="background-color: white;padding:10px;margin:0 0 0 -10px;border-radius: 0 100px 100px 0;">Electromagnetism</h3>
+            <h3 style="background-color: white;padding:10px;margin:0 0 0 -10px;border-radius: 0 100px 100px 0;" id="chapter-title">Electromagnetism</h3>
             <h3 style="flex:1;text-align: end;">
                 <span class="min">3 </span>: <span class="sec">59</span>
             </h3>
@@ -552,6 +552,7 @@ function CLOCK(){
                 if(min<2){
                     document.querySelector('.header-in').style.backgroundColor='red';
                     document.querySelector('.header-in').style.color='white';
+                    document.querySelector("#chapter-title").style.color='black';
                   }
             }
             if(min==0 && sec==0){
