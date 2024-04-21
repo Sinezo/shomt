@@ -14,12 +14,14 @@
    <style>
     .demo{
         padding:20px;
+        margin: 70px 10px 10px 10px;
+        border:1px solid rgb(241, 236, 236);
     }
     .demo button{
-        padding:10px;
+        padding:15px;
         width:100%;
         margin: 10px 0;
-        background-color: rgb(119, 98, 81);
+        background-color: rgb(109, 121, 235);
         border:0;
         border-radius: 4px;
         color:white;
@@ -29,26 +31,71 @@
         padding:20px; 
         position: fixed;
         bottom: 0;
-        border-top: 1px solid;
+        border-top: 1px solid grey;
         border-radius: 30px;
         width:100%;
         box-sizing: border-box;
         display:flex;
         justify-content: center;
     }
+    .quiz-test input{
+        width: 100%;
+        box-sizing: border-box;
+        margin:5px 0;
+    }
     .quiz-test button{
-        background-color: unset;
-        border:1px solid grey;
-        padding:1px;
+        background-color: rgb(163, 223, 108);
+        border:0;
+        width:100%;
+        padding:15px;
+        border-radius: 4px;
+    }
+    .quiz-test .wrap{
+        box-shadow: 1px 1px 3px grey;
+        padding:10px;
+        margin-top: -30px;
+        background-color: white;
+        border-radius: 10px;;
+    }
+    /*menu*/
+    .menu-box{
+        margin-top: -50px;
     }
    </style>
 </head>
 <body onload="ONLOAD_ANIMATION();">
+    <!--WRAP HEADER-->
+    <div class="wrap-header">
+    <!--HEADER-->
+    <header>
+        <!--website name-->
+        <div class="web-name" onclick="window.location='index.html'">
+            <h1><span style="color:rgb(133, 133, 243);">Quiz</span>Room</h1>
+        </div>
+        <!--login-->
+        <div class="login" onclick="window.location='index.html#login-signup'">
+            <div>&#128100</div>
+            <div>Login</div>
+        </div>
+        <!--navigation-->
+        <nav onclick="MENU();">
+            <div class="wrap-bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div><div style="font-size: x-small;margin:-10px 0 0 10px;">Menu</div>
+        </nav>
+    </header>
+    </div>
+
     <div class="demo">
         <p>
             Click on <u>See Demo</u> to have an idea of how the quiz is structured and how you will be marked.
 
-            <br><br><b>NB:</b> Choose any option, when the answer is correct the option selected will turn <span style="color:green">green</span> and when the answer is incorrect the option selected will turn <span style="color:red;">red</span>.
+            <br><br><b>NB:</b> Choose any option, when the answer is correct the option selected will turn green and when the answer is incorrect the option selected will turn red.
+
+            <br><br><b style="color:rgb(63, 216, 63)">GREEN</b> - Correct answer 
+            <br><br><b style="color:rgb(226, 78, 78);">RED</b> - Wrong answer
         </p>
         <button onclick="window.location='electromagnetism.html'">See Demo</button>
     </div>
@@ -56,9 +103,24 @@
     <!--ATTEMPT QUIZ-->
     <div class="quiz-test">
         <div class="wrap">
-            <h1>START A QUIZ TEST</h1>
+            <h1>My QUIZ TEST</h1>
         <label>Quiz ID</label>
-        <br><input type="text" name="" id=""> <button>Submit</button>
+        <br><input type="text" name="" id="" required> <button>Submit</button>
+        </div>
+    </div>
+
+     <!--MENU-->
+     <div class="menu-box">
+
+        <div class="menu-list">
+
+            <!--nav list-->
+            <ul>
+                <li onclick="window.location='index.html#pricing';MENU();">Competion</li>
+                <li onclick="window.location='getting-started.html'">Preperatory notes</li>
+                <li onclick="window.location='quiz.html'">Announcements</li>
+            </ul>
+            
         </div>
     </div>
 

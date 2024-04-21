@@ -312,7 +312,7 @@ flex-wrap: wrap;
 /*pricing*/
 .pricing{
     padding:30px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(241, 240, 223);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -320,7 +320,7 @@ flex-wrap: wrap;
 .pricing .pricing-icon .circle{
     min-width:100px;
     height:100px;
-    background-color: rgb(228, 224, 170);
+    background-color: rgb(240, 209, 164);
     border-radius: 50%;
     display:flex;
     justify-content: center;
@@ -369,53 +369,6 @@ flex-wrap: wrap;
     color:white;
     border:0;
     border-radius: 4px;
-}
-/*login-signup*/
-.login-signup{
-    padding: 0 50px 50px 50px;
-    display:flex;
-    justify-content: center;
-    gap:20px;
-    align-items: center;
-    background-color: rgb(243, 220, 117);
-}
-.login-signup .image .text button{
-    padding:10px;
-    background-color: orange;
-    border: 0;
-    border-radius: 4px;
-}
-.login-signup .login{
-    display:grid;
-    background-color: unset;
-    padding:10px;
-    width:400px;
-    gap:5px;
-    opacity: .9;
-}
-.login-signup .login form{
-    display:grid;
-    gap:5px;
-}
-.login-signup .login form label{
-    font-weight: 600;
-}
-.login-signup .login input{
-    padding:15px;
-    border:1px solid rgb(212, 212, 214);
-    border-radius: 4px;
-}
-.login-signup .login button{
-    padding:15px;
-    background-color: rgb(98, 182, 77);
-    border:0px;
-    border-radius: 4px;
-    color:white;
-}
-.login-signup .login .guest{
-    background-color: rgb(226, 207, 124);
-    border: 1px solid;
-    color:unset;
 }
 /*menu-box*/
 .menu-box{
