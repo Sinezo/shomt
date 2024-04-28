@@ -14,21 +14,17 @@
 <body onload="ONLOAD_ANIMATION();">
     <!--WRAP HEADER-->
     <div class="wrap-header">
-        <!--SLOGAN-->
-    <div class="slogan">
-        <h4>Your Electrical Design Companion</h4>
-    </div>
     <!--HEADER-->
     <header>
         <!--website name-->
         <div class="web-name" onclick="window.location='index.html'">
-            <div class="photo"><img src="OIG4.jpeg" alt=""></div>
-            <div class="label">SHOMT</div>
+            <div class="title"><h2><span>s</span><span>h</span><span>o</span><span>m</span><span>t</span></h2></div>
+            <div class="label">electrical Design</div>
         </div>
         <!--login-->
-        <div class="login" onclick="window.location='index.html#login-signup'">
-            <div>&#128100</div>
-            <div>Login</div>
+        <div class="shop" onclick="window.location='index.html#login-signup'">
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+            <div>Shop</div>
         </div>
         <!--navigation-->
         <nav onclick="MENU();">
@@ -41,122 +37,60 @@
     </header>
     </div>
 
-    <!--ANIMATION-->
-    <div class="animation">
-        <!--animation1-->
-        <div class="animation1">
-            <!--question-->
-           <div class="wrap-question">
-            
-           </div>
-            <!--mark-->
-            <div class="mark">
-                <div class="intro">
-                    <div class="circle">
-                        <div class="wrap">
-                            <div class="short-tick"></div>
-                        <div class="long-tick"></div>
-                        </div>
-                    </div>
-                    <div class="intro-par">
-                        <h2>On Your Mark!</h2>
-                        <p>
-                            Your Electrical Design journey is worthwhile with us.
-                        </p>
-                        
-                        <button>Learn more</button>
-                    </div>
-                </div>
-                <!--heading-->
-                <h3 style="display: flex;gap:4px;align-items: center;"><span style="color:grey;font-size: smaller;">o o o</span> Get set <span style="color:grey;font-size: smaller;">o o o</span></h3>
-                <div class="paragraph">
-                    <div class="image"><img src="Screenshot (73).png" alt="schematic"></div>
-                    <h1>Schematic Diagram</h1>
-                    From designing basic 1kHz 555 timer astable oscillator circuits to building any idea you can come up with.
-
-                    <br><br><button onclick="window.location='quiz.html'">Get started</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-         
-    <!--WHERE TO START-->
-    <div class="where-to-start">
-        <!--heading-->
-        <h3 style="display: flex;gap:4px;align-items: center;"><span style="color:grey;font-size: smaller;">o o o</span> Get ready <span style="color:grey;font-size: smaller;">o o o</span></h3>
-       <div class="wrap">
-         <div class="image">
-             <img src="Screenshot (70).png" alt="pcb">
-         </div>
-         <div class="paragraph">
-             <h1>PCB Design</h1>
-             <p>
-                 Create a Printed Circuit Board on Proteus 8 or on Kicad and solder 
-                 your components according to your project schematic.
-             </p><br>
-             <button class="pricing-btn" onclick="window.location='index.html#pricing'">Learn PCB Design</button>
-         </div>
-       </div>
-    </div>
-
-    <!--presentation-->
-    <!--WHERE TO START-->
-    <div class="where-to-start" style="background-color: rgb(255, 255, 255);">
-        <!--heading-->
-        <h3 style="display: flex;gap:4px;align-items: center;"><span style="color:grey;font-size: smaller;">o o o</span> Go! <span style="color:grey;font-size: smaller;">o o o</span></h3>
-       <div class="wrap">
-         <div class="image">
-             <img src="images (2).jpeg" alt="pcb">
-         </div>
-         <div class="paragraph">
-             <h1>Presentation</h1>
-             <p>
-                 Show your final product to the world. Let their minds be blown by your wonderful idea. 
-             </p><br>
-             <button class="pricing-btn" onclick="window.location='index.html#pricing'">Get started</button>
-         </div>
-       </div>
-    </div>
-
-    <!--PRICING-->
-    <div class="pricing" id="pricing">
-        <!--pricing icon-->
-    <div class="pricing-icon">
-        <!--box-->
-        <div class="circle"><br>
-            <h1>&real;</h1>
-        </div>
-        <div class="paragraph">
-            <h2>Pricing</h2>
+    <!--INTRODUCTION PAGE-->
+    <div class="introduction-box">
+        <div class="wrap">
+            <h2>Thumbs Up to the ideas that blow minds</h2>
             <p>
-                The prices vary according to the level of the project you would like to be mentored on.
-                <br><br><span style="color:rgb(85, 140, 212);">See table below:</span>
+                Bringing creative and innovative ideas into reality to solve real world problems.
             </p>
-        </div>
-    </div>
-        <div class="pricing-table">
-            <table>
-                <tr >
-                    <th>Project</th>
-                    <th>Price </th>
-                </tr>
-
-                <tr>
-                    <td>Basic</td>
-                    <td>R200.00 - R1000.00</td>
-                </tr>
-                <tr>
-                    <td>Advanced</td>
-                    <td>R1000.00 - R10000.00</td>
-                </tr>
-            </table>
             <div class="buttons">
-                <button onclick="window.location='getting-started.html'">Get mentorship</button>
+                <button>Explore ideas</button>
+            <button>Buy a Product</button>
+            <button>Design with us</button>
             </div>
+
         </div>
     </div>
-    
+    <!--INFO BREAK LINE-->
+    <div class="break-line">
+        <b>[- - - - - - - - - - How we do it - - - - - - - - - -]</b>
+    </div>
+
+    <!--PROCEDURE-->
+    <div class="procedure">
+        <!--schematic-->
+        <div class="schematic">
+            <h2>Schematic Diagram</h2>
+            <img src="circuit.png" alt="">
+            
+            <p>
+                From building basic 555 oscillator circuits ranging from 0.05kHz to 298kHz frequency to building any idea we can come up.
+            </p>
+            <button>Learn more</button>
+        </div>
+        <!--pcb-->
+        <div class="pcb">
+            <h2>PCB Design</h2>
+            <img src="pcb.png" alt="">
+            
+            <p>
+                Creating a Printed Circuit Board (PCB) on KiCad and and solder electronic components according the project's schematic.
+            </p>
+            <button>Learn more</button>
+        </div>
+        <!--presentation-->
+        <div class="presentation">
+            <h2>Presentation</h2>
+            <img src="images (2).jpeg" alt="">
+            
+            <p>
+                Show our final product to the world and let their minds be blown by our creativity. 
+
+            </p>
+            <button>Learn more</button>
+        </div>
+    </div>
     <!--MENU-->
     <div class="menu-box">
 
